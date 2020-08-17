@@ -64,7 +64,7 @@ data:
         - needs-rebase
         repos:
         - jenkins-x/jx3-eagle
-      target_url: http://deck-jx.
+      target_url: http://deck-jx.34.121.39.44.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
