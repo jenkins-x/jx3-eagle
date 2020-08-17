@@ -15,3 +15,4 @@ spec:
       - backend:
           serviceName: nexus
           servicePort: 80
+    host: nexus-jx.34.121.39.44.nip.io

@@ -64,9 +64,11 @@ data:
         - needs-rebase
         repos:
         - jenkins-x/jx3-eagle
-      target_url: http://deck-jx.34.121.39.44.nip.io
+      target_url: http://deck-jx.
 kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: config
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'environment'

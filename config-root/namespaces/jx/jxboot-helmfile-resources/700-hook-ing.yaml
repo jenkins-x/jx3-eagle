@@ -15,3 +15,4 @@ spec:
       - backend:
           serviceName: hook
           servicePort: 80
+    host: hook-jx.34.121.39.44.nip.io
