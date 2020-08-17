@@ -7,37 +7,57 @@ buildPacks:
     gitRef: master
     gitURL: https://github.com/jenkins-x/jxr-packs-kubernetes.git
 cluster:
-  clusterName: ""
-  devEnvApprovers:
-  - todo
-  environmentGitOwner: "todo"
+  clusterName: tf-jx-growing-ant
+  environmentGitOwner: todo
   gitKind: github
   gitName: github
   gitServer: https://github.com
+  gke:
+    projectNumber: "193491712574"
   namespace: jx
-  project:  ""
+  project: jx-labs-infra
   provider: gke
   registry: gcr.io
-  zone: ""
+  zone: us-central1-a
 environments:
-- key: dev
-  owner: ""
-  repository: ""
-- key: staging
-  owner: ""
-  repository: ""
-- key: production
-  owner: ""
-  repository: ""
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+  owner: jenkins-x
+  repository: jx3-eagle
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
 gitops: true
 ingress:
-  domain: ""
+  domain: 34.121.39.44.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
     email: ""
     enabled: false
-    production: false
+    production: true
 kaniko: true
 repository: nexus
 secretStorage: gsm
@@ -46,14 +66,14 @@ storage:
     enabled: false
     url: ""
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://logs-tf-jx-growing-ant-0557b76b6584
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://reports-tf-jx-growing-ant-0557b76b6584
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://repository-tf-jx-growing-ant-0557b76b6584
 vault: {}
 velero:
   schedule: ""

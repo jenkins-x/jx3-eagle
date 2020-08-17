@@ -1,0 +1,72 @@
+apiVersion: v1
+data:
+  config.yaml: |
+    branch-protection:
+      orgs:
+        jenkins-x:
+          repos:
+            jx3-eagle:
+              required_status_checks:
+                contexts:
+                - promotion-build
+      protect-tested-repos: true
+    deck:
+      spyglass: {}
+    gerrit: {}
+    github:
+      LinkURL: null
+    plank: {}
+    pod_namespace: jx
+    postsubmits:
+      jenkins-x/jx3-eagle:
+      - agent: tekton
+        branches:
+        - master
+        name: promotion
+        skip_report: true
+    presubmits:
+      jenkins-x/jx3-eagle:
+      - agent: tekton
+        always_run: true
+        context: promotion-build
+        name: promotion-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+    prowjob_namespace: jx
+    push_gateway:
+      serve_metrics: false
+    sinker: {}
+    tide:
+      context_options:
+        from-branch-protection: true
+        required-if-present-contexts: []
+        skip-unknown-contexts: false
+      merge_method:
+        jenkins-x/jx3-eagle: merge
+      queries:
+      - labels:
+        - approved
+        missingLabels:
+        - do-not-merge
+        - do-not-merge/hold
+        - do-not-merge/work-in-progress
+        - needs-ok-to-test
+        - needs-rebase
+        repos:
+        - jenkins-x/jx3-eagle
+      - labels:
+        - updatebot
+        missingLabels:
+        - do-not-merge
+        - do-not-merge/hold
+        - do-not-merge/work-in-progress
+        - needs-ok-to-test
+        - needs-rebase
+        repos:
+        - jenkins-x/jx3-eagle
+      target_url: http://deck-jx.
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: config
+  namespace: jx
