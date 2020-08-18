@@ -5,10 +5,24 @@ data:
       orgs:
         jenkins-x:
           repos:
+            jx-cli:
+              required_status_checks:
+                contexts:
+                - pr-build
+            jx-jenkins:
+              required_status_checks:
+                contexts:
+                - pr-build
             jx3-eagle:
               required_status_checks:
                 contexts:
                 - promotion-build
+        jenkins-x-bot-test:
+          repos:
+            jx3-eagle:
+              required_status_checks:
+                contexts:
+                - pr-build
       protect-tested-repos: true
     deck:
       spyglass: {}
@@ -18,6 +32,24 @@ data:
     plank: {}
     pod_namespace: jx
     postsubmits:
+      jenkins-x-bot-test/jx3-eagle:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      jenkins-x/jx-cli:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      jenkins-x/jx-jenkins:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
       jenkins-x/jx3-eagle:
       - agent: tekton
         branches:
@@ -25,6 +57,27 @@ data:
         name: promotion
         skip_report: true
     presubmits:
+      jenkins-x-bot-test/jx3-eagle:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x/jx-cli:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x/jx-jenkins:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x/jx3-eagle:
       - agent: tekton
         always_run: true
@@ -39,9 +92,12 @@ data:
     tide:
       context_options:
         from-branch-protection: true
-        required-if-present-contexts: []
+        required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        jenkins-x-bot-test/jx3-eagle: merge
+        jenkins-x/jx-cli: merge
+        jenkins-x/jx-jenkins: merge
         jenkins-x/jx3-eagle: merge
       queries:
       - labels:
@@ -54,6 +110,9 @@ data:
         - needs-rebase
         repos:
         - jenkins-x/jx3-eagle
+        - jenkins-x-bot-test/jx3-eagle
+        - jenkins-x/jx-cli
+        - jenkins-x/jx-jenkins
       - labels:
         - updatebot
         missingLabels:
@@ -64,6 +123,9 @@ data:
         - needs-rebase
         repos:
         - jenkins-x/jx3-eagle
+        - jenkins-x-bot-test/jx3-eagle
+        - jenkins-x/jx-cli
+        - jenkins-x/jx-jenkins
       target_url: http://deck-jx.34.121.39.44.nip.io
 kind: ConfigMap
 metadata:

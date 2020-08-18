@@ -6,6 +6,18 @@ data:
       repos:
       - jenkins-x/jx3-eagle
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x-bot-test/jx3-eagle
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x/jx-cli
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x/jx-jenkins
+      require_self_approval: true
     blunderbuss: {}
     cat: {}
     cherry_pick_unapproved: {}
@@ -21,6 +33,54 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      jenkins-x-bot-test/jx3-eagle:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x/jx-cli:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x/jx-jenkins:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/jx3-eagle:
       - config-updater
       - approve
@@ -51,6 +111,17 @@ data:
     - repos:
       - jenkins-x/jx3-eagle
       trusted_org: todo
+    - repos:
+      - jenkins-x-bot-test/jx3-eagle
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jx-cli
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jx-jenkins
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
