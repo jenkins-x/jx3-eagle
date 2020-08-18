@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: jx-jenkins
+  name: jenkins-x-jx-jenkins
+spec:
+  description: Imported application for jenkins-x/jx-jenkins
+  httpCloneURL: https://github.com/jenkins-x/jx-jenkins.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-jenkins
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/jx-jenkins.git
