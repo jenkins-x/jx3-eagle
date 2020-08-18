@@ -1,0 +1,19 @@
+# Source: jxboot-helmfile-resources/templates/environments.yaml
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  labels:
+    env: "jx3-eagle"
+    team: jx
+    gitops.jenkins-x.io/pipeline: 'environment'
+  name: "jx3-eagle"
+  namespace: jx
+spec:
+  source:
+    ref: "master"
+    url: https://github.com/jenkins-x-bot-test/jx3-eagle.git
+  kind: Permanent
+  label: Jx3-Eagle
+  promotionStrategy: "Manual"
+  namespace: "jx-jx3-eagle"
+  remoteCluster: true
