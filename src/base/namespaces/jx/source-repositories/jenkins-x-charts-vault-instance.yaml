@@ -1,0 +1,19 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-charts
+    provider: github
+    repository: vault-instance
+  name: jenkins-x-charts-vault-instance
+spec:
+  description: Imported application for jenkins-x-charts/vault-instance
+  httpCloneURL: https://github.com/jenkins-x-charts/vault-instance.git
+  org: jenkins-x-charts
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: vault-instance
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x-charts/vault-instance.git
