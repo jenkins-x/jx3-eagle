@@ -1,0 +1,19 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-charts
+    provider: github
+    repository: pusher-wave
+  name: jenkins-x-charts-pusher-wave
+spec:
+  description: Imported application for jenkins-x-charts/pusher-wave
+  httpCloneURL: https://github.com/jenkins-x-charts/pusher-wave.git
+  org: jenkins-x-charts
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: pusher-wave
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x-charts/pusher-wave.git
