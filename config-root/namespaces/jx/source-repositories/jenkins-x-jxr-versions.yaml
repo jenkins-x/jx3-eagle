@@ -1,0 +1,20 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: jxr-versions
+    gitops.jenkins-x.io/pipeline: 'environment'
+  name: jenkins-x-jxr-versions
+spec:
+  description: Imported application for jenkins-x/jxr-versions
+  httpCloneURL: https://github.com/jenkins-x/jxr-versions.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jxr-versions
+  scheduler:
+    kind: ""
+    name: jx-versions-scheduler
+  url: https://github.com/jenkins-x/jxr-versions.git

@@ -1,0 +1,20 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: jx-apps
+    gitops.jenkins-x.io/pipeline: 'environment'
+  name: jenkins-x-jx-apps
+spec:
+  description: Imported application for jenkins-x/jx-apps
+  httpCloneURL: https://github.com/jenkins-x/jx-apps.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-apps
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/jx-apps.git

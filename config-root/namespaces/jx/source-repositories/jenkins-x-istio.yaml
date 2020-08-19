@@ -1,0 +1,20 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: istio
+    gitops.jenkins-x.io/pipeline: 'environment'
+  name: jenkins-x-istio
+spec:
+  description: Imported application for jenkins-x/istio
+  httpCloneURL: https://github.com/jenkins-x/istio.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: istio
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/istio.git

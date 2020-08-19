@@ -1,0 +1,20 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: acme
+    gitops.jenkins-x.io/pipeline: 'environment'
+  name: jenkins-x-acme
+spec:
+  description: Imported application for jenkins-x/acme
+  httpCloneURL: https://github.com/jenkins-x/acme.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: acme
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/acme.git
