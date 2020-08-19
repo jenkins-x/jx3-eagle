@@ -9,6 +9,10 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
+            jx-cli-base-image:
+              required_status_checks:
+                contexts:
+                - pr-build
             jx-jenkins:
               required_status_checks:
                 contexts:
@@ -17,6 +21,10 @@ data:
               required_status_checks:
                 contexts:
                 - promotion-build
+            terraform-azurerm-jx:
+              required_status_checks:
+                contexts:
+                - pr-build
         jenkins-x-bot-test:
           repos:
             jx3-eagle:
@@ -44,6 +52,12 @@ data:
         - master
         name: release
         skip_report: true
+      jenkins-x/jx-cli-base-image:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
       jenkins-x/jx-jenkins:
       - agent: tekton
         branches:
@@ -56,6 +70,12 @@ data:
         - master
         name: promotion
         skip_report: true
+      jenkins-x/terraform-azurerm-jx:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
     presubmits:
       jenkins-x-bot-test/jx3-eagle:
       - agent: tekton
@@ -65,6 +85,13 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x/jx-cli:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x/jx-cli-base-image:
       - agent: tekton
         always_run: true
         context: pr-build
@@ -85,6 +112,13 @@ data:
         name: promotion-build
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x/terraform-azurerm-jx:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
     prowjob_namespace: jx
     push_gateway:
       serve_metrics: false
@@ -97,8 +131,10 @@ data:
       merge_method:
         jenkins-x-bot-test/jx3-eagle: merge
         jenkins-x/jx-cli: merge
+        jenkins-x/jx-cli-base-image: merge
         jenkins-x/jx-jenkins: merge
         jenkins-x/jx3-eagle: merge
+        jenkins-x/terraform-azurerm-jx: merge
       queries:
       - labels:
         - approved
@@ -111,8 +147,10 @@ data:
         repos:
         - jenkins-x/jx3-eagle
         - jenkins-x-bot-test/jx3-eagle
+        - jenkins-x/jx-cli-base-image
         - jenkins-x/jx-cli
         - jenkins-x/jx-jenkins
+        - jenkins-x/terraform-azurerm-jx
       - labels:
         - updatebot
         missingLabels:
@@ -124,8 +162,10 @@ data:
         repos:
         - jenkins-x/jx3-eagle
         - jenkins-x-bot-test/jx3-eagle
+        - jenkins-x/jx-cli-base-image
         - jenkins-x/jx-cli
         - jenkins-x/jx-jenkins
+        - jenkins-x/terraform-azurerm-jx
       target_url: http://deck-jx.34.121.39.44.nip.io
 kind: ConfigMap
 metadata:

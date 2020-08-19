@@ -12,11 +12,19 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/jx-cli-base-image
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/jx-cli
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
       - jenkins-x/jx-jenkins
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x/terraform-azurerm-jx
       require_self_approval: true
     blunderbuss: {}
     cat: {}
@@ -65,6 +73,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/jx-cli-base-image:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/jx-jenkins:
       - approve
       - assign
@@ -98,6 +122,22 @@ data:
       - override
       - dog
       - pony
+      jenkins-x/terraform-azurerm-jx:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -115,10 +155,16 @@ data:
       - jenkins-x-bot-test/jx3-eagle
       trusted_org: todo
     - repos:
+      - jenkins-x/jx-cli-base-image
+      trusted_org: todo
+    - repos:
       - jenkins-x/jx-cli
       trusted_org: todo
     - repos:
       - jenkins-x/jx-jenkins
+      trusted_org: todo
+    - repos:
+      - jenkins-x/terraform-azurerm-jx
       trusted_org: todo
     welcome:
     - message_template: Welcome
