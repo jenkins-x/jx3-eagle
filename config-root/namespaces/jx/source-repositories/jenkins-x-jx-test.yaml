@@ -1,0 +1,20 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: jx-test
+    gitops.jenkins-x.io/pipeline: 'environment'
+  name: jenkins-x-jx-test
+spec:
+  description: Imported application for jenkins-x/jx-test
+  httpCloneURL: https://github.com/jenkins-x/jx-test.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-test
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/jx-test.git

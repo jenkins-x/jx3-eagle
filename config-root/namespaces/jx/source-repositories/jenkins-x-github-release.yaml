@@ -1,0 +1,20 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: github-release
+    gitops.jenkins-x.io/pipeline: 'environment'
+  name: jenkins-x-github-release
+spec:
+  description: Imported application for jenkins-x/github-release
+  httpCloneURL: https://github.com/jenkins-x/github-release.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: github-release
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/github-release.git

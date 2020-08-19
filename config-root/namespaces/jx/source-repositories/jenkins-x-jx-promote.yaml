@@ -1,0 +1,20 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: jx-promote
+    gitops.jenkins-x.io/pipeline: 'environment'
+  name: jenkins-x-jx-promote
+spec:
+  description: Imported application for jenkins-x/jx-promote
+  httpCloneURL: https://github.com/jenkins-x/jx-promote.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-promote
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/jx-promote.git

@@ -1,0 +1,20 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: helm3-image
+    gitops.jenkins-x.io/pipeline: 'environment'
+  name: jenkins-x-helm3-image
+spec:
+  description: Imported application for jenkins-x/helm3-image
+  httpCloneURL: https://github.com/jenkins-x/helm3-image.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: helm3-image
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/helm3-image.git
