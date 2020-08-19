@@ -1,0 +1,20 @@
+apiVersion: kubernetes-client.io/v1
+kind: ExternalSecret
+metadata:
+  name: bdd-pipeline-token-github
+  namespace: jx
+spec:
+  backendType: gcpSecretsManager
+  projectId: jx-labs-infra
+  data:
+  - name: password
+    key: bdd-pipeline-token-github
+    version: latest
+  template:
+    metadata:
+      annotations:
+        jenkins-x.io/gsm-kubernetes-secret-key: password
+        jenkins-x.io/gsm-secret-id: bdd-pipeline-token-github
+        meta.helm.sh/release-name: feature-infra-secrets
+        meta.helm.sh/release-namespace: jx
+    type: Opaque
