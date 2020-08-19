@@ -1,0 +1,19 @@
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: flagger-metrics
+  name: jenkins-x-flagger-metrics
+spec:
+  description: Imported application for jenkins-x/flagger-metrics
+  httpCloneURL: https://github.com/jenkins-x/flagger-metrics.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: flagger-metrics
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/flagger-metrics.git
