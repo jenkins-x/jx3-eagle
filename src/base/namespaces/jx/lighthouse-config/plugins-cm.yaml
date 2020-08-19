@@ -635,6 +635,7 @@ data:
       - dog
       - pony
       jenkins-x/jxr-versions:
+      - label
       - approve
       - assign
       - blunderbuss
