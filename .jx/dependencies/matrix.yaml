@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/jenkins-x/jx-jenkins.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x
+  repo: terraform-azurerm-jx
+  url: https://github.com/jenkins-x/terraform-azurerm-jx.git
+  version: ""
+  versionURL: ""
