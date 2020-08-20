@@ -97,6 +97,10 @@ spec:
       httpCloneURL: https://github.com/jenkins-x/jx-test.git
       name: jx-test
       url: https://github.com/jenkins-x/jx-test.git
+    - description: Imported application for jenkins-x/jx-test-collector
+      httpCloneURL: https://github.com/jenkins-x/jx-test-collector.git
+      name: jx-test-collector
+      url: https://github.com/jenkins-x/jx-test-collector.git
     - description: Imported application for jenkins-x/jx-verify
       httpCloneURL: https://github.com/jenkins-x/jx-verify.git
       name: jx-verify
