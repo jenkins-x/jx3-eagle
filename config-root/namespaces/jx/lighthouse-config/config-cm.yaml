@@ -109,10 +109,6 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
-            jxr-versions:
-              required_status_checks:
-                contexts:
-                - pr-build
             octant-jx:
               required_status_checks:
                 contexts:
@@ -331,12 +327,6 @@ data:
         name: promotion
         skip_report: true
       jenkins-x/jxr-packs-kubernetes:
-      - agent: tekton
-        branches:
-        - master
-        name: release
-        skip_report: true
-      jenkins-x/jxr-versions:
       - agent: tekton
         branches:
         - master
@@ -571,13 +561,6 @@ data:
         name: pr-build
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/jxr-versions:
-      - agent: tekton
-        always_run: true
-        context: pr-build
-        name: pr-build
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x/octant-jx:
       - agent: tekton
         always_run: true
@@ -639,7 +622,6 @@ data:
         jenkins-x/jx-verify: merge
         jenkins-x/jx3-eagle: merge
         jenkins-x/jxr-packs-kubernetes: merge
-        jenkins-x/jxr-versions: merge
         jenkins-x/octant-jx: merge
         jenkins-x/step-go-releaser: merge
         jenkins-x/terraform-azurerm-jx: merge
@@ -683,7 +665,6 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
-        - jenkins-x/jxr-versions
         - jenkins-x/octant-jx
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
@@ -726,7 +707,6 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
-        - jenkins-x/jxr-versions
         - jenkins-x/octant-jx
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
