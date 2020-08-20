@@ -112,6 +112,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/jx-test-collector
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/jx-test
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -581,6 +585,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/jx-test-collector:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/jx-verify:
       - approve
       - assign
@@ -768,6 +788,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jx-secret
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jx-test-collector
       trusted_org: todo
     - repos:
       - jenkins-x/jx-test

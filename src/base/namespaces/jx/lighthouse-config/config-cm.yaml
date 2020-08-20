@@ -97,6 +97,10 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
+            jx-test-collector:
+              required_status_checks:
+                contexts:
+                - pr-build
             jx-verify:
               required_status_checks:
                 contexts:
@@ -309,6 +313,12 @@ data:
         name: release
         skip_report: true
       jenkins-x/jx-test:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      jenkins-x/jx-test-collector:
       - agent: tekton
         branches:
         - master
@@ -540,6 +550,13 @@ data:
         name: pr-build
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x/jx-test-collector:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x/jx-verify:
       - agent: tekton
         always_run: true
@@ -619,6 +636,7 @@ data:
         jenkins-x/jx-promote: merge
         jenkins-x/jx-secret: merge
         jenkins-x/jx-test: merge
+        jenkins-x/jx-test-collector: merge
         jenkins-x/jx-verify: merge
         jenkins-x/jx3-eagle: merge
         jenkins-x/jxr-packs-kubernetes: merge
@@ -662,6 +680,7 @@ data:
         - jenkins-x/jx-project
         - jenkins-x/jx-promote
         - jenkins-x/jx-secret
+        - jenkins-x/jx-test-collector
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
@@ -704,6 +723,7 @@ data:
         - jenkins-x/jx-project
         - jenkins-x/jx-promote
         - jenkins-x/jx-secret
+        - jenkins-x/jx-test-collector
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
