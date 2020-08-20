@@ -108,7 +108,10 @@ spec:
     - description: Imported application for jenkins-x/jxr-versions
       httpCloneURL: https://github.com/jenkins-x/jxr-versions.git
       name: jxr-versions
-      scheduler: jx3-versions-scheduler
+      # TODO lets disable BDD tests on this cluster
+      # until we've figured out the WLI for creating clusters in a different project
+      #scheduler: jx3-versions-scheduler
+      scheduler: release-only
       url: https://github.com/jenkins-x/jxr-versions.git
     - description: Imported application for jenkins-x/octant-jx
       httpCloneURL: https://github.com/jenkins-x/octant-jx.git
