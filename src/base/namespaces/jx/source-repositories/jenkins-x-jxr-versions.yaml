@@ -17,5 +17,5 @@ spec:
   repo: jxr-versions
   scheduler:
     kind: ""
-    name: jx3-versions-scheduler
+    name: release-only
   url: https://github.com/jenkins-x/jxr-versions.git
