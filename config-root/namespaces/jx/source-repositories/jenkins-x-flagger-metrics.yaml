@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: flagger-metrics
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-flagger-metrics
 spec:
   description: Imported application for jenkins-x/flagger-metrics

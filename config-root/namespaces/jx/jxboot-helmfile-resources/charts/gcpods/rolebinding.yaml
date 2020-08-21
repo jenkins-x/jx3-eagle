@@ -5,7 +5,7 @@ metadata:
   name: gcpods
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role

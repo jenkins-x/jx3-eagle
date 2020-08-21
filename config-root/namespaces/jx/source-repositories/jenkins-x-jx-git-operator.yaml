@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: jx-git-operator
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-git-operator
 spec:
   description: Imported application for jenkins-x/jx-git-operator

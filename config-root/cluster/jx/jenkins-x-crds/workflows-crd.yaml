@@ -4,7 +4,7 @@ kind: CustomResourceDefinition
 metadata:
   name: workflows.jenkins.io
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'cluster'
 spec:
   conversion:
     strategy: None

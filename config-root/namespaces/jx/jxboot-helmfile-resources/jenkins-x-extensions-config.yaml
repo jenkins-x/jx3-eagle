@@ -5,7 +5,7 @@ metadata:
   name: "jenkins-x-extensions"
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   knownRepositories: |
     repositories:

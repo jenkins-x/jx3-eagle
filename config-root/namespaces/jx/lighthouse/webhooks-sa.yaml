@@ -5,4 +5,4 @@ metadata:
   name: lighthouse-webhooks
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'

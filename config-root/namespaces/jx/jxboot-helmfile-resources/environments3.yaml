@@ -5,7 +5,7 @@ metadata:
   labels:
     env: "production"
     team: jx
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: "production"
   namespace: jx
 spec:

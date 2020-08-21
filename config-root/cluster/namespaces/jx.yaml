@@ -5,5 +5,5 @@ metadata:
     env: dev
     team: jx
     certmanager.k8s.io/disable-validation: "true"
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'cluster'
   name: jx

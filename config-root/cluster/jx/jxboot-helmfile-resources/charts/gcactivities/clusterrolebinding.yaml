@@ -5,7 +5,7 @@ metadata:
   name: gcactivities-jx
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'cluster'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

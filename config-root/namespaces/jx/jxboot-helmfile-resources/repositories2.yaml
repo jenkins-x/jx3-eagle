@@ -5,7 +5,7 @@ metadata:
   name: "jx3-eagle"
   labels:
     jenkins.io/gitSync: "false"
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
 spec:
   description: "the git repository for the Jx3-Eagle environment"

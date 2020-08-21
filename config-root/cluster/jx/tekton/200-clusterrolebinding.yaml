@@ -17,7 +17,7 @@ kind: ClusterRoleBinding
 metadata:
   name: tekton-pipelines-jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'cluster'
 subjects:
 - kind: ServiceAccount
   name: tekton-pipelines

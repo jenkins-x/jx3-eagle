@@ -19,7 +19,7 @@ metadata:
   name: config-logging
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   # Common configuration for all knative codebase
   zap-logger-config: |

@@ -8,7 +8,7 @@ metadata:
     component: "default-backend"
     heritage: Helm
     release: nginx-ingress
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: nginx-ingress-default-backend
   namespace: nginx
 spec:

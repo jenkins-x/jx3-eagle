@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x-apps
     provider: github
     repository: jx-app-gloo
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-apps-jx-app-gloo
 spec:
   description: Imported application for jenkins-x-apps/jx-app-gloo

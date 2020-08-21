@@ -19,7 +19,7 @@ metadata:
   name: config-entrypoint
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   # entrypoint image which will used by taskrun to capture logs
   image: "gcr.io/k8s-prow/entrypoint@sha256:7c7cd8906ce4982ffee326218e9fc75da2d4896d53cabc9833b9cc8d2d6b2b8f"

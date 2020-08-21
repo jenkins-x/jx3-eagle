@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: github-release
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-github-release
 spec:
   description: Imported application for jenkins-x/github-release

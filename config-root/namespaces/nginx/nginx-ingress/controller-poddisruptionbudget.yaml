@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/component: controller
     heritage: Helm
     release: nginx-ingress
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: nginx-ingress-controller
   namespace: nginx
 spec:

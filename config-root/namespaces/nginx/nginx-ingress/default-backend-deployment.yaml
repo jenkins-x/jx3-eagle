@@ -8,7 +8,7 @@ metadata:
     heritage: Helm
     release: nginx-ingress
     app.kubernetes.io/component: default-backend
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: nginx-ingress-default-backend
   namespace: nginx
   annotations:

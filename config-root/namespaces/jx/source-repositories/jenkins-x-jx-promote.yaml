@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: jx-promote
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-promote
 spec:
   description: Imported application for jenkins-x/jx-promote

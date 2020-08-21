@@ -5,7 +5,7 @@ metadata:
   labels:
     env: "jx3-eagle"
     team: jx
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: "jx3-eagle"
   namespace: jx
 spec:

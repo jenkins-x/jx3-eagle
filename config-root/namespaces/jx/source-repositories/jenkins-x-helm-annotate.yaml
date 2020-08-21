@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: helm-annotate
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-helm-annotate
 spec:
   description: Imported application for jenkins-x/helm-annotate

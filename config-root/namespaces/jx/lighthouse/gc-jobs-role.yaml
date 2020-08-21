@@ -5,7 +5,7 @@ metadata:
   name: lighthouse-gc-jobs
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
 - apiGroups:
   - ""

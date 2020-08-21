@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x-charts
     provider: github
     repository: pusher-wave
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-charts-pusher-wave
 spec:
   description: Imported application for jenkins-x-charts/pusher-wave

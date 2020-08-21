@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: jenkins-x-crds
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jenkins-x-crds
 spec:
   description: Imported application for jenkins-x/jenkins-x-crds

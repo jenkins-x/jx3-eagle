@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: jx-apps
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-apps
 spec:
   description: Imported application for jenkins-x/jx-apps

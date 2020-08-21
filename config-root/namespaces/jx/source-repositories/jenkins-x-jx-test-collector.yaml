@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: jx-test-collector
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-test-collector
 spec:
   description: Imported application for jenkins-x/jx-test-collector

@@ -5,7 +5,7 @@ metadata:
   name: owner
   labels:
     jenkins.io/kind: "EnvironmentRole"
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     title: "Team Owner"
     description: "A team owner can add/remove users and has write access to all team

@@ -5,7 +5,7 @@ metadata:
   name: viewer
   labels:
     jenkins.io/kind: "EnvironmentRole"
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     title: "Viewer"
     description: "A viewer can view all project resources"

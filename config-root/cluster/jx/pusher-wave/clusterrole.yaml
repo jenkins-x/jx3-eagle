@@ -7,7 +7,7 @@ metadata:
     release: "pusher-wave"
     chart: "pusher-wave-1.0.0"
     heritage: "Helm"
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'cluster'
   name: pusher-wave-pusher-wave
 rules:
 - apiGroups:

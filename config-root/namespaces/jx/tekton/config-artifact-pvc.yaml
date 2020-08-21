@@ -19,7 +19,7 @@ metadata:
   name: config-artifact-pvc
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   # default size of the PVC mounted
   size: "5Gi"

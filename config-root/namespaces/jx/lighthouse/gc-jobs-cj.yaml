@@ -5,7 +5,7 @@ metadata:
   name: lighthouse-gc-jobs
   labels:
     app: jenkins-x-lighthouse-gcjobs
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
 spec:
   concurrencyPolicy: Forbid

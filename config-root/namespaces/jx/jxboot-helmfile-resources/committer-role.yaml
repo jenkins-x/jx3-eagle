@@ -5,7 +5,7 @@ metadata:
   name: committer
   labels:
     jenkins.io/kind: "EnvironmentRole"
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     title: "Committer"
     description: "A committer can write to project resources but cannot add/remove

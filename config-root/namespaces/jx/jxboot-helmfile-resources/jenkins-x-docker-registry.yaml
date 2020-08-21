@@ -7,7 +7,7 @@ metadata:
     expose.config.fabric8.io/clusterip-port-if-empty-key: docker.registry
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   kaniko.flags: ""
   docker.registry: gcr.io

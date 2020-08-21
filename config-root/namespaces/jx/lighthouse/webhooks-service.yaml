@@ -5,7 +5,7 @@ metadata:
   name: hook
   labels:
     chart: "lighthouse-0.0.683"
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
 spec:
   type: ClusterIP

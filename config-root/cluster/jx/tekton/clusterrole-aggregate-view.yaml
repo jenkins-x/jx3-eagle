@@ -5,7 +5,7 @@ metadata:
   name: tekton-aggregate-view
   labels:
     rbac.authorization.k8s.io/aggregate-to-view: "true"
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'cluster'
 rules:
 - apiGroups:
   - tekton.dev

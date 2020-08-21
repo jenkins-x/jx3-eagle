@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     name: nginx
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'cluster'
   name: nginx
 spec: {}
 status: {}

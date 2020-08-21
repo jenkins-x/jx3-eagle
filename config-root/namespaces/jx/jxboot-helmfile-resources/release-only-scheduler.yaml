@@ -6,7 +6,7 @@ metadata:
   name: release-only
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   approve:
     issueRequired: false

@@ -4,6 +4,6 @@ metadata:
   name: jx-install-config
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   kubeProvider: gke

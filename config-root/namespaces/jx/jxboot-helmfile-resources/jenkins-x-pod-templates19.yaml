@@ -5,7 +5,7 @@ metadata:
   name: "jenkins-x-pod-template-python2"
   labels:
     jenkins.io/kind: podTemplate
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
 data:
   pod: |-

@@ -3,7 +3,7 @@ kind: Scheduler
 metadata:
   labels:
     app.kubernetes.io/managed-by: Helm
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jx3-versions-scheduler
   namespace: jx
 spec:

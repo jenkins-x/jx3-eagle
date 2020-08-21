@@ -4,7 +4,7 @@ kind: CustomResourceDefinition
 metadata:
   name: lighthousejobs.lighthouse.jenkins.io
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'cluster'
 spec:
   group: lighthouse.jenkins.io
   names:

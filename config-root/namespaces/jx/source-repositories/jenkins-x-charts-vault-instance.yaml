@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x-charts
     provider: github
     repository: vault-instance
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-charts-vault-instance
 spec:
   description: Imported application for jenkins-x-charts/vault-instance

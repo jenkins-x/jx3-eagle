@@ -8,7 +8,7 @@ metadata:
     chart: nexus-0.1.35
     release: nexus
     heritage: Helm
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
   namespace: jx

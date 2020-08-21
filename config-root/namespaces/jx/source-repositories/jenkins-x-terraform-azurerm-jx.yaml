@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: terraform-azurerm-jx
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-terraform-azurerm-jx
 spec:
   description: Imported application for jenkins-x/terraform-azurerm-jx

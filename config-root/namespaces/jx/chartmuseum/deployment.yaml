@@ -8,7 +8,7 @@ metadata:
     chart: chartmuseum-1.1.7
     heritage: "Helm"
     release: "chartmuseum"
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
   annotations:
     wave.pusher.com/update-on-config-change: 'true'

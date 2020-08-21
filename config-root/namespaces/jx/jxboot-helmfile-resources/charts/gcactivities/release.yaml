@@ -7,7 +7,7 @@ metadata:
   name: 'gcactivities-2.0.1143'
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
   - author: {}

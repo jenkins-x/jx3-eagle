@@ -5,7 +5,7 @@ metadata:
   name: "kubernetes-workloads"
   namespace: jx
   labels:
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   label: "Kubernetes Workloads: Automated CI+CD with GitOps Promotion"
   gitUrl: "https://github.com/jenkins-x-labs/jenkins-x-kubernetes.git"

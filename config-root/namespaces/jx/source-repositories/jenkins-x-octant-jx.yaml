@@ -6,7 +6,7 @@ metadata:
     owner: jenkins-x
     provider: github
     repository: octant-jx
-    gitops.jenkins-x.io/pipeline: 'environment'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-octant-jx
 spec:
   description: Imported application for jenkins-x/octant-jx
