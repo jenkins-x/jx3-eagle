@@ -9,140 +9,58 @@ spec:
     providerKind: github
     providerName: github
     repositories:
-    - description: Imported application for jenkins-x/acme
-      httpCloneURL: https://github.com/jenkins-x/acme.git
-      name: acme
-      url: https://github.com/jenkins-x/acme.git
-    - description: Imported application for jenkins-x/feature-infra-secrets
-      httpCloneURL: https://github.com/jenkins-x/feature-infra-secrets.git
-      name: feature-infra-secrets
-      url: https://github.com/jenkins-x/feature-infra-secrets.git
-    - description: Imported application for jenkins-x/flagger-metrics
-      httpCloneURL: https://github.com/jenkins-x/flagger-metrics.git
-      name: flagger-metrics
-      url: https://github.com/jenkins-x/flagger-metrics.git
-    - description: Imported application for jenkins-x/github-release
-      httpCloneURL: https://github.com/jenkins-x/github-release.git
-      name: github-release
-      url: https://github.com/jenkins-x/github-release.git
-    - description: Imported application for jenkins-x/helm-annotate
-      httpCloneURL: https://github.com/jenkins-x/helm-annotate.git
-      name: helm-annotate
-      url: https://github.com/jenkins-x/helm-annotate
-    - description: Imported application for jenkins-x/helm3-image
-      httpCloneURL: https://github.com/jenkins-x/helm3-image.git
-      name: helm3-image
-      url: https://github.com/jenkins-x/helm3-image.git
-    - description: Imported application for jenkins-x/istio
-      httpCloneURL: https://github.com/jenkins-x/istio.git
-      name: istio
-      url: https://github.com/jenkins-x/istio.git
-    - description: Imported application for jenkins-x/jenkins-x-crds
-      httpCloneURL: https://github.com/jenkins-x/jenkins-x-crds.git
-      name: jenkins-x-crds
-      url: https://github.com/jenkins-x/jenkins-x-crds.git
-    - description: Imported application for jenkins-x/jx-admin
-      httpCloneURL: https://github.com/jenkins-x/jx-admin.git
-      name: jx-admin
-      url: https://github.com/jenkins-x/jx-admin.git
-    - description: Imported application for jenkins-x/jx-application
-      httpCloneURL: https://github.com/jenkins-x/jx-application.git
-      name: jx-application
-      url: https://github.com/jenkins-x/jx-application.git
-    - description: Imported application for jenkins-x/jx-apps
-      httpCloneURL: https://github.com/jenkins-x/jx-apps.git
-      name: jx-apps
-      url: https://github.com/jenkins-x/jx-apps.git
-    - description: Imported application for jenkins-x/jx-cli
-      httpCloneURL: https://github.com/jenkins-x/jx-cli.git
-      name: jx-cli
-      url: https://github.com/jenkins-x/jx-cli.git
-    - description: Imported application for jenkins-x/jx-cli-base-image
-      httpCloneURL: https://github.com/jenkins-x/jx-cli-base-image.git
-      name: jx-cli-base-image
-      url: https://github.com/jenkins-x/jx-cli-base-image.git
-    - description: Imported application for jenkins-x/jx-git-operator
-      httpCloneURL: https://github.com/jenkins-x/jx-git-operator.git
-      name: jx-git-operator
-      url: https://github.com/jenkins-x/jx-git-operator.git
-    - description: Imported application for jenkins-x/jx-gitops
-      httpCloneURL: https://github.com/jenkins-x/jx-gitops.git
-      name: jx-gitops
-      url: https://github.com/jenkins-x/jx-gitops.git
-    - description: Imported application for jenkins-x/jx-helpers
-      httpCloneURL: https://github.com/jenkins-x/jx-helpers.git
-      name: jx-helpers
-      url: https://github.com/jenkins-x/jx-helpers.git
-    - description: Imported application for jenkins-x/jx-pipeline
-      httpCloneURL: https://github.com/jenkins-x/jx-pipeline.git
-      name: jx-pipeline
-      url: https://github.com/jenkins-x/jx-pipeline.git
-    - description: Imported application for jenkins-x/jx-preview
-      httpCloneURL: https://github.com/jenkins-x/jx-preview.git
-      name: jx-preview
-      url: https://github.com/jenkins-x/jx-preview.git
-    - description: Imported application for jenkins-x/jx-project
-      httpCloneURL: https://github.com/jenkins-x/jx-project.git
-      name: jx-project
-      url: https://github.com/jenkins-x/jx-project.git
-    - description: Imported application for jenkins-x/jx-promote
-      httpCloneURL: https://github.com/jenkins-x/jx-promote.git
-      name: jx-promote
-      url: https://github.com/jenkins-x/jx-promote.git
-    - description: Imported application for jenkins-x/jx-secret
-      httpCloneURL: https://github.com/jenkins-x/jx-secret.git
-      name: jx-secret
-      url: https://github.com/jenkins-x/jx-secret.git
-    - description: Imported application for jenkins-x/jx-test
-      httpCloneURL: https://github.com/jenkins-x/jx-test.git
-      name: jx-test
-      url: https://github.com/jenkins-x/jx-test.git
-    - description: Imported application for jenkins-x/jx-test-collector
-      httpCloneURL: https://github.com/jenkins-x/jx-test-collector.git
-      name: jx-test-collector
-      url: https://github.com/jenkins-x/jx-test-collector.git
-    - description: Imported application for jenkins-x/jx-verify
-      httpCloneURL: https://github.com/jenkins-x/jx-verify.git
-      name: jx-verify
-      url: https://github.com/jenkins-x/jx-verify.git
-    - description: Imported application for jenkins-x/jxr-packs-kubernetes
-      httpCloneURL: https://github.com/jenkins-x/jxr-packs-kubernetes.git
-      name: jxr-packs-kubernetes
-      url: https://github.com/jenkins-x/jxr-packs-kubernetes.git
-# TODO lets disable BDD tests on this cluster
-# until we've figured out the WLI for creating clusters in a different project
-#    - description: Imported application for jenkins-x/jxr-versions
-#      httpCloneURL: https://github.com/jenkins-x/jxr-versions.git
-#      name: jxr-versions
-#      scheduler: jx3-versions-scheduler
-#      url: https://github.com/jenkins-x/jxr-versions.git
-    - description: Imported application for jenkins-x/octant-jx
-      httpCloneURL: https://github.com/jenkins-x/octant-jx.git
-      name: octant-jx
-      url: https://github.com/jenkins-x/octant-jx.git
-    - description: Imported application for jenkins-x/step-go-releaser
-      httpCloneURL: https://github.com/jenkins-x/step-go-releaser.git
-      name: step-go-releaser
-      url: https://github.com/jenkins-x/step-go-releaser.git
+    - name: acme
+    - name: feature-infra-secrets
+    - name: flagger-metrics
+    - name: github-release
+    - name: helm-annotate
+    - name: helm3-image
+    - name: istio
+    - name: jenkins-x-crds
+    - name: jx-admin
+    - name: jx-application
+    - name: jx-apps
+    - name: jx-cli
+    - name: jx-cli-base-image
+    - name: jx-git-operator
+    - name: jx-gitops
+    - name: jx-helpers
+    - name: jx-jenkins
+    - name: jx-pipeline
+    - name: jx-preview
+    - name: jx-project
+    - name: jx-promote
+    - name: jx-secret
+    - name: jx-test
+    - name: jx-test-collector
+    - name: jx-verify
+    - description: the git repository for the Dev environment
+      name: jx3-eagle
+      scheduler: environment
+    - name: jxr-packs-kubernetes
+    - name: jxr-versions
+      scheduler: release-only
+    - name: octant-jx
+    - name: step-go-releaser
+    - name: terraform-azurerm-jx
   - owner: jenkins-x-apps
     provider: https://github.com
     providerKind: github
     providerName: github
     repositories:
-    - description: Imported application for jenkins-x-apps/jx-app-gloo
-      httpCloneURL: https://github.com/jenkins-x-apps/jx-app-gloo.git
-      name: jx-app-gloo
-      url: https://github.com/jenkins-x-apps/jx-app-gloo
+    - name: jx-app-gloo
   - owner: jenkins-x-charts
     provider: https://github.com
     providerKind: github
     providerName: github
     repositories:
-    - description: Imported application for jenkins-x-charts/pusher-wave
-      httpCloneURL: https://github.com/jenkins-x-charts/pusher-wave.git
-      name: pusher-wave
-      url: https://github.com/jenkins-x-charts/pusher-wave.git
-    - description: Imported application for jenkins-x-charts/vault-instance
-      httpCloneURL: https://github.com/jenkins-x-charts/vault-instance.git
-      name: vault-instance
-      url: https://github.com/jenkins-x-charts/vault-instance.git
+    - name: pusher-wave
+    - name: vault-instance
+  - owner: jenkins-x-bot-test
+    provider: https://github.com
+    providerKind: github
+    providerName: github
+    repositories:
+    - description: the git repository for the Jx3-Eagle environment
+      name: jx3-eagle
+    scheduler: pr-only
