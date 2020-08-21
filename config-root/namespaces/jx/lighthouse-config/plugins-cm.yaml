@@ -20,6 +20,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-bot-test/jx3-eagle
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-charts/pusher-wave
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -124,7 +128,15 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/jx3-eagle
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/jxr-packs-kubernetes
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x/jxr-versions
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -650,6 +662,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/jxr-versions:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/octant-jx:
       - approve
       - assign
@@ -719,6 +747,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-apps/jx-app-gloo
+      trusted_org: todo
+    - repos:
+      - jenkins-x-bot-test/jx3-eagle
       trusted_org: todo
     - repos:
       - jenkins-x-charts/pusher-wave
@@ -799,7 +830,13 @@ data:
       - jenkins-x/jx-verify
       trusted_org: todo
     - repos:
+      - jenkins-x/jx3-eagle
+      trusted_org: todo
+    - repos:
       - jenkins-x/jxr-packs-kubernetes
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jxr-versions
       trusted_org: todo
     - repos:
       - jenkins-x/octant-jx
