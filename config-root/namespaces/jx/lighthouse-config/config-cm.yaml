@@ -135,12 +135,6 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
-        jenkins-x-bot-test:
-          repos:
-            jx3-eagle:
-              required_status_checks:
-                contexts:
-                - pr-build
         jenkins-x-charts:
           repos:
             pusher-wave:
@@ -161,12 +155,6 @@ data:
     pod_namespace: jx
     postsubmits:
       jenkins-x-apps/jx-app-gloo:
-      - agent: tekton
-        branches:
-        - master
-        name: release
-        skip_report: true
-      jenkins-x-bot-test/jx3-eagle:
       - agent: tekton
         branches:
         - master
@@ -335,11 +323,6 @@ data:
         name: release
         skip_report: true
       jenkins-x/jx3-eagle:
-      - agent: tekton
-        branches:
-        - master
-        name: promotion
-        skip_report: true
       - agent: tekton
         branches:
         - master
@@ -383,13 +366,6 @@ data:
         name: pr-build
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x-bot-test/jx3-eagle:
-      - agent: tekton
-        always_run: true
-        context: pr-build
-        name: pr-build
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-charts/pusher-wave:
       - agent: tekton
         always_run: true
@@ -580,12 +556,6 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x/jx3-eagle:
-      - agent: tekton
-        always_run: true
-        context: promotion-build
-        name: promotion-build
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
       - agent: tekton
         always_run: true
         context: promotion-build
@@ -638,7 +608,6 @@ data:
         skip-unknown-contexts: false
       merge_method:
         jenkins-x-apps/jx-app-gloo: merge
-        jenkins-x-bot-test/jx3-eagle: merge
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
         jenkins-x/acme: merge
@@ -683,7 +652,6 @@ data:
         - needs-rebase
         repos:
         - jenkins-x/jx3-eagle
-        - jenkins-x-bot-test/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
         - jenkins-x-charts/pusher-wave
@@ -727,7 +695,6 @@ data:
         - needs-rebase
         repos:
         - jenkins-x/jx3-eagle
-        - jenkins-x-bot-test/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
         - jenkins-x-charts/pusher-wave
