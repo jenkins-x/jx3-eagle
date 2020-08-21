@@ -8,10 +8,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x-bot-test/jx3-eagle
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x/acme
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -124,10 +120,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jx3-eagle
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x/jxr-packs-kubernetes
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -162,22 +154,6 @@ data:
     owners: {}
     plugins:
       jenkins-x-apps/jx-app-gloo:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      jenkins-x-bot-test/jx3-eagle:
       - approve
       - assign
       - blunderbuss
@@ -736,9 +712,6 @@ data:
       - jenkins-x/jx3-eagle
       trusted_org: todo
     - repos:
-      - jenkins-x-bot-test/jx3-eagle
-      trusted_org: todo
-    - repos:
       - jenkins-x/acme
       trusted_org: todo
     - repos:
@@ -821,9 +794,6 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jx-verify
-      trusted_org: todo
-    - repos:
-      - jenkins-x/jx3-eagle
       trusted_org: todo
     - repos:
       - jenkins-x/jxr-packs-kubernetes
