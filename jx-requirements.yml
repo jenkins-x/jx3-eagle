@@ -49,21 +49,6 @@ environments:
       enabled: false
       production: false
   key: production
-- gitKind: github
-  gitServer: https://
-  ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: ""
-    tls:
-      email: ""
-      enabled: false
-      production: false
-  key: jx3-eagle
-  owner: jenkins-x-bot-test
-  promotionStrategy: Auto
-  remoteCluster: true
-  repository: jx3-eagle
 gitops: true
 ingress:
   domain: 34.121.39.44.nip.io
