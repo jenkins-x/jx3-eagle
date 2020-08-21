@@ -34,9 +34,6 @@ spec:
     - name: jx-test
     - name: jx-test-collector
     - name: jx-verify
-    - description: the git repository for the Dev environment
-      name: jx3-eagle
-      scheduler: environment
     - name: jxr-packs-kubernetes
     - name: jxr-versions
       scheduler: release-only
@@ -56,11 +53,3 @@ spec:
     repositories:
     - name: pusher-wave
     - name: vault-instance
-  - owner: jenkins-x-bot-test
-    provider: https://github.com
-    providerKind: github
-    providerName: github
-    repositories:
-    - description: the git repository for the Jx3-Eagle environment
-      name: jx3-eagle
-    scheduler: pr-only
