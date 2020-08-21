@@ -20,10 +20,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x-bot-test/jx3-eagle
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x-charts/pusher-wave
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -747,9 +743,6 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-apps/jx-app-gloo
-      trusted_org: todo
-    - repos:
-      - jenkins-x-bot-test/jx3-eagle
       trusted_org: todo
     - repos:
       - jenkins-x-charts/pusher-wave
