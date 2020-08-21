@@ -172,11 +172,6 @@ data:
         - master
         name: release
         skip_report: true
-      - agent: tekton
-        branches:
-        - master
-        name: release
-        skip_report: true
       jenkins-x-charts/pusher-wave:
       - agent: tekton
         branches:
@@ -389,12 +384,6 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-bot-test/jx3-eagle:
-      - agent: tekton
-        always_run: true
-        context: pr-build
-        name: pr-build
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
       - agent: tekton
         always_run: true
         context: pr-build
