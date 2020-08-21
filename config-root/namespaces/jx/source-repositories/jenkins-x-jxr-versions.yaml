@@ -5,18 +5,17 @@ metadata:
   labels:
     owner: jenkins-x
     provider: github
-    repository: jx-promote
+    repository: jxr-versions
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: jenkins-x-jx-promote
+  name: jenkins-x-jxr-versions
 spec:
-  description: Imported application for jenkins-x/jx-promote
-  httpCloneURL: https://github.com/jenkins-x/jx-promote.git
+  httpCloneURL: https://github.com/jenkins-x/jxr-versions.git
   org: jenkins-x
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-promote
+  repo: jxr-versions
   scheduler:
     kind: ""
-    name: ""
-  url: https://github.com/jenkins-x/jx-promote
+    name: release-only
+  url: https://github.com/jenkins-x/jxr-versions

@@ -18,4 +18,4 @@ spec:
   scheduler:
     kind: ""
     name: ""
-  url: https://github.com/jenkins-x/helm3-image.git
+  url: https://github.com/jenkins-x/helm3-image

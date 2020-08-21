@@ -5,18 +5,18 @@ metadata:
   labels:
     owner: jenkins-x
     provider: github
-    repository: jx-promote
+    repository: jx3-eagle
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: jenkins-x-jx-promote
+  name: jenkins-x-jx3-eagle
 spec:
-  description: Imported application for jenkins-x/jx-promote
-  httpCloneURL: https://github.com/jenkins-x/jx-promote.git
+  description: the git repository for the Dev environment
+  httpCloneURL: https://github.com/jenkins-x/jx3-eagle.git
   org: jenkins-x
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-promote
+  repo: jx3-eagle
   scheduler:
     kind: ""
-    name: ""
-  url: https://github.com/jenkins-x/jx-promote
+    name: environment
+  url: https://github.com/jenkins-x/jx3-eagle

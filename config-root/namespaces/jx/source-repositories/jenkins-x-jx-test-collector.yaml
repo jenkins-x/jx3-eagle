@@ -5,17 +5,17 @@ metadata:
   labels:
     owner: jenkins-x
     provider: github
-    repository: flagger-metrics
-  name: jenkins-x-flagger-metrics
+    repository: jx-test-collector
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-jx-test-collector
 spec:
-  description: Imported application for jenkins-x/flagger-metrics
-  httpCloneURL: https://github.com/jenkins-x/flagger-metrics.git
+  httpCloneURL: https://github.com/jenkins-x/jx-test-collector.git
   org: jenkins-x
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: flagger-metrics
+  repo: jx-test-collector
   scheduler:
     kind: ""
     name: ""
-  url: https://github.com/jenkins-x/flagger-metrics
+  url: https://github.com/jenkins-x/jx-test-collector

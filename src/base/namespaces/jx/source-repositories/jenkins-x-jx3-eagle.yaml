@@ -5,17 +5,17 @@ metadata:
   labels:
     owner: jenkins-x
     provider: github
-    repository: jx-test
-  name: jenkins-x-jx-test
+    repository: jx3-eagle
+  name: jenkins-x-jx3-eagle
 spec:
-  description: Imported application for jenkins-x/jx-test
-  httpCloneURL: https://github.com/jenkins-x/jx-test.git
+  description: the git repository for the Dev environment
+  httpCloneURL: https://github.com/jenkins-x/jx3-eagle.git
   org: jenkins-x
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-test
+  repo: jx3-eagle
   scheduler:
     kind: ""
-    name: ""
-  url: https://github.com/jenkins-x/jx-test
+    name: environment
+  url: https://github.com/jenkins-x/jx3-eagle

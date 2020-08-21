@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-bot-test
+    provider: github
+    repository: jx3-eagle
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-bot-test-jx3-eagle
+spec:
+  description: the git repository for the Jx3-Eagle environment
+  httpCloneURL: https://github.com/jenkins-x-bot-test/jx3-eagle.git
+  org: jenkins-x-bot-test
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx3-eagle
+  scheduler:
+    kind: ""
+    name: pr-only
+  url: https://github.com/jenkins-x-bot-test/jx3-eagle
