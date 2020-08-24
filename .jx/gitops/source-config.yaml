@@ -35,8 +35,6 @@ spec:
     - name: jx-test-collector
     - name: jx-verify
     - name: jxr-packs-kubernetes
-    - name: jxr-versions
-      scheduler: release-only
     - name: octant-jx
     - name: step-go-releaser
     - name: terraform-azurerm-jx
