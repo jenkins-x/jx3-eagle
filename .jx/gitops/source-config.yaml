@@ -38,6 +38,12 @@ spec:
     - name: octant-jx
     - name: step-go-releaser
     - name: terraform-azurerm-jx
+  - owner: jenkins-x-labs
+    provider: https://github.com
+    providerKind: github
+    providerName: github
+    repositories:
+    - name: jenkins-x-crds
   - owner: jenkins-x-apps
     provider: https://github.com
     providerKind: github
