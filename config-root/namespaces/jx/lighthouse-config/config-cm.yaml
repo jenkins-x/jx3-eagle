@@ -141,6 +141,12 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
+        jenkins-x-labs:
+          repos:
+            jenkins-x-crds:
+              required_status_checks:
+                contexts:
+                - pr-build
       protect-tested-repos: true
     deck:
       spyglass: {}
@@ -163,6 +169,12 @@ data:
         name: release
         skip_report: true
       jenkins-x-charts/vault-instance:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      jenkins-x-labs/jenkins-x-crds:
       - agent: tekton
         branches:
         - master
@@ -364,6 +376,13 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-charts/vault-instance:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x-labs/jenkins-x-crds:
       - agent: tekton
         always_run: true
         context: pr-build
@@ -593,6 +612,7 @@ data:
         jenkins-x-apps/jx-app-gloo: merge
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
+        jenkins-x-labs/jenkins-x-crds: merge
         jenkins-x/acme: merge
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
@@ -663,6 +683,7 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
+        - jenkins-x-labs/jenkins-x-crds
         - jenkins-x/octant-jx
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
@@ -705,6 +726,7 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
+        - jenkins-x-labs/jenkins-x-crds
         - jenkins-x/octant-jx
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
