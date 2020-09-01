@@ -708,7 +708,7 @@ data:
         - jenkins-x/octant-jx
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
-      target_url: http://deck-jx.34.121.39.44.nip.io
+      target_url: http://deck-jx.
 kind: ConfigMap
 metadata:
   creationTimestamp: null

@@ -52,7 +52,7 @@ jxRequirements:
     key: production
   gitops: true
   ingress:
-    domain: 34.121.39.44.nip.io
+    domain: ""
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
