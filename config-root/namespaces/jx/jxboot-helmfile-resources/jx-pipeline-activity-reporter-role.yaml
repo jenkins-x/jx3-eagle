@@ -7,9 +7,9 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
-- apiGroups:
-  - jenkins.io
-  resources:
-  - '*'
-  verbs:
-  - '*'
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - '*'
+    verbs:
+      - '*'

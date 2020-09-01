@@ -6,31 +6,31 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 rules:
-- apiGroups:
-  - ""
-  - extensions
-  - apps
-  - rbac.authorization.k8s.io
-  - batch
-  - jenkins.io
-  resources:
-  - '*'
-  - pods/*
-  verbs:
-  - list
-  - get
-  - watch
-  - create
-  - update
-  - patch
-  - delete
-- apiGroups:
-  - apiextensions.k8s.io
-  resources:
-  - customresourcedefinitions
-  verbs:
-  - get
-  - create
-  - patch
-  - update
-  - list
+  - apiGroups:
+      - ""
+      - extensions
+      - apps
+      - rbac.authorization.k8s.io
+      - batch
+      - jenkins.io
+    resources:
+      - '*'
+      - pods/*
+    verbs:
+      - list
+      - get
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+  - apiGroups:
+      - apiextensions.k8s.io
+    resources:
+      - customresourcedefinitions
+    verbs:
+      - get
+      - create
+      - patch
+      - update
+      - list

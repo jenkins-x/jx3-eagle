@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-github-release
 spec:
-  description: Imported application for jenkins-x/github-release
   httpCloneURL: https://github.com/jenkins-x/github-release.git
   org: jenkins-x
   provider: https://github.com

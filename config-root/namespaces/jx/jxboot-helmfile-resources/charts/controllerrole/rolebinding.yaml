@@ -11,6 +11,6 @@ roleRef:
   kind: Role
   name: controllerrole
 subjects:
-- kind: ServiceAccount
-  name: jxboot-helmfile-resources-controllerrole
-  namespace: jx
+  - kind: ServiceAccount
+    name: jxboot-helmfile-resources-controllerrole
+    namespace: jx

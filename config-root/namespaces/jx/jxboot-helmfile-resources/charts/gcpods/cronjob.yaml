@@ -26,19 +26,19 @@ spec:
           restartPolicy: Never
           serviceAccountName: jxboot-helmfile-resources-gcpods
           containers:
-          - name: gcpods
-            command: [jx]
-            args:
-            - gc
-            - pods
-            - --batch-mode
-            imagePullPolicy: IfNotPresent
-            image: "gcr.io/jenkinsxio-labs/jxl:0.0.127"
-            env:
-            - name: JX_LOG_FORMAT
-              value: json
-            - name: JX_LOG_LEVEL
-              value: info
-            - name: PIPELINE_KIND
-              value: dummy
-            resources: {}
+            - name: gcpods
+              command: [jx]
+              args:
+                - gc
+                - pods
+                - --batch-mode
+              imagePullPolicy: IfNotPresent
+              image: "gcr.io/jenkinsxio-labs/jxl:0.0.127"
+              env:
+                - name: JX_LOG_FORMAT
+                  value: json
+                - name: JX_LOG_LEVEL
+                  value: info
+                - name: PIPELINE_KIND
+                  value: dummy
+              resources: {}

@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-istio
 spec:
-  description: Imported application for jenkins-x/istio
   httpCloneURL: https://github.com/jenkins-x/istio.git
   org: jenkins-x
   provider: https://github.com

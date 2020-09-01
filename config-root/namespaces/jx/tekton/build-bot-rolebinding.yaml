@@ -11,6 +11,6 @@ roleRef:
   kind: Role
   name: tekton-bot
 subjects:
-- kind: ServiceAccount
-  name: tekton-bot
-  namespace: jx
+  - kind: ServiceAccount
+    name: tekton-bot
+    namespace: jx

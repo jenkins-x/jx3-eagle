@@ -11,6 +11,6 @@ roleRef:
   # name: tekton-bot
   name: cluster-admin
 subjects:
-- kind: ServiceAccount
-  name: tekton-bot
-  namespace: jx
+  - kind: ServiceAccount
+    name: tekton-bot
+    namespace: jx

@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-project
 spec:
-  description: Imported application for jenkins-x/jx-project
   httpCloneURL: https://github.com/jenkins-x/jx-project.git
   org: jenkins-x
   provider: https://github.com

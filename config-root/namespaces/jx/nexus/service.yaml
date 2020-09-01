@@ -15,10 +15,10 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - port: 80
-    targetPort: 8081
-    protocol: TCP
-    name: nexus
+    - port: 80
+      targetPort: 8081
+      protocol: TCP
+      name: nexus
   selector:
     app: nexus
     release: nexus

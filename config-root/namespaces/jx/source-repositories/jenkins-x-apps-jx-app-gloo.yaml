@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-apps-jx-app-gloo
 spec:
-  description: Imported application for jenkins-x-apps/jx-app-gloo
   httpCloneURL: https://github.com/jenkins-x-apps/jx-app-gloo.git
   org: jenkins-x-apps
   provider: https://github.com

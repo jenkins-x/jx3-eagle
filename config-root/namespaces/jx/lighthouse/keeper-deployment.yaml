@@ -11,7 +11,7 @@ metadata:
   namespace: jx
   annotations:
     wave.pusher.com/update-on-config-change: 'true'
-    jenkins-x.io/hash: '248fb3c03350d51b80d77b5affc8ddabd4150bbf763e2b85a7d49d941cdaec51'
+    jenkins-x.io/hash: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
 spec:
   replicas: 1
   strategy:
@@ -34,60 +34,60 @@ spec:
       serviceAccountName: lighthouse-keeper
       terminationGracePeriodSeconds: 30
       containers:
-      - name: lighthouse-keeper
-        image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.683
-        imagePullPolicy: IfNotPresent
-        args:
-        - "--namespace=jx"
-        ports:
-        - name: http
-          containerPort: 8888
-          protocol: TCP
-        livenessProbe:
-          httpGet:
-            path: /
-            port: http
-          initialDelaySeconds: 120
-          periodSeconds: 10
-          successThreshold: 1
-          timeoutSeconds: 1
-        readinessProbe:
-          httpGet:
-            path: /
-            port: http
-          periodSeconds: 10
-          successThreshold: 1
-          timeoutSeconds: 1
-        env:
-        - name: "GIT_KIND"
-          value: "github"
-        - name: "GIT_SERVER"
-          value: "https://github.com"
-        - name: "GIT_USER"
-          value: jenkins-x-labs-bot
-        - name: "GIT_TOKEN"
-          valueFrom:
-            secretKeyRef:
-              name: lighthouse-oauth-token
-              key: oauth
-        - name: "JX_LOG_FORMAT"
-          value: "json"
-        - name: "LOGRUS_FORMAT"
-          value: "json"
-        - name: "LIGHTHOUSE_KEEPER_STATUS_CONTEXT_LABEL"
-          value: "Lighthouse Merge Status"
-        resources:
-          limits:
-            cpu: 400m
-            memory: 512Mi
-          requests:
-            cpu: 100m
-            memory: 128Mi
-        volumeMounts:
-        - name: config
-          mountPath: /etc/config
-          readOnly: true
+        - name: lighthouse-keeper
+          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.683
+          imagePullPolicy: IfNotPresent
+          args:
+            - "--namespace=jx"
+          ports:
+            - name: http
+              containerPort: 8888
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 120
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          env:
+            - name: "GIT_KIND"
+              value: "github"
+            - name: "GIT_SERVER"
+              value: "https://github.com"
+            - name: "GIT_USER"
+              value: jenkins-x-labs-bot
+            - name: "GIT_TOKEN"
+              valueFrom:
+                secretKeyRef:
+                  name: lighthouse-oauth-token
+                  key: oauth
+            - name: "JX_LOG_FORMAT"
+              value: "json"
+            - name: "LOGRUS_FORMAT"
+              value: "json"
+            - name: "LIGHTHOUSE_KEEPER_STATUS_CONTEXT_LABEL"
+              value: "Lighthouse Merge Status"
+          resources:
+            limits:
+              cpu: 400m
+              memory: 512Mi
+            requests:
+              cpu: 100m
+              memory: 128Mi
+          volumeMounts:
+            - name: config
+              mountPath: /etc/config
+              readOnly: true
       volumes:
-      - name: config
-        configMap:
-          name: config
+        - name: config
+          configMap:
+            name: config

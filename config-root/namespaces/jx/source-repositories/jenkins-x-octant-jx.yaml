@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-octant-jx
 spec:
-  description: Imported application for jenkins-x/octant-jx
   httpCloneURL: https://github.com/jenkins-x/octant-jx.git
   org: jenkins-x
   provider: https://github.com

@@ -15,6 +15,6 @@ roleRef:
   kind: Role
   name: nginx-ingress
 subjects:
-- kind: ServiceAccount
-  name: nginx-ingress
-  namespace: nginx
+  - kind: ServiceAccount
+    name: nginx-ingress
+    namespace: nginx

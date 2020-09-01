@@ -12,7 +12,7 @@ metadata:
   namespace: jx
 spec:
   accessModes:
-  - "ReadWriteOnce"
+    - "ReadWriteOnce"
   resources:
     requests:
       storage: "8Gi"

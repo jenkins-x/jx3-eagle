@@ -7,20 +7,20 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
-- apiGroups:
-  - jenkins.io
-  resources:
-  - environments
-  - plugins
-  verbs:
-  - get
-  - list
-  - watch
-- apiGroups:
-  - ""
-  resources:
-  - pods
-  verbs:
-  - get
-  - delete
-  - list
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - environments
+      - plugins
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - ""
+    resources:
+      - pods
+    verbs:
+      - get
+      - delete
+      - list

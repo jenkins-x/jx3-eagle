@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-flagger-metrics
 spec:
-  description: Imported application for jenkins-x/flagger-metrics
   httpCloneURL: https://github.com/jenkins-x/flagger-metrics.git
   org: jenkins-x
   provider: https://github.com

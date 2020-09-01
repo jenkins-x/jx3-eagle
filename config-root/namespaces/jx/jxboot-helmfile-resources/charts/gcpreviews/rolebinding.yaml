@@ -11,6 +11,6 @@ roleRef:
   kind: Role
   name: gcpreviews
 subjects:
-- kind: ServiceAccount
-  name: jxboot-helmfile-resources-gcpreviews
-  namespace: jx
+  - kind: ServiceAccount
+    name: jxboot-helmfile-resources-gcpreviews
+    namespace: jx

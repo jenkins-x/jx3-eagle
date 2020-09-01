@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-charts-pusher-wave
 spec:
-  description: Imported application for jenkins-x-charts/pusher-wave
   httpCloneURL: https://github.com/jenkins-x-charts/pusher-wave.git
   org: jenkins-x-charts
   provider: https://github.com

@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-step-go-releaser
 spec:
-  description: Imported application for jenkins-x/step-go-releaser
   httpCloneURL: https://github.com/jenkins-x/step-go-releaser.git
   org: jenkins-x
   provider: https://github.com

@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-preview
 spec:
-  description: Imported application for jenkins-x/jx-preview
   httpCloneURL: https://github.com/jenkins-x/jx-preview.git
   org: jenkins-x
   provider: https://github.com

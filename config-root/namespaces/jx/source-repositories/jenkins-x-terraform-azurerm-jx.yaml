@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-terraform-azurerm-jx
 spec:
-  description: Imported application for jenkins-x/terraform-azurerm-jx
   httpCloneURL: https://github.com/jenkins-x/terraform-azurerm-jx.git
   org: jenkins-x
   provider: https://github.com

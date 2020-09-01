@@ -7,23 +7,23 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
-- apiGroups:
-  - jenkins.io
-  resources:
-  - teams
-  verbs:
-  - list
-  - get
-- apiGroups:
-  - jenkins.io
-  resources:
-  - environments
-  verbs:
-  - list
-  - get
-- apiGroups:
-  - prow.k8s.io
-  resources:
-  - prowjobs
-  verbs:
-  - create
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - teams
+    verbs:
+      - list
+      - get
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - environments
+    verbs:
+      - list
+      - get
+  - apiGroups:
+      - prow.k8s.io
+    resources:
+      - prowjobs
+    verbs:
+      - create

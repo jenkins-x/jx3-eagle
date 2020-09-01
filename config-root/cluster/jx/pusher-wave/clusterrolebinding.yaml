@@ -14,6 +14,6 @@ roleRef:
   kind: ClusterRole
   name: pusher-wave-pusher-wave
 subjects:
-- kind: ServiceAccount
-  name: pusher-wave-pusher-wave
-  namespace: jx
+  - kind: ServiceAccount
+    name: pusher-wave-pusher-wave
+    namespace: jx

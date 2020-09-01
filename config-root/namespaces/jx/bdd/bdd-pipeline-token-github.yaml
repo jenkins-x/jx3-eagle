@@ -9,9 +9,9 @@ spec:
   backendType: gcpSecretsManager
   projectId: jx-labs-infra
   data:
-  - name: password
-    key: bdd-pipeline-token-github
-    version: latest
+    - name: password
+      key: bdd-pipeline-token-github
+      version: latest
   template:
     metadata:
       annotations:

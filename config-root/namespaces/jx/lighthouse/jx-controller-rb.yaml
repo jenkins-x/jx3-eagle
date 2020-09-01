@@ -11,5 +11,5 @@ roleRef:
   kind: Role
   name: lighthouse-jx-controller
 subjects:
-- kind: ServiceAccount
-  name: lighthouse-jx-controller
+  - kind: ServiceAccount
+    name: lighthouse-jx-controller

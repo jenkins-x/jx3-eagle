@@ -7,22 +7,22 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
-- apiGroups:
-  - jenkins.io
-  resources:
-  - environmentrolebindings
-  verbs:
-  - list
-  - get
-  - watch
-  - create
-  - patch
-  - update
-- apiGroups:
-  - tekton.dev
-  resources:
-  - '*'
-  verbs:
-  - list
-  - get
-  - watch
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - environmentrolebindings
+    verbs:
+      - list
+      - get
+      - watch
+      - create
+      - patch
+      - update
+  - apiGroups:
+      - tekton.dev
+    resources:
+      - '*'
+    verbs:
+      - list
+      - get
+      - watch

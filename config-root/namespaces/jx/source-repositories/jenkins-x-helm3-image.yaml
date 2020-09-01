@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-helm3-image
 spec:
-  description: Imported application for jenkins-x/helm3-image
   httpCloneURL: https://github.com/jenkins-x/helm3-image.git
   org: jenkins-x
   provider: https://github.com

@@ -11,24 +11,24 @@ metadata:
     description: "A viewer can view all project resources"
   namespace: jx
 rules:
-- apiGroups:
-  - ""
-  - jenkins.io
-  - extensions
-  - apps
-  - apiextensions.k8s.io
-  - rbac.authorization.k8s.io
-  - batch
-  - tekton.dev
-  - flagger.app
-  - config.istio.io
-  - authentication.istio.io
-  - security.istio.io
-  - networking.istio.io
-  - rbac.istio.io
-  resources:
-  - "*"
-  verbs:
-  - list
-  - get
-  - watch
+  - apiGroups:
+      - ""
+      - jenkins.io
+      - extensions
+      - apps
+      - apiextensions.k8s.io
+      - rbac.authorization.k8s.io
+      - batch
+      - tekton.dev
+      - flagger.app
+      - config.istio.io
+      - authentication.istio.io
+      - security.istio.io
+      - networking.istio.io
+      - rbac.istio.io
+    resources:
+      - "*"
+    verbs:
+      - list
+      - get
+      - watch

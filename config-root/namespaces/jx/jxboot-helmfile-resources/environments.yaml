@@ -15,7 +15,7 @@ spec:
   kind: Development
   label: Development
   namespace: jx
-  promotionStrategy: Never
+  promotionStrategy: "Never"
   webHookEngine: "Lighthouse"
   teamSettings:
     appsRepository: http://chartmuseum.jenkins-x.io
@@ -41,7 +41,7 @@ spec:
     versionStreamRef: "master"
     useGitOps: true
     storageLocations:
-    - bucketUrl: gs://logs-tf-jx-growing-ant-0557b76b6584
-      classifier: logs
-    - bucketUrl: gs://reports-tf-jx-growing-ant-0557b76b6584
-      classifier: reports
+      - bucketUrl: gs://logs-tf-jx-growing-ant-0557b76b6584
+        classifier: logs
+      - bucketUrl: gs://reports-tf-jx-growing-ant-0557b76b6584
+        classifier: reports

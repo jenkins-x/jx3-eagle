@@ -22,17 +22,17 @@ spec:
             release: lighthouse
         spec:
           containers:
-          - command:
-            - /gc-jobs
-            image: gcr.io/jenkinsxio/lighthouse-gc-jobs:0.0.683
-            imagePullPolicy: IfNotPresent
-            args:
-            - "--namespace=jx"
-            - "--max-age=168h"
-            name: lighthouse-gc-jobs
-            resources: {}
-            terminationMessagePath: /dev/termination-log
-            terminationMessagePolicy: File
+            - command:
+                - /gc-jobs
+              image: gcr.io/jenkinsxio/lighthouse-gc-jobs:0.0.683
+              imagePullPolicy: IfNotPresent
+              args:
+                - "--namespace=jx"
+                - "--max-age=168h"
+              name: lighthouse-gc-jobs
+              resources: {}
+              terminationMessagePath: /dev/termination-log
+              terminationMessagePolicy: File
           dnsPolicy: ClusterFirst
           restartPolicy: Never
           schedulerName: default-scheduler

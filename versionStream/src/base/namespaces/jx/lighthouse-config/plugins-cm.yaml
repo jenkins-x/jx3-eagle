@@ -124,10 +124,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x-labs/jenkins-x-crds
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x/octant-jx
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -138,7 +134,6 @@ data:
       repos:
       - jenkins-x/terraform-azurerm-jx
       require_self_approval: true
-    blunderbuss: {}
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -186,22 +181,6 @@ data:
       - dog
       - pony
       jenkins-x-charts/vault-instance:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      jenkins-x-labs/jenkins-x-crds:
       - approve
       - assign
       - blunderbuss
@@ -706,7 +685,6 @@ data:
       s: 0
       xl: 0
       xxl: 0
-    slack: {}
     triggers:
     - repos:
       - jenkins-x/jx3-eagle
@@ -799,9 +777,6 @@ data:
       - jenkins-x/jxr-packs-kubernetes
       trusted_org: todo
     - repos:
-      - jenkins-x-labs/jenkins-x-crds
-      trusted_org: todo
-    - repos:
       - jenkins-x/octant-jx
       trusted_org: todo
     - repos:
@@ -817,5 +792,3 @@ metadata:
   creationTimestamp: null
   name: plugins
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'

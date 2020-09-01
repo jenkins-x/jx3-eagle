@@ -11,7 +11,7 @@ metadata:
   namespace: jx
   annotations:
     wave.pusher.com/update-on-config-change: 'true'
-    jenkins-x.io/hash: '248fb3c03350d51b80d77b5affc8ddabd4150bbf763e2b85a7d49d941cdaec51'
+    jenkins-x.io/hash: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
 spec:
   replicas: 1
   selector:
@@ -26,34 +26,34 @@ spec:
     spec:
       serviceAccountName: lighthouse-jx-controller
       containers:
-      - name: lighthouse-jx-controller
-        image: gcr.io/jenkinsxio/lighthouse-jx-controller:0.0.683
-        imagePullPolicy: IfNotPresent
-        args:
-        - "--namespace=jx"
-        env:
-        - name: "GIT_KIND"
-          value: "github"
-        - name: "GIT_SERVER"
-          value: "https://github.com"
-        - name: "GIT_USER"
-          value: jenkins-x-labs-bot
-        - name: "GIT_TOKEN"
-          valueFrom:
-            secretKeyRef:
-              name: lighthouse-oauth-token
-              key: oauth
-        - name: "JX_LOG_FORMAT"
-          value: "json"
-        - name: "LOGRUS_FORMAT"
-          value: "json"
-        - name: JX_DEFAULT_IMAGE
-          value: "gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-7527-27"
-        resources:
-          limits:
-            cpu: 100m
-            memory: 256Mi
-          requests:
-            cpu: 80m
-            memory: 128Mi
+        - name: lighthouse-jx-controller
+          image: gcr.io/jenkinsxio/lighthouse-jx-controller:0.0.683
+          imagePullPolicy: IfNotPresent
+          args:
+            - "--namespace=jx"
+          env:
+            - name: "GIT_KIND"
+              value: "github"
+            - name: "GIT_SERVER"
+              value: "https://github.com"
+            - name: "GIT_USER"
+              value: jenkins-x-labs-bot
+            - name: "GIT_TOKEN"
+              valueFrom:
+                secretKeyRef:
+                  name: lighthouse-oauth-token
+                  key: oauth
+            - name: "JX_LOG_FORMAT"
+              value: "json"
+            - name: "LOGRUS_FORMAT"
+              value: "json"
+            - name: JX_DEFAULT_IMAGE
+              value: "gcr.io/jenkinsxio/builder-maven:0.0.0-SNAPSHOT-PR-7527-27"
+          resources:
+            limits:
+              cpu: 100m
+              memory: 256Mi
+            requests:
+              cpu: 80m
+              memory: 128Mi
       terminationGracePeriodSeconds: 180

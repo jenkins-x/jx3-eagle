@@ -26,26 +26,26 @@ spec:
     spec:
       serviceAccountName: kubernetes-external-secrets
       containers:
-      - name: kubernetes-external-secrets
-        image: "godaddy/kubernetes-external-secrets:4.0.0"
-        ports:
-        - name: prometheus
-          containerPort: 3001
-        imagePullPolicy: IfNotPresent
-        resources: {}
-        env:
-        - name: "AWS_DEFAULT_REGION"
-          value: "us-west-2"
-        - name: "AWS_REGION"
-          value: "us-west-2"
-        - name: "LOG_LEVEL"
-          value: "info"
-        - name: "METRICS_PORT"
-          value: "3001"
-        - name: "POLLER_INTERVAL_MILLISECONDS"
-          value: "10000"
-        - name: "VAULT_ADDR"
-          value: "http://127.0.0.1:8200"
-          # Params for env vars populated from k8s secrets
+        - name: kubernetes-external-secrets
+          image: "godaddy/kubernetes-external-secrets:4.0.0"
+          ports:
+            - name: prometheus
+              containerPort: 3001
+          imagePullPolicy: IfNotPresent
+          resources: {}
+          env:
+            - name: "AWS_DEFAULT_REGION"
+              value: "us-west-2"
+            - name: "AWS_REGION"
+              value: "us-west-2"
+            - name: "LOG_LEVEL"
+              value: "info"
+            - name: "METRICS_PORT"
+              value: "3001"
+            - name: "POLLER_INTERVAL_MILLISECONDS"
+              value: "10000"
+            - name: "VAULT_ADDR"
+              value: "http://127.0.0.1:8200"
+              # Params for env vars populated from k8s secrets
       securityContext:
         runAsNonRoot: true

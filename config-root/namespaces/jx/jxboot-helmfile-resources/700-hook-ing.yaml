@@ -10,10 +10,10 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   rules:
-  - http:
-      paths:
-      - backend:
-          serviceName: hook
-          servicePort: 80
-        path: "/"
-    host: hook-jx.34.121.39.44.nip.io
+    - http:
+        paths:
+          - backend:
+              serviceName: hook
+              servicePort: 80
+            path: "/"
+      host: hook-jx.34.121.39.44.nip.io

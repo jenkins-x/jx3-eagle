@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-verify
 spec:
-  description: Imported application for jenkins-x/jx-verify
   httpCloneURL: https://github.com/jenkins-x/jx-verify.git
   org: jenkins-x
   provider: https://github.com

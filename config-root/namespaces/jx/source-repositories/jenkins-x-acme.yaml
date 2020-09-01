@@ -9,7 +9,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-acme
 spec:
-  description: Imported application for jenkins-x/acme
   httpCloneURL: https://github.com/jenkins-x/acme.git
   org: jenkins-x
   provider: https://github.com

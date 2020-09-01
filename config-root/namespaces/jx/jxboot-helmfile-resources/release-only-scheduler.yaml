@@ -27,37 +27,37 @@ spec:
     targetUrl: http://deck-jx.34.121.39.44.nip.io
   plugins:
     entries:
-    - approve
-    - assign
-    - blunderbuss
-    - help
-    - hold
-    - lgtm
-    - lifecycle
-    - override
-    - size
-    - trigger
-    - wip
-    - heart
-    - cat
-    - dog
-    - pony
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
   policy:
     protectTested: true
   postsubmits:
     entries:
-    - agent: tekton
-      branches:
-        entries:
-        - master
-      cluster: ""
-      context: ""
-      labels: {}
-      maxConcurrency: 0
-      name: release
-      report: false
-      runIfChanged: ""
-      skipBranches: {}
+      - agent: tekton
+        branches:
+          entries:
+            - master
+        cluster: ""
+        context: ""
+        labels: {}
+        maxConcurrency: 0
+        name: release
+        report: false
+        runIfChanged: ""
+        skipBranches: {}
   schedulerAgent:
     agent: tekton
   trigger:
@@ -66,4 +66,4 @@ spec:
     onlyOrgMembers: false
     trustedOrg: todo
   welcome:
-  - message_template: Welcome
+    - message_template: Welcome

@@ -19,9 +19,9 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 subjects:
-- kind: ServiceAccount
-  name: tekton-pipelines
-  namespace: jx
+  - kind: ServiceAccount
+    name: tekton-pipelines
+    namespace: jx
 roleRef:
   kind: ClusterRole
   name: tekton-pipelines

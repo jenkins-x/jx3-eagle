@@ -23,9 +23,9 @@ metadata:
   namespace: jx
 spec:
   ports:
-  - name: metrics
-    port: 9090
-    protocol: TCP
-    targetPort: 9090
+    - name: metrics
+      port: 9090
+      protocol: TCP
+      targetPort: 9090
   selector:
     app: tekton-pipelines-controller

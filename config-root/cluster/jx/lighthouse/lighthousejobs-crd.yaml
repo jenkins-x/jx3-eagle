@@ -12,7 +12,7 @@ spec:
     singular: lighthousejob
     plural: lighthousejobs
     shortNames:
-    - lhjob
+      - lhjob
   scope: Namespaced
   subresources:
     status: {}

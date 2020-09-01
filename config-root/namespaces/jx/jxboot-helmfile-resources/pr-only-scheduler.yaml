@@ -27,75 +27,75 @@ spec:
     targetUrl: http://deck-jx.34.121.39.44.nip.io
   plugins:
     entries:
-    - approve
-    - assign
-    - blunderbuss
-    - help
-    - hold
-    - lgtm
-    - lifecycle
-    - override
-    - size
-    - trigger
-    - wip
-    - heart
-    - cat
-    - dog
-    - pony
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
   policy:
     protectTested: true
   presubmits:
     entries:
-    - agent: tekton
-      alwaysRun: true
-      branches: {}
-      cluster: ""
-      context: pr-build
-      labels: {}
-      maxConcurrency: 0
-      mergeMethod: ""
-      name: pr-build
-      optional: false
-      policy:
-        Replace: false
-        requiredStatusChecks:
-          contexts:
-            entries:
-            - pr-build
-      queries:
-      - excludedBranches: {}
-        includedBranches: {}
-        labels:
-          entries:
-          - approved
-        milestone: ""
-        missingLabels:
-          entries:
-          - do-not-merge
-          - do-not-merge/hold
-          - do-not-merge/work-in-progress
-          - needs-ok-to-test
-          - needs-rebase
-        reviewApprovedRequired: false
-      - excludedBranches: {}
-        includedBranches: {}
-        labels:
-          entries:
-          - updatebot
-        milestone: ""
-        missingLabels:
-          entries:
-          - do-not-merge
-          - do-not-merge/hold
-          - do-not-merge/work-in-progress
-          - needs-ok-to-test
-          - needs-rebase
-        reviewApprovedRequired: false
-      report: true
-      rerunCommand: /test this
-      runIfChanged: ""
-      skipBranches: {}
-      trigger: (?m)^/test( all| this),?(\s+|$)
+      - agent: tekton
+        alwaysRun: true
+        branches: {}
+        cluster: ""
+        context: pr-build
+        labels: {}
+        maxConcurrency: 0
+        mergeMethod: ""
+        name: pr-build
+        optional: false
+        policy:
+          Replace: false
+          requiredStatusChecks:
+            contexts:
+              entries:
+                - pr-build
+        queries:
+          - excludedBranches: {}
+            includedBranches: {}
+            labels:
+              entries:
+                - approved
+            milestone: ""
+            missingLabels:
+              entries:
+                - do-not-merge
+                - do-not-merge/hold
+                - do-not-merge/work-in-progress
+                - needs-ok-to-test
+                - needs-rebase
+            reviewApprovedRequired: false
+          - excludedBranches: {}
+            includedBranches: {}
+            labels:
+              entries:
+                - updatebot
+            milestone: ""
+            missingLabels:
+              entries:
+                - do-not-merge
+                - do-not-merge/hold
+                - do-not-merge/work-in-progress
+                - needs-ok-to-test
+                - needs-rebase
+            reviewApprovedRequired: false
+        report: true
+        rerunCommand: /test this
+        runIfChanged: ""
+        skipBranches: {}
+        trigger: (?m)^/test( all| this),?(\s+|$)
   schedulerAgent:
     agent: tekton
   trigger:
@@ -104,4 +104,4 @@ spec:
     onlyOrgMembers: false
     trustedOrg: todo
   welcome:
-  - message_template: Welcome
+    - message_template: Welcome

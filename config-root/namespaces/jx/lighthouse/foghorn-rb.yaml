@@ -11,5 +11,5 @@ roleRef:
   kind: Role
   name: lighthouse-foghorn
 subjects:
-- kind: ServiceAccount
-  name: lighthouse-foghorn
+  - kind: ServiceAccount
+    name: lighthouse-foghorn

@@ -11,6 +11,6 @@ roleRef:
   kind: ClusterRole
   name: controllerbuild-jx
 subjects:
-- kind: ServiceAccount
-  name: jxboot-helmfile-resources-controllerbuild
-  namespace: jx
+  - kind: ServiceAccount
+    name: jxboot-helmfile-resources-controllerbuild
+    namespace: jx

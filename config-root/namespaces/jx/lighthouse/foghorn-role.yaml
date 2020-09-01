@@ -7,45 +7,45 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
-- apiGroups:
-  - jenkins.io
-  resources:
-  - pipelineactivities
-  verbs:
-  - list
-  - get
-  - watch
-- apiGroups:
-  - ""
-  resources:
-  - namespaces
-  - configmaps
-  - secrets
-  verbs:
-  - get
-  - list
-  - watch
-- apiGroups:
-  - lighthouse.jenkins.io
-  resources:
-  - lighthousejobs
-  verbs:
-  - create
-  - delete
-  - list
-  - update
-  - get
-  - watch
-  - patch
-- apiGroups:
-  - lighthouse.jenkins.io
-  resources:
-  - lighthousejobs/status
-  verbs:
-  - create
-  - delete
-  - list
-  - update
-  - get
-  - watch
-  - patch
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - pipelineactivities
+    verbs:
+      - list
+      - get
+      - watch
+  - apiGroups:
+      - ""
+    resources:
+      - namespaces
+      - configmaps
+      - secrets
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - lighthouse.jenkins.io
+    resources:
+      - lighthousejobs
+    verbs:
+      - create
+      - delete
+      - list
+      - update
+      - get
+      - watch
+      - patch
+  - apiGroups:
+      - lighthouse.jenkins.io
+    resources:
+      - lighthousejobs/status
+    verbs:
+      - create
+      - delete
+      - list
+      - update
+      - get
+      - watch
+      - patch
