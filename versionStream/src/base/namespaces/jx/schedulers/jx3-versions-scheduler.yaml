@@ -83,6 +83,36 @@ spec:
       trigger: (?m)^/test( all| gsm),?(s+|$)
     - agent: tekton
       alwaysRun: false
+      context: ghe
+      name: ghe
+      queries:
+      - labels:
+          entries:
+          - approved
+          - lgtm
+        missingLabels:
+          entries:
+          - do-not-merge
+          - do-not-merge/hold
+          - do-not-merge/work-in-progress
+          - needs-ok-to-test
+          - needs-rebase
+      - labels:
+          entries:
+          - updatebot
+        missingLabels:
+          entries:
+          - do-not-merge
+          - do-not-merge/hold
+          - do-not-merge/work-in-progress
+          - needs-ok-to-test
+          - needs-rebase
+          - needs-security-review
+      report: true
+      rerunCommand: /test ghe
+      trigger: (?m)^/test( all| ghe),?(s+|$)
+    - agent: tekton
+      alwaysRun: false
       context: istio
       name: istio
       queries:
