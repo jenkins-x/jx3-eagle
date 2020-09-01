@@ -117,6 +117,10 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
+            slack:
+              required_status_checks:
+                contexts:
+                - pr-build
             step-go-releaser:
               required_status_checks:
                 contexts:
@@ -336,6 +340,12 @@ data:
         - master
         name: release
       jenkins-x/octant-jx:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      jenkins-x/slack:
       - agent: tekton
         branches:
         - master
@@ -644,6 +654,13 @@ data:
         name: pr-build
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x/slack:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x/step-go-releaser:
       - agent: tekton
         always_run: true
@@ -700,6 +717,7 @@ data:
         jenkins-x/jxr-packs-kubernetes: merge
         jenkins-x/jxr-versions: merge
         jenkins-x/octant-jx: merge
+        jenkins-x/slack: merge
         jenkins-x/step-go-releaser: merge
         jenkins-x/terraform-azurerm-jx: merge
       queries:
@@ -743,6 +761,7 @@ data:
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/octant-jx
+        - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
       - labels:
@@ -785,6 +804,7 @@ data:
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/octant-jx
+        - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
       - labels:
