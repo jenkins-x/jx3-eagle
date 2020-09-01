@@ -2,10 +2,10 @@
 apiVersion: kubernetes-client.io/v1
 kind: ExternalSecret
 metadata:
-  name: jx-pipeline-git-github-ghe
+  name: bdd-pipeline-token-github-ghe
   namespace: jx
   annotations:
-    secret.jenkins-x.io/schema-object: '{"name":"jx-pipeline-git-github-ghe","properties":[{"name":"username","question":"the pipeline username","help":"the user name used by pipelines running in Jenkins X","defaultValue": "dev1"},{"name":"password","question":"the pipeline token or password","help":"the token or password used by pipelines running in Jenkins X"}]}'
+    secret.jenkins-x.io/schema-object: '{"name":"bdd-pipeline-token-github-ghe","properties":[{"name":"username","question":"the pipeline username","help":"the user name used by pipelines running in Jenkins X","defaultValue": "dev1"},{"name":"password","question":"the pipeline token or password","help":"the token or password used by pipelines running in Jenkins X"}]}'
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
@@ -27,7 +27,7 @@ spec:
         jenkins.io/credentials-description: API Token for acccessing https://github.beescloud.com Git service inside pipelines
         jenkins.io/name: ghe
         jenkins.io/url: https://github.beescloud.com
-        secret.jenkins-x.io/schema-object: '{"name":"jx-pipeline-git-github-ghe","properties":[{"name":"username","question":"the pipeline username","help":"the user name used by pipelines running in Jenkins X","defaultValue": "dev1"},{"name":"password","question":"the pipeline token or password","help":"the token or password used by pipelines running in Jenkins X"}]}'
+        secret.jenkins-x.io/schema-object: '{"name":"bdd-pipeline-token-github-ghe","properties":[{"name":"username","question":"the pipeline username","help":"the user name used by pipelines running in Jenkins X","defaultValue": "dev1"},{"name":"password","question":"the pipeline token or password","help":"the token or password used by pipelines running in Jenkins X"}]}'
       labels:
         jenkins.io/created-by: jx
         jenkins.io/credentials-type: usernamePassword
