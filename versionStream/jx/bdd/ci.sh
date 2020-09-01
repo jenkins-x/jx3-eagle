@@ -85,6 +85,7 @@ jx admin create -b --initial-git-url $GITOPS_TEMPLATE_URL --env dev --version-st
 
 export GITOPS_REPO=https://${GIT_USERNAME//[[:space:]]}:${GIT_TOKEN}@github.com/${GH_OWNER}/env-${CLUSTER_NAME}-dev.git
 
+echo "going to clone git repo $GITOPS_REPO"
 
 if [ -z "$NO_JX_TEST" ]
 then
@@ -96,6 +97,8 @@ else
       echo "not using jx-test to gc old tests"
 fi
 
+export SOURCE_DIR=`pwd`
+
 # avoid cloning cluster repo into the working CI folder
 cd ..
 
@@ -103,7 +106,8 @@ git clone $GITOPS_REPO
 cd env-${CLUSTER_NAME}-dev
 
 # use the changes from this PR in the version stream for the cluster repo when resolving the helmfile
-cp -R ../source versionStream
+rm -rf versionStream
+cp -R $SOURCE_DIR versionStream
 rm -rf versionStream/.git versionStream/.github
 git add versionStream/
 
@@ -115,6 +119,9 @@ $GITOPS_BIN/configure.sh
 
 # lets create the cluster
 $GITOPS_BIN/create.sh
+
+# lets add some testing charts....
+jx gitops helmfile add --chart jx3/jx-test-collector
 
 # lets add / commit any cloud resource specific changes
 git add * || true
