@@ -14,11 +14,9 @@ spec:
   data:
     - name: password
       key: bdd-ghe-password
-      property: token
       version: latest
     - name: username
       key: bdd-ghe-username
-      property: username
       version: latest
   template:
     metadata:
