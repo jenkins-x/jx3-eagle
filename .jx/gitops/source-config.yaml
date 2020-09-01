@@ -38,6 +38,7 @@ spec:
     - name: jxr-versions
       scheduler: jx3-versions-scheduler
     - name: octant-jx
+    - name: slack
     - name: step-go-releaser
     - name: terraform-azurerm-jx
   - owner: jenkins-x-apps
