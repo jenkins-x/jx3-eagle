@@ -24,7 +24,7 @@ spec:
       skipUnknownContexts: false
     prStatusBaseUrl: ""
     squashLabel: ""
-    targetUrl: http://deck-jx.34.121.39.44.nip.io
+    targetUrl: http://deck-jx.34.69.138.83.nip.io
   plugins:
     entries:
       - approve

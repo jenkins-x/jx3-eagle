@@ -16,4 +16,4 @@ spec:
               serviceName: nexus
               servicePort: 80
             path: "/"
-      host: nexus-jx.34.121.39.44.nip.io
+      host: nexus-jx.34.69.138.83.nip.io
