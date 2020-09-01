@@ -124,6 +124,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/jxr-versions
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/octant-jx
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -629,6 +633,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/jxr-versions:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/octant-jx:
       - approve
       - assign
@@ -775,6 +795,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jxr-packs-kubernetes
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jxr-versions
       trusted_org: todo
     - repos:
       - jenkins-x/octant-jx
