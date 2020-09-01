@@ -3,7 +3,7 @@ environments:
   default:
     values:
     - jx-values.yaml
-    - src/fake-secrets.yaml.gotmpl
+    - versionStream/src/fake-secrets.yaml.gotmpl
 repositories:
 - name: jenkins-x
   url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
