@@ -841,7 +841,7 @@ data:
         - needs-rebase
         repos:
         - jenkins-x/jxr-versions
-      target_url: http://deck-jx.34.69.138.83.nip.io
+      target_url: http://deck-jx.34.122.191.185.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
