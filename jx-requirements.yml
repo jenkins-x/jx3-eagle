@@ -59,6 +59,8 @@ ingress:
     enabled: false
     production: true
 kaniko: true
+pipelineUser:
+  username: jenkins-x-bot-test
 repository: nexus
 secretStorage: gsm
 storage:
