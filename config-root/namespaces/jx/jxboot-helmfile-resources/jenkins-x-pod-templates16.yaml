@@ -1,0 +1,11 @@
+# Source: jxboot-helmfile-resources/templates/jenkins-x-pod-templates.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "jenkins-x-pod-template-packer"
+  labels:
+    jenkins.io/kind: podTemplate
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx
+data:
+  pod: "apiVersion: v1\nkind: Pod\nmetadata:\n  name: jenkins-packer\n  labels:\n    jenkins.io/kind: build-pod\n  annotations:\n    jenkins-x.io/devpodPorts: \nspec:\n  serviceAccount: tekton-sa\n  nodeSelector:\n  volumes:\n  - name: workspace-volume\n    emptyDir: {}\n  containers:\n  - name: packer\n    image: hashicorp/packer:1.4.1\n    args:\n    - cat\n    command:\n    - /bin/sh\n    - -c\n    workingDir: /home/jenkins\n    securityContext:\n      privileged: false\n    tty: true\n    env:\n    - name: DOCKER_REGISTRY\n      valueFrom:\n        configMapKeyRef:\n          name: jenkins-x-docker-registry\n          key: docker.registry\n    - name: GIT_AUTHOR_EMAIL\n      value: jenkins-x@googlegroups.com\n    - name: GIT_AUTHOR_NAME\n      value: jenkins-x-bot\n    - name: GIT_COMMITTER_EMAIL\n      value: jenkins-x@googlegroups.com\n    - name: GIT_COMMITTER_NAME\n      value: jenkins-x-bot\n    - name: XDG_CONFIG_HOME\n      value: /home/jenkins\n    resources:\n      requests:\n        cpu: 100m\n        memory: 128Mi\n      limits:\n    volumeMounts:\n      - mountPath: /home/jenkins\n        name: workspace-volume"

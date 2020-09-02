@@ -1,0 +1,24 @@
+# Source: nexus/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nexus
+  labels:
+    app: nexus
+    chart: nexus-0.1.35
+    release: nexus
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    fabric8.io/expose: "true"
+  namespace: jx
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8081
+      protocol: TCP
+      name: nexus
+  selector:
+    app: nexus
+    release: nexus

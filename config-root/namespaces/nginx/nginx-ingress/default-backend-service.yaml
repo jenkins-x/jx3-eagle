@@ -1,0 +1,24 @@
+# Source: nginx-ingress/templates/default-backend-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx-ingress
+    chart: nginx-ingress-1.39.1
+    component: "default-backend"
+    heritage: Helm
+    release: nginx-ingress
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: nginx-ingress-default-backend
+  namespace: nginx
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: http
+  selector:
+    app: nginx-ingress
+    release: nginx-ingress
+    app.kubernetes.io/component: default-backend
+  type: "ClusterIP"
