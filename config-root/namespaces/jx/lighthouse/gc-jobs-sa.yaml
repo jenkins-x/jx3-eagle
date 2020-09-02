@@ -1,0 +1,8 @@
+# Source: lighthouse/templates/gc-jobs-sa.yaml
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: lighthouse-gc-jobs
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
