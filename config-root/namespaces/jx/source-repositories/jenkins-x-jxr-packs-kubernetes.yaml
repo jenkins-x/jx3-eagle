@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: jxr-packs-kubernetes
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-jxr-packs-kubernetes
+spec:
+  httpCloneURL: https://github.com/jenkins-x/jxr-packs-kubernetes.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jxr-packs-kubernetes
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x/jxr-packs-kubernetes

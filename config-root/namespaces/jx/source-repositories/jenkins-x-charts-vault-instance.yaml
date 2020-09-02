@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-charts
+    provider: github
+    repository: vault-instance
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-charts-vault-instance
+spec:
+  httpCloneURL: https://github.com/jenkins-x-charts/vault-instance.git
+  org: jenkins-x-charts
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: vault-instance
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x-charts/vault-instance
