@@ -7,7 +7,7 @@ buildPacks:
     gitRef: master
     gitURL: https://github.com/jenkins-x/jxr-packs-kubernetes.git
 cluster:
-  clusterName: tf-jx-growing-ant
+  clusterName: tf-jx-gentle-titmouse
   environmentGitOwner: todo
   gitKind: github
   gitName: github
@@ -69,13 +69,13 @@ storage:
     url: ""
   logs:
     enabled: true
-    url: gs://logs-tf-jx-growing-ant-0557b76b6584
+    url: gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2
   reports:
     enabled: true
-    url: gs://reports-tf-jx-growing-ant-0557b76b6584
+    url: gs://reports-tf-jx-gentle-titmouse-1603d78dd9a2
   repository:
     enabled: true
-    url: gs://repository-tf-jx-growing-ant-0557b76b6584
+    url: gs://repository-tf-jx-gentle-titmouse-1603d78dd9a2
 vault: {}
 velero:
   schedule: ""
