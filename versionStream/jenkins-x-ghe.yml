@@ -16,7 +16,7 @@ pipelineConfig:
         - name: GH_ACCESS_TOKEN
           valueFrom:
             secretKeyRef:
-              name: bdd-pipeline-token-github
+              name: bdd-pipeline-token-github-ghe
               key: password
         - name: JENKINS_PASSWORD
           valueFrom:
@@ -28,6 +28,6 @@ pipelineConfig:
         stages:
         - name: ci
           steps:
-          - command: jx/bdd/gke/ci.sh
+          - command: jx/bdd/ghe/ci.sh
             image: gcr.io/jenkinsxio/jx-cli:3.0.102
             name: runci
