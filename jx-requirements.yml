@@ -51,7 +51,7 @@ environments:
   key: production
 gitops: true
 ingress:
-  domain: 34.122.191.185.nip.io
+  domain: ""
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
