@@ -21,14 +21,14 @@ spec:
   template:
     metadata:
       annotations:
-        Xbuild.knative.dev/git-0: https://github.beescloud.com
-        Xjenkins.io/credentials-description: API Token for acccessing https://github.beescloud.com Git service inside pipelines
-        Xjenkins.io/name: ghe
-        Xjenkins.io/url: https://github.beescloud.com
+        xbuild.knative.dev/git-0: https://github.beescloud.com
+        xjenkins.io/credentials-description: API Token for acccessing https://github.beescloud.com Git service inside pipelines
+        xjenkins.io/name: ghe
+        xjenkins.io/url: https://github.beescloud.com
         secret.jenkins-x.io/schema-object: '{"name":"bdd-pipeline-token-github-ghe","properties":[{"name":"username","question":"the pipeline username","help":"the user name used by pipelines running in Jenkins X","defaultValue": "dev1"},{"name":"password","question":"the pipeline token or password","help":"the token or password used by pipelines running in Jenkins X"}]}'
       labels:
-        Xjenkins.io/created-by: jx
-        Xjenkins.io/credentials-type: usernamePassword
-        Xjenkins.io/kind: git
+        xjenkins.io/created-by: jx
+        xjenkins.io/credentials-type: usernamePassword
+        xjenkins.io/kind: git
         xjenkins.io/service-kind: github
     type: Opaque
