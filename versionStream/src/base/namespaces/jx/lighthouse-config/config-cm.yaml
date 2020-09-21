@@ -577,12 +577,6 @@ data:
       jenkins-x/jxr-versions:
       - agent: tekton
         always_run: true
-        context: gke
-        name: gke
-        rerun_command: /test gke
-        trigger: (?m)^/test( default| all| gke),?(s+|$)
-      - agent: tekton
-        always_run: false
         context: gsm
         name: gsm
         rerun_command: /test gsm
@@ -642,7 +636,7 @@ data:
         rerun_command: /test tls
         trigger: (?m)^/test( all| tls),?(s+|$)
       - agent: tekton
-        always_run: false
+        always_run: true
         context: vault
         name: vault
         rerun_command: /test vault
@@ -809,7 +803,6 @@ data:
         - jenkins-x/terraform-azurerm-jx
       - labels:
         - approved
-        - person-approved
         - lgtm
         missingLabels:
         - do-not-merge
@@ -828,17 +821,6 @@ data:
         - needs-ok-to-test
         - needs-rebase
         - needs-security-review
-        repos:
-        - jenkins-x/jxr-versions
-      - labels:
-        - approved
-        - lgtm
-        missingLabels:
-        - do-not-merge
-        - do-not-merge/hold
-        - do-not-merge/work-in-progress
-        - needs-ok-to-test
-        - needs-rebase
         repos:
         - jenkins-x/jxr-versions
       target_url: http://deck-jx.34.121.39.44.nip.io
