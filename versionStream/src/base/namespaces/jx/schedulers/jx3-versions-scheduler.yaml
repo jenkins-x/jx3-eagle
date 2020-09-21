@@ -22,37 +22,6 @@ spec:
     entries:
     - agent: tekton
       alwaysRun: true
-      context: gke
-      name: gke
-      queries:
-      - labels:
-          entries:
-          - approved
-          - person-approved
-          - lgtm
-        missingLabels:
-          entries:
-          - do-not-merge
-          - do-not-merge/hold
-          - do-not-merge/work-in-progress
-          - needs-ok-to-test
-          - needs-rebase
-      - labels:
-          entries:
-          - updatebot
-        missingLabels:
-          entries:
-          - do-not-merge
-          - do-not-merge/hold
-          - do-not-merge/work-in-progress
-          - needs-ok-to-test
-          - needs-rebase
-          - needs-security-review
-      report: true
-      rerunCommand: /test gke
-      trigger: (?m)^/test( default| all| gke),?(s+|$)
-    - agent: tekton
-      alwaysRun: false
       context: gsm
       name: gsm
       queries:
@@ -352,7 +321,7 @@ spec:
       rerunCommand: /test tls
       trigger: (?m)^/test( all| tls),?(s+|$)
     - agent: tekton
-      alwaysRun: false
+      alwaysRun: true
       context: vault
       name: vault
       queries:
