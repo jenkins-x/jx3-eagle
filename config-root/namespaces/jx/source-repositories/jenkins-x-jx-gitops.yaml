@@ -8,6 +8,7 @@ metadata:
     repository: jx-gitops
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-gitops
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-gitops.git
   org: jenkins-x

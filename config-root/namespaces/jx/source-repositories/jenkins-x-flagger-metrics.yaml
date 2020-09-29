@@ -8,6 +8,7 @@ metadata:
     repository: flagger-metrics
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-flagger-metrics
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/flagger-metrics.git
   org: jenkins-x

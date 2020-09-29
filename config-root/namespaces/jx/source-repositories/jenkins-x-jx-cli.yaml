@@ -8,6 +8,7 @@ metadata:
     repository: jx-cli
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-cli
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-cli.git
   org: jenkins-x

@@ -8,6 +8,7 @@ metadata:
     repository: jenkins-x-crds
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jenkins-x-crds
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jenkins-x-crds.git
   org: jenkins-x

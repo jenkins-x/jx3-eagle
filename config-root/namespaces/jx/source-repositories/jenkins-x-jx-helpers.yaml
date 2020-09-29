@@ -8,6 +8,7 @@ metadata:
     repository: jx-helpers
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-helpers
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-helpers.git
   org: jenkins-x

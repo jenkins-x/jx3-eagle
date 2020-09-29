@@ -8,6 +8,7 @@ metadata:
     repository: jx-admin
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-admin
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-admin.git
   org: jenkins-x

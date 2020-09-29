@@ -8,6 +8,7 @@ metadata:
     repository: step-go-releaser
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-step-go-releaser
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/step-go-releaser.git
   org: jenkins-x

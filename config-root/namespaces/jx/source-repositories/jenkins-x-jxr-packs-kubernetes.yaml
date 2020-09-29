@@ -8,6 +8,7 @@ metadata:
     repository: jxr-packs-kubernetes
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jxr-packs-kubernetes
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jxr-packs-kubernetes.git
   org: jenkins-x

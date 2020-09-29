@@ -8,6 +8,7 @@ metadata:
     repository: jx-git-operator
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-git-operator
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-git-operator.git
   org: jenkins-x

@@ -8,6 +8,7 @@ metadata:
     repository: terraform-azurerm-jx
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-terraform-azurerm-jx
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/terraform-azurerm-jx.git
   org: jenkins-x

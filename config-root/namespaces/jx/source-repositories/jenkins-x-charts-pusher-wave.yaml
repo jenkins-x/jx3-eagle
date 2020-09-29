@@ -8,6 +8,7 @@ metadata:
     repository: pusher-wave
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-charts-pusher-wave
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x-charts/pusher-wave.git
   org: jenkins-x-charts

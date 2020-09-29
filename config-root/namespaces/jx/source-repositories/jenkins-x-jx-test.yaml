@@ -8,6 +8,7 @@ metadata:
     repository: jx-test
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-test
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-test.git
   org: jenkins-x

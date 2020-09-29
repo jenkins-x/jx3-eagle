@@ -8,6 +8,7 @@ metadata:
     repository: jx-promote
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-promote
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-promote.git
   org: jenkins-x

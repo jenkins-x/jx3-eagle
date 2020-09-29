@@ -8,6 +8,7 @@ metadata:
     repository: octant-jx
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-octant-jx
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/octant-jx.git
   org: jenkins-x

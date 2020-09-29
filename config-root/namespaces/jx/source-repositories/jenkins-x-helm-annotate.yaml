@@ -8,6 +8,7 @@ metadata:
     repository: helm-annotate
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-helm-annotate
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/helm-annotate.git
   org: jenkins-x

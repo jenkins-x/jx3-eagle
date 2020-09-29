@@ -8,6 +8,7 @@ metadata:
     repository: jx-verify
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-verify
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-verify.git
   org: jenkins-x

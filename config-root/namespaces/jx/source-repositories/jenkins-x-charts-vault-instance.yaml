@@ -8,6 +8,7 @@ metadata:
     repository: vault-instance
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-charts-vault-instance
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x-charts/vault-instance.git
   org: jenkins-x-charts

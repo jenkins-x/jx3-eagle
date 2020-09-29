@@ -8,6 +8,7 @@ metadata:
     repository: jxr-versions
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jxr-versions
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jxr-versions.git
   org: jenkins-x

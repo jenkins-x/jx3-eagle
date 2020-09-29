@@ -8,6 +8,7 @@ metadata:
     repository: jx-app-gloo
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-apps-jx-app-gloo
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x-apps/jx-app-gloo.git
   org: jenkins-x-apps

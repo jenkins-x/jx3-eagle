@@ -8,6 +8,7 @@ metadata:
     repository: jx-cli-base-image
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-cli-base-image
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-cli-base-image.git
   org: jenkins-x

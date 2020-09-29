@@ -8,6 +8,7 @@ metadata:
     repository: jx-preview
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-jx-preview
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/jx-preview.git
   org: jenkins-x

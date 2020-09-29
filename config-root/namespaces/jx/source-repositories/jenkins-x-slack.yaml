@@ -8,6 +8,7 @@ metadata:
     repository: slack
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: jenkins-x-slack
+  namespace: jx
 spec:
   httpCloneURL: https://github.com/jenkins-x/slack.git
   org: jenkins-x
