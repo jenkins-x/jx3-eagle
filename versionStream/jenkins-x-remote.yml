@@ -13,20 +13,20 @@ pipelineConfig:
                 cpu: 1
                 memory: 2048Mi
         environment:
-        - name: GH_ACCESS_TOKEN
-          valueFrom:
-            secretKeyRef:
-              name: bdd-pipeline-token-github
-              key: password
-        - name: JENKINS_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: bdd-admin-password
-              key: password
+          - name: GH_ACCESS_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: bdd-pipeline-token-github
+                key: password
+          - name: JENKINS_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: bdd-admin-password
+                key: password
         agent:
-          image: gcr.io/jenkinsxio/builder-go-nodejs:2.1.100-729
+          image: gcr.io/jenkinsxio/builder-go-nodejs:2.1.142-761
         stages:
-        - name: ci
-          steps:
-          - command: jx/bdd/remove/ci.sh
-            name: runci
+          - name: ci
+            steps:
+              - command: jx/bdd/remove/ci.sh
+                name: runci

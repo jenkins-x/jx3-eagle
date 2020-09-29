@@ -13,6 +13,7 @@ export PATH=$PATH:/usr/local/bin
 KUBECONFIG="/tmp/jxhome/config"
 
 #export XDG_CONFIG_HOME="/builder/home/.config"
+mkdir -p /builder/home
 mkdir -p /home/.config
 cp -r /home/.config /builder/home/.config
 
@@ -31,9 +32,19 @@ then
     export GIT_USERNAME="jenkins-x-labs-bot"
 fi
 
+if [ -z "$GIT_SERVER_HOST" ]
+then
+    export GIT_SERVER_HOST="github.com"
+fi
+
+if [ -z "$GH_OWNER" ]
+then
+    export GH_OWNER="cb-kubecd"
+fi
+
 export GIT_USER_EMAIL="jenkins-x@googlegroups.com"
-export GH_OWNER="cb-kubecd"
 export GIT_TOKEN="${GH_ACCESS_TOKEN//[[:space:]]}"
+export GIT_PROVIDER_URL="https://${GIT_SERVER_HOST}"
 
 
 if [ -z "$GIT_TOKEN" ]
@@ -53,16 +64,19 @@ export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-$BDD_NAME"
 export ZONE=europe-west1-c
 export LABELS="branch=${BRANCH_NAME,,},cluster=$BDD_NAME,create-time=${CREATED_TIME,,}"
 
+# lets pass values into terraform
+#export TF_VAR_cluster_name="${CLUSTER_NAME}"
+#export TF_VAR_resource_labels='{ branch = "${BRANCH_NAME,,}", cluster = "$BDD_NAME" , created = "${CREATED_TIME,,}" }'
+
 # lets setup git
-git config --global --add user.name JenkinsXBot
+git config --global --add user.name $GIT_USERNAME
 git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD test with JX_HOME = $JX_HOME"
 
 mkdir -p $XDG_CONFIG_HOME/git
 # replace the credentials file with a single user entry
-echo "https://${GIT_USERNAME//[[:space:]]}:${GIT_TOKEN}@github.com" > $XDG_CONFIG_HOME/git/credentials
-echo $JX_BDD_GIT_CREDENTIALS >> $XDG_CONFIG_HOME/git/credentials
+echo "https://${GIT_USERNAME//[[:space:]]}:${GIT_TOKEN}@${GIT_SERVER_HOST}" > $XDG_CONFIG_HOME/git/credentials
 
 echo "using git credentials: $XDG_CONFIG_HOME/git/credentials"
 ls -al $XDG_CONFIG_HOME/git/credentials
@@ -87,9 +101,10 @@ echo "using GitOps template: $GITOPS_TEMPLATE_URL version: $GITOPS_TEMPLATE_VERS
 # create the boot git repository to mimic creating the git repository via the github create repository wizard
 jx admin create -b --initial-git-url $GITOPS_TEMPLATE_URL --env dev --version-stream-ref=$PULL_PULL_SHA --version-stream-url=${PR_SOURCE_URL//[[:space:]]} --env-git-owner=$GH_OWNER --repo env-$CLUSTER_NAME-dev --no-operator $JX_ADMIN_CREATE_ARGS
 
-export GITOPS_REPO=https://${GIT_USERNAME//[[:space:]]}:${GIT_TOKEN}@github.com/${GH_OWNER}/env-${CLUSTER_NAME}-dev.git
 
-echo "going to clone git repo $GITOPS_REPO"
+export GITOPS_REPO=https://${GIT_USERNAME//[[:space:]]}:${GIT_TOKEN}@${GIT_SERVER_HOST}/${GH_OWNER}/env-${CLUSTER_NAME}-dev.git
+
+echo "gitops cluster git repo $GITOPS_REPO"
 
 if [ -z "$NO_JX_TEST" ]
 then
@@ -115,14 +130,6 @@ cp -R $SOURCE_DIR versionStream
 rm -rf versionStream/.git versionStream/.github
 git add versionStream/
 
-export GITOPS_DIR=`pwd`
-export GITOPS_BIN=$GITOPS_DIR/bin
-
-# lets configure git to use the project/cluster
-$GITOPS_BIN/configure.sh
-
-# lets create the cluster
-$GITOPS_BIN/create.sh
 
 # lets add some testing charts....
 jx gitops helmfile add --chart jx3/jx-test-collector
@@ -132,18 +139,32 @@ git add * || true
 git commit -a -m "chore: cluster changes" || true
 git push
 
+export GITOPS_DIR=`pwd`
+export GITOPS_BIN=$GITOPS_DIR/bin
+
+if [ -z "$CUSTOMISE_GITOPS_REPO" ]
+then
+      echo "no custom gitops repository setup commands"
+else
+      echo "customising the gitops repository"
+
+      $CUSTOMISE_GITOPS_REPO
+fi
+
+# lets configure the cluster
+source $GITOPS_BIN/configure.sh
+
+# lets create the cluster
+$GITOPS_BIN/create.sh
+
 # now lets install the operator
 # --username is found from $GIT_USERNAME or git clone URL
 # --token is found from $GIT_TOKEN or git clone URL
 jx admin operator
-
 sleep 90
-
 jx ns jx
-
 # lets wait for things to be installed correctly
 make verify-install
-
 jx secret verify
 
 # diagnostic commands to test the image's kubectl
@@ -160,6 +181,9 @@ export JX_DISABLE_DELETE_REPO="true"
 # increase the timeout for complete PipelineActivity
 export BDD_TIMEOUT_PIPELINE_ACTIVITY_COMPLETE="60"
 
+# we don't yet update the PipelineActivity.spec.pullTitle on previews....
+export BDD_DISABLE_PIPELINEACTIVITY_CHECK="true"
+
 # define variables for the BDD tests
 export GIT_ORGANISATION="$GH_OWNER"
 export GH_USERNAME="$GIT_USERNAME"
@@ -174,7 +198,6 @@ echo "about to run the bdd tests...."
 if [ -z "$RUN_TEST" ]
 then
       bddjx -ginkgo.focus=golang -test.v
-      #bddjx -ginkgo.focus=javascript -test.v
 else
       $RUN_TEST
 fi
@@ -184,19 +207,15 @@ echo "completed the bdd tests"
 echo "switching context back to the infra cluster"
 
 # lets connect back to the infra cluster so we can find the TestRun CRDs
-#gcloud container clusters get-credentials flash --zone europe-west1-b --project jx-labs-infra
-gcloud container clusters get-credentials tf-jx-growing-ant --zone us-central1-a --project jx-labs-infra
+gcloud container clusters get-credentials tf-jx-gentle-titmouse --zone us-central1-a --project jx-labs-infra
 
 jx ns jx
-
 
 if [ -z "$NO_JX_TEST" ]
 then
     echo "cleaning up cloud resources"
     jx test delete --test-url $GITOPS_REPO --dir=$GITOPS_DIR --script=$GITOPS_BIN/destroy.sh
+
 else
     echo "not using jx-test to gc test resources"
 fi
-
-
-

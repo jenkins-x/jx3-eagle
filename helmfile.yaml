@@ -15,13 +15,13 @@ repositories:
   url: https://kubernetes-charts.storage.googleapis.com
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
-  version: 0.0.290
+  version: 0.0.309
   name: jxboot-helmfile-resources
   namespace: jx
   values:
   - versionStream/charts/jenkins-x/jxboot-helmfile-resources/values.yaml.gotmpl
 - chart: external-secrets/kubernetes-external-secrets
-  version: 4.0.0
+  version: 5.2.0
   name: kubernetes-external-secrets
   namespace: secret-infra
   values:
@@ -39,7 +39,7 @@ releases:
   values:
   - versionStream/charts/stable/nginx-ingress/values.yaml.gotmpl
 - chart: jenkins-x/tekton
-  version: 0.0.60
+  version: 0.0.63
   name: tekton
   namespace: jx
   values:
