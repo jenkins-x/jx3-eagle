@@ -113,10 +113,6 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
-            jxr-versions:
-              required_status_checks:
-                contexts:
-                - pr-build
             octant-jx:
               required_status_checks:
                 contexts:
@@ -394,8 +390,6 @@ data:
       - agent: tekton
         branches:
         - master
-        labels:
-          aadpodidbinding: tekton-bot
         name: release
       jenkins-x/octant-jx:
       - agent: tekton
@@ -717,12 +711,70 @@ data:
       jenkins-x/jxr-versions:
       - agent: tekton
         always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
+        context: gsm
+        name: gsm
+        rerun_command: /test gsm
+        trigger: (?m)^/test( all| gsm),?(s+|$)
+      - agent: tekton
+        always_run: false
+        context: ghe
+        name: ghe
+        rerun_command: /test ghe
+        trigger: (?m)^/test( all| ghe),?(s+|$)
+      - agent: tekton
+        always_run: false
+        context: istio
+        name: istio
+        rerun_command: /test istio
+        trigger: (?m)^/test( all| istio| istio-all),?(s+|$)
+      - agent: tekton
+        always_run: false
+        context: istio-tls
+        name: istio-tls
+        rerun_command: /test istio-tls
+        trigger: (?m)^/test( all| istio-tls| istio-all),?(s+|$)
+      - agent: tekton
+        always_run: false
+        context: kube
+        name: kube
+        rerun_command: /test kube
+        trigger: (?m)^/test( all| kube),?(s+|$)
+      - agent: tekton
+        always_run: false
+        context: mc
+        name: mc
+        rerun_command: /test mc
+        trigger: (?m)^/test( all| mc),?(s+|$)
+      - agent: tekton
+        always_run: false
+        context: remote
+        name: remote
+        rerun_command: /test mc
+        trigger: (?m)^/test( all| mc),?(s+|$)
+      - agent: tekton
+        always_run: false
+        context: storage
+        name: storage
+        rerun_command: /test storage
+        trigger: (?m)^/test( all| storage),?(s+|$)
+      - agent: tekton
+        always_run: false
+        context: terraform
+        name: terraform
+        rerun_command: /test terraform
+        trigger: (?m)^/test( all| terraform),?(s+|$)
+      - agent: tekton
+        always_run: true
+        context: tls
+        name: tls
+        rerun_command: /test tls
+        trigger: (?m)^/test( all| tls),?(s+|$)
+      - agent: tekton
+        always_run: true
+        context: vault
+        name: vault
+        rerun_command: /test vault
+        trigger: (?m)^/test( default| all| vault),?(s+|$)
       jenkins-x/octant-jx:
       - agent: tekton
         always_run: true
@@ -845,7 +897,6 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
-        - jenkins-x/jxr-versions
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
@@ -891,13 +942,34 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
-        - jenkins-x/jxr-versions
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
         - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
+      - labels:
+        - approved
+        - lgtm
+        missingLabels:
+        - do-not-merge
+        - do-not-merge/hold
+        - do-not-merge/work-in-progress
+        - needs-ok-to-test
+        - needs-rebase
+        repos:
+        - jenkins-x/jxr-versions
+      - labels:
+        - updatebot
+        missingLabels:
+        - do-not-merge
+        - do-not-merge/hold
+        - do-not-merge/work-in-progress
+        - needs-ok-to-test
+        - needs-rebase
+        - needs-security-review
+        repos:
+        - jenkins-x/jxr-versions
       target_url: http://deck-jx.-jx.34.121.39.44.nip.io
 kind: ConfigMap
 metadata:
