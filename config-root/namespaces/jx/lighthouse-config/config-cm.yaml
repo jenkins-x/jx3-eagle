@@ -155,6 +155,14 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
+            jx-scm:
+              required_status_checks:
+                contexts:
+                - pr-build
+            jx-updatebot:
+              required_status_checks:
+                contexts:
+                - pr-build
       protect-tested-repos: true
     github:
       LinkURL: null
@@ -191,6 +199,20 @@ data:
           aadpodidbinding: tekton-bot
         name: release
       jenkins-x-plugins/jx-kh-check:
+      - agent: tekton
+        branches:
+        - master
+        labels:
+          aadpodidbinding: tekton-bot
+        name: release
+      jenkins-x-plugins/jx-scm:
+      - agent: tekton
+        branches:
+        - master
+        labels:
+          aadpodidbinding: tekton-bot
+        name: release
+      jenkins-x-plugins/jx-updatebot:
       - agent: tekton
         branches:
         - master
@@ -457,6 +479,24 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-plugins/jx-kh-check:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        labels:
+          aadpodidbinding: tekton-bot
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x-plugins/jx-scm:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        labels:
+          aadpodidbinding: tekton-bot
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x-plugins/jx-updatebot:
       - agent: tekton
         always_run: true
         context: pr-build
@@ -825,6 +865,8 @@ data:
         jenkins-x-charts/vault-instance: merge
         jenkins-x-plugins/jx-health: merge
         jenkins-x-plugins/jx-kh-check: merge
+        jenkins-x-plugins/jx-scm: merge
+        jenkins-x-plugins/jx-updatebot: merge
         jenkins-x/acme: merge
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
@@ -900,6 +942,8 @@ data:
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-updatebot
         - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
@@ -945,6 +989,8 @@ data:
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-updatebot
         - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
