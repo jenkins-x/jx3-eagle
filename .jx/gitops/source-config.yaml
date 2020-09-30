@@ -59,3 +59,4 @@ spec:
     providerKind: github
     repositories:
     - name: jx-health
+    - name: jx-kh-check
