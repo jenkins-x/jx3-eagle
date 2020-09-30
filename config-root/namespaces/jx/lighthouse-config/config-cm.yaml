@@ -149,6 +149,12 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
+        jenkins-x-plugins:
+          repos:
+            jx-health:
+              required_status_checks:
+                contexts:
+                - pr-build
       protect-tested-repos: true
     github:
       LinkURL: null
@@ -171,6 +177,13 @@ data:
           aadpodidbinding: tekton-bot
         name: release
       jenkins-x-charts/vault-instance:
+      - agent: tekton
+        branches:
+        - master
+        labels:
+          aadpodidbinding: tekton-bot
+        name: release
+      jenkins-x-plugins/jx-health:
       - agent: tekton
         branches:
         - master
@@ -421,6 +434,15 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-charts/vault-instance:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        labels:
+          aadpodidbinding: tekton-bot
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x-plugins/jx-health:
       - agent: tekton
         always_run: true
         context: pr-build
@@ -729,6 +751,7 @@ data:
         jenkins-x-apps/jx-app-gloo: merge
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
+        jenkins-x-plugins/jx-health: merge
         jenkins-x/acme: merge
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
@@ -803,6 +826,7 @@ data:
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/jxr-versions
         - jenkins-x/octant-jx
+        - jenkins-x-plugins/jx-health
         - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx
@@ -847,6 +871,7 @@ data:
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/jxr-versions
         - jenkins-x/octant-jx
+        - jenkins-x-plugins/jx-health
         - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/terraform-azurerm-jx

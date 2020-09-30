@@ -54,3 +54,8 @@ spec:
     repositories:
     - name: pusher-wave
     - name: vault-instance
+  - owner: jenkins-x-plugins
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: jx-health

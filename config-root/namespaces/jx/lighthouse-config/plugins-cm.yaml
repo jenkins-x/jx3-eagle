@@ -132,6 +132,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-health
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/slack
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -189,6 +193,22 @@ data:
       - dog
       - pony
       jenkins-x-charts/vault-instance:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-health:
       - approve
       - assign
       - blunderbuss
@@ -819,6 +839,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/octant-jx
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-health
       trusted_org: todo
     - repos:
       - jenkins-x/slack
