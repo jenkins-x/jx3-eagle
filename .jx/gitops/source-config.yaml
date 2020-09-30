@@ -60,3 +60,5 @@ spec:
     repositories:
     - name: jx-health
     - name: jx-kh-check
+    - name: jx-scm
+    - name: jx-updatebot
