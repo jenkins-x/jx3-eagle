@@ -1,7 +1,7 @@
 apiVersion: gitops.jenkins-x.io/v1alpha1
 kind: Scheduler
 metadata:
-  name: jx3-versions
+  name: jxr-versions
 spec:
   plugins:
     entries:
