@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-plugins
+    provider: github
+    repository: jx-kh-check
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-plugins-jx-kh-check
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-plugins/jx-kh-check.git
+  org: jenkins-x-plugins
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-kh-check
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x-plugins/jx-kh-check
