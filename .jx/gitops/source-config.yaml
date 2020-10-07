@@ -58,6 +58,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: jx-build-controller
     - name: jx-health
     - name: jx-kh-check
     - name: jx-scm
