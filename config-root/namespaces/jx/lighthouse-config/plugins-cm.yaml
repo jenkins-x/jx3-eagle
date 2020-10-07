@@ -92,6 +92,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/jx-pipelines-visualizer
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/jx-preview
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -592,6 +596,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/jx-pipelines-visualizer:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/jx-preview:
       - approve
       - assign
@@ -889,6 +909,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jx-pipeline
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jx-pipelines-visualizer
       trusted_org: todo
     - repos:
       - jenkins-x/jx-preview

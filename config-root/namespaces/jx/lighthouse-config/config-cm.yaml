@@ -77,6 +77,10 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
+            jx-pipelines-visualizer:
+              required_status_checks:
+                contexts:
+                - pr-build
             jx-preview:
               required_status_checks:
                 contexts:
@@ -375,6 +379,14 @@ data:
           aadpodidbinding: tekton-bot
         name: release
       jenkins-x/jx-pipeline:
+      - agent: tekton
+        branches:
+        - main
+        - master
+        labels:
+          aadpodidbinding: tekton-bot
+        name: release
+      jenkins-x/jx-pipelines-visualizer:
       - agent: tekton
         branches:
         - main
@@ -725,6 +737,15 @@ data:
         name: pr-build
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x/jx-pipelines-visualizer:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        labels:
+          aadpodidbinding: tekton-bot
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x/jx-preview:
       - agent: tekton
         always_run: true
@@ -944,6 +965,7 @@ data:
         jenkins-x/jx-helpers: merge
         jenkins-x/jx-jenkins: merge
         jenkins-x/jx-pipeline: merge
+        jenkins-x/jx-pipelines-visualizer: merge
         jenkins-x/jx-preview: merge
         jenkins-x/jx-project: merge
         jenkins-x/jx-promote: merge
@@ -990,6 +1012,7 @@ data:
         - jenkins-x/jx-helpers
         - jenkins-x/jx-jenkins
         - jenkins-x/jx-pipeline
+        - jenkins-x/jx-pipelines-visualizer
         - jenkins-x/jx-preview
         - jenkins-x/jx-project
         - jenkins-x/jx-promote
@@ -1038,6 +1061,7 @@ data:
         - jenkins-x/jx-helpers
         - jenkins-x/jx-jenkins
         - jenkins-x/jx-pipeline
+        - jenkins-x/jx-pipelines-visualizer
         - jenkins-x/jx-preview
         - jenkins-x/jx-project
         - jenkins-x/jx-promote
