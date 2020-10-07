@@ -177,6 +177,7 @@ data:
       jenkins-x-apps/jx-app-gloo:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -184,6 +185,7 @@ data:
       jenkins-x-charts/pusher-wave:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -191,6 +193,7 @@ data:
       jenkins-x-charts/vault-instance:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -198,6 +201,7 @@ data:
       jenkins-x-plugins/jx-build-controller:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -205,6 +209,7 @@ data:
       jenkins-x-plugins/jx-health:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -212,6 +217,7 @@ data:
       jenkins-x-plugins/jx-kh-check:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -219,6 +225,7 @@ data:
       jenkins-x-plugins/jx-scm:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -226,6 +233,7 @@ data:
       jenkins-x-plugins/jx-updatebot:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -233,6 +241,7 @@ data:
       jenkins-x/acme:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -240,6 +249,7 @@ data:
       jenkins-x/feature-infra-secrets:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -247,6 +257,7 @@ data:
       jenkins-x/flagger-metrics:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -254,6 +265,7 @@ data:
       jenkins-x/github-release:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -261,6 +273,7 @@ data:
       jenkins-x/helm-annotate:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -268,6 +281,7 @@ data:
       jenkins-x/helm3-image:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -275,6 +289,7 @@ data:
       jenkins-x/istio:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -282,6 +297,7 @@ data:
       jenkins-x/jenkins-x-crds:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -289,6 +305,7 @@ data:
       jenkins-x/jx-admin:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -296,6 +313,7 @@ data:
       jenkins-x/jx-application:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -303,6 +321,7 @@ data:
       jenkins-x/jx-apps:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -310,6 +329,7 @@ data:
       jenkins-x/jx-cli:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -317,6 +337,7 @@ data:
       jenkins-x/jx-cli-base-image:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -324,6 +345,7 @@ data:
       jenkins-x/jx-git-operator:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -331,6 +353,7 @@ data:
       jenkins-x/jx-gitops:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -338,6 +361,7 @@ data:
       jenkins-x/jx-helpers:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -345,6 +369,7 @@ data:
       jenkins-x/jx-jenkins:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -352,6 +377,7 @@ data:
       jenkins-x/jx-pipeline:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -359,6 +385,7 @@ data:
       jenkins-x/jx-preview:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -366,6 +393,7 @@ data:
       jenkins-x/jx-project:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -373,6 +401,7 @@ data:
       jenkins-x/jx-promote:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -380,6 +409,7 @@ data:
       jenkins-x/jx-secret:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -387,6 +417,7 @@ data:
       jenkins-x/jx-test:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -394,6 +425,7 @@ data:
       jenkins-x/jx-test-collector:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -401,6 +433,7 @@ data:
       jenkins-x/jx-verify:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -415,6 +448,7 @@ data:
       jenkins-x/jxr-packs-kubernetes:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -427,6 +461,7 @@ data:
       jenkins-x/octant-jx:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -434,6 +469,7 @@ data:
       jenkins-x/slack:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -441,6 +477,7 @@ data:
       jenkins-x/step-go-releaser:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
@@ -448,6 +485,7 @@ data:
       jenkins-x/terraform-azurerm-jx:
       - agent: tekton
         branches:
+        - main
         - master
         labels:
           aadpodidbinding: tekton-bot
