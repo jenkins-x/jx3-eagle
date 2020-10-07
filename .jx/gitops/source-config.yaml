@@ -27,6 +27,7 @@ spec:
     - name: jx-helpers
     - name: jx-jenkins
     - name: jx-pipeline
+    - name: jx-pipelines-visualizer
     - name: jx-preview
     - name: jx-project
     - name: jx-promote
