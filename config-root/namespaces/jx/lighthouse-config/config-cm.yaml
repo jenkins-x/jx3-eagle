@@ -147,6 +147,10 @@ data:
                 - pr-build
         jenkins-x-plugins:
           repos:
+            jx-build-controller:
+              required_status_checks:
+                contexts:
+                - pr-build
             jx-health:
               required_status_checks:
                 contexts:
@@ -185,6 +189,13 @@ data:
           aadpodidbinding: tekton-bot
         name: release
       jenkins-x-charts/vault-instance:
+      - agent: tekton
+        branches:
+        - master
+        labels:
+          aadpodidbinding: tekton-bot
+        name: release
+      jenkins-x-plugins/jx-build-controller:
       - agent: tekton
         branches:
         - master
@@ -461,6 +472,15 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-charts/vault-instance:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        labels:
+          aadpodidbinding: tekton-bot
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x-plugins/jx-build-controller:
       - agent: tekton
         always_run: true
         context: pr-build
@@ -863,6 +883,7 @@ data:
         jenkins-x-apps/jx-app-gloo: merge
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
+        jenkins-x-plugins/jx-build-controller: merge
         jenkins-x-plugins/jx-health: merge
         jenkins-x-plugins/jx-kh-check: merge
         jenkins-x-plugins/jx-scm: merge
@@ -940,6 +961,7 @@ data:
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/octant-jx
+        - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
         - jenkins-x-plugins/jx-scm
@@ -987,6 +1009,7 @@ data:
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/octant-jx
+        - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
         - jenkins-x-plugins/jx-scm
