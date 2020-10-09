@@ -44,6 +44,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-images/kaniko
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/istio
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -213,6 +217,22 @@ data:
       - dog
       - pony
       jenkins-x-charts/vault-instance:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-images/kaniko:
       - approve
       - assign
       - blunderbuss
@@ -873,6 +893,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/helm3-image
+      trusted_org: todo
+    - repos:
+      - jenkins-x-images/kaniko
       trusted_org: todo
     - repos:
       - jenkins-x/istio

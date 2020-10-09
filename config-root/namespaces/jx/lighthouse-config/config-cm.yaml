@@ -149,6 +149,12 @@ data:
               required_status_checks:
                 contexts:
                 - pr-build
+        jenkins-x-images:
+          repos:
+            kaniko:
+              required_status_checks:
+                contexts:
+                - pr-build
         jenkins-x-plugins:
           repos:
             jx-build-controller:
@@ -195,6 +201,14 @@ data:
           aadpodidbinding: tekton-bot
         name: release
       jenkins-x-charts/vault-instance:
+      - agent: tekton
+        branches:
+        - main
+        - master
+        labels:
+          aadpodidbinding: tekton-bot
+        name: release
+      jenkins-x-images/kaniko:
       - agent: tekton
         branches:
         - main
@@ -522,6 +536,15 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-charts/vault-instance:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        labels:
+          aadpodidbinding: tekton-bot
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x-images/kaniko:
       - agent: tekton
         always_run: true
         context: pr-build
@@ -942,6 +965,7 @@ data:
         jenkins-x-apps/jx-app-gloo: merge
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
+        jenkins-x-images/kaniko: merge
         jenkins-x-plugins/jx-build-controller: merge
         jenkins-x-plugins/jx-health: merge
         jenkins-x-plugins/jx-kh-check: merge
@@ -1000,6 +1024,7 @@ data:
         - jenkins-x/github-release
         - jenkins-x/helm-annotate
         - jenkins-x/helm3-image
+        - jenkins-x-images/kaniko
         - jenkins-x/istio
         - jenkins-x/jenkins-x-crds
         - jenkins-x/jx-admin
@@ -1049,6 +1074,7 @@ data:
         - jenkins-x/github-release
         - jenkins-x/helm-annotate
         - jenkins-x/helm3-image
+        - jenkins-x-images/kaniko
         - jenkins-x/istio
         - jenkins-x/jenkins-x-crds
         - jenkins-x/jx-admin

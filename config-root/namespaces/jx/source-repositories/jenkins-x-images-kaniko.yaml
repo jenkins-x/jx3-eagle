@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-images
+    provider: github
+    repository: kaniko
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-images-kaniko
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-images/kaniko.git
+  org: jenkins-x-images
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: kaniko
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x-images/kaniko
