@@ -55,6 +55,12 @@ spec:
     repositories:
     - name: pusher-wave
     - name: vault-instance
+  - owner: jenkins-x-images
+    provider: https://github.com
+    providerKind: github
+    providerName: github
+    repositories:
+    - name: kaniko
   - owner: jenkins-x-plugins
     provider: https://github.com
     providerKind: github
