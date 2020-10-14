@@ -12,7 +12,7 @@ spec:
   podSpec:
     containers:
       - name: jx-install
-        image: gcr.io/jenkinsxio/jx-install:0.0.30
+        image: gcr.io/jenkinsxio/jx-install:0.0.31
         resources:
           requests:
             cpu: 25m
