@@ -2,10 +2,10 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-14T18:52:01Z"
+  creationTimestamp: "2020-10-14T20:11:35Z"
   deletionTimestamp: null
-  name: 'jx-kh-check-0.0.31'
-  namespace: jx-git-operator
+  name: 'jx-kh-check-0.0.32'
+  namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
@@ -24,12 +24,12 @@ spec:
         email: rawlingsj80@gmail.com
         name: James Rawlings
       message: |
-        chore: rename chart key to match version stream defaults
-      sha: 5112e531af34caee1294d3aca830a7a5fd12a443
+        chore: lets not report health check errors with build pods
+      sha: 948fd9542b79fde7c2e77387cc7c9710107b1cad
   gitCloneUrl: https://github.com/jenkins-x-plugins/jx-kh-check.git
   gitHttpUrl: https://github.com/jenkins-x-plugins/jx-kh-check
   gitOwner: jenkins-x-plugins
   gitRepository: jx-kh-check
   name: 'jx-kh-check'
-  version: 0.0.31
+  version: 0.0.32
 status: {}

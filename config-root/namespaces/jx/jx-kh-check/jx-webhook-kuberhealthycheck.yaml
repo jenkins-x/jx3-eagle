@@ -12,7 +12,7 @@ spec:
   podSpec:
     containers:
       - name: jx-webhook
-        image: gcr.io/jenkinsxio/jx-webhooks:0.0.31
+        image: gcr.io/jenkinsxio/jx-webhooks:0.0.32
         resources:
           requests:
             cpu: 25m
