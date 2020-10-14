@@ -12,7 +12,7 @@ spec:
   podSpec:
     containers:
       - name: jx-bot-token
-        image: gcr.io/jenkinsxio/jx-bot-token:0.0.30
+        image: gcr.io/jenkinsxio/jx-bot-token:0.0.31
         resources:
           requests:
             cpu: 25m

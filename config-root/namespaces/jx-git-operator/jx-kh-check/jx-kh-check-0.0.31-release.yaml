@@ -2,10 +2,10 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-14T13:03:59Z"
+  creationTimestamp: "2020-10-14T18:52:01Z"
   deletionTimestamp: null
-  name: 'jx-kh-check-0.0.30'
-  namespace: kuberhealthy
+  name: 'jx-kh-check-0.0.31'
+  namespace: jx-git-operator
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
@@ -24,12 +24,12 @@ spec:
         email: rawlingsj80@gmail.com
         name: James Rawlings
       message: |
-        chore: update to new tekton secret name
-      sha: 29a4db9ac30d63569873d646af66f466ba22eedf
+        chore: rename chart key to match version stream defaults
+      sha: 5112e531af34caee1294d3aca830a7a5fd12a443
   gitCloneUrl: https://github.com/jenkins-x-plugins/jx-kh-check.git
   gitHttpUrl: https://github.com/jenkins-x-plugins/jx-kh-check
   gitOwner: jenkins-x-plugins
   gitRepository: jx-kh-check
   name: 'jx-kh-check'
-  version: 0.0.30
+  version: 0.0.31
 status: {}
