@@ -1,0 +1,8 @@
+# Source: kuberhealthy/templates/khcheck-deployment.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: deployment-sa
+  namespace: kuberhealthy
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

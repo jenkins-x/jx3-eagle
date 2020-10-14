@@ -1,0 +1,15 @@
+# Source: jx-kh-check/templates/jx-pod-status-check.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: jx-pod-status-check-rb
+  labels:
+    gitops.jenkins-x.io/pipeline: 'cluster'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: jx-pod-status-role
+subjects:
+  - kind: ServiceAccount
+    name: jx-pod-status-sa
+    namespace: kuberhealthy

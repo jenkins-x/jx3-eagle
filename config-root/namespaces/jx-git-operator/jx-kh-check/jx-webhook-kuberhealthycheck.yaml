@@ -1,0 +1,24 @@
+# Source: jx-kh-check/templates/jx-webhook-check.yaml
+apiVersion: comcast.github.io/v1
+kind: KuberhealthyCheck
+metadata:
+  name: jx-webhook
+  namespace: jx-git-operator
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  runInterval: 90s
+  timeout: 2m
+  podSpec:
+    containers:
+      - name: jx-webhook
+        image: gcr.io/jenkinsxio/jx-webhooks:0.0.30
+        resources:
+          requests:
+            cpu: 25m
+            memory: 15Mi
+          limits:
+            cpu: 40m
+        restartPolicy: Never
+    serviceAccountName: jx-webhook-sa
+    terminationGracePeriodSeconds: 60

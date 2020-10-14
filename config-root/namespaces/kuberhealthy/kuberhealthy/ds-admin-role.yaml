@@ -1,0 +1,25 @@
+# Source: kuberhealthy/templates/khcheck-daemonset.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: ds-admin
+  namespace: kuberhealthy
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+rules:
+  - apiGroups:
+      - ""
+      - extensions
+      - apps
+    resources:
+      - daemonsets
+      - pods
+    verbs:
+      - create
+      - delete
+      - deletecollection
+      - get
+      - list
+      - patch
+      - update
+      - watch

@@ -1,0 +1,16 @@
+# Source: jx-kh-check/templates/jx-webhook-check.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: jx-webhook-service-role
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+rules:
+  - apiGroups:
+      - "jenkins.io"
+    resources:
+      - sourcerepositories
+    verbs:
+      - get
+      - list

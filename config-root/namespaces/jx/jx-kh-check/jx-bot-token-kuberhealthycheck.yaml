@@ -1,0 +1,31 @@
+# Source: jx-kh-check/templates/jx-bot-token.yaml
+apiVersion: comcast.github.io/v1
+kind: KuberhealthyCheck
+metadata:
+  name: jx-bot-token
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  runInterval: 90s
+  timeout: 2m
+  podSpec:
+    containers:
+      - name: jx-bot-token
+        image: gcr.io/jenkinsxio/jx-bot-token:0.0.30
+        resources:
+          requests:
+            cpu: 25m
+            memory: 15Mi
+          limits:
+            cpu: 40m
+        restartPolicy: Never
+        env:
+          - name: OAUTH_TOKEN
+            valueFrom:
+              secretKeyRef:
+                key: password
+                name: tekton-git
+          - name: GIT_PROVIDER
+            value: https://github.com
+    terminationGracePeriodSeconds: 60

@@ -1,0 +1,21 @@
+# Source: kuberhealthy/templates/check-reaper.yaml
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: check-reaper
+  namespace: kuberhealthy
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  schedule: "*/3 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: check-reaper
+              image: kuberhealthy/check-reaper:v1.3.1
+              imagePullPolicy: IfNotPresent
+          restartPolicy: OnFailure
+          serviceAccountName: check-reaper
+  concurrencyPolicy: Forbid

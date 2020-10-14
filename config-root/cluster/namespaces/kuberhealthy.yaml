@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  labels:
+    name: kuberhealthy
+    gitops.jenkins-x.io/pipeline: 'cluster'
+    team: 'jx'
+  name: kuberhealthy
+spec: {}
+status: {}
