@@ -11,7 +11,6 @@ rules:
       - jenkins.io
     resources:
       - pipelineactivities
-      - pipelinestructures
       - sourcerepositories
     verbs:
       - list
@@ -35,6 +34,17 @@ rules:
       - pods
       - pods/log
       - secrets
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - tekton.dev
+    resources:
+      - pipelines
+      - pipelineruns
+      - tasks
+      - taskruns
     verbs:
       - get
       - list

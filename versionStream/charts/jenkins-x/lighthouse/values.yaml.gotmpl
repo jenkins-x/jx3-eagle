@@ -1,5 +1,8 @@
 enabled: true
 
+engines:
+  tekton: true
+
 hmacToken: "{{ .Values.secrets.hmacToken | default "123abc" }}"
 
 git:
@@ -12,8 +15,13 @@ service:
   
 replicaCount: 2
 
+tektoncontroller:
+  dashboardURL: "http://dashboard{{ .Values.jxRequirements.ingress.namespaceSubDomain }}{{ .Values.jxRequirements.ingress.domain }}"
+  dashboardTemplate: "namespaces/{{"{{"}} .Namespace {{"}}"}}/pipelineruns/{{"{{"}} .PipelineRun {{"}}"}}"
+
 env:
   JX_DEFAULT_IMAGE: gcr.io/jenkinsxio/builder-maven:2.1.142-761
+  LIGHTHOUSE_DASHBOARD_TEMPLATE: "namespaces/{{"{{"}} .Namespace {{"}}"}}/pipelineruns/{{"{{"}} .PipelineRun {{"}}"}}"
 
 image:
   repository: gcr.io/jenkinsxio/lighthouse

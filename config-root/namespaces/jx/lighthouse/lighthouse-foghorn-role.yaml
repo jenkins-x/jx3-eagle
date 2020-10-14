@@ -8,14 +8,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
   - apiGroups:
-      - jenkins.io
-    resources:
-      - pipelineactivities
-    verbs:
-      - list
-      - get
-      - watch
-  - apiGroups:
       - ""
     resources:
       - namespaces

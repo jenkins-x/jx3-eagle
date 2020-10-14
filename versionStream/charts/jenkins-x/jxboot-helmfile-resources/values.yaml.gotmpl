@@ -3,25 +3,39 @@ versions:
 
 sourceRepositoriesEnvKey: true
 
+pipeline:
+  serviceAccount:
+{{- if and (hasKey .Values.jxRequirements.cluster "project") (hasKey .Values.jxRequirements.cluster "clusterName") (eq .Values.jxRequirements.cluster.provider "eks") }}
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::{{ .Values.jxRequirements.cluster.project }}:role/{{ .Values.jxRequirements.cluster.clusterName }}-{{ .Values.jxRequirements.cluster.namespace }}-tekton-bot
+{{- else if eq .Values.jxRequirements.cluster.provider "gke" }}
+    annotations:
+      iam.gke.io/gcp-service-account: {{ .Values.jxRequirements.cluster.clusterName }}-tekton@{{ .Values.jxRequirements.cluster.project }}.iam.gserviceaccount.com
+{{- else }}
+    annotations: {}
+{{- end }}
+
 controllerrole:
   enabled: false
-  image:
-    repository: gcr.io/jenkinsxio/builder-go
-    tag: 2.1.150-769
 
 controllerbuild:
   image:
-    repository: gcr.io/jenkinsxio/builder-go
-    tag: 2.1.150-769
+    repository: gcr.io/jenkinsxio/jx-build-controller
+    tag: 0.0.8
 
   serviceaccount:
-    customName: jenkins-x-controllerbuild
+    dummy: value
 {{- if eq .Values.jxRequirements.cluster.provider "gke"}}
+    customName: jenkins-x-controllerbuild
     annotations:
       iam.gke.io/gcp-service-account: {{ .Values.jxRequirements.cluster.clusterName }}-bc@{{ .Values.jxRequirements.cluster.project }}.iam.gserviceaccount.com
 {{- end }}
 
 {{- if eq .Values.jxRequirements.cluster.provider "eks" }}
+podTemplates:
+  agent:
+    dockerConfig: true
+{{- else if eq .Values.jxRequirements.cluster.provider "aks" }}
 podTemplates:
   agent:
     dockerConfig: true
@@ -40,6 +54,20 @@ secrets:
   dockerConfig: |-
     {
       "credsStore": "ecr-login"
+    }
+  {{- end }}
+{{- else if eq .Values.jxRequirements.cluster.provider "aks" }}
+  {{- if .Values.jxRequirements.cluster.registry }}
+  dockerConfig: |-
+    {
+      "credHelpers": {
+        "{{ .Values.jxRequirements.cluster.registry }}": "acr-env"
+      }
+    }
+  {{- else }}
+  dockerConfig: |-
+    {
+      "credsStore": "acr"
     }
   {{- end }}
 {{- end }}

@@ -6,7 +6,7 @@ jxRequirements:
   buildPacks:
     buildPackLibrary:
       gitRef: master
-      gitURL: https://github.com/jenkins-x/jxr-packs-kubernetes.git
+      gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
   cluster:
     clusterName: tf-jx-gentle-titmouse
     environmentGitOwner: todo
