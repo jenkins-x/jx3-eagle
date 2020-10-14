@@ -13,6 +13,7 @@ Run the `./bin/apply.sh` script to generate the terraform resources and modify t
 
 Now git commit and push any changes...
 
+
 ```bash 
 git add *
 git commit -a -m "chore: regenerated terraform"
