@@ -53,13 +53,16 @@ fetch: init
 
 	# convert k8s Secrets => ExternalSecret resources using secret mapping + schemas
 	# see: https://github.com/jenkins-x/jx-secret#mappings
-	jx secret convert --dir $(OUTPUT_DIR)
+	jx secret convert --source-dir $(OUTPUT_DIR)
 
 	# replicate secrets to local staging/production namespaces
 	jx secret replicate --selector secret.jenkins-x.io/replica-source=true
 
 	# lets make sure all the namespaces exist for environments of the replicated secrets
 	jx gitops namespace --dir-mode --dir $(OUTPUT_DIR)/namespaces
+
+	# lets publish the requirements metadata into the dev Environment.Spec.TeamSettings.BootRequirements so its easy to access them via CRDs
+	jx gitops requirements publish
 
 .PHONY: build
 # uncomment this line to enable kustomize
@@ -125,8 +128,7 @@ verify-install:
 
 .PHONY: verify
 verify: dev-ns verify-ingress
-	jx verify env
-	jx verify webhooks --verbose --warn-on-fail
+	jx gitops webhook update --warn-on-fail
 
 .PHONY: dev-ns verify-ignore
 verify-ignore: verify-ingress-ignore
@@ -149,6 +151,7 @@ git-setup:
 
 .PHONY: regen-check
 regen-check:
+	jx gitops git setup
 	jx gitops apply
 
 .PHONY: regen-phase-1
@@ -200,11 +203,12 @@ pr-regen: all commit push-pr-branch
 
 .PHONY: push-pr-branch
 push-pr-branch:
-	jx gitops pr push
+	jx gitops pr push --ignore-no-pr
 
 .PHONY: push
 push:
-	git push
+	git pull
+	git push -f
 
 .PHONY: release
 release: lint
