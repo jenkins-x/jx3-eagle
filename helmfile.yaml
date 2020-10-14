@@ -15,6 +15,10 @@ repositories:
   url: https://kubernetes-charts.storage.googleapis.com
 - name: cdf
   url: https://cdfoundation.github.io/tekton-helm-chart
+- name: kuberhealthy
+  url: https://comcast.github.io/kuberhealthy/helm-repos
+- name: jx3
+  url: https://storage.googleapis.com/jenkinsxio/charts
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.6
@@ -69,5 +73,26 @@ releases:
   version: 1.0.0
   name: pusher-wave
   namespace: jx
+- chart: kuberhealthy/kuberhealthy
+  version: 2.2.0
+  name: kuberhealthy
+  namespace: kuberhealthy
+  values:
+  - versionStream/charts/kuberhealthy/kuberhealthy/values.yaml.gotmpl
+- chart: jx3/jx-kh-check
+  name: jx-kh-check
+  namespace: kuberhealthy
+  values:
+  - versionStream/charts/jx3/jx-kh-check/values.yaml.gotmpl
+- chart: jx3/jx-kh-check
+  name: health-checks-install
+  namespace: jx-git-operator
+  values:
+  - versionStream/charts/jx3/health-checks-install/values.yaml.gotmpl
+- chart: jx3/jx-kh-check
+  name: health-checks-jx
+  namespace: jx
+  values:
+  - versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
 templates: {}
 missingFileHandler: ""
