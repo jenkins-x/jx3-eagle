@@ -8,29 +8,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
   - apiGroups:
-      - jenkins.io
-    resources:
-      - pipelineactivities
-      - pipelinestructures
-      - sourcerepositories
-      - environments
-    verbs:
-      - create
-      - list
-      - update
-      - get
-      - watch
-      - patch
-  - apiGroups:
-      - jenkins.io
-    resources:
-      - apps
-      - plugins
-    verbs:
-      - list
-      - get
-      - watch
-  - apiGroups:
       - ""
     resources:
       - namespaces
@@ -38,20 +15,10 @@ rules:
       - secrets
     verbs:
       - get
-      - list
-      - watch
-  - apiGroups:
-      - tekton.dev
-    resources:
-      - pipelineresources
-      - tasks
-      - pipelines
-      - pipelineruns
-    verbs:
+      - update
       - create
       - list
-      - get
-      - update
+      - watch
   - apiGroups:
       - lighthouse.jenkins.io
     resources:

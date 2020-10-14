@@ -5,16 +5,16 @@ metadata:
   name: lighthouse-webhooks
   labels:
     draft: draft-app
-    chart: "lighthouse-0.0.683"
+    chart: "lighthouse-0.0.851"
     app: lighthouse-webhooks
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    checksum/config: 76ab9fb6ef968b6e338a15d4353d8d9ac76760519d0e8cedba062f6a61462bd2
+    checksum/config: a126f77da7d7209246c55e2b3e603b6e045d4ccda351c68f774a4ba6fe90dcae
     wave.pusher.com/update-on-config-change: 'true'
-    jenkins-x.io/hash: '57a2b248df4d494e48f26d772c1c602ac41e8726f86d5907b58489c2dff1154d'
+    jenkins-x.io/hash: '7ed9129f59435f6025ed8778ed4af896096fb600d0a57112fb22a3ead5f6f345'
   namespace: jx
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       draft: draft-app
@@ -28,7 +28,7 @@ spec:
       serviceAccountName: lighthouse-webhooks
       containers:
         - name: lighthouse-webhooks
-          image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.683
+          image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.851
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -55,6 +55,8 @@ spec:
               value: "json"
             - name: JX_DEFAULT_IMAGE
               value: "gcr.io/jenkinsxio/builder-maven:2.1.142-761"
+            - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
+              value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
           ports:
             - containerPort: 8080
           livenessProbe:
@@ -75,7 +77,7 @@ spec:
           resources:
             limits:
               cpu: 100m
-              memory: 256Mi
+              memory: 512Mi
             requests:
               cpu: 80m
               memory: 128Mi

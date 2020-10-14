@@ -4,8 +4,9 @@ kind: Service
 metadata:
   name: hook
   labels:
-    chart: "lighthouse-0.0.683"
+    chart: "lighthouse-0.0.851"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations: {}
   namespace: jx
 spec:
   type: ClusterIP

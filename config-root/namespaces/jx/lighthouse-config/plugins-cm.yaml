@@ -753,12 +753,14 @@ data:
       - hold
       - lgtm
       - lifecycle
+      - override
       - size
       - trigger
       - wip
       - heart
       - cat
-      - override
+      - dog
+      - pony
       jenkins-x/jxr-packs-kubernetes:
       - approve
       - assign
@@ -869,124 +871,127 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/acme
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x-apps/jx-app-gloo
-      trusted_org: todo
+      trusted_org: jenkins-x-apps
     - repos:
       - jenkins-x-charts/pusher-wave
-      trusted_org: todo
+      trusted_org: jenkins-x-charts
     - repos:
       - jenkins-x-charts/vault-instance
-      trusted_org: todo
+      trusted_org: jenkins-x-charts
     - repos:
       - jenkins-x/feature-infra-secrets
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/flagger-metrics
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/github-release
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/helm-annotate
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/helm3-image
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x-images/kaniko
-      trusted_org: todo
+      trusted_org: jenkins-x-images
     - repos:
       - jenkins-x/istio
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jenkins-x-crds
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-admin
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-application
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-apps
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-cli-base-image
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-cli
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-git-operator
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-gitops
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-helpers
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-jenkins
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-pipeline
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-pipelines-visualizer
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-preview
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-project
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-promote
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-secret
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-test-collector
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-test
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-verify
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/jxr-packs-kubernetes
-      trusted_org: todo
+      trusted_org: jenkins-x
+    - repos:
+      - jenkins-x/jxr-versions
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/octant-jx
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x-plugins/jx-build-controller
-      trusted_org: todo
+      trusted_org: jenkins-x-plugins
     - repos:
       - jenkins-x-plugins/jx-health
-      trusted_org: todo
+      trusted_org: jenkins-x-plugins
     - repos:
       - jenkins-x-plugins/jx-kh-check
-      trusted_org: todo
+      trusted_org: jenkins-x-plugins
     - repos:
       - jenkins-x-plugins/jx-scm
-      trusted_org: todo
+      trusted_org: jenkins-x-plugins
     - repos:
       - jenkins-x-plugins/jx-updatebot
-      trusted_org: todo
+      trusted_org: jenkins-x-plugins
     - repos:
       - jenkins-x/slack
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/step-go-releaser
-      trusted_org: todo
+      trusted_org: jenkins-x
     - repos:
       - jenkins-x/terraform-azurerm-jx
-      trusted_org: todo
+      trusted_org: jenkins-x
     welcome:
     - message_template: Welcome
 kind: ConfigMap

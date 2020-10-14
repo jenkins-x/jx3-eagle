@@ -1,47 +1,137 @@
-# Source: jxboot-helmfile-resources/templates/environments.yaml
 apiVersion: jenkins.io/v1
 kind: Environment
 metadata:
+  creationTimestamp: null
   labels:
-    env: "dev"
+    env: dev
     team: jx
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: "dev"
+  name: dev
   namespace: jx
 spec:
-  source:
-    ref: "master"
-    url: https://github.com/jenkins-x/jx3-eagle.git
   kind: Development
   label: Development
   namespace: jx
-  promotionStrategy: "Never"
-  webHookEngine: "Lighthouse"
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source:
+    ref: master
+    url: https://github.com/jenkins-x/jx3-eagle.git
   teamSettings:
     appsRepository: http://chartmuseum.jenkins-x.io
-    buildPackRef: "master"
-    buildPackUrl: "https://github.com/jenkins-x/jxr-packs-kubernetes.git"
+    bootRequirements: |
+      autoUpdate:
+        enabled: false
+        schedule: ""
+      bootConfigURL: https://github.com/jenkins-x/jx3-boot-config
+      buildPacks:
+        buildPackLibrary:
+          gitRef: master
+          gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
+      cluster:
+        clusterName: tf-jx-gentle-titmouse
+        environmentGitOwner: todo
+        gitKind: github
+        gitName: github
+        gitServer: https://github.com
+        gke:
+          projectNumber: "193491712574"
+        namespace: jx
+        project: jx-labs-infra
+        provider: gke
+        registry: gcr.io
+        zone: us-central1-a
+      environments:
+      - ingress:
+          domain: ""
+          externalDNS: false
+          namespaceSubDomain: ""
+          tls:
+            email: ""
+            enabled: false
+            production: false
+        key: dev
+        owner: jenkins-x
+        repository: jx3-eagle
+      - ingress:
+          domain: ""
+          externalDNS: false
+          namespaceSubDomain: ""
+          tls:
+            email: ""
+            enabled: false
+            production: false
+        key: staging
+      - ingress:
+          domain: ""
+          externalDNS: false
+          namespaceSubDomain: ""
+          tls:
+            email: ""
+            enabled: false
+            production: false
+        key: production
+      gitops: true
+      ingress:
+        domain: 34.121.39.44.nip.io
+        externalDNS: false
+        namespaceSubDomain: -jx.
+        tls:
+          email: ""
+          enabled: false
+          production: true
+      kaniko: true
+      pipelineUser:
+        username: jenkins-x-bot-test
+      repository: nexus
+      secretStorage: gsm
+      storage:
+        backup:
+          enabled: false
+          url: ""
+        logs:
+          enabled: true
+          url: gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2
+        reports:
+          enabled: true
+          url: gs://reports-tf-jx-gentle-titmouse-1603d78dd9a2
+        repository:
+          enabled: true
+          url: gs://repository-tf-jx-gentle-titmouse-1603d78dd9a2
+      vault: {}
+      velero:
+        schedule: ""
+        ttl: ""
+      versionStream:
+        ref: master
+        url: https://github.com/jenkins-x/jxr-versions.git
+      webhook: lighthouse
+    buildPackRef: master
+    buildPackUrl: https://github.com/jenkins-x/jx3-pipeline-catalog.git
     defaultScheduler:
       apiVersion: jenkins.io/v1
       kind: Scheduler
-      name: default
-    dockerRegistryOrg: "jx-labs-infra"
+      name: jx-meta-pipeline
+    dockerRegistryOrg: jx-labs-infra
     envOrganisation: todo
-    gitServer: https://github.com
     gitPublic: true
+    gitServer: https://github.com
     helmTemplate: true
-    kubeProvider: "gke"
-    pipelineUsername: "jenkins-x-bot-test"
-    pipelineUserEmail: "jenkins-x@googlegroups.com"
-    prowConfig: Scheduler
     importMode: YAML
+    kubeProvider: gke
+    pipelineUserEmail: jenkins-x@googlegroups.com
+    pipelineUsername: jenkins-x-bot-test
     promotionEngine: Prow
+    prowConfig: Scheduler
     prowEngine: Tekton
-    versionStreamUrl: "https://github.com/jenkins-x/jxr-versions.git"
-    versionStreamRef: "master"
-    useGitOps: true
     storageLocations:
       - bucketUrl: gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2
         classifier: logs
       - bucketUrl: gs://reports-tf-jx-gentle-titmouse-1603d78dd9a2
         classifier: reports
+    useGitOps: true
+    versionStreamRef: master
+    versionStreamUrl: https://github.com/jenkins-x/jxr-versions.git
+  webHookEngine: Lighthouse
+status: {}
