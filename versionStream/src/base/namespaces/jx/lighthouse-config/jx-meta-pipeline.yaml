@@ -2,6 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
   name: jx-meta-pipeline
+  namespace: jx
 spec:
   params:
   - description: the unique build number
