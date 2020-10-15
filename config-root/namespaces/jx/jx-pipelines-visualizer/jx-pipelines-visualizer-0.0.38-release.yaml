@@ -1,0 +1,18 @@
+# Source: jx-pipelines-visualizer/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-10-10T06:20:45Z"
+  deletionTimestamp: null
+  name: 'jx-pipelines-visualizer-0.0.38'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  gitCloneUrl: https://github.com/jenkins-x/jx-pipelines-visualizer.git
+  gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
+  gitOwner: jenkins-x
+  gitRepository: jx-pipelines-visualizer
+  name: 'jx-pipelines-visualizer'
+  version: 0.0.38
+status: {}

@@ -1,0 +1,44 @@
+# Source: jx-pipelines-visualizer/templates/rbac.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: jx-pipelines-visualizer
+  labels:
+    app.kubernetes.io/name: jx-pipelines-visualizer
+    app.kubernetes.io/instance: "jx-pipelines-visualizer"
+    helm.sh/chart: jx-pipelines-visualizer-0.0.38
+    app.kubernetes.io/version: "0.0.38"
+    app.kubernetes.io/managed-by: "Helm"
+    gitops.jenkins-x.io/pipeline: 'cluster'
+rules:
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - pipelineactivities
+      - pipelinestructures
+    verbs:
+      - list
+      - watch
+      - get
+  - apiGroups:
+      - tekton.dev
+    resources:
+      - pipelineruns
+    verbs:
+      - list
+      - watch
+      - get
+  - apiGroups:
+      - ""
+    resources:
+      - pods
+    verbs:
+      - list
+      - watch
+      - get
+  - apiGroups:
+      - ""
+    resources:
+      - pods/log
+    verbs:
+      - get
