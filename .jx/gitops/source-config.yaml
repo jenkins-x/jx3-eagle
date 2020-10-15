@@ -24,6 +24,7 @@ spec:
     - name: jx-cli-base-image
     - name: jx-git-operator
     - name: jx-gitops
+      scheduler: in-repo
     - name: jx-helpers
     - name: jx-jenkins
     - name: jx-pipeline
