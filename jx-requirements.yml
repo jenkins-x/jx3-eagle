@@ -8,12 +8,11 @@ buildPacks:
     gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
 cluster:
   clusterName: tf-jx-gentle-titmouse
+  dockerRegistryOrg: jenkinsxio
   environmentGitOwner: todo
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  gke:
-    projectNumber: "193491712574"
   namespace: jx
   project: jx-labs-infra
   provider: gke
