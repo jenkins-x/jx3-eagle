@@ -934,7 +934,7 @@ data:
       trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-pipeline
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-pipelines-visualizer
       trusted_org: todo
