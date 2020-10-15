@@ -1,4 +1,4 @@
-# Jenkins X 3.x GitOps Repository for the Jenkins X Infrastructure
+# Jenkins X 3.x GitOps Repository for the production Jenkins X Infrastructure
 
 This git repository setups the cloud resources required to run Jenkins X on GKE via Terraform and then sets up Jenkins X with [Google Secrets Manager](https://cloud.google.com/secret-manager).
 
