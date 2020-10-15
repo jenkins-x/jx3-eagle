@@ -18,5 +18,5 @@ spec:
   repo: jxr-versions
   scheduler:
     kind: ""
-    name: jxr-versions
+    name: in-repo
   url: https://github.com/jenkins-x/jxr-versions
