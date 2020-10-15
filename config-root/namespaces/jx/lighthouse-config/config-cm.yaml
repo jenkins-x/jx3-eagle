@@ -12,6 +12,7 @@ data:
         jenkins-x/jx-pipelines-visualizer: true
         jenkins-x/jx-preview: true
         jenkins-x/jx3-eagle: true
+        jenkins-x/jxr-versions: true
     plank: {}
     pod_namespace: jx
     postsubmits:
@@ -399,11 +400,6 @@ data:
           pipelineRef:
             name: jx-meta-pipeline
           serviceAccountName: tekton-bot
-      jenkins-x/jxr-versions:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        name: release
       jenkins-x/octant-jx:
       - agent: tekton-pipeline
         branches:
@@ -869,117 +865,6 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/jxr-versions:
-      - agent: tekton-pipeline
-        always_run: true
-        context: gsm
-        name: gsm
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test gsm
-        trigger: (?m)^/test( all| gsm),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: false
-        context: ghe
-        name: ghe
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test ghe
-        trigger: (?m)^/test( all| ghe),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: false
-        context: istio
-        name: istio
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test istio
-        trigger: (?m)^/test( all| istio| istio-all),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: false
-        context: istio-tls
-        name: istio-tls
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test istio-tls
-        trigger: (?m)^/test( all| istio-tls| istio-all),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: false
-        context: kube
-        name: kube
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test kube
-        trigger: (?m)^/test( all| kube),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: false
-        context: mc
-        name: mc
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test mc
-        trigger: (?m)^/test( all| mc),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: false
-        context: remote
-        name: remote
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test mc
-        trigger: (?m)^/test( all| mc),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: false
-        context: storage
-        name: storage
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test storage
-        trigger: (?m)^/test( all| storage),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: false
-        context: terraform
-        name: terraform
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test terraform
-        trigger: (?m)^/test( all| terraform),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: true
-        context: tls
-        name: tls
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test tls
-        trigger: (?m)^/test( all| tls),?(s+|$)
-      - agent: tekton-pipeline
-        always_run: true
-        context: vault
-        name: vault
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test vault
-        trigger: (?m)^/test( default| all| vault),?(s+|$)
       jenkins-x/octant-jx:
       - agent: tekton-pipeline
         always_run: true
@@ -1125,6 +1010,7 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
+        - jenkins-x/jxr-versions
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-health
@@ -1175,6 +1061,7 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
+        - jenkins-x/jxr-versions
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-health
