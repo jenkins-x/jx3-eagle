@@ -444,7 +444,7 @@ data:
             name: jx-meta-pipeline
           serviceAccountName: tekton-bot
       jenkins-x/jxr-versions:
-      - agent: tekton
+      - agent: tekton-pipeline
         branches:
         - master
         name: release
@@ -966,7 +966,7 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x/jxr-versions:
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: true
         context: gsm
         name: gsm
@@ -976,7 +976,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test gsm
         trigger: (?m)^/test( all| gsm),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: false
         context: ghe
         name: ghe
@@ -986,7 +986,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test ghe
         trigger: (?m)^/test( all| ghe),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: false
         context: istio
         name: istio
@@ -996,7 +996,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test istio
         trigger: (?m)^/test( all| istio| istio-all),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: false
         context: istio-tls
         name: istio-tls
@@ -1006,7 +1006,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test istio-tls
         trigger: (?m)^/test( all| istio-tls| istio-all),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: false
         context: kube
         name: kube
@@ -1016,7 +1016,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test kube
         trigger: (?m)^/test( all| kube),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: false
         context: mc
         name: mc
@@ -1026,7 +1026,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test mc
         trigger: (?m)^/test( all| mc),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: false
         context: remote
         name: remote
@@ -1036,7 +1036,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test mc
         trigger: (?m)^/test( all| mc),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: false
         context: storage
         name: storage
@@ -1046,7 +1046,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test storage
         trigger: (?m)^/test( all| storage),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: false
         context: terraform
         name: terraform
@@ -1056,7 +1056,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test terraform
         trigger: (?m)^/test( all| terraform),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: true
         context: tls
         name: tls
@@ -1066,7 +1066,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test tls
         trigger: (?m)^/test( all| tls),?(s+|$)
-      - agent: tekton
+      - agent: tekton-pipeline
         always_run: true
         context: vault
         name: vault
