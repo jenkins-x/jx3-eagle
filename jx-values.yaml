@@ -9,7 +9,6 @@ jxRequirements:
       gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
   cluster:
     clusterName: tf-jx-gentle-titmouse
-    dockerRegistryOrg: jenkinsxio
     environmentGitOwner: todo
     gitKind: github
     gitName: github
