@@ -231,7 +231,7 @@ spec:
         name: create-effective-pipeline
         resources: {}
       - args:
-        - "source .jx/variables.sh && jx step create task --clone-dir /workspace/source --kind ${PIPELINE_KIND} --pr-number ${PULL_NUMBER} --service-account tekton-bot --source source --branch ${BRANCH_NAME} --build-number 1 --context ${JOB_NAME}"
+        - "source .jx/variables.sh && jx step create task --clone-dir /workspace/source --kind ${PIPELINE_KIND} --pr-number ${PULL_NUMBER} --service-account tekton-bot --source source --branch ${BRANCH_NAME} --build-number 1 --context ${JOB_NAME} --url https://github.com/jenkins-x/jxr-packs-kubernetes"
         command:
         - /bin/sh
         - -c
