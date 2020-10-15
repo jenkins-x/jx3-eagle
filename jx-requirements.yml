@@ -13,6 +13,8 @@ cluster:
   gitKind: github
   gitName: github
   gitServer: https://github.com
+  gke:
+    projectNumber: "193491712574"
   namespace: jx
   project: jx-labs-infra
   provider: gke

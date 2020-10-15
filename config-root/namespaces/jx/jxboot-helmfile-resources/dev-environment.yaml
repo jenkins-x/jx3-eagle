@@ -31,6 +31,7 @@ spec:
           gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
       cluster:
         clusterName: tf-jx-gentle-titmouse
+        dockerRegistryOrg: jenkinsxio
         environmentGitOwner: todo
         gitKind: github
         gitName: github
@@ -113,7 +114,7 @@ spec:
       apiVersion: jenkins.io/v1
       kind: Scheduler
       name: jx-meta-pipeline
-    dockerRegistryOrg: jx-labs-infra
+    dockerRegistryOrg: jenkinsxio
     envOrganisation: todo
     gitPublic: true
     gitServer: https://github.com
