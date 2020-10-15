@@ -963,9 +963,6 @@ data:
       - jenkins-x/jxr-packs-kubernetes
       trusted_org: jenkins-x
     - repos:
-      - jenkins-x/jxr-versions
-      trusted_org: jenkins-x
-    - repos:
       - jenkins-x/octant-jx
       trusted_org: jenkins-x
     - repos:
