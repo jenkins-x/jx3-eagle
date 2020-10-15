@@ -28,6 +28,7 @@ spec:
     - name: jx-jenkins
     - name: jx-pipeline
     - name: jx-pipelines-visualizer
+      scheduler: in-repo
     - name: jx-preview
       scheduler: in-repo
     - name: jx-project
