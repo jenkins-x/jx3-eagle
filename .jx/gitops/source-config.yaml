@@ -29,6 +29,7 @@ spec:
     - name: jx-pipeline
     - name: jx-pipelines-visualizer
     - name: jx-preview
+      scheduler: in-repo
     - name: jx-project
     - name: jx-promote
     - name: jx-secret
