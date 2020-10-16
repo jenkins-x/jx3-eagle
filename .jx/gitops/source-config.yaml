@@ -80,10 +80,10 @@ spec:
   - owner: jenkins-x-plugins
     provider: https://github.com
     providerKind: github
+    scheduler: in-repo
     repositories:
     - name: jx-build-controller
     - name: jx-changelog
-      scheduler: in-repo
     - name: jx-health
     - name: jx-kh-check
     - name: jx-scm
