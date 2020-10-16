@@ -927,10 +927,10 @@ data:
       trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-admin
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-application
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-apps
       trusted_org: jenkins-x

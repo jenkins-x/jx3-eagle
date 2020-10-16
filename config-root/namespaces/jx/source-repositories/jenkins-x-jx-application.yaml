@@ -18,5 +18,5 @@ spec:
   repo: jx-application
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x/jx-application
