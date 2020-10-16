@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-plugins
+    provider: github
+    repository: jx-v2-tekton-converter
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-plugins-jx-v2-tekton-converter
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-plugins/jx-v2-tekton-converter.git
+  org: jenkins-x-plugins
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-v2-tekton-converter
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x-plugins/jx-v2-tekton-converter

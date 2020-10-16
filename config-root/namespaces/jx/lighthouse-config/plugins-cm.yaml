@@ -156,11 +156,19 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-release-version
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/jx-scm
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
       - jenkins-x-plugins/jx-updatebot
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x-plugins/jx-v2-tekton-converter
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -316,6 +324,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x-plugins/jx-release-version:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x-plugins/jx-scm:
       - approve
       - assign
@@ -333,6 +357,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-updatebot:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-v2-tekton-converter:
       - approve
       - assign
       - blunderbuss
@@ -1001,10 +1041,16 @@ data:
       - jenkins-x-plugins/jx-kh-check
       trusted_org: todo
     - repos:
+      - jenkins-x-plugins/jx-release-version
+      trusted_org: todo
+    - repos:
       - jenkins-x-plugins/jx-scm
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-updatebot
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-v2-tekton-converter
       trusted_org: todo
     - repos:
       - jenkins-x/slack
