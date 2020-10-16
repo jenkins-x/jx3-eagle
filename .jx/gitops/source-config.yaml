@@ -37,6 +37,7 @@ spec:
     - name: jx-promote
     - name: jx-secret
     - name: jx-test
+      scheduler: in-repo
     - name: jx-test-collector
     - name: jx-verify
     - name: jxr-packs-kubernetes
