@@ -18,5 +18,5 @@ spec:
   repo: jx-cli-base-image
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x/jx-cli-base-image

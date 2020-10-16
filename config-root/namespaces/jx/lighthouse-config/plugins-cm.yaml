@@ -936,13 +936,13 @@ data:
       trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-cli-base-image
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-cli
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-git-operator
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-gitops
       trusted_org: todo
@@ -963,22 +963,22 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jx-project
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-promote
       trusted_org: todo
     - repos:
       - jenkins-x/jx-secret
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-test-collector
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-test
       trusted_org: todo
     - repos:
       - jenkins-x/jx-verify
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jxr-packs-kubernetes
       trusted_org: jenkins-x
