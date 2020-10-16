@@ -18,7 +18,9 @@ spec:
     - name: istio
     - name: jenkins-x-crds
     - name: jx-admin
+      scheduler: in-repo
     - name: jx-application
+      scheduler: in-repo
     - name: jx-apps
     - name: jx-cli
     - name: jx-cli-base-image
