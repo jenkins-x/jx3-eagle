@@ -144,6 +144,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-changelog
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/jx-health
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -249,6 +253,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-build-controller:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-changelog:
       - approve
       - assign
       - blunderbuss
@@ -946,7 +966,7 @@ data:
       trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-promote
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-secret
       trusted_org: jenkins-x
@@ -971,6 +991,9 @@ data:
     - repos:
       - jenkins-x-plugins/jx-build-controller
       trusted_org: jenkins-x-plugins
+    - repos:
+      - jenkins-x-plugins/jx-changelog
+      trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-health
       trusted_org: jenkins-x-plugins
