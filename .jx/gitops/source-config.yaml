@@ -35,6 +35,7 @@ spec:
       scheduler: in-repo
     - name: jx-project
     - name: jx-promote
+      scheduler: in-repo
     - name: jx-secret
     - name: jx-test
       scheduler: in-repo
@@ -71,6 +72,8 @@ spec:
     providerKind: github
     repositories:
     - name: jx-build-controller
+    - name: jx-changelog
+      scheduler: in-repo
     - name: jx-health
     - name: jx-kh-check
     - name: jx-scm
