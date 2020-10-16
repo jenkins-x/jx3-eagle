@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        jenkins-x-charts/jx-bdd: true
         jenkins-x-plugins/jx-build-controller: true
         jenkins-x-plugins/jx-changelog: true
         jenkins-x-plugins/jx-health: true
@@ -522,6 +523,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         jenkins-x-apps/jx-app-gloo: merge
+        jenkins-x-charts/jx-bdd: merge
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
         jenkins-x-images/kaniko: merge
@@ -579,6 +581,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x-charts/jx-bdd
         - jenkins-x-charts/pusher-wave
         - jenkins-x-charts/vault-instance
         - jenkins-x/feature-infra-secrets
@@ -633,6 +636,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x-charts/jx-bdd
         - jenkins-x-charts/pusher-wave
         - jenkins-x-charts/vault-instance
         - jenkins-x/feature-infra-secrets
