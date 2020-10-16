@@ -990,22 +990,22 @@ data:
       trusted_org: jenkins-x
     - repos:
       - jenkins-x-plugins/jx-build-controller
-      trusted_org: jenkins-x-plugins
+      trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-changelog
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-health
-      trusted_org: jenkins-x-plugins
+      trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-kh-check
-      trusted_org: jenkins-x-plugins
+      trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-scm
-      trusted_org: jenkins-x-plugins
+      trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-updatebot
-      trusted_org: jenkins-x-plugins
+      trusted_org: todo
     - repos:
       - jenkins-x/slack
       trusted_org: jenkins-x

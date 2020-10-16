@@ -7,7 +7,12 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        jenkins-x-plugins/jx-build-controller: true
         jenkins-x-plugins/jx-changelog: true
+        jenkins-x-plugins/jx-health: true
+        jenkins-x-plugins/jx-kh-check: true
+        jenkins-x-plugins/jx-scm: true
+        jenkins-x-plugins/jx-updatebot: true
         jenkins-x/jx-admin: true
         jenkins-x/jx-application: true
         jenkins-x/jx-cli: true
@@ -66,66 +71,6 @@ data:
             name: jx-meta-pipeline
           serviceAccountName: tekton-bot
       jenkins-x-images/kaniko:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x-plugins/jx-build-controller:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x-plugins/jx-health:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x-plugins/jx-kh-check:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x-plugins/jx-scm:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x-plugins/jx-updatebot:
       - agent: tekton-pipeline
         branches:
         - master
@@ -358,71 +303,6 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-images/kaniko:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x-plugins/jx-build-controller:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x-plugins/jx-health:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x-plugins/jx-kh-check:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x-plugins/jx-scm:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x-plugins/jx-updatebot:
       - agent: tekton-pipeline
         always_run: true
         context: pr-build
