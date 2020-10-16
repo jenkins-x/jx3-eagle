@@ -23,8 +23,11 @@ spec:
       scheduler: in-repo
     - name: jx-apps
     - name: jx-cli
+      scheduler: in-repo
     - name: jx-cli-base-image
+      scheduler: in-repo
     - name: jx-git-operator
+      scheduler: in-repo
     - name: jx-gitops
       scheduler: in-repo
     - name: jx-helpers
@@ -36,13 +39,17 @@ spec:
     - name: jx-preview
       scheduler: in-repo
     - name: jx-project
+      scheduler: in-repo
     - name: jx-promote
       scheduler: in-repo
     - name: jx-secret
+      scheduler: in-repo
     - name: jx-test
       scheduler: in-repo
     - name: jx-test-collector
+      scheduler: in-repo
     - name: jx-verify
+      scheduler: in-repo
     - name: jxr-packs-kubernetes
     - name: jxr-versions
       scheduler: in-repo
