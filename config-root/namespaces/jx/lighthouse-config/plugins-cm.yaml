@@ -955,7 +955,7 @@ data:
       trusted_org: jenkins-x
     - repos:
       - jenkins-x/jx-test
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-verify
       trusted_org: jenkins-x
