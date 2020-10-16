@@ -69,6 +69,8 @@ spec:
     providerKind: github
     providerName: github
     repositories:
+    - name: jx-bdd
+      scheduler: in-repo
     - name: pusher-wave
     - name: vault-instance
   - owner: jenkins-x-images
