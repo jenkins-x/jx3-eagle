@@ -31,6 +31,7 @@ spec:
     - name: jx-gitops
       scheduler: in-repo
     - name: jx-helpers
+      scheduler: in-repo
     - name: jx-jenkins
       scheduler: in-repo
     - name: jx-pipeline
