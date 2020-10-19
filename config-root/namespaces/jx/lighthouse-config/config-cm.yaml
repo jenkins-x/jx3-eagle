@@ -22,6 +22,7 @@ data:
         jenkins-x/jx-cli-base-image: true
         jenkins-x/jx-git-operator: true
         jenkins-x/jx-gitops: true
+        jenkins-x/jx-helpers: true
         jenkins-x/jx-jenkins: true
         jenkins-x/jx-pipeline: true
         jenkins-x/jx-pipelines-visualizer: true
@@ -182,18 +183,6 @@ data:
             name: jx-meta-pipeline
           serviceAccountName: tekton-bot
       jenkins-x/jx-apps:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/jx-helpers:
       - agent: tekton-pipeline
         branches:
         - master
@@ -423,19 +412,6 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x/jx-apps:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/jx-helpers:
       - agent: tekton-pipeline
         always_run: true
         context: pr-build
