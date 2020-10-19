@@ -27,7 +27,7 @@ spec:
       serviceAccountName: lighthouse-foghorn
       containers:
         - name: lighthouse-foghorn
-          image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.0-SNAPSHOT-PR-1117-25
+          image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.0-SNAPSHOT-PR-1117-30
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
