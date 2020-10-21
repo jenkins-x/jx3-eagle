@@ -1,0 +1,14 @@
+# Source: jmc/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jmc
+  labels:
+    app: jmc
+    chart: jmc-0.0.7
+    release: jmc
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    iam.gke.io/gcp-service-account: collector@jx-labs-infra.iam.gserviceaccount.com
+  namespace: jx

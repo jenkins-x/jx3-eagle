@@ -106,6 +106,7 @@ releases:
   values:
   - versionStream/charts/jx3/jx-pipelines-visualizer/values.yaml.gotmpl
 - chart: collector/jmc
+  name: jmc
   namespace: jx
   values:
   - values/jmc-values.yaml.gotmpl

@@ -1,0 +1,17 @@
+# Source: jmc/templates/role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: jmc
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+rules:
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - pipelineactivities
+    verbs:
+      - list
+      - get
+      - watch
