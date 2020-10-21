@@ -116,5 +116,9 @@ releases:
   version: 1.0.0
   name: nodedemo
   namespace: jx-staging
+- chart: dev/springdemo
+  version: 0.0.1
+  name: springdemo
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
