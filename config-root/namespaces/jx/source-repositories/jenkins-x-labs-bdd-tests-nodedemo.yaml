@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-labs-bdd-tests
+    provider: github
+    repository: nodedemo
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-labs-bdd-tests-nodedemo
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo.git
+  org: jenkins-x-labs-bdd-tests
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: nodedemo
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x-labs-bdd-tests/nodedemo
