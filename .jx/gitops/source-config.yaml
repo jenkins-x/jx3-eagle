@@ -83,7 +83,6 @@ spec:
   - owner: jenkins-x-plugins
     provider: https://github.com
     providerKind: github
-    scheduler: in-repo
     repositories:
     - name: jx-build-controller
     - name: jx-changelog
@@ -93,3 +92,10 @@ spec:
     - name: jx-scm
     - name: jx-updatebot
     - name: jx-v2-tekton-converter
+    scheduler: in-repo
+  - owner: jenkins-x-labs-bdd-tests
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: nodedemo
+    scheduler: in-repo

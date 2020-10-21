@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         jenkins-x-charts/jx-bdd: true
+        jenkins-x-labs-bdd-tests/nodedemo: true
         jenkins-x-plugins/jx-build-controller: true
         jenkins-x-plugins/jx-changelog: true
         jenkins-x-plugins/jx-health: true
@@ -503,6 +504,7 @@ data:
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
         jenkins-x-images/kaniko: merge
+        jenkins-x-labs-bdd-tests/nodedemo: merge
         jenkins-x-plugins/jx-build-controller: merge
         jenkins-x-plugins/jx-changelog: merge
         jenkins-x-plugins/jx-health: merge
@@ -588,6 +590,7 @@ data:
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/jxr-versions
+        - jenkins-x-labs-bdd-tests/nodedemo
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
@@ -643,6 +646,7 @@ data:
         - jenkins-x/jx-verify
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/jxr-versions
+        - jenkins-x-labs-bdd-tests/nodedemo
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
