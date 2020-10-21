@@ -1,0 +1,71 @@
+# Source: jmc/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jmc
+  labels:
+    app: jmc
+    chart: jmc-0.0.7
+    release: jmc
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: jmc
+      release: jmc
+  template:
+    metadata:
+      labels:
+        app: jmc
+        release: jmc
+    spec:
+      serviceAccountName:
+      serviceAccountName: jmc
+      containers:
+        - name: jmc
+          imagePullPolicy: IfNotPresent
+          image: "rawlingsj80/jmc:0.0.6"
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: http
+          env:
+            - name: JX_DB_INSTANCE_CONNECTION_NAME
+              valueFrom:
+                secretKeyRef:
+                  key: dbInstanceConnectionName
+                  name: jmc
+            - name: JX_DB_DATABASE_NAME
+              valueFrom:
+                secretKeyRef:
+                  key: dbDatabaseName
+                  name: jmc
+            - name: JX_DB_DATABASE_USER
+              valueFrom:
+                secretKeyRef:
+                  key: dbDatabaseUser
+                  name: jmc
+            - name: JX_DB_DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: dbDatabasePassword
+                  name: jmc
+            - name: CLUSTER_NAME
+              value: "tf-jx-gentle-titmouse"
+            - name: JX_LOG_FORMAT
+              value: json
+            - name: JX_LOG_LEVEL
+              value: info
+          resources: {}
