@@ -36,6 +36,7 @@ data:
         jenkins-x/jx-test-collector: true
         jenkins-x/jx-verify: true
         jenkins-x/jx3-eagle: true
+        jenkins-x/jx3-pipeline-catalog: true
         jenkins-x/jxr-versions: true
     plank: {}
     pod_namespace: jx
@@ -542,6 +543,7 @@ data:
         jenkins-x/jx-test-collector: merge
         jenkins-x/jx-verify: merge
         jenkins-x/jx3-eagle: merge
+        jenkins-x/jx3-pipeline-catalog: merge
         jenkins-x/jxr-packs-kubernetes: merge
         jenkins-x/jxr-versions: merge
         jenkins-x/octant-jx: merge
@@ -590,6 +592,7 @@ data:
         - jenkins-x/jx-test-collector
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
+        - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/jxr-versions
         - jenkins-x-labs-bdd-tests/nodedemo
@@ -647,6 +650,7 @@ data:
         - jenkins-x/jx-test-collector
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
+        - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/jxr-versions
         - jenkins-x-labs-bdd-tests/nodedemo
