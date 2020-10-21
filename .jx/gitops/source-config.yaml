@@ -52,6 +52,8 @@ spec:
       scheduler: in-repo
     - name: jx-verify
       scheduler: in-repo
+    - name: jx3-pipeline-catalog
+      scheduler: in-repo
     - name: jxr-packs-kubernetes
     - name: jxr-versions
       scheduler: in-repo
