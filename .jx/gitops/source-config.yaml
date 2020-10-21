@@ -98,4 +98,5 @@ spec:
     providerKind: github
     repositories:
     - name: nodedemo
+    - name: springdemo
     scheduler: in-repo
