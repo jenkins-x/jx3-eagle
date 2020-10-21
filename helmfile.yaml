@@ -19,6 +19,8 @@ repositories:
   url: https://comcast.github.io/kuberhealthy/helm-repos
 - name: jx3
   url: https://storage.googleapis.com/jenkinsxio/charts
+- name: collector
+  url: https://rawlingsj.github.io/jmc
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.7
@@ -103,5 +105,9 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/jx-pipelines-visualizer/values.yaml.gotmpl
+- chart: collector/jmc
+  namespace: jx
+  values:
+  - values/jmc-values.yaml.gotmpl
 templates: {}
 missingFileHandler: ""

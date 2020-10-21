@@ -1,0 +1,5 @@
+serviceaccount:
+  annotations:
+    iam.gke.io/gcp-service-account: collector@{{ .Values.jxRequirements.cluster.project }}.iam.gserviceaccount.com
+
+clusterName: {{ .Values.jxRequirements.cluster.clusterName }}
