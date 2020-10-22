@@ -204,19 +204,17 @@ spec:
           - $(params.PULL_BASE_REF)
           command:
           - jx
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
           image: gcr.io/jenkinsxio/builder-jx:2.1.142-761
           name: git-merge
           resources: {}
-        - command:
-          - jx step next-version --use-git-tag-only --tag
-          image: gcr.io/jenkinsxio-labs-private/jxl:0.0.136
+        - args: 
+          - step 
+          - next-version 
+          - --use-git-tag-only 
+          - --tag
+          command:
+          - jx 
+          image: gcr.io/jenkinsxio/builder-jx:2.1.142-761
           name: next-version
           resources: {}
         - args:
@@ -224,13 +222,6 @@ spec:
           command:
           - /bin/sh
           - -c
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
           image: gcr.io/jenkinsxio/builder-jx:2.1.142-761
           name: setup-builder-home
           resources: {}
@@ -247,29 +238,15 @@ spec:
           command:
           - /bin/sh
           - -c
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
-          image: gcr.io/jenkinsxio/builder-jx:0.1.792
+          image: gcr.io/jenkinsxio/builder-jx:2.1.142-761
           name: get-jx-prerelease-state
           resources: {}
         - args:
-          - jx step changelog --verbose --version ${VERSION} --rev v${VERSION}
+          - source .jx/variables.sh && jx step changelog --verbose --version ${VERSION} --rev v${VERSION}
           command:
           - /bin/sh
           - -c
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
-          image: gcr.io/jenkinsxio/builder-jx:0.1.792
+          image: gcr.io/jenkinsxio/builder-jx:2.1.142-761
           name: changelog
           resources: {}
         - args:
@@ -277,13 +254,6 @@ spec:
           command:
           - /bin/sh
           - -c
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
           image: gcr.io/jenkinsxio/jx-cli:latest
           name: promote-vs
           resources: {}
@@ -292,14 +262,7 @@ spec:
           command:
           - /bin/sh
           - -c
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
-          image: gcr.io/jenkinsxio/builder-jx:0.1.792
+          image: gcr.io/jenkinsxio/builder-jx:2.1.142-761
           name: update-bot-fork
           resources: {}
         - args:
@@ -307,14 +270,7 @@ spec:
           command:
           - /bin/sh
           - -c
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
-          image: gcr.io/jenkinsxio-labs-private/jx-gitops:0.0.190
+          image: gcr.io/jenkinsxio/jx-cli:latest
           name: release-resources
           resources: {}
         - args:
@@ -322,14 +278,7 @@ spec:
           command:
           - /bin/sh
           - -c
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
-          image: gcr.io/jenkinsxio/builder-jx:0.1.792
+          image: gcr.io/jenkinsxio/builder-jx:2.1.142-761
           name: release-jx
           resources: {}
         - args:
@@ -337,14 +286,7 @@ spec:
           command:
           - /bin/sh
           - -c
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
-          image: gcr.io/jenkinsxio/builder-jx:0.1.792
+          image: gcr.io/jenkinsxio/builder-jx:2.1.142-761
           name: update-jx-bot
           resources: {}
         - args:
@@ -352,13 +294,6 @@ spec:
           command:
           - /bin/sh
           - -c
-          env:
-          - name: GOPATH
-            value: /workspace/go
-          - name: GOPROXY
-            value: http://jenkins-x-athens-proxy
-          - name: IS_JX_PRERELEASE
-            value: is_jx_prerelease.bool
           image: gcr.io/jenkinsxio/builder-go:2.1.142-761
           name: update-jx-website
           resources: {}
