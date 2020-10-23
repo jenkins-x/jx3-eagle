@@ -25,7 +25,7 @@ spec:
             - command:
                 - /bin/sh
                 - -c
-                - jx gitops git setup && jx preview gc
+                - jx gitops git setup -n jx --secret tekton-git && jx preview gc
               image: gcr.io/jenkinsxio/jx-cli:latest
               imagePullPolicy: IfNotPresent
               name: jx-preview-gc-jobs
@@ -39,6 +39,6 @@ spec:
           terminationGracePeriodSeconds: 30
           serviceAccountName: jx-preview-gc-jobs
   successfulJobsHistoryLimit: 3
-  schedule: "0/30 * * * *"
+  schedule: "*/10 * * * *"
   startingDeadlineSeconds: 4000
   suspend: false
