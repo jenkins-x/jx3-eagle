@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-23T08:25:03Z"
+  creationTimestamp: "2020-10-23T08:27:53Z"
   deletionTimestamp: null
-  name: 'nodedemo-1.0.3'
+  name: 'nodedemo-1.0.4'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.3
-      sha: 022ed82d40d359fa0feb3d7daee6173bea9b0ac4
+        release 1.0.4
+      sha: 18d0eb2b8f0d6cf5df3768f4acc696586e70e2e3
     - author:
         accountReference:
           - id: jenkins-x-bot-test
@@ -40,8 +40,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.3
-      sha: 70b527cb6e7f58e04c5f81a01caae87c637bbc4c
+        release 1.0.4
+      sha: 7a7898e3503c678f540908ff8bbc43eaba9465ec
     - author:
         accountReference:
           - id: james-strachan-0
@@ -51,17 +51,18 @@ spec:
       branch: master
       committer:
         accountReference:
-          - id: github-0
+          - id: james-strachan-0
             provider: jenkins.io/git-github-userid
-        email: noreply@github.com
-        name: GitHub
-      message: Update pullrequest.yaml
-      sha: 557511b196d6a7d9ffc1f66e8320dfcf942197db
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: test out pipeline catalog changes
+      sha: 89ae2cc1161305b9e0dee7f56922f32a6768594b
   gitCloneUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo.git
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: nodedemo
   name: 'nodedemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.3
-  version: v1.0.3
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.4
+  version: v1.0.4
 status: {}
