@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-23T10:14:47Z"
+  creationTimestamp: "2020-10-23T10:21:52Z"
   deletionTimestamp: null
-  name: 'nodedemo-1.0.10'
+  name: 'nodedemo-1.0.14'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.10
-      sha: edf47981ade676ec4fcabc05d7819b0e683446e5
+        release 1.0.14
+      sha: 97f9b02e1124893f8607352effab10b60bb368f6
     - author:
         accountReference:
           - id: jenkins-x-bot-test
@@ -40,29 +40,29 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.10
-      sha: 3e80b5ab07826e2379350016e4eb4c4a1c93be2a
+        release 1.0.14
+      sha: dafe93c7118f3553875489503e8a608a240341ea
     - author:
         accountReference:
-          - id: jenkins-x-bot-test
+          - id: james-strachan-0
             provider: jenkins.io/git-github-userid
-        email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
+        email: james.strachan@gmail.com
+        name: James Strachan
       branch: master
       committer:
         accountReference:
-          - id: jenkins-x-bot-test
+          - id: james-strachan-0
             provider: jenkins.io/git-github-userid
-        email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
+        email: james.strachan@gmail.com
+        name: James Strachan
       message: |
-        chore: upgrade pipeline library
-      sha: 49b9f6aa2dbbbfc9b7c73467ed5f01a22519120b
+        fix: test out pipeline catalog changes
+      sha: 8c51ac44bfbcd7baaae2c6e9481577d9b5290f3a
   gitCloneUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo.git
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: nodedemo
   name: 'nodedemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.10
-  version: v1.0.10
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.14
+  version: v1.0.14
 status: {}
