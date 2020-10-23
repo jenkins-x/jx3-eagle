@@ -101,6 +101,10 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
+- chart: jx3/jx-preview
+  version: 0.0.111
+  name: jx-preview
+  namespace: jx
 - chart: jx3/jx-pipelines-visualizer
   version: 0.0.44
   name: jx-pipelines-visualizer
