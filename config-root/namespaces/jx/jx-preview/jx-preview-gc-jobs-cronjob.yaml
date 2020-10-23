@@ -25,7 +25,7 @@ spec:
             - command:
                 - /bin/sh
                 - -c
-                - jx gitops git setup -n jx --secret tekton-git && jx preview gc
+                - jx gitops git setup --namespace jx --secret tekton-git && jx preview gc
               image: gcr.io/jenkinsxio/jx-cli:latest
               imagePullPolicy: IfNotPresent
               name: jx-preview-gc-jobs
