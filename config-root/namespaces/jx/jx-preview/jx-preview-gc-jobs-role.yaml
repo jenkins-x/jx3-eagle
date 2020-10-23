@@ -17,6 +17,14 @@ rules:
       - watch
       - delete
   - apiGroups:
+      - ""
+    resources:
+      - secrets
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
       - preview.jenkins.io
     resources:
       - previews
