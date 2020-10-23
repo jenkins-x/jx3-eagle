@@ -117,7 +117,7 @@ releases:
   values:
   - values/jmc-values.yaml.gotmpl
 - chart: dev/nodedemo
-  version: 1.0.10
+  version: 1.0.14
   name: nodedemo
   namespace: jx-staging
 - chart: dev/springdemo
