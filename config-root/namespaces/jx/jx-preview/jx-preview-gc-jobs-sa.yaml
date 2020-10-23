@@ -1,0 +1,8 @@
+# Source: jx-preview/templates/gc-jobs-sa.yaml
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: jx-preview-gc-jobs
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
