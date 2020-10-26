@@ -5,7 +5,7 @@ metadata:
   name: springdemo-springdemo
   labels:
     draft: draft-app
-    chart: "springdemo-0.0.1"
+    chart: "springdemo-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: springdemo
-          image: "gcr.io/jenkinsxio/springdemo:0.0.1"
+          image: "gcr.io/jenkinsxio/springdemo:0.0.2"
           imagePullPolicy: IfNotPresent
           env:
           envFrom: null
@@ -31,7 +31,7 @@ spec:
             - containerPort: 8080
           livenessProbe:
             httpGet:
-              path: /
+              path: /actuator/health
               port: 8080
             initialDelaySeconds: 60
             periodSeconds: 10
@@ -39,7 +39,7 @@ spec:
             timeoutSeconds: 1
           readinessProbe:
             httpGet:
-              path: /
+              path: /actuator/health
               port: 8080
             periodSeconds: 10
             successThreshold: 1

@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-21T13:03:13Z"
+  creationTimestamp: "2020-10-26T14:20:17Z"
   deletionTimestamp: null
-  name: 'springdemo-0.0.1'
+  name: 'springdemo-0.0.2'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,24 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 0.0.1
-      sha: 0fe11039bfae98914f26c41a16a9f71caa7c74d8
-    - author:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        accountReference:
-          - id: james-strachan-0
-            provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix:(plugins) use a better version of maven plugins
-      sha: 7fb8f37a19a5bfbce1eeb8e358712cb221625392
+        release 0.0.2
+      sha: 8b084c64b1749e821fa4e01e1fdd157591e7259b
     - author:
         accountReference:
           - id: james-strachan-0
@@ -57,12 +41,12 @@ spec:
         name: James Strachan
       message: |
         Jenkins X build pack
-      sha: 252b587f5761420cdddd501001ec7cdb3e8e28e4
+      sha: 683314fcbe76669dd46f1343b621d89824ce3f3e
   gitCloneUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo.git
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: springdemo
   name: 'springdemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.1
-  version: v0.0.1
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.2
+  version: v0.0.2
 status: {}
