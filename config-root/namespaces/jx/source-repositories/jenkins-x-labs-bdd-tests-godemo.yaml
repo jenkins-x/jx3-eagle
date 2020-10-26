@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-labs-bdd-tests
+    provider: github
+    repository: godemo
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-labs-bdd-tests-godemo
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-labs-bdd-tests/godemo.git
+  org: jenkins-x-labs-bdd-tests
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: godemo
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x-labs-bdd-tests/godemo

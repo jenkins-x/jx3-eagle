@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         jenkins-x-charts/jx-bdd: true
+        jenkins-x-labs-bdd-tests/godemo: true
         jenkins-x-labs-bdd-tests/nodedemo: true
         jenkins-x-labs-bdd-tests/springdemo: true
         jenkins-x-plugins/jx-build-controller: true
@@ -482,6 +483,7 @@ data:
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
         jenkins-x-images/kaniko: merge
+        jenkins-x-labs-bdd-tests/godemo: merge
         jenkins-x-labs-bdd-tests/nodedemo: merge
         jenkins-x-labs-bdd-tests/springdemo: merge
         jenkins-x-plugins/jx-build-controller: merge
@@ -571,6 +573,7 @@ data:
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/jxr-versions
+        - jenkins-x-labs-bdd-tests/godemo
         - jenkins-x-labs-bdd-tests/nodedemo
         - jenkins-x-labs-bdd-tests/springdemo
         - jenkins-x/octant-jx
@@ -629,6 +632,7 @@ data:
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jxr-packs-kubernetes
         - jenkins-x/jxr-versions
+        - jenkins-x-labs-bdd-tests/godemo
         - jenkins-x-labs-bdd-tests/nodedemo
         - jenkins-x-labs-bdd-tests/springdemo
         - jenkins-x/octant-jx
