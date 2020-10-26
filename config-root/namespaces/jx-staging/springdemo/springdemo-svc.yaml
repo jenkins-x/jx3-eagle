@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: springdemo
   labels:
-    chart: "springdemo-0.0.2"
+    chart: "springdemo-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
