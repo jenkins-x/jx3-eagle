@@ -1119,7 +1119,7 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/octant-jx
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-build-controller
       trusted_org: todo
