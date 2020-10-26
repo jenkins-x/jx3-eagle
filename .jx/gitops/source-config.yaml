@@ -30,6 +30,8 @@ spec:
       scheduler: in-repo
     - name: jx-gitops
       scheduler: in-repo
+    - name: jx-go-maven-base-image
+      scheduler: in-repo
     - name: jx-helpers
       scheduler: in-repo
     - name: jx-jenkins
