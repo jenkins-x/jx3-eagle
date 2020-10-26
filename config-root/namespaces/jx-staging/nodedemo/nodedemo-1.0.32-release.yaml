@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-26T10:44:16Z"
+  creationTimestamp: "2020-10-26T10:47:14Z"
   deletionTimestamp: null
-  name: 'nodedemo-1.0.31'
+  name: 'nodedemo-1.0.32'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.31
-      sha: d50174d4666281c092b3860f9a4dff520b2ea926
+        release 1.0.32
+      sha: 9d7ca2a0a074f444bfc704c3733689a5a95f84e2
     - author:
         accountReference:
           - id: jenkins-x-bot-test
@@ -40,8 +40,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.31
-      sha: cce7372bc9e6dfef3571b9a4fb9e33b7df334f28
+        release 1.0.32
+      sha: 99152d1a56c62502033d0ac050e7e09fdcf60eb7
     - author:
         accountReference:
           - id: jenkins-x-bot-test
@@ -56,13 +56,13 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: upgrade pipeline library
-      sha: 84ae0f240b1cd509c35575ba372225c7937140f9
+        fix: test out pipeline catalog changes
+      sha: a9f77caf5faad5a360e6b9dc8218309e8705ad3e
   gitCloneUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo.git
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: nodedemo
   name: 'nodedemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.31
-  version: v1.0.31
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.32
+  version: v1.0.32
 status: {}
