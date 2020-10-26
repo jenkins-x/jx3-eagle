@@ -88,6 +88,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/jx-go-maven-base-image
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/jx-helpers
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -712,6 +716,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/jx-go-maven-base-image:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/jx-helpers:
       - approve
       - assign
@@ -1088,6 +1108,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jx-gitops
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jx-go-maven-base-image
       trusted_org: todo
     - repos:
       - jenkins-x/jx-helpers
