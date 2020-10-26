@@ -25,6 +25,7 @@ data:
         jenkins-x/jx-cli-base-image: true
         jenkins-x/jx-git-operator: true
         jenkins-x/jx-gitops: true
+        jenkins-x/jx-go-maven-base-image: true
         jenkins-x/jx-helpers: true
         jenkins-x/jx-jenkins: true
         jenkins-x/jx-pipeline: true
@@ -509,6 +510,7 @@ data:
         jenkins-x/jx-cli-base-image: merge
         jenkins-x/jx-git-operator: merge
         jenkins-x/jx-gitops: merge
+        jenkins-x/jx-go-maven-base-image: merge
         jenkins-x/jx-helpers: merge
         jenkins-x/jx-jenkins: merge
         jenkins-x/jx-pipeline: merge
@@ -559,6 +561,7 @@ data:
         - jenkins-x/jx-cli
         - jenkins-x/jx-git-operator
         - jenkins-x/jx-gitops
+        - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
         - jenkins-x/jx-jenkins
         - jenkins-x/jx-pipeline
@@ -618,6 +621,7 @@ data:
         - jenkins-x/jx-cli
         - jenkins-x/jx-git-operator
         - jenkins-x/jx-gitops
+        - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
         - jenkins-x/jx-jenkins
         - jenkins-x/jx-pipeline
