@@ -121,7 +121,7 @@ releases:
   name: nodedemo
   namespace: jx-staging
 - chart: dev/springdemo
-  version: 0.0.3
+  version: 0.0.4
   name: springdemo
   namespace: jx-staging
 templates: {}
