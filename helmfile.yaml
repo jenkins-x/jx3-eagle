@@ -56,7 +56,7 @@ releases:
   - versionStream/charts/jenkins-x/tekton/values.yaml.gotmpl
   - versionStream/charts/cdf/tekton-pipeline/values.yaml.gotmpl
 - chart: jenkins-x/lighthouse
-  version: 0.0.857
+  version: 0.0.860
   name: lighthouse
   namespace: jx
   values:
@@ -102,7 +102,7 @@ releases:
   values:
   - versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
 - chart: jx3/jx-preview
-  version: 0.0.113
+  version: 0.0.114
   name: jx-preview
   namespace: jx
 - chart: jx3/jx-pipelines-visualizer
