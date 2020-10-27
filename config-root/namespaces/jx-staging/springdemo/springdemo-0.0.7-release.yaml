@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-27T07:04:19Z"
+  creationTimestamp: "2020-10-27T17:29:02Z"
   deletionTimestamp: null
-  name: 'springdemo-0.0.6'
+  name: 'springdemo-0.0.7'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,45 +24,45 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 0.0.6
-      sha: 42305b90dc27e986a5c95fbf116163e76758c5f9
+        release 0.0.7
+      sha: fc4d893e28f496b2e0b5b603880ad93a3dae9971
     - author:
         accountReference:
-          - id: james-strachan-0
+          - id: jenkins-x-bot-test
             provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
       branch: master
       committer:
         accountReference:
-          - id: james-strachan-0
+          - id: jenkins-x-bot-test
             provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
       message: |
         fix: test out pipeline catalog changes
-      sha: ad6fae1f54cbb2bbb75942830b0e0328a36b0447
+      sha: f711164a4d443cbb1184027ad2605d9a23326f91
     - author:
         accountReference:
-          - id: james-strachan-0
+          - id: jenkins-x-bot-test
             provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
       branch: master
       committer:
         accountReference:
-          - id: james-strachan-0
+          - id: jenkins-x-bot-test
             provider: jenkins.io/git-github-userid
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
       message: |
         Jenkins X build pack
-      sha: c7b96b2bd66e7f8aa882b3b85280272f1d5eaf2d
+      sha: 760a8baae21c15d40f9d7c1475b9cdd626b006d1
   gitCloneUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo.git
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: springdemo
   name: 'springdemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.6
-  version: v0.0.6
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.7
+  version: v0.0.7
 status: {}
