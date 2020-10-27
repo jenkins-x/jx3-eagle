@@ -5,7 +5,7 @@ metadata:
   name: jmc
   labels:
     app: jmc
-    chart: jmc-0.0.7
+    chart: jmc-0.0.8
     release: jmc
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -28,7 +28,7 @@ spec:
       containers:
         - name: jmc
           imagePullPolicy: IfNotPresent
-          image: "rawlingsj80/jmc:0.0.6"
+          image: "rawlingsj80/jmc:0.0.8"
           ports:
             - name: http
               containerPort: 8080
