@@ -124,5 +124,9 @@ releases:
   version: 0.0.9
   name: springdemo
   namespace: jx-staging
+- chart: dev/vault-instance
+  version: 0.0.5
+  name: vault-instance
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
