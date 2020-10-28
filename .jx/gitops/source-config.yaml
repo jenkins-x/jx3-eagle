@@ -96,6 +96,7 @@ spec:
     - name: jx-kh-check
     - name: jx-release-version
     - name: jx-scm
+    - name: jx-stash
     - name: jx-updatebot
     - name: jx-v2-tekton-converter
     - name: kuberhealthy-terraform-drift-check
