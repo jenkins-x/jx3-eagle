@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-28T10:44:17Z"
+  creationTimestamp: "2020-10-28T11:02:18Z"
   deletionTimestamp: null
-  name: 'springdemo-0.0.8'
+  name: 'springdemo-0.0.9'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 0.0.8
-      sha: 51f1eacc9f744b6f6a93d3eeb93877f3f1c92fc9
+        release 0.0.9
+      sha: 616193d64859bf4925c60542cdc97a20a1c6e4ad
     - author:
         accountReference:
           - id: jenkins-x-bot-test
@@ -41,7 +41,7 @@ spec:
         name: jenkins-x-bot
       message: |
         fix: test out pipeline catalog changes
-      sha: 650c16ceca753a4d3cdb9e12b3d69165b54e2a0d
+      sha: fbbff27be1bda160572606cdada95219396ace1c
     - author:
         accountReference:
           - id: jenkins-x-bot-test
@@ -57,12 +57,12 @@ spec:
         name: jenkins-x-bot
       message: |
         Jenkins X build pack
-      sha: e8daf7d17da340ad5e139f42adae7c8b598059d3
+      sha: 04b11c8d28041509674cfe3cbdfdc4b61e827620
   gitCloneUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo.git
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: springdemo
   name: 'springdemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.8
-  version: v0.0.8
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.9
+  version: v0.0.9
 status: {}
