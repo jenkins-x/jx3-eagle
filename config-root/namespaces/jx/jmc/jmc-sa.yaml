@@ -5,7 +5,7 @@ metadata:
   name: jmc
   labels:
     app: jmc
-    chart: jmc-0.0.8
+    chart: jmc-0.0.9
     release: jmc
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
