@@ -98,6 +98,7 @@ spec:
     - name: jx-scm
     - name: jx-updatebot
     - name: jx-v2-tekton-converter
+    - name: kuberhealthy-terraform-drift-check
     scheduler: in-repo
   - owner: jenkins-x-labs-bdd-tests
     provider: https://github.com
