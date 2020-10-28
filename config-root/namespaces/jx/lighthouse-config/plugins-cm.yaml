@@ -1063,7 +1063,7 @@ data:
       trusted_org: jenkins-x-charts
     - repos:
       - jenkins-x-charts/vault-instance
-      trusted_org: jenkins-x-charts
+      trusted_org: todo
     - repos:
       - jenkins-x/feature-infra-secrets
       trusted_org: jenkins-x

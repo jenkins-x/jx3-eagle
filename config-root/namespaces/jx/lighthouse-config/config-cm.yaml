@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         jenkins-x-charts/jx-bdd: true
+        jenkins-x-charts/vault-instance: true
         jenkins-x-labs-bdd-tests/godemo: true
         jenkins-x-labs-bdd-tests/nodedemo: true
         jenkins-x-labs-bdd-tests/springdemo: true
@@ -57,18 +58,6 @@ data:
             name: jx-meta-pipeline
           serviceAccountName: tekton-bot
       jenkins-x-charts/pusher-wave:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x-charts/vault-instance:
       - agent: tekton-pipeline
         branches:
         - master
@@ -263,19 +252,6 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-charts/pusher-wave:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x-charts/vault-instance:
       - agent: tekton-pipeline
         always_run: true
         context: pr-build
