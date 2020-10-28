@@ -192,6 +192,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-tap
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/jx-updatebot
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -453,6 +457,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-stash:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-tap:
       - approve
       - assign
       - blunderbuss
@@ -1226,6 +1246,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-stash
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-tap
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-updatebot
