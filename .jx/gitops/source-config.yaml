@@ -79,6 +79,7 @@ spec:
       scheduler: in-repo
     - name: pusher-wave
     - name: vault-instance
+      scheduler: in-repo
   - owner: jenkins-x-images
     provider: https://github.com
     providerKind: github
