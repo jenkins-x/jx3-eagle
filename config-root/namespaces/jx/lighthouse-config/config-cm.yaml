@@ -18,6 +18,7 @@ data:
         jenkins-x-plugins/jx-kh-check: true
         jenkins-x-plugins/jx-release-version: true
         jenkins-x-plugins/jx-scm: true
+        jenkins-x-plugins/jx-stash: true
         jenkins-x-plugins/jx-updatebot: true
         jenkins-x-plugins/jx-v2-tekton-converter: true
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
@@ -470,6 +471,7 @@ data:
         jenkins-x-plugins/jx-kh-check: merge
         jenkins-x-plugins/jx-release-version: merge
         jenkins-x-plugins/jx-scm: merge
+        jenkins-x-plugins/jx-stash: merge
         jenkins-x-plugins/jx-updatebot: merge
         jenkins-x-plugins/jx-v2-tekton-converter: merge
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: merge
@@ -564,6 +566,7 @@ data:
         - jenkins-x-plugins/jx-kh-check
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-stash
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
@@ -625,6 +628,7 @@ data:
         - jenkins-x-plugins/jx-kh-check
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-stash
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
