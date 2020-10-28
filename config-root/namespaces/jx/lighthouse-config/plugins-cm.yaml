@@ -196,6 +196,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/kuberhealthy-terraform-drift-check
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/slack
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -461,6 +465,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-v2-tekton-converter:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/kuberhealthy-terraform-drift-check:
       - approve
       - assign
       - blunderbuss
@@ -1189,6 +1209,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-v2-tekton-converter
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/kuberhealthy-terraform-drift-check
       trusted_org: todo
     - repos:
       - jenkins-x/slack
