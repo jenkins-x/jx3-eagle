@@ -12,7 +12,7 @@ repositories:
 - name: jx-labs
   url: https://storage.googleapis.com/jenkinsxio-labs-private/charts
 - name: stable
-  url: https://kubernetes-charts.storage.googleapis.com
+  url: https://charts.helm.sh/stable
 - name: cdf
   url: https://cdfoundation.github.io/tekton-helm-chart
 - name: kuberhealthy
@@ -56,7 +56,7 @@ releases:
   - versionStream/charts/jenkins-x/tekton/values.yaml.gotmpl
   - versionStream/charts/cdf/tekton-pipeline/values.yaml.gotmpl
 - chart: jenkins-x/lighthouse
-  version: 0.0.863
+  version: 0.0.865
   name: lighthouse
   namespace: jx
   values:
@@ -106,7 +106,7 @@ releases:
   name: jx-preview
   namespace: jx
 - chart: jx3/jx-pipelines-visualizer
-  version: 0.0.49
+  version: 0.0.50
   name: jx-pipelines-visualizer
   namespace: jx
   values:
