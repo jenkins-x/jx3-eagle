@@ -116,6 +116,12 @@ releases:
   namespace: jx
   values:
   - values/jmc-values.yaml.gotmpl
+- chart: jx3/jx-build-controller
+  version: 0.0.13
+  name: jx-build-controller
+  namespace: jx
+  values:
+  - values/jx-build-controller-values.yaml.gotmpl
 - chart: dev/nodedemo
   version: 1.0.32
   name: nodedemo
