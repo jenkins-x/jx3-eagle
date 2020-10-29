@@ -1,12 +1,12 @@
-# Source: jxboot-helmfile-resources/charts/controllerbuild/templates/serviceaccount.yaml
+# Source: jx-build-controller/templates/serviceaccount.yaml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: jenkins-x-controllerbuild
   labels:
-    app: controllerbuild
-    chart: controllerbuild-2.0.1143
-    release: jxboot-helmfile-resources
+    app: jx-build-controller
+    chart: jx-build-controller-0.0.13
+    release: jx-build-controller
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
