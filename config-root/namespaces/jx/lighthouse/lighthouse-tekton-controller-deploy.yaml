@@ -28,7 +28,7 @@ spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
         - name: lighthouse-tekton-controller
-          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.865
+          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.0-SNAPSHOT-PR-1135-26
           imagePullPolicy: IfNotPresent
           args:
             - --namespace=jx
@@ -40,6 +40,10 @@ spec:
           env:
             - name: "LOGRUS_FORMAT"
               value: "json"
+            - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
+              value: "tekton-bot"
+            - name: DEFAULT_PIPELINE_RUN_TIMEOUT
+              value: "2h0m0s"
             - name: JX_DEFAULT_IMAGE
               value: "gcr.io/jenkinsxio/builder-maven:2.1.142-761"
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
