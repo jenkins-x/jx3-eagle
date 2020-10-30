@@ -18,5 +18,5 @@ spec:
   repo: helm-annotate
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x/helm-annotate

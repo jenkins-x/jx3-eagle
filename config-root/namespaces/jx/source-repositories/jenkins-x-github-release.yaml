@@ -18,5 +18,5 @@ spec:
   repo: github-release
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x/github-release

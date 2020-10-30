@@ -18,5 +18,5 @@ spec:
   repo: jenkins-x-crds
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x/jenkins-x-crds

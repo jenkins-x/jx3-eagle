@@ -18,5 +18,5 @@ spec:
   repo: terraform-azurerm-jx
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x/terraform-azurerm-jx

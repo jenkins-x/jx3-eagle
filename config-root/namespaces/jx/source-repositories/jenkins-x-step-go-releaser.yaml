@@ -18,5 +18,5 @@ spec:
   repo: step-go-releaser
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x/step-go-releaser

@@ -1111,7 +1111,7 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/acme
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x-apps/jx-app-gloo
       trusted_org: jenkins-x-apps
@@ -1120,34 +1120,34 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-charts/pusher-wave
-      trusted_org: jenkins-x-charts
+      trusted_org: todo
     - repos:
       - jenkins-x-charts/vault-instance
       trusted_org: todo
     - repos:
       - jenkins-x/feature-infra-secrets
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/flagger-metrics
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/github-release
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/helm-annotate
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/helm3-image
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x-images/kaniko
       trusted_org: jenkins-x-images
     - repos:
       - jenkins-x/istio
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jenkins-x-crds
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-admin
       trusted_org: todo
@@ -1156,7 +1156,7 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jx-apps
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jx-cli-base-image
       trusted_org: todo
@@ -1210,7 +1210,7 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jxr-packs-kubernetes
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/jxr-versions
       trusted_org: todo
@@ -1261,13 +1261,13 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/slack
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/step-go-releaser
-      trusted_org: jenkins-x
+      trusted_org: todo
     - repos:
       - jenkins-x/terraform-azurerm-jx
-      trusted_org: jenkins-x
+      trusted_org: todo
     welcome:
     - message_template: Welcome
 kind: ConfigMap

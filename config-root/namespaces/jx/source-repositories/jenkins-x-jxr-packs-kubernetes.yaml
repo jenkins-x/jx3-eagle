@@ -18,5 +18,5 @@ spec:
   repo: jxr-packs-kubernetes
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x/jxr-packs-kubernetes

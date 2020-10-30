@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         jenkins-x-charts/jx-bdd: true
+        jenkins-x-charts/pusher-wave: true
         jenkins-x-charts/vault-instance: true
         jenkins-x-labs-bdd-tests/godemo: true
         jenkins-x-labs-bdd-tests/nodedemo: true
@@ -23,8 +24,17 @@ data:
         jenkins-x-plugins/jx-updatebot: true
         jenkins-x-plugins/jx-v2-tekton-converter: true
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
+        jenkins-x/acme: true
+        jenkins-x/feature-infra-secrets: true
+        jenkins-x/flagger-metrics: true
+        jenkins-x/github-release: true
+        jenkins-x/helm-annotate: true
+        jenkins-x/helm3-image: true
+        jenkins-x/istio: true
+        jenkins-x/jenkins-x-crds: true
         jenkins-x/jx-admin: true
         jenkins-x/jx-application: true
+        jenkins-x/jx-apps: true
         jenkins-x/jx-cli: true
         jenkins-x/jx-cli-base-image: true
         jenkins-x/jx-git-operator: true
@@ -43,8 +53,12 @@ data:
         jenkins-x/jx-verify: true
         jenkins-x/jx3-eagle: true
         jenkins-x/jx3-pipeline-catalog: true
+        jenkins-x/jxr-packs-kubernetes: true
         jenkins-x/jxr-versions: true
         jenkins-x/octant-jx: true
+        jenkins-x/slack: true
+        jenkins-x/step-go-releaser: true
+        jenkins-x/terraform-azurerm-jx: true
     plank: {}
     pod_namespace: jx
     postsubmits:
@@ -60,175 +74,7 @@ data:
           pipelineRef:
             name: jx-meta-pipeline
           serviceAccountName: tekton-bot
-      jenkins-x-charts/pusher-wave:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
       jenkins-x-images/kaniko:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/acme:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/feature-infra-secrets:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/flagger-metrics:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/github-release:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/helm-annotate:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/helm3-image:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/istio:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/jenkins-x-crds:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/jx-apps:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/jxr-packs-kubernetes:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/slack:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/step-go-releaser:
-      - agent: tekton-pipeline
-        branches:
-        - master
-        - main
-        labels:
-          aadpodidbinding: tekton-bot
-        name: release
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-      jenkins-x/terraform-azurerm-jx:
       - agent: tekton-pipeline
         branches:
         - master
@@ -254,189 +100,7 @@ data:
           serviceAccountName: tekton-bot
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x-charts/pusher-wave:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-images/kaniko:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/acme:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/feature-infra-secrets:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/flagger-metrics:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/github-release:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/helm-annotate:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/helm3-image:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/istio:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/jenkins-x-crds:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/jx-apps:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/jxr-packs-kubernetes:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/slack:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/step-go-releaser:
-      - agent: tekton-pipeline
-        always_run: true
-        context: pr-build
-        labels:
-          aadpodidbinding: tekton-bot
-        name: pr-build
-        pipeline_run_spec:
-          pipelineRef:
-            name: jx-meta-pipeline
-          serviceAccountName: tekton-bot
-        rerun_command: /test this
-        trigger: (?m)^/test( all| this),?(\s+|$)
-      jenkins-x/terraform-azurerm-jx:
       - agent: tekton-pipeline
         always_run: true
         context: pr-build

@@ -18,5 +18,5 @@ spec:
   repo: pusher-wave
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x-charts/pusher-wave
