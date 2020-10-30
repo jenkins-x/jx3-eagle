@@ -18,52 +18,32 @@ spec:
     - name: istio
     - name: jenkins-x-crds
     - name: jx-admin
-      scheduler: in-repo
     - name: jx-application
-      scheduler: in-repo
     - name: jx-apps
     - name: jx-cli
-      scheduler: in-repo
     - name: jx-cli-base-image
-      scheduler: in-repo
     - name: jx-git-operator
-      scheduler: in-repo
     - name: jx-gitops
-      scheduler: in-repo
     - name: jx-go-maven-base-image
-      scheduler: in-repo
     - name: jx-helpers
-      scheduler: in-repo
     - name: jx-jenkins
-      scheduler: in-repo
     - name: jx-pipeline
-      scheduler: in-repo
     - name: jx-pipelines-visualizer
-      scheduler: in-repo
     - name: jx-preview
-      scheduler: in-repo
     - name: jx-project
-      scheduler: in-repo
     - name: jx-promote
-      scheduler: in-repo
     - name: jx-secret
-      scheduler: in-repo
     - name: jx-test
-      scheduler: in-repo
     - name: jx-test-collector
-      scheduler: in-repo
     - name: jx-verify
-      scheduler: in-repo
     - name: jx3-pipeline-catalog
-      scheduler: in-repo
     - name: jxr-packs-kubernetes
     - name: jxr-versions
-      scheduler: in-repo
     - name: octant-jx
-      scheduler: in-repo
     - name: slack
     - name: step-go-releaser
     - name: terraform-azurerm-jx
+    scheduler: in-repo
   - owner: jenkins-x-apps
     provider: https://github.com
     providerKind: github
@@ -76,10 +56,9 @@ spec:
     providerName: github
     repositories:
     - name: jx-bdd
-      scheduler: in-repo
     - name: pusher-wave
     - name: vault-instance
-      scheduler: in-repo
+    scheduler: in-repo
   - owner: jenkins-x-images
     provider: https://github.com
     providerKind: github
