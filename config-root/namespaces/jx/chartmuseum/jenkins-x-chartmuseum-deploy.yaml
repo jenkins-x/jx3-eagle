@@ -15,9 +15,7 @@ metadata:
 spec:
   replicas: 1
   strategy:
-    rollingUpdate:
-      maxUnavailable: 0
-    type: RollingUpdate
+    type: Recreate
   revisionHistoryLimit: 10
   selector:
     matchLabels:
