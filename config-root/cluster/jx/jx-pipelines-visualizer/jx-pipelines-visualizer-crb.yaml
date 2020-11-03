@@ -6,8 +6,8 @@ metadata:
   labels:
     app.kubernetes.io/name: jx-pipelines-visualizer
     app.kubernetes.io/instance: "jx-pipelines-visualizer"
-    helm.sh/chart: jx-pipelines-visualizer-0.0.51
-    app.kubernetes.io/version: "0.0.51"
+    helm.sh/chart: jx-pipelines-visualizer-0.0.52
+    app.kubernetes.io/version: "0.0.52"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'cluster'
 roleRef:
