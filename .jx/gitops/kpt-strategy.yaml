@@ -1,0 +1,3 @@
+config:
+- relativePath: .lighthouse
+  strategy: force-delete-replace
