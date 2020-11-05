@@ -1,0 +1,36 @@
+# Source: acme/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-05T13:36:10Z"
+  deletionTimestamp: null
+  name: 'acme-0.0.3'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        chore: move to charts folder
+      sha: 1884b559d9ba1a61d0c57f38889813daeaddab85
+  gitCloneUrl: https://github.com/jenkins-x/acme.git
+  gitHttpUrl: https://github.com/jenkins-x/acme
+  gitOwner: jenkins-x
+  gitRepository: acme
+  name: 'acme'
+  releaseNotesURL: https://github.com/jenkins-x/acme/releases/tag/v0.0.3
+  version: v0.0.3
+status: {}
