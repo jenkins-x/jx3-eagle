@@ -1,8 +1,0 @@
-# Source: jx-kh-check/templates/jx-install-check.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: jx-install-sa
-  namespace: jx-git-operator
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'

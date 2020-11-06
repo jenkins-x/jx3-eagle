@@ -1,8 +1,0 @@
-# Source: kuberhealthy/templates/check-reaper.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: check-reaper
-  namespace: kuberhealthy
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'

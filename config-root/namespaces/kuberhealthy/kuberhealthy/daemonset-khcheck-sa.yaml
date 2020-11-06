@@ -1,8 +1,0 @@
-# Source: kuberhealthy/templates/khcheck-daemonset.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: daemonset-khcheck
-  namespace: kuberhealthy
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'

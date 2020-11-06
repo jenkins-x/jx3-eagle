@@ -1,8 +1,0 @@
-# Source: kuberhealthy/templates/serviceaccount.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: kuberhealthy
-  namespace: kuberhealthy
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
