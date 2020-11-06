@@ -77,30 +77,6 @@ releases:
   version: 1.0.0
   name: pusher-wave
   namespace: jx
-- chart: kuberhealthy/kuberhealthy
-  version: 2.2.0
-  name: kuberhealthy
-  namespace: kuberhealthy
-  values:
-  - versionStream/charts/kuberhealthy/kuberhealthy/values.yaml.gotmpl
-- chart: jx3/jx-kh-check
-  version: 0.0.32
-  name: jx-kh-check
-  namespace: kuberhealthy
-  values:
-  - versionStream/charts/jx3/jx-kh-check/values.yaml.gotmpl
-- chart: jx3/jx-kh-check
-  version: 0.0.32
-  name: health-checks-install
-  namespace: jx-git-operator
-  values:
-  - versionStream/charts/jx3/health-checks-install/values.yaml.gotmpl
-- chart: jx3/jx-kh-check
-  version: 0.0.32
-  name: health-checks-jx
-  namespace: jx
-  values:
-  - versionStream/charts/jx3/health-checks-jx/values.yaml.gotmpl
 - chart: jx3/jx-preview
   version: 0.0.116
   name: jx-preview
