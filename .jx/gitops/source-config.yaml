@@ -16,7 +16,6 @@ spec:
     - name: helm-annotate
     - name: helm3-image
     - name: istio
-    - name: jenkins-x-crds
     - name: jx-admin
     - name: jx-application
     - name: jx-apps
