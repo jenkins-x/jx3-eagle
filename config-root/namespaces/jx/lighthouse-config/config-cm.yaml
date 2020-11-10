@@ -32,7 +32,6 @@ data:
         jenkins-x/helm-annotate: true
         jenkins-x/helm3-image: true
         jenkins-x/istio: true
-        jenkins-x/jenkins-x-crds: true
         jenkins-x/jx-admin: true
         jenkins-x/jx-application: true
         jenkins-x/jx-apps: true
@@ -150,7 +149,6 @@ data:
         jenkins-x/helm-annotate: merge
         jenkins-x/helm3-image: merge
         jenkins-x/istio: merge
-        jenkins-x/jenkins-x-crds: merge
         jenkins-x/jx-admin: merge
         jenkins-x/jx-application: merge
         jenkins-x/jx-apps: merge
@@ -202,7 +200,6 @@ data:
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
         - jenkins-x/istio
-        - jenkins-x/jenkins-x-crds
         - jenkins-x/jx-admin
         - jenkins-x/jx-application
         - jenkins-x/jx-apps
@@ -266,7 +263,6 @@ data:
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
         - jenkins-x/istio
-        - jenkins-x/jenkins-x-crds
         - jenkins-x/jx-admin
         - jenkins-x/jx-application
         - jenkins-x/jx-apps
