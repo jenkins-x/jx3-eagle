@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        jenkins-x-charts/jenkins-x-crds: true
         jenkins-x-charts/jx-bdd: true
         jenkins-x-charts/pusher-wave: true
         jenkins-x-charts/vault-instance: true
@@ -123,6 +124,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         jenkins-x-apps/jx-app-gloo: merge
+        jenkins-x-charts/jenkins-x-crds: merge
         jenkins-x-charts/jx-bdd: merge
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
@@ -189,6 +191,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x-charts/jenkins-x-crds
         - jenkins-x-charts/jx-bdd
         - jenkins-x-charts/pusher-wave
         - jenkins-x-charts/vault-instance
@@ -252,6 +255,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x-charts/jenkins-x-crds
         - jenkins-x-charts/jx-bdd
         - jenkins-x-charts/pusher-wave
         - jenkins-x-charts/vault-instance
