@@ -60,10 +60,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jenkins-x-crds
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x/jx-admin
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -668,22 +664,6 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/jenkins-x-crds:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x/jx-admin:
       - approve
       - assign
@@ -1167,9 +1147,6 @@ data:
       trusted_org: jenkins-x-images
     - repos:
       - jenkins-x/istio
-      trusted_org: todo
-    - repos:
-      - jenkins-x/jenkins-x-crds
       trusted_org: todo
     - repos:
       - jenkins-x/jx-admin
