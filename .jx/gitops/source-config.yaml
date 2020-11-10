@@ -55,6 +55,7 @@ spec:
     providerKind: github
     providerName: github
     repositories:
+    - name: jenkins-x-crds
     - name: jx-bdd
     - name: pusher-wave
     - name: vault-instance
