@@ -107,5 +107,9 @@ releases:
   version: 0.0.11
   name: springdemo
   namespace: jx-staging
+- chart: dev/acme
+  version: 0.0.6
+  name: acme
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
