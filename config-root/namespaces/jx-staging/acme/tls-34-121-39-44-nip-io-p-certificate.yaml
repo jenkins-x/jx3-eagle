@@ -1,0 +1,16 @@
+# Source: acme/templates/cert-manager-prod-certificate.yaml
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: "tls-34-121-39-44-nip-io-p"
+  labels:
+    jenkins.io/letsencrypt-service: production
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-staging
+spec:
+  secretName: "tls-34-121-39-44-nip-io-p"
+  issuerRef:
+    name: letsencrypt-prod
+  commonName: "*.34.121.39.44.nip.io"
+  dnsNames:
+    - "*.34.121.39.44.nip.io"

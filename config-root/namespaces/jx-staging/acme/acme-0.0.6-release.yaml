@@ -1,0 +1,36 @@
+# Source: acme/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-11T11:04:34Z"
+  deletionTimestamp: null
+  name: 'acme-0.0.6'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        update jenkins-x (https://github.com/jenkins-x/jx3-pipeline-catalog) from master (005e78cf69b643862344397a635736a51dd1bd89) to master (90cab4adbe1a7036f419bb699d9d2358337ae393)
+      sha: d54cf4143e6a7ca652cc6d59d419f7672128f7da
+  gitCloneUrl: https://github.com/jenkins-x/acme.git
+  gitHttpUrl: https://github.com/jenkins-x/acme
+  gitOwner: jenkins-x
+  gitRepository: acme
+  name: 'acme'
+  releaseNotesURL: https://github.com/jenkins-x/acme/releases/tag/v0.0.6
+  version: v0.0.6
+status: {}
