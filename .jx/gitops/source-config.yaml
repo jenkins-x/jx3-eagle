@@ -56,6 +56,7 @@ spec:
     repositories:
     - name: jenkins-x-crds
     - name: jx-bdd
+    - name: local-external-secrets
     - name: pusher-wave
     - name: vault-instance
     scheduler: in-repo
