@@ -107,5 +107,9 @@ releases:
   version: 0.0.11
   name: springdemo
   namespace: jx-staging
+- chart: dev/local-external-secrets
+  version: 0.0.1
+  name: local-external-secrets
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
