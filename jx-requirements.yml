@@ -7,6 +7,7 @@ buildPacks:
     gitRef: master
     gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
 cluster:
+  chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
   clusterName: tf-jx-gentle-titmouse
   dockerRegistryOrg: jenkinsxio
   environmentGitOwner: todo
