@@ -1,0 +1,40 @@
+# Source: jenkins-x-crds/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-12T11:12:02Z"
+  deletionTimestamp: null
+  name: 'jenkins-x-crds-3.0.5'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        Revert "chore: add Scheduler crd back for v3"
+
+        now removed the scheduler from helmfile resources repo so not needed again
+
+        This reverts commit 02b922952ac76dec8fa94afecf7cf80462631e4d.
+      sha: 5b2e19ccbf6ef865ff295ebcc65493c6b57fa737
+  gitCloneUrl: https://github.com/jenkins-x-charts/jenkins-x-crds.git
+  gitHttpUrl: https://github.com/jenkins-x-charts/jenkins-x-crds
+  gitOwner: jenkins-x-charts
+  gitRepository: jenkins-x-crds
+  name: 'jenkins-x-crds'
+  releaseNotesURL: https://github.com/jenkins-x-charts/jenkins-x-crds/releases/tag/v3.0.5
+  version: v3.0.5
+status: {}
