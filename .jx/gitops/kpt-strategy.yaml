@@ -1,3 +1,5 @@
 config:
 - relativePath: .lighthouse
   strategy: force-delete-replace
+- relativePath: versionStream
+  strategy: force-delete-replace
