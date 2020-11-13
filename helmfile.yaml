@@ -19,8 +19,6 @@ repositories:
   url: https://storage.googleapis.com/jenkinsxio/charts
 - name: collector
   url: https://rawlingsj.github.io/jmc
-- name: dev
-  url: http://chartmuseum-jx.34.121.39.44.nip.io/
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.16
@@ -97,13 +95,5 @@ releases:
   values:
   - values/jx-build-controller-values.yaml.gotmpl
   - versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
-- chart: dev/nodedemo
-  version: 1.0.39
-  name: nodedemo
-  namespace: jx-staging
-- chart: dev/springdemo
-  version: 0.0.11
-  name: springdemo
-  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
