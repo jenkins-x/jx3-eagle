@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-13T15:25:29Z"
+  creationTimestamp: "2020-11-13T17:54:20Z"
   deletionTimestamp: null
-  name: 'nodedemo-1.0.40'
+  name: 'nodedemo-1.0.41'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.40
-      sha: f0f2edfd49775c3bd3cb2b713ab4f3d76306c9bd
+        release 1.0.41
+      sha: 6c6141c3e933a6986b513c4b3436602d4772082b
     - author:
         accountReference:
           - id: jenkins-x-bot
@@ -40,8 +40,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 1.0.40
-      sha: c520892fcd3abce839bd0ed30e416279b4eacc1f
+        release 1.0.41
+      sha: 78452ea7f2658cfb962c0caaefcf99913c49225c
     - author:
         accountReference:
           - id: jenkins-x-bot
@@ -57,12 +57,12 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: Jenkins X build pack
-      sha: bdf141350dd5913caf1f7b604b1bd53a13f27cc2
+      sha: 45466a8867317912203311ba37241ecd4f4231a2
   gitCloneUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo.git
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: nodedemo
   name: 'nodedemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.40
-  version: v1.0.40
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.41
+  version: v1.0.41
 status: {}
