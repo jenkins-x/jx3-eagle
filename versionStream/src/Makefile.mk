@@ -17,7 +17,7 @@ HELMFILE_TEMPLATE_FLAGS ?=
 # this option can be useful - uncomment the following line:
 #
 # KUBECTL_APPLY_FLAGS ?= --force
-KUBECTL_APPLY_FLAGS ?=
+KUBECTL_APPLY_FLAGS ?= --force
 
 .PHONY: clean
 clean:
