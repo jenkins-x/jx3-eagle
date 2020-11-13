@@ -4,7 +4,6 @@ jxRequirements:
     namespaceSubDomain: "."
     tls:
       enabled: true
-
 enabled: true
 serviceaccount:
   enabled: true
