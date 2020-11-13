@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: nodedemo
   labels:
-    chart: "nodedemo-1.0.40"
+    chart: "nodedemo-1.0.41"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
