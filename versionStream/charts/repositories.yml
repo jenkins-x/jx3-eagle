@@ -26,16 +26,13 @@ repositories:
   - http://chartmuseum.jenkins-x.io
 - prefix: jenkinsci
   urls:
-  -  https://charts.jenkins.io
+  - https://charts.jenkins.io
 - prefix: jetstack
   urls:
   - https://charts.jetstack.io
 - prefix: jx3
   urls:
   - https://storage.googleapis.com/jenkinsxio/charts
-- prefix: jx-labs
-  urls:
-  - https://storage.googleapis.com/jenkinsxio-labs-private/charts
 - prefix: presslabs
   urls:
   - https://presslabs.github.io/charts
