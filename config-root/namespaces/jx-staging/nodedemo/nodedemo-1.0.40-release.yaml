@@ -1,0 +1,68 @@
+# Source: nodedemo/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-13T15:25:29Z"
+  deletionTimestamp: null
+  name: 'nodedemo-1.0.40'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jenkins-x-bot
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 1.0.40
+      sha: f0f2edfd49775c3bd3cb2b713ab4f3d76306c9bd
+    - author:
+        accountReference:
+          - id: jenkins-x-bot
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 1.0.40
+      sha: c520892fcd3abce839bd0ed30e416279b4eacc1f
+    - author:
+        accountReference:
+          - id: jenkins-x-bot
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: Jenkins X build pack
+      sha: bdf141350dd5913caf1f7b604b1bd53a13f27cc2
+  gitCloneUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo.git
+  gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo
+  gitOwner: jenkins-x-labs-bdd-tests
+  gitRepository: nodedemo
+  name: 'nodedemo'
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.40
+  version: v1.0.40
+status: {}
