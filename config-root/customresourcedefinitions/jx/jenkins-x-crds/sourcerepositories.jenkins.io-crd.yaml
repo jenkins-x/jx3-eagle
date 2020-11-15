@@ -1,19 +1,19 @@
-# Source: jenkins-x-crds/templates/pipelineactivities-crd.yaml
+# Source: jenkins-x-crds/templates/sourcerepositories-crd.yaml
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: pipelineactivities.jenkins.io
+  name: sourcerepositories.jenkins.io
   labels:
-    gitops.jenkins-x.io/pipeline: 'cluster'
+    gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
   additionalPrinterColumns:
-    - JSONPath: .spec.gitUrl
-      description: The URL of the Git repository
-      name: Git URL
+    - JSONPath: .spec.url
+      description: The URL of the git repository
+      name: URL
       type: string
-    - JSONPath: .spec.status
-      description: The status of the pipeline
-      name: Status
+    - JSONPath: .spec.description
+      description: A description of the source code repository - non-functional user-data
+      name: Description
       type: string
   conversion:
     strategy: None
@@ -21,18 +21,18 @@ spec:
   names:
     categories:
       - all
-    kind: PipelineActivity
-    listKind: PipelineActivityList
-    plural: pipelineactivities
+    kind: SourceRepository
+    listKind: SourceRepositoryList
+    plural: sourcerepositories
     shortNames:
-      - activity
-      - act
-      - pa
-    singular: pipelineactivity
+      - sourcerepo
+      - srcrepo
+      - sr
+    singular: sourcerepository
   scope: Namespaced
   validation:
     openAPIV3Schema:
-      description: PipelineActivity represents pipeline activity for a particular run of a pipeline
+      description: SourceRepository is the metadata for an Application/Project/SourceRepository
       properties:
         apiVersion:
           description: 'APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources'
@@ -232,265 +232,49 @@ spec:
               type: string
           type: object
         spec:
-          description: PipelineActivitySpec is the specification of the pipeline activity
+          description: SourceRepositorySpec provides details of the metadata for an App
           properties:
-            attachments:
-              items:
-                properties:
-                  name:
-                    type: string
-                  urls:
-                    items:
-                      type: string
-                    type: array
-                type: object
-              type: array
-            author:
+            description:
               type: string
-            baseSHA:
+            httpCloneURL:
+              description: HTTPCloneURL is the git URL to clone this repository using HTTP/HTTPS
               type: string
-            batchPipelineActivity:
-              description: BatchPipelineActivity contains information about a batch build, used by both the batch build and its comprising PRs for linking them together
+            org:
+              type: string
+            provider:
+              description: Provider stores the URL of the git provider such as https://github.com
+              type: string
+            providerKind:
+              description: ProviderKind is the kind of provider (github / bitbucketcloud / bitbucketserver etc)
+              type: string
+            providerName:
+              description: ProviderName is a logical name for the provider without any URL scheme which can be used in a label selector
+              type: string
+            repo:
+              type: string
+            scheduler:
               properties:
-                batchBranchName:
+                apiVersion:
+                  description: API version of the referent.
                   type: string
-                batchBuildNumber:
+                kind:
+                  description: 'Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds'
                   type: string
-                pullRequestInfo:
-                  items:
-                    description: PullRequestInfo contains information about a PR included in a batch, like its PR number, the last build number, and SHA
-                    properties:
-                      lastBuildNumberForCommit:
-                        description: LastBuildNumberForCommit is the number of the last successful build of this PR outside of a batch
-                        type: string
-                      lastBuildSHA:
-                        description: LastBuildSHA is the commit SHA in the last successful build of this PR outside of a batch.
-                        type: string
-                      pullRequestNumber:
-                        type: string
-                    type: object
-                  type: array
+                name:
+                  description: 'Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names'
+                  type: string
+                uid:
+                  description: 'UID of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#uids'
+                  type: string
+              required:
+                - kind
+                - name
               type: object
-            build:
+            sshCloneURL:
+              description: SSHCloneURL is the git URL to clone this repository using SSH
               type: string
-            buildLogsUrl:
-              type: string
-            buildUrl:
-              type: string
-            completedTimestamp:
-              description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-              format: date-time
-              type: string
-            context:
-              type: string
-            gitBranch:
-              type: string
-            gitOwner:
-              type: string
-            gitRepository:
-              type: string
-            gitUrl:
-              type: string
-            lastCommitMessage:
-              type: string
-            lastCommitSHA:
-              type: string
-            lastCommitURL:
-              type: string
-            pipeline:
-              type: string
-            postExtensions:
-              items:
-                description: ExtensionExecution is an executable instance of an extension which can be attached into a pipeline for later execution. It differs from an Extension as it cannot have children and parameters have been resolved to environment variables
-                properties:
-                  description:
-                    type: string
-                  environmentVariables:
-                    items:
-                      properties:
-                        name:
-                          type: string
-                        value:
-                          type: string
-                      type: object
-                    type: array
-                  given:
-                    type: string
-                  name:
-                    type: string
-                  namespace:
-                    type: string
-                  script:
-                    type: string
-                  uuid:
-                    type: string
-                type: object
-              type: array
-            pullTitle:
-              type: string
-            releaseNotesURL:
-              type: string
-            startedTimestamp:
-              description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-              format: date-time
-              type: string
-            status:
-              type: string
-            steps:
-              items:
-                description: PipelineActivityStep represents a step in a pipeline activity
-                properties:
-                  kind:
-                    type: string
-                  preview:
-                    description: PreviewActivityStep is the step of creating a preview environment as part of a Pull Request pipeline
-                    properties:
-                      applicationURL:
-                        type: string
-                      completedTimestamp:
-                        description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                        format: date-time
-                        type: string
-                      description:
-                        type: string
-                      environment:
-                        type: string
-                      name:
-                        type: string
-                      pullRequestURL:
-                        type: string
-                      startedTimestamp:
-                        description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                        format: date-time
-                        type: string
-                      status:
-                        type: string
-                    type: object
-                  promote:
-                    description: PromoteActivityStep is the step of promoting a version of an application to an environment
-                    properties:
-                      applicationURL:
-                        type: string
-                      completedTimestamp:
-                        description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                        format: date-time
-                        type: string
-                      description:
-                        type: string
-                      environment:
-                        type: string
-                      name:
-                        type: string
-                      pullRequest:
-                        description: PromotePullRequestStep is the step for promoting a version to an environment by raising a Pull Request on the git repository of the environment
-                        properties:
-                          completedTimestamp:
-                            description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                            format: date-time
-                            type: string
-                          description:
-                            type: string
-                          mergeCommitSHA:
-                            type: string
-                          name:
-                            type: string
-                          pullRequestURL:
-                            type: string
-                          startedTimestamp:
-                            description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                            format: date-time
-                            type: string
-                          status:
-                            type: string
-                        type: object
-                      startedTimestamp:
-                        description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                        format: date-time
-                        type: string
-                      status:
-                        type: string
-                      update:
-                        description: PromoteUpdateStep is the step for updating a promotion after the Pull Request merges to master
-                        properties:
-                          completedTimestamp:
-                            description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                            format: date-time
-                            type: string
-                          description:
-                            type: string
-                          name:
-                            type: string
-                          startedTimestamp:
-                            description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                            format: date-time
-                            type: string
-                          status:
-                            type: string
-                          statuses:
-                            items:
-                              description: GitStatus the status of a git commit in terms of CI/CD
-                              properties:
-                                status:
-                                  type: string
-                                url:
-                                  type: string
-                              type: object
-                            type: array
-                        type: object
-                    type: object
-                  stage:
-                    description: StageActivityStep represents a stage of zero to more sub steps in a jenkins pipeline
-                    properties:
-                      completedTimestamp:
-                        description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                        format: date-time
-                        type: string
-                      description:
-                        type: string
-                      name:
-                        type: string
-                      startedTimestamp:
-                        description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                        format: date-time
-                        type: string
-                      status:
-                        type: string
-                      steps:
-                        items:
-                          description: CoreActivityStep is a base step included in Stages of a pipeline or other kinds of step
-                          properties:
-                            completedTimestamp:
-                              description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                              format: date-time
-                              type: string
-                            description:
-                              type: string
-                            name:
-                              type: string
-                            startedTimestamp:
-                              description: Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
-                              format: date-time
-                              type: string
-                            status:
-                              type: string
-                          type: object
-                        type: array
-                    type: object
-                type: object
-              type: array
-            version:
-              type: string
-            workflow:
-              type: string
-            workflowMessage:
-              type: string
-            workflowStatus:
-              type: string
-          type: object
-        status:
-          description: PipelineActivityStatus is the status for an Environment resource
-          properties:
-            version:
+            url:
+              description: URL is the web URL of the project page
               type: string
           type: object
       type: object
@@ -503,16 +287,16 @@ status:
   acceptedNames:
     categories:
       - all
-    kind: PipelineActivity
-    listKind: PipelineActivityList
-    plural: pipelineactivities
+    kind: SourceRepository
+    listKind: SourceRepositoryList
+    plural: sourcerepositories
     shortNames:
-      - activity
-      - act
-      - pa
-    singular: pipelineactivity
+      - sourcerepo
+      - srcrepo
+      - sr
+    singular: sourcerepository
   conditions:
-    - lastTransitionTime: "2020-03-30T19:10:44Z"
+    - lastTransitionTime: "2020-03-30T19:10:45Z"
       message: no conflicts found
       reason: NoConflicts
       status: "True"
