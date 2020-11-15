@@ -1,5 +1,5 @@
-# Source: tekton-pipeline/templates/images.caching.internal.knative.dev-crd.yaml
-# Copyright 2018 The Knative Authors
+# Source: tekton-pipeline/templates/conditions.tekton.dev-crd.yaml
+# Copyright 2019 The Tekton Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,24 +16,24 @@
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: images.caching.internal.knative.dev
+  name: conditions.tekton.dev
   labels:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
-    knative.dev/crd-install: "true"
-    gitops.jenkins-x.io/pipeline: 'cluster'
+    pipeline.tekton.dev/release: "v0.16.3"
+    version: "v0.16.3"
+    gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
-  group: caching.internal.knative.dev
-  version: v1alpha1
+  group: tekton.dev
   names:
-    kind: Image
-    plural: images
-    singular: image
+    kind: Condition
+    plural: conditions
     categories:
-      - knative-internal
-      - caching
-    shortNames:
-      - img
+      - tekton
+      - tekton-pipelines
   scope: Namespaced
+  # Opt into the status subresource so metadata.generation
+  # starts to increment
   subresources:
     status: {}
+  version: v1alpha1

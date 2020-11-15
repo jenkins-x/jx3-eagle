@@ -1,5 +1,5 @@
-# Source: tekton-pipeline/templates/runs.tekton.dev-crd.yaml
-# Copyright 2020 The Tekton Authors
+# Source: tekton-pipeline/templates/taskruns.tekton.dev-crd.yaml
+# Copyright 2019 The Tekton Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: runs.tekton.dev
+  name: taskruns.tekton.dev
   labels:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
     pipeline.tekton.dev/release: "v0.16.3"
     version: "v0.16.3"
-    gitops.jenkins-x.io/pipeline: 'cluster'
+    gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
   group: tekton.dev
   preserveUnknownFields: false
@@ -40,13 +40,19 @@ spec:
   versions:
     - name: v1alpha1
       served: true
+      storage: false
+    - name: v1beta1
+      served: true
       storage: true
   names:
-    kind: Run
-    plural: runs
+    kind: TaskRun
+    plural: taskruns
     categories:
       - tekton
       - tekton-pipelines
+    shortNames:
+      - tr
+      - trs
   scope: Namespaced
   additionalPrinterColumns:
     - name: Succeeded

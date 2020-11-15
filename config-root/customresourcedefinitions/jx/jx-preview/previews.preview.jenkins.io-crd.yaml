@@ -4,7 +4,7 @@ kind: CustomResourceDefinition
 metadata:
   name: previews.preview.jenkins.io
   labels:
-    gitops.jenkins-x.io/pipeline: 'cluster'
+    gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
   group: preview.jenkins.io
   versions:

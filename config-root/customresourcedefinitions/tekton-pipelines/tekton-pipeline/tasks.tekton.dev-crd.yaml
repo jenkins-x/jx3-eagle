@@ -22,7 +22,7 @@ metadata:
     app.kubernetes.io/part-of: tekton-pipelines
     pipeline.tekton.dev/release: "v0.16.3"
     version: "v0.16.3"
-    gitops.jenkins-x.io/pipeline: 'cluster'
+    gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
   group: tekton.dev
   preserveUnknownFields: false
