@@ -1,0 +1,12 @@
+# Source: bot/templates/plugins-bot.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    iam.gke.io/gcp-service-account: jr-test-health-module-tekton@jenkins-x-labs-bdd.iam.gserviceaccount.com
+  name: plugins-bot
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+secrets:
+  - name: plugins-git
