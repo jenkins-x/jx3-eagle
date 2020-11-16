@@ -101,5 +101,10 @@ releases:
   version: 1.0.41
   name: nodedemo
   namespace: jx-staging
+- chart: ./charts/bots
+  name: bots
+  namespace: jx
+  values:
+  - values/bots-values.yaml.gotmpl
 templates: {}
 missingFileHandler: ""

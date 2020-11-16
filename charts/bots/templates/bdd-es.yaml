@@ -1,0 +1,35 @@
+apiVersion: kubernetes-client.io/v1
+kind: ExternalSecret
+metadata:
+  labels:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/instance: default
+    app.kubernetes.io/part-of: tekton-pipelines
+    gitops.jenkins-x.io/pipeline: namespaces
+  name: bbd-git
+spec:
+  backendType: gcpSecretsManager
+  data:
+  - key: jx-infra-bbd-user
+    name: password
+    property: token
+    version: latest
+  - key: jx-infra-bbd-token
+    name: username
+    property: username
+    version: latest
+  projectId: {{ .Values.projectID }}
+  template:
+    metadata:
+      annotations:
+        secret.jenkins-x.io/schema-object: '{"name":"tekton-git","properties":[{"name":"username","question":"the
+          bdd pipeline username","help":"the user name used by bdd pipelines running in Jenkins
+          X"},{"name":"password","question":"the
+          bdd pipeline token or password","help":"the bdd token or password used by pipelines
+          running in Jenkins X"}],"mandatory":true}'
+        tekton.dev/git-0: https://github.com
+      labels:
+        app.kubernetes.io/component: controller
+        app.kubernetes.io/instance: default
+        app.kubernetes.io/part-of: tekton-pipelines
+    type: kubernetes.io/basic-auth

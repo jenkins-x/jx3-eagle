@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    iam.gke.io/gcp-service-account: jr-test-health-module-tekton@jenkins-x-labs-bdd.iam.gserviceaccount.com
+  name: vs-bot
+secrets:
+- name: vs-git
