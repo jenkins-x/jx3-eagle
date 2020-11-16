@@ -1,0 +1,12 @@
+# Source: bot/templates/bdd-bot.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    iam.gke.io/gcp-service-account: jr-test-health-module-tekton@jenkins-x-labs-bdd.iam.gserviceaccount.com
+  name: bdd-bot
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+secrets:
+  - name: bdd-git
