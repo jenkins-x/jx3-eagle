@@ -107,7 +107,7 @@ releases:
   values:
   - values/bots-values.yaml.gotmpl
 - chart: dev/godemo
-  version: 0.0.2
+  version: 0.0.3
   name: godemo
   namespace: jx-staging
 - chart: dev/springdemo
