@@ -106,5 +106,9 @@ releases:
   namespace: jx
   values:
   - values/bots-values.yaml.gotmpl
+- chart: dev/godemo
+  version: 0.0.2
+  name: godemo
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
