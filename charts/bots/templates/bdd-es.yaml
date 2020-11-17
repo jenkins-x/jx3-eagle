@@ -6,15 +6,15 @@ metadata:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
     gitops.jenkins-x.io/pipeline: namespaces
-  name: bbd-git
+  name: bdd-git
 spec:
   backendType: gcpSecretsManager
   data:
-  - key: jx-infra-bbd-user
+  - key: jx-infra-bdd-user
     name: password
     property: token
     version: latest
-  - key: jx-infra-bbd-token
+  - key: jx-infra-bdd-token
     name: username
     property: username
     version: latest
