@@ -36,7 +36,7 @@ data:
       "errorOutputPaths": ["stderr"],
       "encoding": "json",
       "encoderConfig": {
-        "timeKey": "",
+        "timeKey": "ts",
         "levelKey": "level",
         "nameKey": "logger",
         "callerKey": "caller",
@@ -44,7 +44,7 @@ data:
         "stacktraceKey": "stacktrace",
         "lineEnding": "",
         "levelEncoder": "",
-        "timeEncoder": "",
+        "timeEncoder": "iso8601",
         "durationEncoder": "",
         "callerEncoder": ""
       }

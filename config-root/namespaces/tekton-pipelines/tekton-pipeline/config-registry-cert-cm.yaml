@@ -1,5 +1,5 @@
-# Source: tekton-pipeline/templates/webhook-certs-secret.yaml
-# Copyright 2020 The Tekton Authors
+# Source: tekton-pipeline/templates/config-registry-cert-cm.yaml
+# Copyright 2020 Tekton Authors LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,14 +14,14 @@
 # limitations under the License.
 
 apiVersion: v1
-kind: Secret
+kind: ConfigMap
 metadata:
-  name: webhook-certs
+  name: config-registry-cert
   namespace: tekton-pipelines
   labels:
-    app.kubernetes.io/component: webhook
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
-    pipeline.tekton.dev/release: "v0.18.0"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-# The data is populated at install time.
+# data:
+#  # Registry's self-signed certificate
+#  cert: |

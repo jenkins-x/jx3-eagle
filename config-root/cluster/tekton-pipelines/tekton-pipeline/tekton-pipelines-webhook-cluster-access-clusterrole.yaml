@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/part-of: tekton-pipelines
     gitops.jenkins-x.io/pipeline: 'cluster'
 rules:
-  - # The webhook needs to be able to list and update customresourcedefinitions,
-    # mainly to update the webhook certificates.
-    apiGroups: ["apiextensions.k8s.io"]
+  # The webhook needs to be able to list and update customresourcedefinitions,
+  # mainly to update the webhook certificates.
+  - apiGroups: ["apiextensions.k8s.io"]
     resources: ["customresourcedefinitions", "customresourcedefinitions/status"]
     verbs: ["get", "list", "update", "patch", "watch"]
   - apiGroups: ["admissionregistration.k8s.io"]
