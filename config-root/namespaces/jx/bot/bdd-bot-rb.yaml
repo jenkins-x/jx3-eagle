@@ -1,0 +1,16 @@
+# Source: bot/templates/bdd-bot-rb.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: bdd-bot
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: bdd-bot
+subjects:
+  - kind: ServiceAccount
+    name: bdd-bot
+    namespace: jx
