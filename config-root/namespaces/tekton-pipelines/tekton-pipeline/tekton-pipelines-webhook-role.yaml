@@ -13,18 +13,18 @@ rules:
   - apiGroups: [""]
     resources: ["configmaps"]
     verbs: ["list", "watch"]
-  - # The webhook needs access to these configmaps for logging information.
-    apiGroups: [""]
+  # The webhook needs access to these configmaps for logging information.
+  - apiGroups: [""]
     resources: ["configmaps"]
     verbs: ["get"]
     resourceNames: ["config-logging", "config-observability", "config-leader-election"]
   - apiGroups: [""]
     resources: ["secrets"]
     verbs: ["list", "watch"]
-  - # The webhook daemon makes a reconciliation loop on webhook-certs. Whenever
-    # the secret changes it updates the webhook configurations with the certificates
-    # stored in the secret.
-    apiGroups: [""]
+  # The webhook daemon makes a reconciliation loop on webhook-certs. Whenever
+  # the secret changes it updates the webhook configurations with the certificates
+  # stored in the secret.
+  - apiGroups: [""]
     resources: ["secrets"]
     verbs: ["get", "update"]
     resourceNames: ["webhook-certs"]

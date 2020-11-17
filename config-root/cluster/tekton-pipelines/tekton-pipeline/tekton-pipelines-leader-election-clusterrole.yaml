@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/part-of: tekton-pipelines
     gitops.jenkins-x.io/pipeline: 'cluster'
 rules:
-  - # We uses leases for leaderelection
-    apiGroups: ["coordination.k8s.io"]
+  # We uses leases for leaderelection
+  - apiGroups: ["coordination.k8s.io"]
     resources: ["leases"]
     verbs: ["get", "list", "create", "update", "delete", "patch", "watch"]
