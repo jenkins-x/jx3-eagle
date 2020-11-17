@@ -110,5 +110,9 @@ releases:
   version: 0.0.2
   name: godemo
   namespace: jx-staging
+- chart: dev/springdemo
+  version: 0.0.20
+  name: springdemo
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
