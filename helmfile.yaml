@@ -8,7 +8,7 @@ repositories:
 - name: jenkins-x
   url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
 - name: external-secrets
-  url: https://godaddy.github.io/kubernetes-external-secrets
+  url: https://external-secrets.github.io/kubernetes-external-secrets
 - name: stable
   url: https://charts.helm.sh/stable
 - name: cdf
