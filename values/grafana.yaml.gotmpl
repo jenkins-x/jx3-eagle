@@ -5,7 +5,7 @@ ingress:
 
 serviceAccount:
   annotations:
-    iam.gke.io/gcp-service-account: grafana@jx-labs-infra.iam.gserviceaccount.com
+    iam.gke.io/gcp-service-account: {{ .Values.jxRequirements.cluster.clusterName }}-grafana@{{ .Values.jxRequirements.cluster.project }}.iam.gserviceaccount.com
 
 
 extraContainers: |
