@@ -7,10 +7,17 @@ rules:
   - jenkins.io
   resources:
   - environments
+  verbs:
+  - get
+  - list
+- apiGroups:
+  - jenkins.io
+  resources:
   - pipelineactivities
   verbs:
   - get
   - list
+  - create
 - apiGroups:
   - jxtest.jenkins.io
   resources:
