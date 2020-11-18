@@ -1,0 +1,27 @@
+ingress:
+  enabled: true
+  hosts:
+    - grafana{{ .Values.jxRequirements.ingress.namespaceSubDomain }}{{ .Values.jxRequirements.ingress.domain }}
+
+serviceAccount:
+  annotations:
+    iam.gke.io/gcp-service-account: grafana@jx-labs-infra.iam.gserviceaccount.com
+
+
+extraContainers: |
+  - name: cloudsql-proxy
+    image: gcr.io/cloudsql-docker/gce-proxy:1.17
+    command:
+      - "/cloud_sql_proxy"
+      - "-instances=jx-labs-infra:europe-west2:jx-activity=tcp:5432"
+
+persistence:
+  enabled: true
+
+grafana.ini:
+  server:
+    domain: grafana{{ .Values.jxRequirements.ingress.namespaceSubDomain }}{{ .Values.jxRequirements.ingress.domain }}
+    root_url: "http://grafana{{ .Values.jxRequirements.ingress.namespaceSubDomain }}{{ .Values.jxRequirements.ingress.domain }}"
+    serve_from_sub_path: true
+
+deploymentStrategy: { "type": "Recreate" }

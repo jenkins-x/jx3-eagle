@@ -21,6 +21,8 @@ repositories:
   url: https://rawlingsj.github.io/jmc
 - name: dev
   url: http://chartmuseum-jx.34.121.39.44.nip.io/
+- name: grafana
+  url: https://grafana.github.io/helm-charts
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.16
@@ -114,5 +116,10 @@ releases:
   version: 0.0.20
   name: springdemo
   namespace: jx-staging
+- chart: grafana/grafana
+  name: grafana
+  namespace: jx
+  values:
+  - values/grafana.yaml.gotmpl
 templates: {}
 missingFileHandler: ""
