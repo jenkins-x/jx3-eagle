@@ -10,6 +10,6 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    iam.gke.io/gcp-service-account: grafana@jx-labs-infra.iam.gserviceaccount.com
+    iam.gke.io/gcp-service-account: tf-jx-gentle-titmouse-grafana@jx-labs-infra.iam.gserviceaccount.com
   name: grafana
   namespace: jx
