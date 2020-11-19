@@ -53,11 +53,11 @@ environments:
   key: production
 gitops: true
 ingress:
-  domain: dev.jenkins-x.me\
+  domain: dev.jenkins-x.me
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
-    email: "rawlingsj80@gmail.com"
+    email: rawlingsj80@gmail.com
     enabled: true
     production: true
 kaniko: true

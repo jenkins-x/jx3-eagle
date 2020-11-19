@@ -15,4 +15,8 @@ spec:
           - backend:
               serviceName: godemo
               servicePort: 80
-      host: godemo-jx-staging.34.121.39.44.nip.io
+      host: godemo-jx-staging.dev.jenkins-x.me
+  tls:
+    - hosts:
+        - godemo-jx-staging.dev.jenkins-x.me
+      secretName: "tls-dev-jenkins-x-me-p"

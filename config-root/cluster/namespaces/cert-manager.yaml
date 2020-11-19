@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  labels:
+    name: cert-manager
+    gitops.jenkins-x.io/pipeline: 'cluster'
+    team: 'jx'
+  name: cert-manager
+spec: {}
+status: {}

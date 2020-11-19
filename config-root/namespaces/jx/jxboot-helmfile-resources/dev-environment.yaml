@@ -76,12 +76,12 @@ spec:
         key: production
       gitops: true
       ingress:
-        domain: 34.121.39.44.nip.io
+        domain: dev.jenkins-x.me
         externalDNS: false
         namespaceSubDomain: -jx.
         tls:
-          email: ""
-          enabled: false
+          email: rawlingsj80@gmail.com
+          enabled: true
           production: true
       kaniko: true
       pipelineUser:

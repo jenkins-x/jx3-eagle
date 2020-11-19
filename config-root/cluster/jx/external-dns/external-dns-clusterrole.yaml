@@ -1,0 +1,55 @@
+# Source: external-dns/templates/clusterrole.yaml
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRole
+metadata:
+  name: external-dns
+  labels:
+    app.kubernetes.io/name: external-dns
+    helm.sh/chart: external-dns-3.2.0
+    app.kubernetes.io/instance: external-dns
+    app.kubernetes.io/managed-by: Helm
+    gitops.jenkins-x.io/pipeline: 'cluster'
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - services
+      - pods
+      - nodes
+      - endpoints
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - extensions
+      - "networking.k8s.io"
+    resources:
+      - ingresses
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - networking.istio.io
+    resources:
+      - gateways
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - zalando.org
+    resources:
+      - routegroups
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - zalando.org
+    resources:
+      - routegroups/status
+    verbs:
+      - patch
+      - update

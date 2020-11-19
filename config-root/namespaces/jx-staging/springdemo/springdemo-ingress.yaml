@@ -15,4 +15,8 @@ spec:
           - backend:
               serviceName: springdemo
               servicePort: 80
-      host: springdemo-jx-staging.34.121.39.44.nip.io
+      host: springdemo-jx-staging.dev.jenkins-x.me
+  tls:
+    - hosts:
+        - springdemo-jx-staging.dev.jenkins-x.me
+      secretName: "tls-dev-jenkins-x-me-p"

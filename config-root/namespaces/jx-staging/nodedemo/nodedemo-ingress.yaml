@@ -15,4 +15,8 @@ spec:
           - backend:
               serviceName: nodedemo
               servicePort: 80
-      host: nodedemo-jx-staging.34.121.39.44.nip.io
+      host: nodedemo-jx-staging.dev.jenkins-x.me
+  tls:
+    - hosts:
+        - nodedemo-jx-staging.dev.jenkins-x.me
+      secretName: "tls-dev-jenkins-x-me-p"

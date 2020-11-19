@@ -54,7 +54,7 @@ jxRequirements:
     key: production
   gitops: true
   ingress:
-    domain: dev.jenkins-x.me\
+    domain: dev.jenkins-x.me
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:

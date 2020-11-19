@@ -13,7 +13,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   rules:
-    - host: grafana-jx.34.121.39.44.nip.io
+    - host: grafana-jx.dev.jenkins-x.me
       http:
         paths:
           - path: /

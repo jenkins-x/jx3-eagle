@@ -1,0 +1,24 @@
+# Source: acme/templates/cert-manager-prod-clusterissuer.yaml
+apiVersion: cert-manager.io/v1alpha2
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+  labels:
+    gitops.jenkins-x.io/pipeline: 'cluster'
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: "rawlingsj80@gmail.com"
+    # Name of a secret used to store the ACME account private key
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    solvers:
+      - selector:
+          dnsNames:
+            - "*.dev.jenkins-x.me"
+            - "dev.jenkins-x.me"
+        # ACME DNS-01 provider configurations
+        dns01:
+          clouddns:
+            # The project in which to update the DNS zone
+            project: "jx-labs-infra"

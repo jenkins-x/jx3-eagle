@@ -1,0 +1,15 @@
+# Source: cert-manager/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: cert-manager
+  namespace: "cert-manager"
+  annotations:
+    iam.gke.io/gcp-service-account: tf-jx-gentle-titmouse-dn@jx-labs-infra.iam.gserviceaccount.com
+  labels:
+    app: cert-manager
+    app.kubernetes.io/name: cert-manager
+    app.kubernetes.io/instance: cert-manager
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: cert-manager-v0.13.1
+    gitops.jenkins-x.io/pipeline: 'namespaces'

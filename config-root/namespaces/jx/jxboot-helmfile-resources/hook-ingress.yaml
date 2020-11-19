@@ -16,4 +16,8 @@ spec:
               serviceName: hook
               servicePort: 80
             path: "/"
-      host: hook-jx.34.121.39.44.nip.io
+      host: hook-jx.dev.jenkins-x.me
+  tls:
+    - hosts:
+        - hook-jx.dev.jenkins-x.me
+      secretName: "tls-dev-jenkins-x-me-p"

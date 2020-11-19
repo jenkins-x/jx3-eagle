@@ -25,6 +25,6 @@ data:
     plugins = /var/lib/grafana/plugins
     provisioning = /etc/grafana/provisioning
     [server]
-    domain = grafana-jx.34.121.39.44.nip.io
-    root_url = http://grafana-jx.34.121.39.44.nip.io
+    domain = grafana-jx.dev.jenkins-x.me
+    root_url = http://grafana-jx.dev.jenkins-x.me
     serve_from_sub_path = true
