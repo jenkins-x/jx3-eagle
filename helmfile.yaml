@@ -20,7 +20,7 @@ repositories:
 - name: collector
   url: https://rawlingsj.github.io/jmc
 - name: dev
-  url: http://chartmuseum-jx.34.121.39.44.nip.io/
+  url: https://chartmuseum-jx.dev.jenkins-x.me
 - name: grafana
   url: https://grafana.github.io/helm-charts
 - name: bitnami
