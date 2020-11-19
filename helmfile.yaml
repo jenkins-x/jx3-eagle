@@ -23,6 +23,10 @@ repositories:
   url: http://chartmuseum-jx.34.121.39.44.nip.io/
 - name: grafana
   url: https://grafana.github.io/helm-charts
+- name: bitnami
+  url: https://charts.bitnami.com/bitnami
+- name: jetstack
+  url: https://charts.jetstack.io
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.16
@@ -121,5 +125,35 @@ releases:
   namespace: jx
   values:
   - values/grafana.yaml.gotmpl
+- chart: bitnami/external-dns
+  version: 3.2.0
+  name: external-dns
+  namespace: jx
+  values:
+  - versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
+- chart: jetstack/cert-manager
+  version: v0.13.1
+  name: cert-manager
+  namespace: cert-manager
+  values:
+  - versionStream/charts/jetstack/cert-manager/values.yaml.gotmpl
+- chart: jx3/acme
+  version: 0.0.13
+  name: acme-jx
+  namespace: jx
+  values:
+  - versionStream/charts/jx3/acme-jx/values.yaml.gotmpl
+- chart: jx3/acme
+  version: 0.0.13
+  name: tls-jx-staging
+  namespace: jx-staging
+  values:
+  - versionStream/charts/jx3/acme/values.yaml.gotmpl
+- chart: jx3/acme
+  version: 0.0.13
+  name: tls-jx-production
+  namespace: jx-production
+  values:
+  - versionStream/charts/jx3/acme/values.yaml.gotmpl
 templates: {}
 missingFileHandler: ""
