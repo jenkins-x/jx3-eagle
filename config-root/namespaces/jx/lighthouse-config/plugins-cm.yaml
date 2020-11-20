@@ -84,6 +84,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/jx-docs
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/jx-git-operator
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -764,6 +768,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/jx-docs:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/jx-git-operator:
       - approve
       - assign
@@ -1185,6 +1205,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jx-cli
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jx-docs
       trusted_org: todo
     - repos:
       - jenkins-x/jx-git-operator
