@@ -1,7 +1,7 @@
 # Source: cert-manager/templates/cainjector-rbac.yaml
 # grant cert-manager permission to manage the leaderelection configmap in the
 # leader election namespace
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: cert-manager-cainjector:leaderelection
@@ -11,7 +11,8 @@ metadata:
     app.kubernetes.io/name: cainjector
     app.kubernetes.io/instance: cert-manager
     app.kubernetes.io/managed-by: Helm
-    helm.sh/chart: cert-manager-v0.13.1
+    app.kubernetes.io/component: "cainjector"
+    helm.sh/chart: cert-manager-v1.0.4
     gitops.jenkins-x.io/pipeline: 'namespaces'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
