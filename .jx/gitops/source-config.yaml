@@ -75,6 +75,7 @@ spec:
     - name: jx-changelog
     - name: jx-health
     - name: jx-kh-check
+    - name: jx-mink
     - name: jx-release-version
     - name: jx-scm
     - name: jx-stash
