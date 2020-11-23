@@ -188,6 +188,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-mink
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/jx-release-version
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -449,6 +453,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-kh-check:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-mink:
       - approve
       - assign
       - blunderbuss
@@ -1283,6 +1303,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-kh-check
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-mink
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-release-version

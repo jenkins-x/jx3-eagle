@@ -19,6 +19,7 @@ data:
         jenkins-x-plugins/jx-changelog: true
         jenkins-x-plugins/jx-health: true
         jenkins-x-plugins/jx-kh-check: true
+        jenkins-x-plugins/jx-mink: true
         jenkins-x-plugins/jx-release-version: true
         jenkins-x-plugins/jx-scm: true
         jenkins-x-plugins/jx-stash: true
@@ -138,6 +139,7 @@ data:
         jenkins-x-plugins/jx-changelog: merge
         jenkins-x-plugins/jx-health: merge
         jenkins-x-plugins/jx-kh-check: merge
+        jenkins-x-plugins/jx-mink: merge
         jenkins-x-plugins/jx-release-version: merge
         jenkins-x-plugins/jx-scm: merge
         jenkins-x-plugins/jx-stash: merge
@@ -236,6 +238,7 @@ data:
         - jenkins-x-plugins/jx-changelog
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-mink
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
         - jenkins-x-plugins/jx-stash
@@ -301,6 +304,7 @@ data:
         - jenkins-x-plugins/jx-changelog
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-mink
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
         - jenkins-x-plugins/jx-stash
