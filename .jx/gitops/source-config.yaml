@@ -42,6 +42,7 @@ spec:
     - name: octant-jx
     - name: slack
     - name: step-go-releaser
+    - name: step-goreleaser
     - name: terraform-azurerm-jx
     scheduler: in-repo
   - owner: jenkins-x-apps
