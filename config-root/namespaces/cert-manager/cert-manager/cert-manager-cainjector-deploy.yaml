@@ -9,7 +9,8 @@ metadata:
     app.kubernetes.io/name: cainjector
     app.kubernetes.io/instance: cert-manager
     app.kubernetes.io/managed-by: Helm
-    helm.sh/chart: cert-manager-v0.13.1
+    app.kubernetes.io/component: "cainjector"
+    helm.sh/chart: cert-manager-v1.0.4
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     wave.pusher.com/update-on-config-change: 'true'
@@ -17,10 +18,9 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cainjector
       app.kubernetes.io/name: cainjector
       app.kubernetes.io/instance: cert-manager
-      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/component: "cainjector"
   template:
     metadata:
       labels:
@@ -28,13 +28,13 @@ spec:
         app.kubernetes.io/name: cainjector
         app.kubernetes.io/instance: cert-manager
         app.kubernetes.io/managed-by: Helm
-        helm.sh/chart: cert-manager-v0.13.1
-      annotations:
+        app.kubernetes.io/component: "cainjector"
+        helm.sh/chart: cert-manager-v1.0.4
     spec:
       serviceAccountName: cert-manager-cainjector
       containers:
         - name: cert-manager
-          image: "quay.io/jetstack/cert-manager-cainjector:v0.13.1"
+          image: "quay.io/jetstack/cert-manager-cainjector:v1.0.4"
           imagePullPolicy: IfNotPresent
           args:
             - --v=2
