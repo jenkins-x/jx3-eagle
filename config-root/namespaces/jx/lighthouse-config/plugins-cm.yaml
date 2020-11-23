@@ -228,6 +228,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/step-goreleaser
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/terraform-azurerm-jx
       require_self_approval: true
     cat: {}
@@ -1141,6 +1145,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/step-goreleaser:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/terraform-azurerm-jx:
       - approve
       - assign
@@ -1333,6 +1353,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/step-go-releaser
+      trusted_org: todo
+    - repos:
+      - jenkins-x/step-goreleaser
       trusted_org: todo
     - repos:
       - jenkins-x/terraform-azurerm-jx
