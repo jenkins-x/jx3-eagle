@@ -104,7 +104,7 @@ releases:
   - values/jx-build-controller-values.yaml.gotmpl
   - versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
 - chart: dev/nodedemo
-  version: 1.0.47
+  version: 1.0.48
   name: nodedemo
   namespace: jx-staging
 - chart: ./charts/bots
