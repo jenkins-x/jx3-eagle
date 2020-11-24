@@ -31,6 +31,7 @@ data:
         jenkins-x/feature-infra-secrets: true
         jenkins-x/flagger-metrics: true
         jenkins-x/github-release: true
+        jenkins-x/gsm-controller: true
         jenkins-x/helm-annotate: true
         jenkins-x/helm3-image: true
         jenkins-x/istio: true
@@ -152,6 +153,7 @@ data:
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
         jenkins-x/github-release: merge
+        jenkins-x/gsm-controller: merge
         jenkins-x/helm-annotate: merge
         jenkins-x/helm3-image: merge
         jenkins-x/istio: merge
@@ -205,6 +207,7 @@ data:
         - jenkins-x/feature-infra-secrets
         - jenkins-x/flagger-metrics
         - jenkins-x/github-release
+        - jenkins-x/gsm-controller
         - jenkins-x/helm-annotate
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
@@ -272,6 +275,7 @@ data:
         - jenkins-x/feature-infra-secrets
         - jenkins-x/flagger-metrics
         - jenkins-x/github-release
+        - jenkins-x/gsm-controller
         - jenkins-x/helm-annotate
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
