@@ -48,6 +48,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/gsm-controller
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/helm-annotate
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -664,6 +668,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/gsm-controller:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/helm-annotate:
       - approve
       - assign
@@ -1218,6 +1238,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/github-release
+      trusted_org: todo
+    - repos:
+      - jenkins-x/gsm-controller
       trusted_org: todo
     - repos:
       - jenkins-x/helm-annotate
