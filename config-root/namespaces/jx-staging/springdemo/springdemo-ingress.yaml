@@ -19,4 +19,4 @@ spec:
   tls:
     - hosts:
         - springdemo-jx-staging.dev.jenkins-x.me
-      secretName: "tls-dev-jenkins-x-me-p"
+      secretName: "jx/tls-dev-jenkins-x-me-p"
