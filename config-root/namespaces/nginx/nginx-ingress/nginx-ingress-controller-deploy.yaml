@@ -41,6 +41,7 @@ spec:
             - --election-id=ingress-controller-leader
             - --ingress-class=nginx
             - --configmap=nginx/nginx-ingress-controller
+            - --default-ssl-certificate=jx/tls-dev-jenkins-x-me-p
             - --publish-service=nginx/nginx-ingress-controller
           securityContext:
             capabilities:
