@@ -5,18 +5,18 @@ metadata:
   labels:
     owner: jenkins-x-plugins
     provider: github
-    repository: jx-mink
+    repository: mink
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: jenkins-x-plugins-jx-mink
+  name: jenkins-x-plugins-mink
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/jenkins-x-plugins/jx-mink.git
+  httpCloneURL: https://github.com/jenkins-x-plugins/mink.git
   org: jenkins-x-plugins
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-mink
+  repo: mink
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/jenkins-x-plugins/jx-mink
+  url: https://github.com/jenkins-x-plugins/mink
