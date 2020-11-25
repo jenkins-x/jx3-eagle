@@ -19,7 +19,6 @@ data:
         jenkins-x-plugins/jx-changelog: true
         jenkins-x-plugins/jx-health: true
         jenkins-x-plugins/jx-kh-check: true
-        jenkins-x-plugins/jx-mink: true
         jenkins-x-plugins/jx-release-version: true
         jenkins-x-plugins/jx-scm: true
         jenkins-x-plugins/jx-stash: true
@@ -27,6 +26,7 @@ data:
         jenkins-x-plugins/jx-updatebot: true
         jenkins-x-plugins/jx-v2-tekton-converter: true
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
+        jenkins-x-plugins/mink: true
         jenkins-x/acme: true
         jenkins-x/feature-infra-secrets: true
         jenkins-x/flagger-metrics: true
@@ -141,7 +141,6 @@ data:
         jenkins-x-plugins/jx-changelog: merge
         jenkins-x-plugins/jx-health: merge
         jenkins-x-plugins/jx-kh-check: merge
-        jenkins-x-plugins/jx-mink: merge
         jenkins-x-plugins/jx-release-version: merge
         jenkins-x-plugins/jx-scm: merge
         jenkins-x-plugins/jx-stash: merge
@@ -149,6 +148,7 @@ data:
         jenkins-x-plugins/jx-updatebot: merge
         jenkins-x-plugins/jx-v2-tekton-converter: merge
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: merge
+        jenkins-x-plugins/mink: merge
         jenkins-x/acme: merge
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
@@ -243,7 +243,6 @@ data:
         - jenkins-x-plugins/jx-changelog
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
-        - jenkins-x-plugins/jx-mink
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
         - jenkins-x-plugins/jx-stash
@@ -251,6 +250,7 @@ data:
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
+        - jenkins-x-plugins/mink
         - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/step-goreleaser
@@ -311,7 +311,6 @@ data:
         - jenkins-x-plugins/jx-changelog
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
-        - jenkins-x-plugins/jx-mink
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
         - jenkins-x-plugins/jx-stash
@@ -319,6 +318,7 @@ data:
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
+        - jenkins-x-plugins/mink
         - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/step-goreleaser

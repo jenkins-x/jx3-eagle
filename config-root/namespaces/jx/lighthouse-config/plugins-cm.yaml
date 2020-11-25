@@ -192,10 +192,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x-plugins/jx-mink
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x-plugins/jx-release-version
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -221,6 +217,10 @@ data:
     - lgtm_acts_as_approve: true
       repos:
       - jenkins-x-plugins/kuberhealthy-terraform-drift-check
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x-plugins/mink
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -476,22 +476,6 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x-plugins/jx-mink:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x-plugins/jx-release-version:
       - approve
       - assign
@@ -589,6 +573,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/kuberhealthy-terraform-drift-check:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/mink:
       - approve
       - assign
       - blunderbuss
@@ -1348,9 +1348,6 @@ data:
       - jenkins-x-plugins/jx-kh-check
       trusted_org: todo
     - repos:
-      - jenkins-x-plugins/jx-mink
-      trusted_org: todo
-    - repos:
       - jenkins-x-plugins/jx-release-version
       trusted_org: todo
     - repos:
@@ -1370,6 +1367,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/kuberhealthy-terraform-drift-check
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/mink
       trusted_org: todo
     - repos:
       - jenkins-x/slack
