@@ -5,7 +5,7 @@ metadata:
   name: nodedemo-nodedemo
   labels:
     draft: draft-app
-    chart: "nodedemo-1.0.48"
+    chart: "nodedemo-1.0.49"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: nodedemo-nodedemo
       containers:
         - name: nodedemo
-          image: "draft:1.0.48"
+          image: "draft:1.0.49"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 1.0.48
+              value: 1.0.49
           envFrom: null
           ports:
             - containerPort: 8080
