@@ -5,7 +5,7 @@ metadata:
   name: godemo-godemo
   labels:
     draft: draft-app
-    chart: "godemo-0.0.6"
+    chart: "godemo-0.0.7"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: godemo-godemo
       containers:
         - name: godemo
-          image: "draft:0.0.6"
+          image: "draft:0.0.7"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.6
+              value: 0.0.7
           envFrom: null
           ports:
             - containerPort: 8080
