@@ -59,6 +59,7 @@ spec:
     repositories:
     - name: jenkins-x-crds
     - name: jx-bdd
+    - name: knative-serving
     - name: local-external-secrets
     - name: pusher-wave
     - name: vault-instance
