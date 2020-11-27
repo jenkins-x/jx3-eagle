@@ -1,0 +1,15 @@
+# Source: knative-serving/templates/webhook-pdb-poddisruptionbudget.yaml
+# Webhook PDB.
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: webhook-pdb
+  namespace: jx-staging
+  labels:
+    serving.knative.dev/release: "v0.19.0"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  minAvailable: 80%
+  selector:
+    matchLabels:
+      app: webhook
