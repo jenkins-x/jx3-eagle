@@ -155,5 +155,9 @@ releases:
   namespace: jx-production
   values:
   - versionStream/charts/jx3/acme/values.yaml.gotmpl
+- chart: dev/knative-serving
+  version: 0.19.1
+  name: knative-serving
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
