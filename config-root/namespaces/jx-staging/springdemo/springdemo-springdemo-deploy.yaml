@@ -5,7 +5,7 @@ metadata:
   name: springdemo-springdemo
   labels:
     draft: draft-app
-    chart: "springdemo-0.0.29"
+    chart: "springdemo-0.0.30"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: springdemo-springdemo
       containers:
         - name: springdemo
-          image: "gcr.io/jenkinsxio/springdemo:0.0.29"
+          image: "gcr.io/jenkinsxio/springdemo:0.0.30"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.29
+              value: 0.0.30
           envFrom: null
           ports:
             - containerPort: 8080
