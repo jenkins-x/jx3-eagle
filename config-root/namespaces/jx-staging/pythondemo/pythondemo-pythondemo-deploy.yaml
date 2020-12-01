@@ -5,7 +5,7 @@ metadata:
   name: pythondemo-pythondemo
   labels:
     draft: draft-app
-    chart: "pythondemo-0.0.1"
+    chart: "pythondemo-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: pythondemo-pythondemo
       containers:
         - name: pythondemo
-          image: "gcr.io/jenkinsxio/pythondemo:0.0.1"
+          image: "gcr.io/jenkinsxio/pythondemo:0.0.2"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.1
+              value: 0.0.2
           envFrom: null
           ports:
             - containerPort: 8080
