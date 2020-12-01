@@ -1,0 +1,39 @@
+# Source: gradledemo/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-01T11:43:02Z"
+  deletionTimestamp: null
+  name: 'gradledemo-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: added variables
+      sha: 40c412730d09f58fc1b040d58aa4bb1400581703
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: Jenkins X build pack
+      sha: 75064f4cf45e208a5564cc24d711a4eb8420ae3e
+  gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/gradledemo
+  gitOwner: jenkins-x-labs-bdd-tests
+  gitRepository: gradledemo
+  name: 'gradledemo'
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/gradledemo/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
