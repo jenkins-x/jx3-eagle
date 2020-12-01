@@ -2,51 +2,38 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-26T12:13:50Z"
+  creationTimestamp: "2020-12-01T09:00:46Z"
   deletionTimestamp: null
-  name: 'godemo-0.0.7'
+  name: 'godemo-0.0.8'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
     - author:
-        accountReference:
-          - id: jenkins-x-bot
-            provider: jenkins.io/git-github-userid
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       branch: master
       committer:
-        accountReference:
-          - id: jenkins-x-bot
-            provider: jenkins.io/git-github-userid
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: b4d0bc236a72226a5a10867569647f77f40886b3
+      sha: 5621a95a6b0614ea8007c69d9839d64026bcd749
     - author:
-        accountReference:
-          - id: jenkins-x-bot
-            provider: jenkins.io/git-github-userid
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       branch: master
       committer:
-        accountReference:
-          - id: jenkins-x-bot
-            provider: jenkins.io/git-github-userid
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
         chore: Jenkins X build pack
-      sha: 02e3cb937a10812090cc9101e64bf2538c9942d7
-  gitCloneUrl: https://github.com/jenkins-x-labs-bdd-tests/godemo.git
+      sha: 262d84ac0ebdb92901a38fb7fd2ee9c481768948
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/godemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: godemo
   name: 'godemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/godemo/releases/tag/v0.0.7
-  version: v0.0.7
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/godemo/releases/tag/v0.0.8
+  version: v0.0.8
 status: {}
