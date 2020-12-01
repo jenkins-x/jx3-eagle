@@ -5,7 +5,7 @@ metadata:
   name: gradledemo-gradledemo
   labels:
     draft: draft-app
-    chart: "gradledemo-0.0.2"
+    chart: "gradledemo-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: gradledemo-gradledemo
       containers:
         - name: gradledemo
-          image: "gcr.io/jenkinsxio/gradledemo:0.0.2"
+          image: "gcr.io/jenkinsxio/gradledemo:0.0.3"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.2
+              value: 0.0.3
           envFrom: null
           ports:
             - containerPort: 8080
