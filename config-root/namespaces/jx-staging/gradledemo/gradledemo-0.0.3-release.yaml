@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-01T12:01:03Z"
+  creationTimestamp: "2020-12-01T12:23:18Z"
   deletionTimestamp: null
-  name: 'gradledemo-0.0.2'
+  name: 'gradledemo-0.0.3'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -19,20 +19,21 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 0b8c1b2c383fdf8010cba19204ef342c8007e389
+      sha: 5fece35eeee165a808c5fbf50a283715d63d0905
     - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
       branch: master
       committer:
-        email: noreply@github.com
-        name: GitHub
-      message: Update README.md
-      sha: cd753a242a6a41adf2d149bf7d2b35ce32397711
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: Jenkins X build pack
+      sha: 99c90d72da96bab185989edf1a5ca4fad25bfa7d
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/gradledemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: gradledemo
   name: 'gradledemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/gradledemo/releases/tag/v0.0.2
-  version: v0.0.2
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/gradledemo/releases/tag/v0.0.3
+  version: v0.0.3
 status: {}
