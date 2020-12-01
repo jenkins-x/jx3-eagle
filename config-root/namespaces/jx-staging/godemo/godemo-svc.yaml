@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: godemo
   labels:
-    chart: "godemo-0.0.7"
+    chart: "godemo-0.0.8"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
