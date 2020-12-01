@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-01T11:48:03Z"
+  creationTimestamp: "2020-12-01T14:23:04Z"
   deletionTimestamp: null
-  name: 'pythondemo-0.0.1'
+  name: 'pythondemo-0.0.2'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -19,21 +19,21 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 51fffd26534052d77c2d753df34872b87da07ede
+      sha: ff06cbc3d4b1e933ad13d0e8bd10e7e94a3396ab
     - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
       branch: master
       committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
       message: |
         chore: Jenkins X build pack
-      sha: 987fb6765ca99f0791d0a6e9f68a2e630e453be3
+      sha: 29a35089f2eb3ffb46eb6fcb1856a0cd0f2bd6e8
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/pythondemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: pythondemo
   name: 'pythondemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/pythondemo/releases/tag/v0.0.1
-  version: v0.0.1
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/pythondemo/releases/tag/v0.0.2
+  version: v0.0.2
 status: {}

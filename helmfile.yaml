@@ -156,7 +156,7 @@ releases:
   values:
   - versionStream/charts/jx3/acme/values.yaml.gotmpl
 - chart: dev/pythondemo
-  version: 0.0.1
+  version: 0.0.2
   name: pythondemo
   namespace: jx-staging
 - chart: dev/gradledemo
