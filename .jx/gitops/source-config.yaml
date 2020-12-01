@@ -78,7 +78,6 @@ spec:
     - name: jx-changelog
     - name: jx-health
     - name: jx-kh-check
-    - name: mink
     - name: jx-release-version
     - name: jx-scm
     - name: jx-stash
@@ -86,12 +85,14 @@ spec:
     - name: jx-updatebot
     - name: jx-v2-tekton-converter
     - name: kuberhealthy-terraform-drift-check
+    - name: mink
     scheduler: in-repo
   - owner: jenkins-x-labs-bdd-tests
     provider: https://github.com
     providerKind: github
     repositories:
     - name: godemo
+    - name: gradledemo
     - name: nodedemo
     - name: springdemo
     scheduler: in-repo

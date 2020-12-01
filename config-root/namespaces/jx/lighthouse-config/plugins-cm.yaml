@@ -168,6 +168,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-labs-bdd-tests/gradledemo
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-labs-bdd-tests/nodedemo
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -385,6 +389,22 @@ data:
       - dog
       - pony
       jenkins-x-labs-bdd-tests/godemo:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-labs-bdd-tests/gradledemo:
       - approve
       - assign
       - blunderbuss
@@ -1348,6 +1368,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-labs-bdd-tests/godemo
+      trusted_org: todo
+    - repos:
+      - jenkins-x-labs-bdd-tests/gradledemo
       trusted_org: todo
     - repos:
       - jenkins-x-labs-bdd-tests/nodedemo
