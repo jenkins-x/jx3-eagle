@@ -159,5 +159,9 @@ releases:
   version: 0.0.1
   name: pythondemo
   namespace: jx-staging
+- chart: dev/gradledemo
+  version: 0.0.2
+  name: gradledemo
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
