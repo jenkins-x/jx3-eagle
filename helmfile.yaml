@@ -155,5 +155,9 @@ releases:
   namespace: jx-production
   values:
   - versionStream/charts/jx3/acme/values.yaml.gotmpl
+- chart: dev/gradledemo
+  version: 0.0.1
+  name: gradledemo
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
