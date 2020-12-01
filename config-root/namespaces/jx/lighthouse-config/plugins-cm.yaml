@@ -176,6 +176,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-labs-bdd-tests/pythondemo
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-labs-bdd-tests/springdemo
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -421,6 +425,22 @@ data:
       - dog
       - pony
       jenkins-x-labs-bdd-tests/nodedemo:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-labs-bdd-tests/pythondemo:
       - approve
       - assign
       - blunderbuss
@@ -1374,6 +1394,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-labs-bdd-tests/nodedemo
+      trusted_org: todo
+    - repos:
+      - jenkins-x-labs-bdd-tests/pythondemo
       trusted_org: todo
     - repos:
       - jenkins-x-labs-bdd-tests/springdemo
