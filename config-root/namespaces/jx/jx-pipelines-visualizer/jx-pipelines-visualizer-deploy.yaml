@@ -6,8 +6,8 @@ metadata:
   labels:
     app.kubernetes.io/name: jx-pipelines-visualizer
     app.kubernetes.io/instance: "jx-pipelines-visualizer"
-    helm.sh/chart: jx-pipelines-visualizer-0.0.52
-    app.kubernetes.io/version: "0.0.52"
+    helm.sh/chart: jx-pipelines-visualizer-0.0.53
+    app.kubernetes.io/version: "0.0.53"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -25,13 +25,13 @@ spec:
       labels:
         app.kubernetes.io/name: jx-pipelines-visualizer
         app.kubernetes.io/instance: "jx-pipelines-visualizer"
-        helm.sh/chart: jx-pipelines-visualizer-0.0.52
-        app.kubernetes.io/version: "0.0.52"
+        helm.sh/chart: jx-pipelines-visualizer-0.0.53
+        app.kubernetes.io/version: "0.0.53"
         app.kubernetes.io/managed-by: "Helm"
     spec:
       containers:
         - name: jx-pipelines-visualizer
-          image: "gcr.io/jenkinsxio/jx-pipelines-visualizer:0.0.52"
+          image: "gcr.io/jenkinsxio/jx-pipelines-visualizer:0.0.53"
           args:
             - -namespace
             - jx
@@ -56,5 +56,7 @@ spec:
             requests:
               cpu: "0.2"
               memory: 128M
+      securityContext:
+        fsGroup: 1000
       serviceAccountName: jx-pipelines-visualizer
       enableServiceLinks: false
