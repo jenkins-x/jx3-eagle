@@ -16,6 +16,7 @@ data:
         jenkins-x-labs-bdd-tests/godemo: true
         jenkins-x-labs-bdd-tests/gradledemo: true
         jenkins-x-labs-bdd-tests/nodedemo: true
+        jenkins-x-labs-bdd-tests/pythondemo: true
         jenkins-x-labs-bdd-tests/springdemo: true
         jenkins-x-plugins/jx-build-controller: true
         jenkins-x-plugins/jx-changelog: true
@@ -140,6 +141,7 @@ data:
         jenkins-x-labs-bdd-tests/godemo: merge
         jenkins-x-labs-bdd-tests/gradledemo: merge
         jenkins-x-labs-bdd-tests/nodedemo: merge
+        jenkins-x-labs-bdd-tests/pythondemo: merge
         jenkins-x-labs-bdd-tests/springdemo: merge
         jenkins-x-plugins/jx-build-controller: merge
         jenkins-x-plugins/jx-changelog: merge
@@ -243,6 +245,7 @@ data:
         - jenkins-x-labs-bdd-tests/godemo
         - jenkins-x-labs-bdd-tests/gradledemo
         - jenkins-x-labs-bdd-tests/nodedemo
+        - jenkins-x-labs-bdd-tests/pythondemo
         - jenkins-x-labs-bdd-tests/springdemo
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
@@ -313,6 +316,7 @@ data:
         - jenkins-x-labs-bdd-tests/godemo
         - jenkins-x-labs-bdd-tests/gradledemo
         - jenkins-x-labs-bdd-tests/nodedemo
+        - jenkins-x-labs-bdd-tests/pythondemo
         - jenkins-x-labs-bdd-tests/springdemo
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
