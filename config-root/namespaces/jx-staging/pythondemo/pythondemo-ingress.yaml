@@ -1,0 +1,22 @@
+# Source: pythondemo/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: pythondemo
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: pythondemo
+              servicePort: 80
+      host: pythondemo-jx-staging.dev.jenkins-x.me
+  tls:
+    - hosts:
+        - pythondemo-jx-staging.dev.jenkins-x.me
+      secretName: "jx/tls-dev-jenkins-x-me-p"
