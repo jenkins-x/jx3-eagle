@@ -155,5 +155,9 @@ releases:
   namespace: jx-production
   values:
   - versionStream/charts/jx3/acme/values.yaml.gotmpl
+- chart: dev/pythondemo
+  version: 0.0.1
+  name: pythondemo
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
