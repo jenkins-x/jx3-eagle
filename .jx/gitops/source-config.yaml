@@ -94,5 +94,6 @@ spec:
     - name: godemo
     - name: gradledemo
     - name: nodedemo
+    - name: pythondemo
     - name: springdemo
     scheduler: in-repo
