@@ -5,11 +5,11 @@ metadata:
   name: lighthouse-webhooks
   labels:
     draft: draft-app
-    chart: "lighthouse-0.0.874"
+    chart: "lighthouse-0.0.879"
     app: lighthouse-webhooks
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    checksum/config: 47caf41a28070c23a6e0cb91163bb8cd3ad916cb577d991faa03d8ffb52fcdf8
+    checksum/config: b27b236f4741dce5e23f35563f7cec080231db7e303eccb1a8473cf33b5097bf
     wave.pusher.com/update-on-config-change: 'true'
     jenkins-x.io/hash: 'f8fd386ceffd39c2f5ae15f8b0eaf043f338b18f478383d4507fda8836dcfa84'
   namespace: jx

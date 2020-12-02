@@ -5,7 +5,7 @@ metadata:
   name: lighthouse-foghorn
   labels:
     draft: draft-app
-    chart: "lighthouse-0.0.874"
+    chart: "lighthouse-0.0.879"
     app: lighthouse-foghorn
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -43,6 +43,11 @@ spec:
                 secretKeyRef:
                   name: lighthouse-oauth-token
                   key: oauth
+            - name: "HMAC_TOKEN"
+              valueFrom:
+                secretKeyRef:
+                  name: "lighthouse-hmac-token"
+                  key: hmac
             - name: "JX_LOG_FORMAT"
               value: "json"
             - name: "LOGRUS_FORMAT"
@@ -59,7 +64,4 @@ spec:
             limits:
               cpu: 100m
               memory: 256Mi
-            requests:
-              cpu: 80m
-              memory: 128Mi
       terminationGracePeriodSeconds: 180
