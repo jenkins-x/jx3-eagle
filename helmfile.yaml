@@ -60,7 +60,7 @@ releases:
   - versionStream/charts/jenkins-x/tekton/values.yaml.gotmpl
   - versionStream/charts/cdf/tekton-pipeline/values.yaml.gotmpl
 - chart: jenkins-x/lighthouse
-  version: 0.0.874
+  version: 0.0.879
   name: lighthouse
   namespace: jx
   values:
