@@ -1,0 +1,39 @@
+# Source: vault-instance/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-04T13:08:06Z"
+  deletionTimestamp: null
+  name: 'vault-instance-1.0.2'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: added variables
+      sha: fd9f4b03ad765a59074aa43cd941559ebc498c8e
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: upgrade pipelines
+      sha: 1c3947c8823d8f7a8ed91191aa24fb92ebabd30a
+  gitHttpUrl: https://github.com/jenkins-x-charts/vault-instance
+  gitOwner: jenkins-x-charts
+  gitRepository: vault-instance
+  name: 'vault-instance'
+  releaseNotesURL: https://github.com/jenkins-x-charts/vault-instance/releases/tag/v1.0.2
+  version: v1.0.2
+status: {}
