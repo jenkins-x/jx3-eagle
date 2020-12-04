@@ -219,6 +219,12 @@ releases:
   namespace: jx-staging
   forceNamespace: ""
   skipDeps: null
+- chart: dev/jx-bdd
+  version: 1.0.8
+  name: jx-bdd
+  namespace: jx-staging
+  forceNamespace: ""
+  skipDeps: null
 templates: {}
 missingFileHandler: ""
 renderedvalues: {}
