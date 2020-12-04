@@ -213,6 +213,12 @@ releases:
   namespace: jx-staging
   forceNamespace: ""
   skipDeps: null
+- chart: dev/acme
+  version: 0.0.14
+  name: acme
+  namespace: jx-staging
+  forceNamespace: ""
+  skipDeps: null
 templates: {}
 missingFileHandler: ""
 renderedvalues: {}
