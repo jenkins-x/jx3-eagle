@@ -1,0 +1,45 @@
+# Source: jx-bdd/templates/job.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: jx-bdd
+  labels:
+    app: jx-bdd
+    chart: jx-bdd-1.0.8
+    release: jx-bdd
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-staging
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 12000
+  template:
+    metadata:
+      labels:
+        app: jx-bdd
+        release: jx-bdd
+    spec:
+      restartPolicy: Never
+      serviceAccountName: "jx-bdd"
+      containers:
+        - name: jx-bdd
+          imagePullPolicy: Always
+          image: "gcr.io/jenkinsxio/jx-bdd:1.0.8"
+          env:
+            - name: GIT_USERNAME
+              value: ""
+            - name: GIT_TOKEN
+              value: ""
+            - name: GH_OWNER
+              value: ""
+            - name: GIT_SERVER_HOST
+              value: "github.com"
+            - name: QUICKSTART
+              value: "golang"
+          resources:
+            limits:
+              cpu: 100m
+              memory: 256Mi
+            requests:
+              cpu: 80m
+              memory: 128Mi
