@@ -225,6 +225,12 @@ releases:
   namespace: jx-staging
   forceNamespace: ""
   skipDeps: null
+- chart: dev/vault-instance
+  version: 1.0.2
+  name: vault-instance
+  namespace: jx-staging
+  forceNamespace: ""
+  skipDeps: null
 templates: {}
 missingFileHandler: ""
 renderedvalues: {}
