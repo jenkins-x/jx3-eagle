@@ -1,0 +1,49 @@
+# Source: springdemo/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-08T20:59:08Z"
+  deletionTimestamp: null
+  name: 'springdemo-0.0.31'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 21390435283b7a023810727e0cbf0e3672f3a8a5
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        fix: test out pipeline catalog changes
+      sha: 83a101961e8d0c6001f56dcd7a25533e02169633
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: Jenkins X build pack
+      sha: 6971375525cd2c57e3a999b1a2f65066f9d9d0a4
+  gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo
+  gitOwner: jenkins-x-labs-bdd-tests
+  gitRepository: springdemo
+  name: 'springdemo'
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.31
+  version: v0.0.31
+status: {}
