@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: jx-staging
 repositories:
 - name: dev
@@ -7,6 +11,8 @@ releases:
 - chart: dev/springdemo
   version: 0.0.31
   name: springdemo
+  values:
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 templates: {}
