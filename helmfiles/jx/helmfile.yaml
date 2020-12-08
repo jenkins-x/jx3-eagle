@@ -2,8 +2,7 @@ filepath: ""
 environments:
   default:
     values:
-    - ../../jx-values.yaml
-    - ../../versionStream/src/fake-secrets.yaml.gotmpl
+    - jx-values.yaml
 namespace: jx
 repositories:
 - name: jenkins-x
@@ -24,6 +23,7 @@ releases:
   name: jxboot-helmfile-resources
   values:
   - ../../versionStream/charts/jenkins-x/jxboot-helmfile-resources/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: jx3/jenkins-x-crds
@@ -31,6 +31,7 @@ releases:
   name: jenkins-x-crds
   values:
   - ../../versionStream/charts/jx3/jenkins-x-crds/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: jenkins-x/lighthouse
@@ -38,6 +39,7 @@ releases:
   name: lighthouse
   values:
   - ../../versionStream/charts/jenkins-x/lighthouse/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: jenkins-x/nexus
@@ -45,6 +47,7 @@ releases:
   name: nexus
   values:
   - ../../versionStream/charts/jenkins-x/nexus/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: stable/chartmuseum
@@ -52,16 +55,21 @@ releases:
   name: chartmuseum
   values:
   - ../../versionStream/charts/stable/chartmuseum/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: jx3/pusher-wave
   version: 0.4.12
   name: pusher-wave
+  values:
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: jx3/jx-preview
   version: 0.0.131
   name: jx-preview
+  values:
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: jx3/jx-pipelines-visualizer
@@ -69,12 +77,14 @@ releases:
   name: jx-pipelines-visualizer
   values:
   - ../../versionStream/charts/jx3/jx-pipelines-visualizer/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: collector/jmc
   name: jmc
   values:
   - ../../values/jmc-values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: jx3/jx-build-controller
@@ -83,18 +93,21 @@ releases:
   values:
   - ../../values/jx-build-controller-values.yaml.gotmpl
   - ../../versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: ./charts/bots
   name: bots
   values:
   - ../../values/bots-values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: grafana/grafana
   name: grafana
   values:
   - ../../values/grafana.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: bitnami/external-dns
@@ -102,6 +115,7 @@ releases:
   name: external-dns
   values:
   - ../../versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 - chart: jx3/acme
@@ -109,6 +123,7 @@ releases:
   name: acme-jx
   values:
   - ../../versionStream/charts/jx3/acme-jx/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 templates: {}

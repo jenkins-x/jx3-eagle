@@ -2,8 +2,7 @@ filepath: ""
 environments:
   default:
     values:
-    - ../../jx-values.yaml
-    - ../../versionStream/src/fake-secrets.yaml.gotmpl
+    - jx-values.yaml
 namespace: jx-production
 repositories:
 - name: jx3
@@ -14,6 +13,7 @@ releases:
   name: tls-jx-production
   values:
   - ../../versionStream/charts/jx3/acme/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 templates: {}
