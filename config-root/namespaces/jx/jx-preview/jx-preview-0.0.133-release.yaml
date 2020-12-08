@@ -1,0 +1,30 @@
+# Source: jx-preview/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-08T19:55:14Z"
+  deletionTimestamp: null
+  name: 'jx-preview-0.0.133'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: herve.lemeur@sixense-group.com
+        name: Hervé Le Meur
+      branch: master
+      committer:
+        email: herve.lemeur@sixense-group.com
+        name: Hervé Le Meur
+      message: |
+        fix(lighthouse): inverse steps order so the correct version and value are used in 'release-chart' step.
+
+        Fixes https://github.com/jenkins-x/jx-preview/issues/161
+      sha: 6814004ea5816177e8ace9fbd8b233cd0725fc1e
+  gitHttpUrl: https://github.com/jenkins-x/jx-preview
+  gitOwner: jenkins-x
+  gitRepository: jx-preview
+  name: 'jx-preview'
+  version: 0.0.133
+status: {}
