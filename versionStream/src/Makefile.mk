@@ -17,7 +17,7 @@ SOURCE_DIR ?= /workspace/source
 #
 # or change the next line to:
 # HELMFILE_TEMPLATE_FLAGS ?= --debug
-t
+HELMFILE_TEMPLATE_FLAGS ?=
 
 .PHONY: clean
 clean:
