@@ -12,7 +12,6 @@ releases:
   version: 0.18.0-1
   name: tekton
   values:
-  - ../../versionStream/charts/jenkins-x/tekton/values.yaml.gotmpl
   - ../../versionStream/charts/cdf/tekton-pipeline/values.yaml.gotmpl
   - jx-values.yaml
   forceNamespace: ""
