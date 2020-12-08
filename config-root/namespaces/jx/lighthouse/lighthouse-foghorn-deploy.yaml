@@ -5,13 +5,13 @@ metadata:
   name: lighthouse-foghorn
   labels:
     draft: draft-app
-    chart: "lighthouse-0.0.879"
+    chart: "lighthouse-0.0.881"
     app: lighthouse-foghorn
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
   annotations:
     wave.pusher.com/update-on-config-change: 'true'
-    jenkins-x.io/hash: 'f8fd386ceffd39c2f5ae15f8b0eaf043f338b18f478383d4507fda8836dcfa84'
+    jenkins-x.io/hash: '6f9e417da0b9202d30e58c6f986c21cb770bf5818470b83638a6803f031ad641'
 spec:
   replicas: 1
   selector:

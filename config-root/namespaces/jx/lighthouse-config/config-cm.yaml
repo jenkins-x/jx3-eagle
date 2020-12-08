@@ -60,8 +60,8 @@ data:
         jenkins-x/jx-verify: true
         jenkins-x/jx3-eagle: true
         jenkins-x/jx3-pipeline-catalog: true
+        jenkins-x/jx3-versions: true
         jenkins-x/jxr-packs-kubernetes: true
-        jenkins-x/jxr-versions: true
         jenkins-x/octant-jx: true
         jenkins-x/slack: true
         jenkins-x/step-go-releaser: true
@@ -185,8 +185,8 @@ data:
         jenkins-x/jx-verify: merge
         jenkins-x/jx3-eagle: merge
         jenkins-x/jx3-pipeline-catalog: merge
+        jenkins-x/jx3-versions: merge
         jenkins-x/jxr-packs-kubernetes: merge
-        jenkins-x/jxr-versions: merge
         jenkins-x/octant-jx: merge
         jenkins-x/slack: merge
         jenkins-x/step-go-releaser: merge
@@ -240,8 +240,8 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jx3-pipeline-catalog
+        - jenkins-x/jx3-versions
         - jenkins-x/jxr-packs-kubernetes
-        - jenkins-x/jxr-versions
         - jenkins-x-labs-bdd-tests/godemo
         - jenkins-x-labs-bdd-tests/gradledemo
         - jenkins-x-labs-bdd-tests/nodedemo
@@ -311,8 +311,8 @@ data:
         - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jx3-pipeline-catalog
+        - jenkins-x/jx3-versions
         - jenkins-x/jxr-packs-kubernetes
-        - jenkins-x/jxr-versions
         - jenkins-x-labs-bdd-tests/godemo
         - jenkins-x-labs-bdd-tests/gradledemo
         - jenkins-x-labs-bdd-tests/nodedemo
