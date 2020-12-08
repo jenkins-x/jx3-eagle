@@ -1,0 +1,14 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: https://chartmuseum-jx.dev.jenkins-x.me
+releases:
+- chart: dev/springdemo
+  version: 0.0.31
+  name: springdemo
+  forceNamespace: ""
+  skipDeps: null
+templates: {}
+missingFileHandler: ""
+renderedvalues: {}
