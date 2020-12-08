@@ -11,3 +11,4 @@ metadata:
 data:
   kaniko.flags: ""
   docker.registry: gcr.io
+  docker.registry.org: jenkinsxio
