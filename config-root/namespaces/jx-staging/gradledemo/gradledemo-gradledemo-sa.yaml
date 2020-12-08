@@ -1,8 +1,0 @@
-# Source: gradledemo/templates/sa.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: gradledemo-gradledemo
-  namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'

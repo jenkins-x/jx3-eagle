@@ -1,8 +1,0 @@
-# Source: vault-instance/templates/sa.yaml
-kind: ServiceAccount
-apiVersion: v1
-metadata:
-  name: vault
-  namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'

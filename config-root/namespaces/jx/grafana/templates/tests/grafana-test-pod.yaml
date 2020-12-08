@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: grafana-test
   labels:
-    helm.sh/chart: grafana-6.1.12
+    helm.sh/chart: grafana-6.1.13
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: grafana
     app.kubernetes.io/version: "7.3.3"

@@ -156,11 +156,11 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jxr-packs-kubernetes
+      - jenkins-x/jx3-versions
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jxr-versions
+      - jenkins-x/jxr-packs-kubernetes
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -1145,7 +1145,7 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/jxr-packs-kubernetes:
+      jenkins-x/jx3-versions:
       - approve
       - assign
       - blunderbuss
@@ -1161,7 +1161,7 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/jxr-versions:
+      jenkins-x/jxr-packs-kubernetes:
       - approve
       - assign
       - blunderbuss
@@ -1381,10 +1381,10 @@ data:
       - jenkins-x/jx3-pipeline-catalog
       trusted_org: todo
     - repos:
-      - jenkins-x/jxr-packs-kubernetes
+      - jenkins-x/jx3-versions
       trusted_org: todo
     - repos:
-      - jenkins-x/jxr-versions
+      - jenkins-x/jxr-packs-kubernetes
       trusted_org: todo
     - repos:
       - jenkins-x-labs-bdd-tests/godemo
