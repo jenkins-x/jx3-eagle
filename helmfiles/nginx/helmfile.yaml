@@ -2,8 +2,7 @@ filepath: ""
 environments:
   default:
     values:
-    - ../../jx-values.yaml
-    - ../../versionStream/src/fake-secrets.yaml.gotmpl
+    - jx-values.yaml
 namespace: nginx
 repositories:
 - name: ingress-nginx
@@ -14,6 +13,7 @@ releases:
   name: nginx-ingress
   values:
   - ../../versionStream/charts/ingress-nginx/ingress-nginx/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 templates: {}

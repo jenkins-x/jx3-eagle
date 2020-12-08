@@ -2,8 +2,7 @@ filepath: ""
 environments:
   default:
     values:
-    - ../../jx-values.yaml
-    - ../../versionStream/src/fake-secrets.yaml.gotmpl
+    - jx-values.yaml
 namespace: secret-infra
 repositories:
 - name: external-secrets
@@ -14,6 +13,7 @@ releases:
   name: kubernetes-external-secrets
   values:
   - ../../versionStream/charts/external-secrets/kubernetes-external-secrets/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 templates: {}

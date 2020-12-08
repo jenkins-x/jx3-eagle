@@ -2,8 +2,7 @@ filepath: ""
 environments:
   default:
     values:
-    - ../../jx-values.yaml
-    - ../../versionStream/src/fake-secrets.yaml.gotmpl
+    - jx-values.yaml
 namespace: tekton-pipelines
 repositories:
 - name: cdf
@@ -15,6 +14,7 @@ releases:
   values:
   - ../../versionStream/charts/jenkins-x/tekton/values.yaml.gotmpl
   - ../../versionStream/charts/cdf/tekton-pipeline/values.yaml.gotmpl
+  - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
 templates: {}

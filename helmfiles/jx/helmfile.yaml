@@ -96,7 +96,7 @@ releases:
   - jx-values.yaml
   forceNamespace: ""
   skipDeps: null
-- chart: ./charts/bots
+- chart: ../../charts/bots
   name: bots
   values:
   - ../../values/bots-values.yaml.gotmpl
