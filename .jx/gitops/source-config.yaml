@@ -39,7 +39,7 @@ spec:
     - name: jx-verify
     - name: jx3-pipeline-catalog
     - name: jxr-packs-kubernetes
-    - name: jxr-versions
+    - name: jx3-versions
     - name: octant-jx
     - name: slack
     - name: step-go-releaser
