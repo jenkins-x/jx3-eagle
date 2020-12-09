@@ -13,15 +13,10 @@ releases:
   name: springdemo
   values:
   - jx-values.yaml
-  forceNamespace: ""
-  skipDeps: null
 - chart: dev/gradledemo
   version: 0.0.4
   name: gradledemo
   values:
   - jx-values.yaml
-  forceNamespace: ""
-  skipDeps: null
 templates: {}
-missingFileHandler: ""
 renderedvalues: {}
