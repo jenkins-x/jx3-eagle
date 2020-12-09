@@ -8,5 +8,4 @@ helmfiles:
 - path: helmfiles/tekton-pipelines/helmfile.yaml
 - path: helmfiles/jx-staging/helmfile.yaml
 templates: {}
-missingFileHandler: ""
 renderedvalues: {}
