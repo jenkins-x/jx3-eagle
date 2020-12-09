@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/name: 'cert-manager'
     app.kubernetes.io/instance: 'cert-manager'
     app.kubernetes.io/managed-by: 'Helm'
-    helm.sh/chart: 'cert-manager-v1.0.4'
+    helm.sh/chart: 'cert-manager-v1.1.0'
     gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
   group: cert-manager.io
@@ -93,6 +93,9 @@ spec:
                   type: array
                   items:
                     type: string
+                encodeUsagesInRequest:
+                  description: EncodeUsagesInRequest controls whether key usages should be present in the CertificateRequest
+                  type: boolean
                 ipAddresses:
                   description: IPAddresses is a list of IP address subjectAltNames to be set on the Certificate.
                   type: array
@@ -387,6 +390,9 @@ spec:
                   type: array
                   items:
                     type: string
+                encodeUsagesInRequest:
+                  description: EncodeUsagesInRequest controls whether key usages should be present in the CertificateRequest
+                  type: boolean
                 ipAddresses:
                   description: IPAddresses is a list of IP address subjectAltNames to be set on the Certificate.
                   type: array
@@ -683,6 +689,9 @@ spec:
                   type: array
                   items:
                     type: string
+                encodeUsagesInRequest:
+                  description: EncodeUsagesInRequest controls whether key usages should be present in the CertificateRequest
+                  type: boolean
                 ipAddresses:
                   description: IPAddresses is a list of IP address subjectAltNames to be set on the Certificate.
                   type: array
@@ -979,6 +988,9 @@ spec:
                   type: array
                   items:
                     type: string
+                encodeUsagesInRequest:
+                  description: EncodeUsagesInRequest controls whether key usages should be present in the CertificateRequest
+                  type: boolean
                 ipAddresses:
                   description: IPAddresses is a list of IP address subjectAltNames to be set on the Certificate.
                   type: array
