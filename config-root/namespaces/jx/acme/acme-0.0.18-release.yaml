@@ -1,0 +1,39 @@
+# Source: acme/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-08T22:05:45Z"
+  deletionTimestamp: null
+  name: 'acme-0.0.18'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: added variables
+      sha: 7e9c5112c7a70510ed19d05c3cba8eb7b1aa4c67
+    - author:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        chore: move to v1 types
+      sha: 9837bc7c46b7b632bad21be55334fa36c370e5a9
+  gitHttpUrl: https://github.com/jenkins-x/acme
+  gitOwner: jenkins-x
+  gitRepository: acme
+  name: 'acme'
+  releaseNotesURL: https://github.com/jenkins-x/acme/releases/tag/v0.0.18
+  version: v0.0.18
+status: {}

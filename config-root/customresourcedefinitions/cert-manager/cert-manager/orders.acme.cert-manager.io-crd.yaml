@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/name: 'cert-manager'
     app.kubernetes.io/instance: 'cert-manager'
     app.kubernetes.io/managed-by: 'Helm'
-    helm.sh/chart: 'cert-manager-v1.0.4'
+    helm.sh/chart: 'cert-manager-v1.1.0'
     gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
   group: acme.cert-manager.io
@@ -70,11 +70,10 @@ spec:
               type: object
               required:
                 - csr
-                - dnsNames
                 - issuerRef
               properties:
                 commonName:
-                  description: CommonName is the common name as specified on the DER encoded CSR. If specified, this value must also be present in `dnsNames`. This field must match the corresponding field on the DER encoded CSR.
+                  description: CommonName is the common name as specified on the DER encoded CSR. If specified, this value must also be present in `dnsNames` or `ipAddresses`. This field must match the corresponding field on the DER encoded CSR.
                   type: string
                 csr:
                   description: Certificate signing request bytes in DER encoding. This will be used when finalizing the order. This field must be set on the order.
@@ -82,6 +81,14 @@ spec:
                   format: byte
                 dnsNames:
                   description: DNSNames is a list of DNS names that should be included as part of the Order validation process. This field must match the corresponding field on the DER encoded CSR.
+                  type: array
+                  items:
+                    type: string
+                duration:
+                  description: Duration is the duration for the not after date for the requested certificate. this is set on order creation as pe the ACME spec.
+                  type: string
+                ipAddresses:
+                  description: IPAddresses is a list of IP addresses that should be included as part of the Order validation process. This field must match the corresponding field on the DER encoded CSR.
                   type: array
                   items:
                     type: string
@@ -220,11 +227,10 @@ spec:
               type: object
               required:
                 - csr
-                - dnsNames
                 - issuerRef
               properties:
                 commonName:
-                  description: CommonName is the common name as specified on the DER encoded CSR. If specified, this value must also be present in `dnsNames`. This field must match the corresponding field on the DER encoded CSR.
+                  description: CommonName is the common name as specified on the DER encoded CSR. If specified, this value must also be present in `dnsNames` or `ipAddresses`. This field must match the corresponding field on the DER encoded CSR.
                   type: string
                 csr:
                   description: Certificate signing request bytes in DER encoding. This will be used when finalizing the order. This field must be set on the order.
@@ -232,6 +238,14 @@ spec:
                   format: byte
                 dnsNames:
                   description: DNSNames is a list of DNS names that should be included as part of the Order validation process. This field must match the corresponding field on the DER encoded CSR.
+                  type: array
+                  items:
+                    type: string
+                duration:
+                  description: Duration is the duration for the not after date for the requested certificate. this is set on order creation as pe the ACME spec.
+                  type: string
+                ipAddresses:
+                  description: IPAddresses is a list of IP addresses that should be included as part of the Order validation process. This field must match the corresponding field on the DER encoded CSR.
                   type: array
                   items:
                     type: string
@@ -370,15 +384,22 @@ spec:
             spec:
               type: object
               required:
-                - dnsNames
                 - issuerRef
                 - request
               properties:
                 commonName:
-                  description: CommonName is the common name as specified on the DER encoded CSR. If specified, this value must also be present in `dnsNames`. This field must match the corresponding field on the DER encoded CSR.
+                  description: CommonName is the common name as specified on the DER encoded CSR. If specified, this value must also be present in `dnsNames` or `ipAddresses`. This field must match the corresponding field on the DER encoded CSR.
                   type: string
                 dnsNames:
                   description: DNSNames is a list of DNS names that should be included as part of the Order validation process. This field must match the corresponding field on the DER encoded CSR.
+                  type: array
+                  items:
+                    type: string
+                duration:
+                  description: Duration is the duration for the not after date for the requested certificate. this is set on order creation as pe the ACME spec.
+                  type: string
+                ipAddresses:
+                  description: IPAddresses is a list of IP addresses that should be included as part of the Order validation process. This field must match the corresponding field on the DER encoded CSR.
                   type: array
                   items:
                     type: string
@@ -521,15 +542,22 @@ spec:
             spec:
               type: object
               required:
-                - dnsNames
                 - issuerRef
                 - request
               properties:
                 commonName:
-                  description: CommonName is the common name as specified on the DER encoded CSR. If specified, this value must also be present in `dnsNames`. This field must match the corresponding field on the DER encoded CSR.
+                  description: CommonName is the common name as specified on the DER encoded CSR. If specified, this value must also be present in `dnsNames` or `ipAddresses`. This field must match the corresponding field on the DER encoded CSR.
                   type: string
                 dnsNames:
                   description: DNSNames is a list of DNS names that should be included as part of the Order validation process. This field must match the corresponding field on the DER encoded CSR.
+                  type: array
+                  items:
+                    type: string
+                duration:
+                  description: Duration is the duration for the not after date for the requested certificate. this is set on order creation as pe the ACME spec.
+                  type: string
+                ipAddresses:
+                  description: IPAddresses is a list of IP addresses that should be included as part of the Order validation process. This field must match the corresponding field on the DER encoded CSR.
                   type: array
                   items:
                     type: string

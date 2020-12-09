@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/instance: cert-manager
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: "cainjector"
-    helm.sh/chart: cert-manager-v1.0.4
+    helm.sh/chart: cert-manager-v1.1.0
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     wave.pusher.com/update-on-config-change: 'true'
@@ -29,12 +29,12 @@ spec:
         app.kubernetes.io/instance: cert-manager
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: "cainjector"
-        helm.sh/chart: cert-manager-v1.0.4
+        helm.sh/chart: cert-manager-v1.1.0
     spec:
       serviceAccountName: cert-manager-cainjector
       containers:
         - name: cert-manager
-          image: "quay.io/jetstack/cert-manager-cainjector:v1.0.4"
+          image: "quay.io/jetstack/cert-manager-cainjector:v1.1.0"
           imagePullPolicy: IfNotPresent
           args:
             - --v=2
