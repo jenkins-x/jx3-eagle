@@ -28,10 +28,10 @@ spec:
         app.kubernetes.io/name: grafana
         app.kubernetes.io/instance: grafana
       annotations:
-        checksum/config: d04b81addc964dc219fbca75b87f496ec7f972ed7ae56e519a57bd64812e0ce6
+        checksum/config: 61fc4ea3a1f9811ebba500428e907ad4b65e1412b169aff40e4c594bd0baeb4e
         checksum/dashboards-json-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
         checksum/sc-dashboard-provider-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-        checksum/secret: 74079717acce36fc8e9ad8e91973d566f7a59c41910b1e528fd438d9165854bd
+        checksum/secret: 2756649b84ce8de15799ec5bc14559437bb5f3c351b814f6dd152861d2a2ccab
     spec:
       serviceAccountName: grafana
       securityContext:
@@ -60,6 +60,9 @@ spec:
               subPath: grafana.ini
             - name: storage
               mountPath: "/var/lib/grafana"
+            - name: config
+              mountPath: "/etc/grafana/provisioning/datasources/datasources.yaml"
+              subPath: datasources.yaml
           ports:
             - name: service
               containerPort: 80
@@ -78,6 +81,11 @@ spec:
                 secretKeyRef:
                   name: grafana
                   key: admin-password
+            - name: GF_INSTALL_PLUGINS
+              valueFrom:
+                configMapKeyRef:
+                  name: grafana
+                  key: plugins
           livenessProbe:
             failureThreshold: 10
             httpGet:
