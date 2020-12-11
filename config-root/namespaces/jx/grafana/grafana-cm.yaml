@@ -33,7 +33,7 @@ data:
     apiVersion: 1
     datasources:
     - database: dev
-      default: true
+      isDefault: true
       jsonData:
         connMaxLifetime: 14400
         maxIdleConns: 2
