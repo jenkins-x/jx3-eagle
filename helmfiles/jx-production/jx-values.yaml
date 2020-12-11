@@ -62,7 +62,7 @@ jxRequirements:
         production: false
     key: production
   ingress:
-    domain: dev.jenkins-x.me
+    domain: ""
     externalDNS: false
     namespaceSubDomain: -jx-production.
     tls:
