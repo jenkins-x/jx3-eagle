@@ -49,6 +49,8 @@ spec:
               value: jenkins-x@googlegroups.com
             - name: GIT_AUTHOR_NAME
               value: jenkins-x-bot
+            - name: GIT_SECRET_SERVER
+              value: github.com
             - name: XDG_CONFIG_HOME
               value: /home/jenkins
           resources: null
