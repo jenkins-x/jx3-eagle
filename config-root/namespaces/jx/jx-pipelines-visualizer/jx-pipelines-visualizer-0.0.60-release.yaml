@@ -1,0 +1,40 @@
+# Source: jx-pipelines-visualizer/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-11T11:50:24Z"
+  deletionTimestamp: null
+  name: 'jx-pipelines-visualizer-0.0.60'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: upgrade to latest pipeline
+
+        Signed-off-by: James Strachan <james.strachan@gmail.com>
+      sha: 385af49111b2f27ae2d4915921b29bca797dda2d
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        update jenkins-x (https://github.com/jenkins-x/jx3-pipeline-catalog) from master (8b4e9b8183ae243434f4d26669229212726ee229) to master (e683ec9b73e4faff14b8cd61c19791bc95dd01fb)
+      sha: e992343ea8ea93105063f733217df6f91648d529
+  gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
+  gitOwner: jenkins-x
+  gitRepository: jx-pipelines-visualizer
+  name: 'jx-pipelines-visualizer'
+  version: 0.0.60
+status: {}

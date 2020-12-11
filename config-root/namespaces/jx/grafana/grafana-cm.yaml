@@ -38,9 +38,9 @@ data:
         connMaxLifetime: 14400
         maxIdleConns: 2
         maxOpenConns: 0
-        postgresVersion: 903
+        postgresVersion: 1200
         sslmode: disable
-        timescaledb: false
+        timescaledb: true
       name: jx
       secureJsonData:
         password: ${JX_DB}
