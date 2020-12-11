@@ -46,8 +46,8 @@ datasources:
         maxOpenConns: 0         # Grafana v5.4+
         maxIdleConns: 2         # Grafana v5.4+
         connMaxLifetime: 14400  # Grafana v5.4+
-        postgresVersion: 903 # 903=9.3, 904=9.4, 905=9.5, 906=9.6, 1000=10
-        timescaledb: false
+        postgresVersion: 1200 # 903=9.3, 904=9.4, 905=9.5, 906=9.6, 1000=10
+        timescaledb: true
     - name: GitHub
       accessToken: ${GITHUB_TOKEN}
 
