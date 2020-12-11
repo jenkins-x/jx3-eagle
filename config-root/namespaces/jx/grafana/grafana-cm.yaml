@@ -47,5 +47,6 @@ data:
       type: postgres
       url: localhost:5432
       user: read
-    - accessToken: ${GITHUB_TOKEN}
-      name: GitHub
+    - name: GitHub
+      secureJsonData:
+        accessToken: ${GITHUB_TOKEN}
