@@ -5,7 +5,7 @@ metadata:
   name: jx-build-controller
   labels:
     app: jx-build-controller
-    chart: jx-build-controller-0.0.15
+    chart: jx-build-controller-0.0.17
     release: jx-build-controller
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -29,7 +29,7 @@ spec:
         - name: jx-build-controller
           command: [jx-build-controller]
           imagePullPolicy:
-          image: "gcr.io/jenkinsxio/jx-build-controller:0.0.15"
+          image: "gcr.io/jenkinsxio/jx-build-controller:0.0.17"
           ports:
             - name: http
               containerPort: 8080
@@ -43,6 +43,8 @@ spec:
               path: /readyz
               port: http
           env:
+            - name: GIT_SECRET_MOUNT_PATH
+              value: /secrets/git
             - name: GIT_AUTHOR_EMAIL
               value: jenkins-x@googlegroups.com
             - name: GIT_AUTHOR_NAME
@@ -50,3 +52,11 @@ spec:
             - name: XDG_CONFIG_HOME
               value: /home/jenkins
           resources: null
+          volumeMounts:
+            - mountPath: /secrets/git
+              name: secrets-git
+      volumes:
+        - name: secrets-git
+          secret:
+            defaultMode: 420
+            secretName: tekton-git
