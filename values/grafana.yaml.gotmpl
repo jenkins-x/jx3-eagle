@@ -39,7 +39,7 @@ datasources:
       database: dev
       user: read
       secureJsonData:
-        password: ${DB}
+        password: ${JX_DB}
       jsonData:
         sslmode: "disable" # disable/require/verify-ca/verify-full
         maxOpenConns: 0         # Grafana v5.4+
@@ -48,7 +48,7 @@ datasources:
         postgresVersion: 903 # 903=9.3, 904=9.4, 905=9.5, 906=9.6, 1000=10
         timescaledb: false
     - name: GitHub
-      accessToken: ${GITHUB}
+      accessToken: ${GITHUB_TOKEN}
 
 plugins:
 - grafana-github-datasource
