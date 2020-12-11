@@ -40,7 +40,7 @@ data:
         maxOpenConns: 0
         postgresVersion: 1200
         sslmode: disable
-        timescaledb: true
+        timescaledb: false
       name: jx
       secureJsonData:
         password: ${JX_DB}

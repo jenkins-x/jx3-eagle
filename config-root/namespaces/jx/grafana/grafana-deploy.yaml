@@ -28,10 +28,10 @@ spec:
         app.kubernetes.io/name: grafana
         app.kubernetes.io/instance: grafana
       annotations:
-        checksum/config: 63d56d459204c7027361a4856de31f5a5f64d084f46736f11d7643bc7664cdf3
+        checksum/config: 5d47f18dfb0871b1a502a41bd40a9d30219db6fce32ac38a0d69467791cd3105
         checksum/dashboards-json-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
         checksum/sc-dashboard-provider-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-        checksum/secret: 679b3e8b6e3e861e8267b658f9f83c98d928b8625a1ca258b86127d26356f499
+        checksum/secret: 350a3be71af01c0f18b5a7b22a019f66c0041c7dc66d79f3823539e4fad8ce91
     spec:
       serviceAccountName: grafana
       securityContext:
