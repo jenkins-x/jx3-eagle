@@ -41,6 +41,10 @@ data:
         sslmode: disable
         timescaledb: false
       name: jx
+      secureJsonData:
+        password: ${DB}
       type: postgres
       url: localhost:5432
       user: read
+    - accessToken: ${GITHUB}
+      name: GitHub

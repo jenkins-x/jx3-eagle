@@ -28,10 +28,10 @@ spec:
         app.kubernetes.io/name: grafana
         app.kubernetes.io/instance: grafana
       annotations:
-        checksum/config: 61fc4ea3a1f9811ebba500428e907ad4b65e1412b169aff40e4c594bd0baeb4e
+        checksum/config: 229a4289a81406ea99a8c5b263df72a93a01b8724a7baecce01e0584957e03f9
         checksum/dashboards-json-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
         checksum/sc-dashboard-provider-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-        checksum/secret: c43941cb9a57407f2b70a892961babf51e07e5b025f91478220dd9d9cccd20a2
+        checksum/secret: 0299cba6e358af34a82c1dc1d3788d31bd9ff4196e18ece30a9a970019fda4b0
     spec:
       serviceAccountName: grafana
       securityContext:
@@ -86,6 +86,9 @@ spec:
                 configMapKeyRef:
                   name: grafana
                   key: plugins
+          envFrom:
+            - secretRef:
+                name: grafana-jx
           livenessProbe:
             failureThreshold: 10
             httpGet:
