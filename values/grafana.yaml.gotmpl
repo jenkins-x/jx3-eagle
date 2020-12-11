@@ -27,6 +27,8 @@ grafana.ini:
 deploymentStrategy: { "type": "Recreate" }
 testFramework.enabled: false
 
+envFromSecret: grafana-jx
+
 datasources:
   datasources.yaml:
     apiVersion: 1
@@ -36,6 +38,8 @@ datasources:
       url: localhost:5432
       database: dev
       user: read
+      secureJsonData:
+        password: ${DB}
       jsonData:
         sslmode: "disable" # disable/require/verify-ca/verify-full
         maxOpenConns: 0         # Grafana v5.4+
@@ -43,6 +47,8 @@ datasources:
         connMaxLifetime: 14400  # Grafana v5.4+
         postgresVersion: 903 # 903=9.3, 904=9.4, 905=9.5, 906=9.6, 1000=10
         timescaledb: false
+    - name: GitHub
+      accessToken: ${GITHUB}
 
 plugins:
 - grafana-github-datasource

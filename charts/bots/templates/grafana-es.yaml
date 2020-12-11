@@ -1,0 +1,16 @@
+apiVersion: kubernetes-client.io/v1
+kind: ExternalSecret
+metadata:
+  name: grafana-jx
+spec:
+  backendType: gcpSecretsManager
+  data:
+  - key: jx-db
+    name: db
+    property: password
+    version: latest
+  - key: jx-github
+    name: github
+    property: token
+    version: latest
+  projectId: {{ .Values.projectID }}
