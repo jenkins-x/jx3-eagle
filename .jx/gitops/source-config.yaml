@@ -58,6 +58,7 @@ spec:
     providerName: github
     repositories:
     - name: jenkins-x-crds
+    - name: jenkins-resources
     - name: jx-bdd
     - name: knative-serving
     - name: local-external-secrets
