@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-charts
+    provider: github
+    repository: jenkins-resources
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-charts-jenkins-resources
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-charts/jenkins-resources.git
+  org: jenkins-x-charts
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkins-resources
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x-charts/jenkins-resources

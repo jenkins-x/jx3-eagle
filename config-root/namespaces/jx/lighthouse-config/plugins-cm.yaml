@@ -16,6 +16,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-charts/jenkins-resources
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-charts/jenkins-x-crds
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -265,6 +269,22 @@ data:
     owners: {}
     plugins:
       jenkins-x-apps/jx-app-gloo:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-charts/jenkins-resources:
       - approve
       - assign
       - blunderbuss
@@ -1275,6 +1295,9 @@ data:
     - repos:
       - jenkins-x-apps/jx-app-gloo
       trusted_org: jenkins-x-apps
+    - repos:
+      - jenkins-x-charts/jenkins-resources
+      trusted_org: todo
     - repos:
       - jenkins-x-charts/jenkins-x-crds
       trusted_org: todo
