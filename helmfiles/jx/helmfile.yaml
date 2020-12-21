@@ -54,7 +54,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: jx3/jx-preview
-  version: 0.0.135
+  version: 0.0.137
   name: jx-preview
   values:
   - jx-values.yaml
@@ -70,7 +70,7 @@ releases:
   - ../../values/jmc-values.yaml.gotmpl
   - jx-values.yaml
 - chart: jx3/jx-build-controller
-  version: 0.0.17
+  version: 0.0.18
   name: jx-build-controller
   values:
   - ../../values/jx-build-controller-values.yaml.gotmpl
