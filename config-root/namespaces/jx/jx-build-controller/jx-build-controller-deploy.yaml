@@ -5,7 +5,7 @@ metadata:
   name: jx-build-controller
   labels:
     app: jx-build-controller
-    chart: jx-build-controller-0.0.17
+    chart: jx-build-controller-0.0.18
     release: jx-build-controller
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -29,7 +29,7 @@ spec:
         - name: jx-build-controller
           command: [jx-build-controller]
           imagePullPolicy:
-          image: "gcr.io/jenkinsxio/jx-build-controller:0.0.17"
+          image: "gcr.io/jenkinsxio/jx-build-controller:0.0.18"
           ports:
             - name: http
               containerPort: 8080

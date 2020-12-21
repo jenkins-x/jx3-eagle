@@ -5,7 +5,7 @@ metadata:
   name: jenkins-x-controllerbuild
   labels:
     app: jx-build-controller
-    chart: jx-build-controller-0.0.17
+    chart: jx-build-controller-0.0.18
     release: jx-build-controller
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
