@@ -12,4 +12,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: ingress-nginx-controller
   namespace: nginx
+  annotations:
+    kapp.k14s.io/change-group: 'apps.jenkins-x.io/ingress-nginx'
 data:

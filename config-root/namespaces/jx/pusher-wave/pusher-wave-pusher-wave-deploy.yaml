@@ -2,7 +2,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations: {}
   labels:
     app: pusher-wave
     release: "pusher-wave"
@@ -11,6 +10,8 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: pusher-wave-pusher-wave
   namespace: jx
+  annotations:
+    kapp.k14s.io/change-group: 'apps.jenkins-x.io/pusher-wave'
 spec:
   replicas: 1
   selector:

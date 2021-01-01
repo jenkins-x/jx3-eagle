@@ -10,3 +10,5 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: pusher-wave-pusher-wave
   namespace: jx
+  annotations:
+    kapp.k14s.io/change-group: 'apps.jenkins-x.io/pusher-wave'
