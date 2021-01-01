@@ -12,6 +12,8 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: ingress-nginx-controller-admission
   namespace: nginx
+  annotations:
+    kapp.k14s.io/change-group: 'apps.jenkins-x.io/ingress-nginx'
 spec:
   type: ClusterIP
   ports:

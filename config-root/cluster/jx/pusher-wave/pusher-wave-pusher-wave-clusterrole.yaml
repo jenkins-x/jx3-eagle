@@ -9,6 +9,8 @@ metadata:
     heritage: "Helm"
     gitops.jenkins-x.io/pipeline: 'cluster'
   name: pusher-wave-pusher-wave
+  annotations:
+    kapp.k14s.io/change-group: 'apps.jenkins-x.io/pusher-wave'
 rules:
   - apiGroups:
       - ""

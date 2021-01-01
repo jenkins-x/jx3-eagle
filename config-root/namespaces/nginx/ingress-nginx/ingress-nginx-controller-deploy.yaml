@@ -13,6 +13,7 @@ metadata:
   name: ingress-nginx-controller
   namespace: nginx
   annotations:
+    kapp.k14s.io/change-group: 'apps.jenkins-x.io/ingress-nginx'
     wave.pusher.com/update-on-config-change: 'true'
 spec:
   selector:
