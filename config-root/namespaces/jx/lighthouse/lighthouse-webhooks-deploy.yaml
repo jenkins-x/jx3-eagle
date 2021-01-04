@@ -5,11 +5,11 @@ metadata:
   name: lighthouse-webhooks
   labels:
     draft: draft-app
-    chart: "lighthouse-0.0.885"
+    chart: "lighthouse-0.0.900"
     app: lighthouse-webhooks
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    checksum/config: 50b9ce8c4adc32e8f25103ad13ff58b16bc32ae1ab6071e3553342c1368232cb
+    checksum/config: 7682ac9cb4a812fb2ad7b2b9e47ba7a34c52466b7caeb2863b3b655d1a01115e
     wave.pusher.com/update-on-config-change: 'true'
     jenkins-x.io/hash: '95b01efa62f2294ff41889cffbc6e7fc3bf4974152c8cc3ba0bddd2a005040b5'
   namespace: jx
@@ -28,7 +28,7 @@ spec:
       serviceAccountName: lighthouse-webhooks
       containers:
         - name: lighthouse-webhooks
-          image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.885
+          image: gcr.io/jenkinsxio/lighthouse-webhooks:0.0.0-SNAPSHOT-PR-1194-4
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
