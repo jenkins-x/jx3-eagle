@@ -18,5 +18,8 @@ releases:
   name: gradledemo
   values:
   - jx-values.yaml
+- chart: dev/nodedemo
+  version: 1.0.56
+  name: nodedemo
 templates: {}
 renderedvalues: {}
