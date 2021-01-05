@@ -1,0 +1,49 @@
+# Source: nodedemo/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-05T12:28:29Z"
+  deletionTimestamp: null
+  name: 'nodedemo-1.0.56'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.56
+      sha: c96b8ae7a9f345e65a76230c16dd1798f4d518ec
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 565ac76e98f8d5efc21b1af7ee49e123ae5fffc9
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: root
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: root
+      message: |
+        chore: Jenkins X build pack
+      sha: e77d5b3d7afae96da1b71fca36960bf07536653c
+  gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/nodedemo
+  gitOwner: jenkins-x-labs-bdd-tests
+  gitRepository: nodedemo
+  name: 'nodedemo'
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/nodedemo/releases/tag/v1.0.56
+  version: v1.0.56
+status: {}
