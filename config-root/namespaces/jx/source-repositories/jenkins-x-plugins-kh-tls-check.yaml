@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-plugins
+    provider: github
+    repository: kh-tls-check
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-plugins-kh-tls-check
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-plugins/kh-tls-check.git
+  org: jenkins-x-plugins
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: kh-tls-check
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x-plugins/kh-tls-check

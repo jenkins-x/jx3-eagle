@@ -29,6 +29,7 @@ data:
         jenkins-x-plugins/jx-tap: true
         jenkins-x-plugins/jx-updatebot: true
         jenkins-x-plugins/jx-v2-tekton-converter: true
+        jenkins-x-plugins/kh-tls-check: true
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
         jenkins-x-plugins/mink: true
         jenkins-x/acme: true
@@ -155,6 +156,7 @@ data:
         jenkins-x-plugins/jx-tap: merge
         jenkins-x-plugins/jx-updatebot: merge
         jenkins-x-plugins/jx-v2-tekton-converter: merge
+        jenkins-x-plugins/kh-tls-check: merge
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: merge
         jenkins-x-plugins/mink: merge
         jenkins-x/acme: merge
@@ -261,6 +263,7 @@ data:
         - jenkins-x-plugins/jx-tap
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
+        - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/mink
         - jenkins-x/slack
@@ -333,6 +336,7 @@ data:
         - jenkins-x-plugins/jx-tap
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
+        - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/mink
         - jenkins-x/slack

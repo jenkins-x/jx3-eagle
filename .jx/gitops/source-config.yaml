@@ -38,8 +38,8 @@ spec:
     - name: jx-test-collector
     - name: jx-verify
     - name: jx3-pipeline-catalog
-    - name: jxr-packs-kubernetes
     - name: jx3-versions
+    - name: jxr-packs-kubernetes
     - name: octant-jx
     - name: slack
     - name: step-go-releaser
@@ -57,8 +57,8 @@ spec:
     providerKind: github
     providerName: github
     repositories:
-    - name: jenkins-x-crds
     - name: jenkins-resources
+    - name: jenkins-x-crds
     - name: jx-bdd
     - name: knative-serving
     - name: local-external-secrets
@@ -85,6 +85,7 @@ spec:
     - name: jx-tap
     - name: jx-updatebot
     - name: jx-v2-tekton-converter
+    - name: kh-tls-check
     - name: kuberhealthy-terraform-drift-check
     - name: mink
     scheduler: in-repo
