@@ -64,6 +64,7 @@ jxRequirements:
   ingress:
     domain: dev.jenkins-x.me
     externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: rawlingsj80@gmail.com
