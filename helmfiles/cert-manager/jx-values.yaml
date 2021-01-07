@@ -87,5 +87,7 @@ jxRequirementsIngressExternalDNS:
   enabled: false
 jxRequirementsIngressTLS:
   enabled: true
+jxRequirementsKuberhealthy:
+  enabled: false
 jxRequirementsVault:
   enabled: false
