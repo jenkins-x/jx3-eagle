@@ -2,27 +2,29 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-07T17:05:39Z"
+  creationTimestamp: "2021-01-08T16:06:32Z"
   deletionTimestamp: null
-  name: 'jx-pipelines-visualizer-0.0.63'
+  name: 'jx-pipelines-visualizer-0.0.67'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
     - author:
-        email: florian.orpeliere@dailymotion.com
-        name: Florian Orpelière
+        email: v.behar@free.fr
+        name: Vincent Behar
       branch: master
       committer:
-        email: florian.orpeliere@dailymotion.com
-        name: Florian Orpelière
+        email: v.behar@free.fr
+        name: Vincent Behar
       message: |
-        fix: bad path in archived_logs
-      sha: e0dd4e11da6343307d7d873e5aa33bcfe6945b52
+        fix: always set a start time for pipelines
+
+        even if a pipeline has no start time yet, fallback to the creation time of the pipelineactivity
+      sha: c57b937e2324df4b1d13dad4737004e9986cc4cd
   gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
   gitOwner: jenkins-x
   gitRepository: jx-pipelines-visualizer
   name: 'jx-pipelines-visualizer'
-  version: 0.0.63
+  version: 0.0.67
 status: {}
