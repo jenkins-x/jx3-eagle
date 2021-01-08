@@ -1,0 +1,28 @@
+# Source: jx-pipelines-visualizer/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-07T17:05:39Z"
+  deletionTimestamp: null
+  name: 'jx-pipelines-visualizer-0.0.63'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: florian.orpeliere@dailymotion.com
+        name: Florian Orpelière
+      branch: master
+      committer:
+        email: florian.orpeliere@dailymotion.com
+        name: Florian Orpelière
+      message: |
+        fix: bad path in archived_logs
+      sha: e0dd4e11da6343307d7d873e5aa33bcfe6945b52
+  gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
+  gitOwner: jenkins-x
+  gitRepository: jx-pipelines-visualizer
+  name: 'jx-pipelines-visualizer'
+  version: 0.0.63
+status: {}
