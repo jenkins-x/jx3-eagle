@@ -89,7 +89,5 @@ jxRequirementsIngressTLS:
   enabled: true
 jxRequirementsKuberhealthy:
   enabled: false
-jxRequirementsTLSCheck:
-  enabled: false
 jxRequirementsVault:
   enabled: false
