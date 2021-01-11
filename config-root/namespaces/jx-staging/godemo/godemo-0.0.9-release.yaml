@@ -1,0 +1,49 @@
+# Source: godemo/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-11T14:15:18Z"
+  deletionTimestamp: null
+  name: 'godemo-0.0.9'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.9
+      sha: 692f63d1228cfa3ca0065a3bb7ac23e82a17b712
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 15befdf7fa2b1ab19d71392bb79899fde5ae26f6
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: root
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: root
+      message: |
+        chore: Jenkins X build pack
+      sha: 8602f35c6fb9c59fb10caaa290310871fe211442
+  gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/godemo
+  gitOwner: jenkins-x-labs-bdd-tests
+  gitRepository: godemo
+  name: 'godemo'
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/godemo/releases/tag/v0.0.9
+  version: v0.0.9
+status: {}
