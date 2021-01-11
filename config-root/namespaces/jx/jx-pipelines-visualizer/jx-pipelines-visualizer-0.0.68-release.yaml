@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-08T16:06:32Z"
+  creationTimestamp: "2021-01-08T17:27:49Z"
   deletionTimestamp: null
-  name: 'jx-pipelines-visualizer-0.0.67'
+  name: 'jx-pipelines-visualizer-0.0.68'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,13 +18,13 @@ spec:
         email: v.behar@free.fr
         name: Vincent Behar
       message: |
-        fix: always set a start time for pipelines
+        feat: display the number of pipelines for each status
 
-        even if a pipeline has no start time yet, fallback to the creation time of the pipelineactivity
-      sha: c57b937e2324df4b1d13dad4737004e9986cc4cd
+        instead of the latest pipelines
+      sha: 0d9dcc93514e2f987dbbaeb89750bb36e06cde7d
   gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
   gitOwner: jenkins-x
   gitRepository: jx-pipelines-visualizer
   name: 'jx-pipelines-visualizer'
-  version: 0.0.67
+  version: 0.0.68
 status: {}
