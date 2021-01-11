@@ -26,5 +26,7 @@ releases:
 - chart: dev/godemo
   version: 0.0.9
   name: godemo
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
