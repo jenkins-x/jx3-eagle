@@ -1,0 +1,27 @@
+# Source: jx-preview/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-11T22:47:30Z"
+  deletionTimestamp: null
+  name: 'jx-preview-0.0.139'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: 'fix: upgrade base image'
+      sha: bb3ea3433baf3d7b5ad11bc7d517e036246efe15
+  gitHttpUrl: https://github.com/jenkins-x/jx-preview
+  gitOwner: jenkins-x
+  gitRepository: jx-preview
+  name: 'jx-preview'
+  version: 0.0.139
+status: {}
