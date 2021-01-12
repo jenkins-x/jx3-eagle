@@ -2,10 +2,10 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-08T22:05:45Z"
+  creationTimestamp: "2020-12-14T11:05:13Z"
   deletionTimestamp: null
-  name: 'acme-0.0.18'
-  namespace: jx
+  name: 'acme-0.0.19'
+  namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
@@ -19,21 +19,21 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 7e9c5112c7a70510ed19d05c3cba8eb7b1aa4c67
+      sha: cef935a87d9793264f178e5cb4c751009ac70b0c
     - author:
-        email: rawlingsj80@gmail.com
-        name: James Rawlings
+        email: chrism@datacom.co.nz
+        name: Chris Mellard
       branch: master
       committer:
-        email: rawlingsj80@gmail.com
-        name: James Rawlings
+        email: chrism@datacom.co.nz
+        name: Chris Mellard
       message: |
-        chore: move to v1 types
-      sha: 9837bc7c46b7b632bad21be55334fa36c370e5a9
+        fix: fixed up azure dns values for recent version of cert-manager
+      sha: 86b403a9689d964fce8f9c6d56ec1b89bcbb4f98
   gitHttpUrl: https://github.com/jenkins-x/acme
   gitOwner: jenkins-x
   gitRepository: acme
   name: 'acme'
-  releaseNotesURL: https://github.com/jenkins-x/acme/releases/tag/v0.0.18
-  version: v0.0.18
+  releaseNotesURL: https://github.com/jenkins-x/acme/releases/tag/v0.0.19
+  version: v0.0.19
 status: {}
