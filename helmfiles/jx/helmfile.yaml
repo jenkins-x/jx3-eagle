@@ -93,7 +93,7 @@ releases:
   - ../../versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jx3/acme
-  version: 0.0.18
+  version: 0.0.19
   name: acme-jx
   values:
   - ../../versionStream/charts/jx3/acme-jx/values.yaml.gotmpl
