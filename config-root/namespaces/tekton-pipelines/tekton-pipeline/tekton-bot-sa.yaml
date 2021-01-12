@@ -25,5 +25,3 @@ metadata:
   annotations:
     iam.gke.io/gcp-service-account: tf-jx-gentle-titmouse-tekton@jx-labs-infra.iam.gserviceaccount.com
 secrets:
-  - name: tekton-git
-  - name: tekton-container-registry-auth
