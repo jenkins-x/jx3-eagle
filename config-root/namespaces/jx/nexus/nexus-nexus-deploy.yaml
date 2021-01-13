@@ -5,7 +5,7 @@ metadata:
   name: nexus-nexus
   labels:
     app: nexus
-    chart: nexus-0.1.35
+    chart: nexus-0.1.37
     release: nexus
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: nexus
-          image: "gcr.io/jenkinsxio/nexus:0.1.35"
+          image: "gcr.io/jenkinsxio/nexus:0.1.37"
           imagePullPolicy: IfNotPresent
           env:
             - name: NEXUS_CONTEXT

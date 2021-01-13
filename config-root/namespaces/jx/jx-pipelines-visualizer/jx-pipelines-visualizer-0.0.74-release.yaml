@@ -2,29 +2,26 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-08T17:27:49Z"
+  creationTimestamp: "2021-01-13T13:23:52Z"
   deletionTimestamp: null
-  name: 'jx-pipelines-visualizer-0.0.68'
+  name: 'jx-pipelines-visualizer-0.0.74'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
     - author:
-        email: v.behar@free.fr
-        name: Vincent Behar
+        email: james.strachan@gmail.com
+        name: James Strachan
       branch: master
       committer:
-        email: v.behar@free.fr
-        name: Vincent Behar
-      message: |
-        feat: display the number of pipelines for each status
-
-        instead of the latest pipelines
-      sha: 0d9dcc93514e2f987dbbaeb89750bb36e06cde7d
+        email: noreply@github.com
+        name: GitHub
+      message: 'chore: dummy commit to rerun release'
+      sha: 87323bd75ebfd14376c4b411fea2f762b9cb4249
   gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
   gitOwner: jenkins-x
   gitRepository: jx-pipelines-visualizer
   name: 'jx-pipelines-visualizer'
-  version: 0.0.68
+  version: 0.0.74
 status: {}
