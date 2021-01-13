@@ -5,7 +5,7 @@ metadata:
   name: nexus-nexus
   labels:
     app: nexus
-    chart: "nexus-0.1.35"
+    chart: "nexus-0.1.37"
     release: "nexus"
     heritage: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
