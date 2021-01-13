@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-08T21:42:01Z"
+  creationTimestamp: "2021-01-13T08:52:26Z"
   deletionTimestamp: null
-  name: 'springdemo-0.0.32'
+  name: 'springdemo-0.0.33'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.32
-      sha: 5525420cd73f412350c791805473b490f873c47d
+        chore: release 0.0.33
+      sha: a6729fcb943492c123345595d6e83528c5e333f5
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,31 +29,31 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: c0f21dc2601570f5b166bd2f06514ff61e0c7176
+      sha: 99c0e38d45673be9b1abcdfad4aa03ecbf564633
     - author:
         email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
+        name: root
       branch: master
       committer:
         email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
+        name: root
       message: |
         fix: test out pipeline catalog changes
-      sha: 272b2a5440a968ddcf765bd4893eeb05fcdf8799
+      sha: d8dca32832d402214fcf8986d64668482e36c810
     - author:
         email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
+        name: root
       branch: master
       committer:
         email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
+        name: root
       message: |
         chore: Jenkins X build pack
-      sha: 3fffcefe2260829fd7c9e4283401d8b64fc39884
+      sha: eb6fae9227a3e671850953b7e7c4ef5992516cee
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: springdemo
   name: 'springdemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.32
-  version: v0.0.32
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.33
+  version: v0.0.33
 status: {}
