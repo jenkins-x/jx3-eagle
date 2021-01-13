@@ -31,7 +31,7 @@ spec:
         checksum/config: 07078cb2807a66861efc4883db218f33765cafba04e5f6428536396dbc626d65
         checksum/dashboards-json-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
         checksum/sc-dashboard-provider-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-        checksum/secret: e5d32f24053be01b0c69701f24130c51be4b3337c960be5016f202ee4b067f0d
+        checksum/secret: 7b9fea2f727b43bad2cbba6f557bc70cc72a0f2347aa3f59d5c92249515dcb4b
     spec:
       serviceAccountName: grafana
       securityContext:
