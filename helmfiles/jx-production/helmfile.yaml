@@ -19,5 +19,7 @@ releases:
 - chart: dev/nodedemo
   version: 1.0.57
   name: nodedemo
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
