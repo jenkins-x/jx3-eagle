@@ -19,5 +19,7 @@ releases:
 - chart: dev/springdemo
   version: 0.0.33
   name: springdemo
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
