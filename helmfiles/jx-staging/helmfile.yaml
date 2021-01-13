@@ -9,7 +9,7 @@ repositories:
   url: https://chartmuseum-jx.dev.jenkins-x.me
 releases:
 - chart: dev/springdemo
-  version: 0.0.32
+  version: 0.0.33
   name: springdemo
   values:
   - jx-values.yaml
