@@ -2,26 +2,27 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-13T13:23:52Z"
+  creationTimestamp: "2021-01-14T09:43:40Z"
   deletionTimestamp: null
-  name: 'jx-pipelines-visualizer-0.0.74'
+  name: 'jx-pipelines-visualizer-0.0.75'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
     - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: chrism@datacom.co.nz
+        name: Chris Mellard
       branch: master
       committer:
-        email: noreply@github.com
-        name: GitHub
-      message: 'chore: dummy commit to rerun release'
-      sha: 87323bd75ebfd14376c4b411fea2f762b9cb4249
+        email: chrism@datacom.co.nz
+        name: Chris Mellard
+      message: |
+        chore: dep bump
+      sha: f346d2ad6aa73a96f87ac6cd218da415c4d39b91
   gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
   gitOwner: jenkins-x
   gitRepository: jx-pipelines-visualizer
   name: 'jx-pipelines-visualizer'
-  version: 0.0.74
+  version: 0.0.75
 status: {}
