@@ -1,5 +1,9 @@
-name: Kind
-on: [pull_request]
+name: Kind BDD test
+on:
+  # allow manual triggering
+  workflow_dispatch: {}
+  # TODO disable kind BDD for now until it works reliably
+  # pull_request:
 jobs:
   kind:
     runs-on: ubuntu-latest
