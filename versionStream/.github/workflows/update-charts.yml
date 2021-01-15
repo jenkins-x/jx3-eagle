@@ -1,0 +1,18 @@
+name: Update charts in the version stream
+on:
+  schedule:
+  # run at midnight
+  - cron: '0 0 * * *'
+  # allow manual triggering
+  workflow_dispatch: {}
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      name: updatebot
+      uses: docker://gcr.io/jenkinsxio/jx-updatebot:0.0.22
+      with:
+        args: -c .github/workflows/update-charts/updatebot.yaml
