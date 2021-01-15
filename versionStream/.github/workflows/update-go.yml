@@ -1,4 +1,4 @@
-name: Update charts in the version stream
+name: Update go dependencies in jx repositories
 on:
   schedule:
   # run at midnight
@@ -15,4 +15,4 @@ jobs:
       name: updatebot
       uses: docker://gcr.io/jenkinsxio/jx-updatebot:0.0.30
       with:
-        args: pr -c .github/workflows/update-charts/updatebot.yaml --no-version --git-credentials
+        args: pr -c .github/workflows/update-go/updatebot.yaml --no-version --git-credentials
