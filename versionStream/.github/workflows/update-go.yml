@@ -12,8 +12,7 @@ jobs:
     - uses: actions/checkout@v1
     - env:
         GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
-        XDG_CONFIG_HOME: /home/.config
       name: updatebot
-      uses: docker://gcr.io/jenkinsxio/jx-updatebot:0.0.31
+      uses: docker://gcr.io/jenkinsxio/jx-updatebot:0.0.34
       with:
         args: pr -c .github/workflows/update-go/updatebot.yaml --no-version --git-credentials
