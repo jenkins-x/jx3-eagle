@@ -62,6 +62,7 @@ spec:
     - name: jx-bdd
     - name: knative-serving
     - name: local-external-secrets
+    - name: nfs-subdir-external-provisioner
     - name: pusher-wave
     - name: vault-instance
     scheduler: in-repo
