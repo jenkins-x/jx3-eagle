@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-charts
+    provider: github
+    repository: nfs-subdir-external-provisioner
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-charts-nfs-subdir-external-provisioner
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-charts/nfs-subdir-external-provisioner.git
+  org: jenkins-x-charts
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: nfs-subdir-external-provisioner
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x-charts/nfs-subdir-external-provisioner

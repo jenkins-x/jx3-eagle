@@ -12,6 +12,7 @@ data:
         jenkins-x-charts/jx-bdd: true
         jenkins-x-charts/knative-serving: true
         jenkins-x-charts/local-external-secrets: true
+        jenkins-x-charts/nfs-subdir-external-provisioner: true
         jenkins-x-charts/pusher-wave: true
         jenkins-x-charts/vault-instance: true
         jenkins-x-labs-bdd-tests/godemo: true
@@ -138,6 +139,7 @@ data:
         jenkins-x-charts/jx-bdd: merge
         jenkins-x-charts/knative-serving: merge
         jenkins-x-charts/local-external-secrets: merge
+        jenkins-x-charts/nfs-subdir-external-provisioner: merge
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
         jenkins-x-images/kaniko: merge
@@ -214,6 +216,7 @@ data:
         - jenkins-x-charts/jx-bdd
         - jenkins-x-charts/knative-serving
         - jenkins-x-charts/local-external-secrets
+        - jenkins-x-charts/nfs-subdir-external-provisioner
         - jenkins-x-charts/pusher-wave
         - jenkins-x-charts/vault-instance
         - jenkins-x/feature-infra-secrets
@@ -287,6 +290,7 @@ data:
         - jenkins-x-charts/jx-bdd
         - jenkins-x-charts/knative-serving
         - jenkins-x-charts/local-external-secrets
+        - jenkins-x-charts/nfs-subdir-external-provisioner
         - jenkins-x-charts/pusher-wave
         - jenkins-x-charts/vault-instance
         - jenkins-x/feature-infra-secrets
