@@ -1,0 +1,28 @@
+# Source: jx-pipelines-visualizer/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-19T09:26:18Z"
+  deletionTimestamp: null
+  name: 'jx-pipelines-visualizer-1.0.3'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: v.behar@free.fr
+        name: Vincent Behar
+      branch: master
+      committer:
+        email: v.behar@free.fr
+        name: Vincent Behar
+      message: |
+        fix: display the error msg for the archived logs
+      sha: 39aef8e0ecab6f602abb1ee843adcde6d598ff2a
+  gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
+  gitOwner: jenkins-x
+  gitRepository: jx-pipelines-visualizer
+  name: 'jx-pipelines-visualizer'
+  version: 1.0.3
+status: {}
