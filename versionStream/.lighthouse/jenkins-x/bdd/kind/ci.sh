@@ -11,7 +11,7 @@ else
       echo "has valid git token for kind/ci.sh"
 fi
 
-export WORKING_DIR=$(pwd)
+export WORKING_DIR=/home/runner/work/jx3-versions
 
 
 export NO_JX_TEST="true"
@@ -56,8 +56,8 @@ jx upgrade plugins --boot --path /usr/bin
 export BDD_NAME="bdd-kind"
 
 # lets default env vars that don't get populated if not running in jx
-export BRANCH_NAME="${BRANCH_NAME:-pr-todo}"
-export BUILD_NUMBER="${BUILD_NUMBER:-1}"
+export BRANCH_NAME="${BRANCH_NAME:-pr-${GITHUB_RUN_ID}-${GITHUB_RUN_NUMBER}}"
+export BUILD_NUMBER="${GITHUB_RUN_NUMBER}"
 
 # the gitops repository template to use
 export GITOPS_TEMPLATE_PROJECT="jx3-gitops-repositories/jx3-kind-vault"
