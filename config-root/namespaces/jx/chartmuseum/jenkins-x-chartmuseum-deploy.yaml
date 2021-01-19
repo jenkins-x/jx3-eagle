@@ -5,7 +5,7 @@ metadata:
   name: jenkins-x-chartmuseum
   labels:
     app: chartmuseum
-    chart: chartmuseum-2.4.1
+    chart: chartmuseum-2.14.2
     heritage: "Helm"
     release: "chartmuseum"
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -29,10 +29,13 @@ spec:
         app: chartmuseum
         release: "chartmuseum"
     spec:
+      securityContext:
+        fsGroup: 1000
       containers:
         - name: chartmuseum
-          image: chartmuseum/chartmuseum:v0.8.2
+          image: chartmuseum/chartmuseum:v0.12.0
           imagePullPolicy: IfNotPresent
+          securityContext: {}
           env:
             - name: "AUTH_ANONYMOUS_GET"
               value: "true"
@@ -90,8 +93,6 @@ spec:
             requests:
               cpu: 160m
               memory: 128Mi
-      securityContext:
-        fsGroup: 1000
       volumes:
         - name: storage-volume
           persistentVolumeClaim:
