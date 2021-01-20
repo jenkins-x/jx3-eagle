@@ -1,0 +1,30 @@
+# Source: jx-preview/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-19T10:29:54Z"
+  deletionTimestamp: null
+  name: 'jx-preview-0.0.144'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: youssef.elhouti@gmail.com
+        name: Youssef El Houti
+      branch: master
+      committer:
+        email: youssef.elhouti@gmail.com
+        name: Youssef El Houti
+      message: |
+        docs: how to debug jx preview inside a pipeline step
+
+        Signed-off-by: Youssef El Houti <youssef.elhouti@gmail.com>
+      sha: a081b9c725f00320ded9f5167fb140084637fdfa
+  gitHttpUrl: https://github.com/jenkins-x/jx-preview
+  gitOwner: jenkins-x
+  gitRepository: jx-preview
+  name: 'jx-preview'
+  version: 0.0.144
+status: {}
