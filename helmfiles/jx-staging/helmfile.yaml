@@ -33,5 +33,7 @@ releases:
 - chart: dev2/pusher-wave
   version: 0.4.14
   name: pusher-wave
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
