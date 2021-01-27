@@ -19,5 +19,7 @@ releases:
 - chart: dev/local-external-secrets
   version: 0.0.8
   name: local-external-secrets
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
