@@ -119,6 +119,12 @@
 	      <td></td>
 	    </tr>
     <tr>
+	      <td><a href='' title='Local External Secrets'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png' width='24px' height='24px'> local-external-secrets </a></td>
+	      <td>0.0.8</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>nginx</h3></td>
 		    </tr>
 	    <tr>
@@ -171,6 +177,12 @@
 	      <td>0.0.10</td>
 	      <td><a href='http://godemo-jx-staging.dev.jenkins-x.me'>view</a></td>
 	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='https://github.com/pusher/wave' title='wave chart that runs on kubernetes'> <img src='' width='24px' height='24px'> pusher-wave </a></td>
+	      <td>0.4.14</td>
+	      <td></td>
+	      <td><a href='https://github.com/pusher/wave'>source</a></td>
 	    </tr>
 
   </tbody>
