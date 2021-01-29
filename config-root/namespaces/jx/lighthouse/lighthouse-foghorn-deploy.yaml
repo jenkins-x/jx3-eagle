@@ -63,7 +63,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "982863bf259592950973c8d0a07d5e22a51e819e"
+              value: "ac512b070483791339800de4494a99cdd92e7c74"
           resources:
             limits:
               cpu: 100m
