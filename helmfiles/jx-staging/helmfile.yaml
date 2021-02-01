@@ -35,5 +35,8 @@ releases:
   name: pusher-wave
   values:
   - jx-values.yaml
+- chart: dev2/vault-instance
+  version: 1.0.15
+  name: vault-instance
 templates: {}
 renderedvalues: {}
