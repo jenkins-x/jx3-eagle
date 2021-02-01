@@ -1,18 +1,19 @@
-# Source: tekton-pipeline/templates/tekton-pipelines-controller-leaderelection-crb.yaml
+# Source: tekton-pipeline/templates/tekton-pipelines-controller-leaderelection-rb.yaml
 apiVersion: rbac.authorization.k8s.io/v1beta1
-kind: ClusterRoleBinding
+kind: RoleBinding
 metadata:
   name: tekton-pipelines-controller-leaderelection
+  namespace: tekton-pipelines
   labels:
     app.kubernetes.io/component: controller
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
-    gitops.jenkins-x.io/pipeline: 'cluster'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 subjects:
   - kind: ServiceAccount
     name: tekton-pipelines-controller
     namespace: tekton-pipelines
 roleRef:
-  kind: ClusterRole
+  kind: Role
   name: tekton-pipelines-leader-election
   apiGroup: rbac.authorization.k8s.io
