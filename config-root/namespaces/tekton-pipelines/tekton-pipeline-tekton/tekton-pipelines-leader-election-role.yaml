@@ -1,12 +1,13 @@
-# Source: tekton-pipeline/templates/tekton-pipelines-leader-election-clusterrole.yaml
-kind: ClusterRole
+# Source: tekton-pipeline/templates/tekton-pipelines-leader-election-role.yaml
+kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: tekton-pipelines-leader-election
+  namespace: tekton-pipelines
   labels:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
-    gitops.jenkins-x.io/pipeline: 'cluster'
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
   # We uses leases for leaderelection
   - apiGroups: ["coordination.k8s.io"]
