@@ -29,7 +29,7 @@ spec:
               env:
                 - name: XDG_CONFIG_HOME
                   value: /home
-              image: gcr.io/jenkinsxio/jx-preview:0.0.151
+              image: gcr.io/jenkinsxio/jx-preview:0.0.153
               imagePullPolicy: IfNotPresent
               name: jx-preview-gc-jobs
               resources: {}
