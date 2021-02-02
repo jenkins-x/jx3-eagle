@@ -1,0 +1,21 @@
+# Source: jx-bdd/templates/role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: jx-bdd
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+rules:
+  - apiGroups: [""]
+    resources:
+      - configmaps
+      - pods
+      - pods/log
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["jenkins.io"]
+    resources: ["*"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["tekton.dev"]
+    resources: ["*"]
+    verbs: ["get", "list", "watch"]
