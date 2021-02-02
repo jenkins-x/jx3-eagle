@@ -35,5 +35,10 @@ releases:
   name: pusher-wave
   values:
   - jx-values.yaml
+- chart: dev2/jx-bdd
+  version: 1.0.9
+  name: jx-bdd
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

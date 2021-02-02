@@ -1,0 +1,65 @@
+# Source: jx-bdd/templates/job.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: jx-bdd
+  labels:
+    app: jx-bdd
+    chart: jx-bdd-1.0.9
+    release: jx-bdd
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-staging
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 12000
+  template:
+    metadata:
+      labels:
+        app: jx-bdd
+        release: jx-bdd
+    spec:
+      restartPolicy: Never
+      serviceAccountName: "jx-bdd"
+      containers:
+        - name: jx-bdd
+          command:
+            - bash
+            - -c
+          args:
+            - |
+              git clone https://github.com/jenkins-x/bdd-jx3
+              cd bdd-jx3
+              jx gitops git setup
+              go mod download
+              make test-quickstart-golang-http
+          imagePullPolicy: IfNotPresent
+          image: "gcr.io/jenkinsxio/jx-bdd:1.0.9"
+          env:
+            - name: GIT_SECRET_MOUNT_PATH
+              value: /secrets/git
+            - name: GIT_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: tekton-git
+                  key: username
+            - name: GIT_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: tekton-git
+                  key: password
+            - name: GH_OWNER
+              value: ""
+            - name: GIT_ORGANISATION
+              value: ""
+            - name: GIT_SERVER_HOST
+              value: "github.com"
+            - name: QUICKSTART
+              value: "golang"
+          resources:
+            limits:
+              cpu: 4
+              memory: 6144Mi
+            requests:
+              cpu: 1
+              memory: 2048Mi
