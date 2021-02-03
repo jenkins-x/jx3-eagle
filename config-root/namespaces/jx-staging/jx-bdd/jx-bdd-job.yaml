@@ -5,7 +5,7 @@ metadata:
   name: jx-bdd
   labels:
     app: jx-bdd
-    chart: jx-bdd-1.0.9
+    chart: jx-bdd-1.0.12
     release: jx-bdd
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -34,7 +34,7 @@ spec:
               go mod download
               make test-quickstart-golang-http
           imagePullPolicy: IfNotPresent
-          image: "gcr.io/jenkinsxio/jx-bdd:1.0.9"
+          image: "gcr.io/jenkinsxio/jx-bdd:1.0.12"
           env:
             - name: GIT_SECRET_MOUNT_PATH
               value: /secrets/git
