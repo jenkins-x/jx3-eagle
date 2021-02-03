@@ -5,7 +5,7 @@ metadata:
   name: lighthouse-keeper
   labels:
     draft: draft-app
-    chart: "lighthouse-0.0.922"
+    chart: "lighthouse-0.0.923"
     app: lighthouse-keeper
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -35,7 +35,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: lighthouse-keeper
-          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.922
+          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.923
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
