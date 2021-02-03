@@ -36,7 +36,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: dev2/jx-bdd
-  version: 1.0.9
+  version: 1.0.12
   name: jx-bdd
   values:
   - jx-values.yaml
