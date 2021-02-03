@@ -1,0 +1,49 @@
+# Source: pusher-wave/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-27T11:30:51Z"
+  deletionTimestamp: null
+  name: 'pusher-wave-0.4.14'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.4.14
+      sha: 69b841b4fecc91d7aa4ee31c68f5a68f94f6919a
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 6e2ce2d1c7ba73695506dd17a1aa0f9277aa50eb
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: upgrade pipelines
+      sha: 757a97f1cc0c80f917458ebba89896c1fd6ad49e
+  gitHttpUrl: https://github.com/jenkins-x-charts/pusher-wave
+  gitOwner: jenkins-x-charts
+  gitRepository: pusher-wave
+  name: 'pusher-wave'
+  releaseNotesURL: https://github.com/jenkins-x-charts/pusher-wave/releases/tag/v0.4.14
+  version: v0.4.14
+status: {}
