@@ -24,5 +24,7 @@ releases:
 - chart: dev/jx-bdd
   version: 1.0.11
   name: jx-bdd
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
