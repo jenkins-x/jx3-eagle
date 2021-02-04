@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-04T12:50:52Z"
+  creationTimestamp: "2021-02-04T13:01:57Z"
   deletionTimestamp: null
-  name: 'springdemo-0.0.35'
+  name: 'springdemo-0.0.37'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.35
-      sha: a704c0a74c084f15c9c334ec095a288a00804aa8
+        chore: release 0.0.37
+      sha: ecaabd883a94c29b793a9386c899be656c45501b
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,21 +29,31 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 4ec2f60e75765fa4953e7a48cf23e0e42f6c4b17
+      sha: c1b12ce4e715b1eed864d592fb340f0c72ded823
     - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
       branch: master
       committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
       message: |
-        fix: add set version
-      sha: 8ea462e198b64b547c12d0b0deac5251669ccdb8
+        fix: test out pipeline catalog changes
+      sha: 1e512e0b3a88694cdac9df6bb599c444cec4f654
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: Jenkins X build pack
+      sha: e46ad7245becae53ab0ba055dda8723060a78bc0
   gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo
   gitOwner: jenkins-x-labs-bdd-tests
   gitRepository: springdemo
   name: 'springdemo'
-  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.35
-  version: v0.0.35
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.37
+  version: v0.0.37
 status: {}
