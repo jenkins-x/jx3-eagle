@@ -248,6 +248,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/secretfacade
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/slack
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -709,6 +713,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/mink:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/secretfacade:
       - approve
       - assign
       - blunderbuss
@@ -1508,6 +1528,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/mink
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/secretfacade
       trusted_org: todo
     - repos:
       - jenkins-x/slack

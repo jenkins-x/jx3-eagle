@@ -33,6 +33,7 @@ data:
         jenkins-x-plugins/kh-tls-check: true
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
         jenkins-x-plugins/mink: true
+        jenkins-x-plugins/secretfacade: true
         jenkins-x/acme: true
         jenkins-x/feature-infra-secrets: true
         jenkins-x/flagger-metrics: true
@@ -161,6 +162,7 @@ data:
         jenkins-x-plugins/kh-tls-check: merge
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: merge
         jenkins-x-plugins/mink: merge
+        jenkins-x-plugins/secretfacade: merge
         jenkins-x/acme: merge
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
@@ -269,6 +271,7 @@ data:
         - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/mink
+        - jenkins-x-plugins/secretfacade
         - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/step-goreleaser
@@ -343,6 +346,7 @@ data:
         - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/mink
+        - jenkins-x-plugins/secretfacade
         - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/step-goreleaser
