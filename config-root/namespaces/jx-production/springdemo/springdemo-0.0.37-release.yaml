@@ -1,0 +1,59 @@
+# Source: springdemo/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-04T13:01:57Z"
+  deletionTimestamp: null
+  name: 'springdemo-0.0.37'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.37
+      sha: ecaabd883a94c29b793a9386c899be656c45501b
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: c1b12ce4e715b1eed864d592fb340f0c72ded823
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        fix: test out pipeline catalog changes
+      sha: 1e512e0b3a88694cdac9df6bb599c444cec4f654
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: Jenkins X build pack
+      sha: e46ad7245becae53ab0ba055dda8723060a78bc0
+  gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo
+  gitOwner: jenkins-x-labs-bdd-tests
+  gitRepository: springdemo
+  name: 'springdemo'
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.37
+  version: v0.0.37
+status: {}
