@@ -11,7 +11,7 @@ repositories:
   url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
 releases:
 - chart: dev/springdemo
-  version: 0.0.43
+  version: 0.0.44
   name: springdemo
   values:
   - jx-values.yaml
