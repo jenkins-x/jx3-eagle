@@ -1,0 +1,49 @@
+# Source: springdemo/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-04T12:50:52Z"
+  deletionTimestamp: null
+  name: 'springdemo-0.0.35'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.35
+      sha: a704c0a74c084f15c9c334ec095a288a00804aa8
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 4ec2f60e75765fa4953e7a48cf23e0e42f6c4b17
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add set version
+      sha: 8ea462e198b64b547c12d0b0deac5251669ccdb8
+  gitHttpUrl: https://github.com/jenkins-x-labs-bdd-tests/springdemo
+  gitOwner: jenkins-x-labs-bdd-tests
+  gitRepository: springdemo
+  name: 'springdemo'
+  releaseNotesURL: https://github.com/jenkins-x-labs-bdd-tests/springdemo/releases/tag/v0.0.35
+  version: v0.0.35
+status: {}
