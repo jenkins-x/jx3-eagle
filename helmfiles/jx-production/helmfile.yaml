@@ -21,5 +21,8 @@ releases:
   name: local-external-secrets
   values:
   - jx-values.yaml
+- chart: dev/springdemo
+  version: 0.0.43
+  name: springdemo
 templates: {}
 renderedvalues: {}
