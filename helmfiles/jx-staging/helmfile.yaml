@@ -40,5 +40,8 @@ releases:
   name: jx-bdd
   values:
   - jx-values.yaml
+- chart: dev2/kubernetes-external-secrets
+  version: 6.2.1
+  name: kubernetes-external-secrets
 templates: {}
 renderedvalues: {}
