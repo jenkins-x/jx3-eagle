@@ -66,6 +66,7 @@ data:
         jenkins-x/jx3-pipeline-catalog: true
         jenkins-x/jx3-versions: true
         jenkins-x/jxr-packs-kubernetes: true
+        jenkins-x/kubernetes-external-secrets: true
         jenkins-x/octant-jx: true
         jenkins-x/slack: true
         jenkins-x/step-go-releaser: true
@@ -195,6 +196,7 @@ data:
         jenkins-x/jx3-pipeline-catalog: merge
         jenkins-x/jx3-versions: merge
         jenkins-x/jxr-packs-kubernetes: merge
+        jenkins-x/kubernetes-external-secrets: merge
         jenkins-x/octant-jx: merge
         jenkins-x/slack: merge
         jenkins-x/step-go-releaser: merge
@@ -252,6 +254,7 @@ data:
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jx3-versions
         - jenkins-x/jxr-packs-kubernetes
+        - jenkins-x/kubernetes-external-secrets
         - jenkins-x-labs-bdd-tests/godemo
         - jenkins-x-labs-bdd-tests/gradledemo
         - jenkins-x-labs-bdd-tests/nodedemo
@@ -327,6 +330,7 @@ data:
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jx3-versions
         - jenkins-x/jxr-packs-kubernetes
+        - jenkins-x/kubernetes-external-secrets
         - jenkins-x-labs-bdd-tests/godemo
         - jenkins-x-labs-bdd-tests/gradledemo
         - jenkins-x-labs-bdd-tests/nodedemo
