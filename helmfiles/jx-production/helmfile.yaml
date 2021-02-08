@@ -24,5 +24,7 @@ releases:
 - chart: dev/kubernetes-external-secrets
   version: 6.2.1
   name: kubernetes-external-secrets
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
