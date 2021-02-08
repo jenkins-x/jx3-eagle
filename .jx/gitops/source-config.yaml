@@ -40,6 +40,7 @@ spec:
     - name: jx3-pipeline-catalog
     - name: jx3-versions
     - name: jxr-packs-kubernetes
+    - name: kubernetes-external-secrets
     - name: octant-jx
     - name: slack
     - name: step-go-releaser
@@ -88,8 +89,8 @@ spec:
     - name: jx-v2-tekton-converter
     - name: kh-tls-check
     - name: kuberhealthy-terraform-drift-check
-    - name: secretfacade
     - name: mink
+    - name: secretfacade
     scheduler: in-repo
   - owner: jenkins-x-labs-bdd-tests
     provider: https://github.com
