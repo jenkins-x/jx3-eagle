@@ -15,6 +15,7 @@ spec:
           - backend:
               serviceName: hook
               servicePort: 80
+            path: "/hook"
       host: hook-jx.dev.jenkins-x.me
   tls:
     - hosts:
