@@ -5,10 +5,10 @@ metadata:
   name: grafana
   namespace: jx
   labels:
-    helm.sh/chart: grafana-6.2.2
+    helm.sh/chart: grafana-6.3.0
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: grafana
-    app.kubernetes.io/version: "7.3.5"
+    app.kubernetes.io/version: "7.4.0"
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
@@ -28,10 +28,10 @@ spec:
         app.kubernetes.io/name: grafana
         app.kubernetes.io/instance: grafana
       annotations:
-        checksum/config: 1b956603fb84b922746f59522b7422ca4ed497d481647315d00c44fd470c7f8c
+        checksum/config: 392e1965dd868e9b2d18107c9856dcd3765b5570797f82c3bd9c5b82acea58ff
         checksum/dashboards-json-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
         checksum/sc-dashboard-provider-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-        checksum/secret: 4bda36ee2046ea127a57858a871942421af44ee90c70a1e7f25c7da5f63ede60
+        checksum/secret: 8f2c3ce3db62868796d97bf28cdfad8f57cd3d35671db759eb80bb7b4dce4c68
     spec:
       serviceAccountName: grafana
       securityContext:
@@ -52,7 +52,7 @@ spec:
               mountPath: "/var/lib/grafana"
       containers:
         - name: grafana
-          image: "grafana/grafana:7.3.5"
+          image: "grafana/grafana:7.4.0"
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: config
