@@ -50,13 +50,14 @@ spec:
     key: production
   ingress:
     domain: dev.jenkins-x.me
-    externalDNS: false
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: rawlingsj80@gmail.com
       enabled: true
       production: true
+  kuberhealthy: true
   pipelineUser:
     username: jenkins-x-bot-test
   repository: nexus

@@ -63,13 +63,14 @@ jxRequirements:
     key: production
   ingress:
     domain: dev.jenkins-x.me
-    externalDNS: false
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -secret-infra.
     tls:
       email: rawlingsj80@gmail.com
       enabled: true
       production: true
+  kuberhealthy: true
   pipelineUser:
     username: jenkins-x-bot-test
   repository: nexus
@@ -84,12 +85,12 @@ jxRequirements:
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
-  enabled: false
+  enabled: true
 jxRequirementsIngressTLS:
   enabled: true
 jxRequirementsKuberhealthy:
-  enabled: false
+  enabled: true
 jxRequirementsTLSCheck:
-  enabled: false
+  enabled: true
 jxRequirementsVault:
   enabled: false
