@@ -5,7 +5,7 @@ metadata:
   name: lighthouse-foghorn
   labels:
     draft: draft-app
-    chart: "lighthouse-0.0.930"
+    chart: "lighthouse-0.0.933"
     app: lighthouse-foghorn
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -27,7 +27,7 @@ spec:
       serviceAccountName: lighthouse-foghorn
       containers:
         - name: lighthouse-foghorn
-          image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.930
+          image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.933
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -48,6 +48,7 @@ spec:
                 secretKeyRef:
                   name: "lighthouse-hmac-token"
                   key: hmac
+                  optional: false
             - name: "JX_LOG_FORMAT"
               value: "json"
             - name: "LOGRUS_FORMAT"

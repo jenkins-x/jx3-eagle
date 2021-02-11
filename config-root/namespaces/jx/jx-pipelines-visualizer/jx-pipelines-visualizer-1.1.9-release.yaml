@@ -2,14 +2,24 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-05T15:11:10Z"
+  creationTimestamp: "2021-02-10T16:01:31Z"
   deletionTimestamp: null
-  name: 'jx-pipelines-visualizer-1.1.8'
+  name: 'jx-pipelines-visualizer-1.1.9'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: upgrade deps
+      sha: c08b85e641ecb38813b869b32d4c3490271d846c
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -22,21 +32,9 @@ spec:
 
         from: https://github.com/jenkins-x/jx3-versions
       sha: 969896dec59fa8e5820ae283662e7a4db5bb1f20
-    - author:
-        email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
-      branch: master
-      committer:
-        email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
-      message: |
-        chore: upgrade go dependencies
-
-        from: https://github.com/jenkins-x/jx3-versions
-      sha: 116a6c7d4c229ebcd4da70450947ed8caf10fe15
   gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
   gitOwner: jenkins-x
   gitRepository: jx-pipelines-visualizer
   name: 'jx-pipelines-visualizer'
-  version: 1.1.8
+  version: 1.1.9
 status: {}
