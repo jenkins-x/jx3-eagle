@@ -1,0 +1,39 @@
+# Source: pusher-wave/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-11T10:42:56Z"
+  deletionTimestamp: null
+  name: 'pusher-wave-0.4.15'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.4.15
+      sha: c9a1fc7dad7aca031dde9182635d019d363a7c3a
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 776feb68b5e0e6f788d5cea2f7aef848e9e21b8d
+  gitHttpUrl: https://github.com/jenkins-x-charts/pusher-wave
+  gitOwner: jenkins-x-charts
+  gitRepository: pusher-wave
+  name: 'pusher-wave'
+  releaseNotesURL: https://github.com/jenkins-x-charts/pusher-wave/releases/tag/v0.4.15
+  version: v0.4.15
+status: {}
