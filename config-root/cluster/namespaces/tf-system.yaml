@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  labels:
+    name: tf-system
+    gitops.jenkins-x.io/pipeline: 'cluster'
+    team: 'jx'
+  name: tf-system
+spec: {}
+status: {}

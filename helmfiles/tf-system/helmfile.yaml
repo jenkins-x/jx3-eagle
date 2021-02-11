@@ -1,9 +1,16 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 repositories:
 - name: isaaguilar
   url: https://isaaguilar.github.io/helm-charts
 releases:
 - chart: isaaguilar/terraform-operator
+  name: terraform-operator
   namespace: tf-system
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

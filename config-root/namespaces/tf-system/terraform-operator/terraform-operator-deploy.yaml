@@ -1,0 +1,60 @@
+# Source: terraform-operator/templates/controller-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: terraform-operator
+  labels:
+    app: terraform-operator
+    chart: terraform-operator-v0.1.10
+    release: terraform-operator
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: tf-system
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  selector:
+    matchLabels:
+      app: terraform-operator
+      release: terraform-operator
+  template:
+    metadata:
+      labels:
+        app: terraform-operator
+        release: terraform-operator
+    spec:
+      serviceAccountName: terraform-operator
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1001
+      containers:
+        - name: terraform-operator
+          image: "isaaguilar/terraform-operator:v0.3.3"
+          imagePullPolicy: Always
+          command:
+            - terraform-operator
+          args:
+            - --zap-level=debug
+            - --zap-encoder=console
+          env:
+            - name: WATCH_NAMESPACE # Leave blank to watch all namespaces
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: terraform-operator
+          resources:
+            limits:
+              cpu: 50m
+              memory: 128M
+            requests:
+              cpu: 25m
+              memory: 64M

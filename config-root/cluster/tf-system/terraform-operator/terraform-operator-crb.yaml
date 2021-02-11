@@ -1,0 +1,19 @@
+# Source: terraform-operator/templates/controller-clusterrolebinding.yaml
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: terraform-operator
+  labels:
+    app: terraform-operator
+    chart: terraform-operator-v0.1.10
+    release: terraform-operator
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'cluster'
+subjects:
+  - kind: ServiceAccount
+    name: terraform-operator
+    namespace: tf-system
+roleRef:
+  kind: ClusterRole
+  name: terraform-operator
+  apiGroup: rbac.authorization.k8s.io
