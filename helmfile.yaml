@@ -1,11 +1,12 @@
 filepath: ""
 helmfiles:
 - path: helmfiles/cert-manager/helmfile.yaml
-- path: helmfiles/jx/helmfile.yaml
 - path: helmfiles/jx-production/helmfile.yaml
+- path: helmfiles/jx-staging/helmfile.yaml
+- path: helmfiles/jx/helmfile.yaml
 - path: helmfiles/nginx/helmfile.yaml
 - path: helmfiles/secret-infra/helmfile.yaml
 - path: helmfiles/tekton-pipelines/helmfile.yaml
-- path: helmfiles/jx-staging/helmfile.yaml
+- path: helmfiles/tf-system/helmfile.yaml
 templates: {}
 renderedvalues: {}

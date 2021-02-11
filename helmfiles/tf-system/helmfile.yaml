@@ -1,0 +1,9 @@
+filepath: ""
+repositories:
+- name: isaaguilar
+  url: https://isaaguilar.github.io/helm-charts
+releases:
+- chart: isaaguilar/terraform-operator
+  namespace: tf-system
+templates: {}
+renderedvalues: {}
