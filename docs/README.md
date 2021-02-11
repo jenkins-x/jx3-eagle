@@ -30,6 +30,114 @@
 	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
 	    </tr>
     <tr>
+		      <td colspan='4'><h3>jx-production</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='' title='Acme'> <img src='https://avatars2.githubusercontent.com/u/35583233?s=200&v=4' width='24px' height='24px'> acme </a></td>
+	      <td>0.0.20</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='Local External Secrets'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png' width='24px' height='24px'> local-external-secrets </a></td>
+	      <td>0.0.8</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
+		      <td colspan='4'><h3>jx-production</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='' title='Acme'> <img src='https://avatars2.githubusercontent.com/u/35583233?s=200&v=4' width='24px' height='24px'> acme </a></td>
+	      <td>0.0.20</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='Local External Secrets'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png' width='24px' height='24px'> local-external-secrets </a></td>
+	      <td>0.0.8</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
+		      <td colspan='4'><h3>jx-staging</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> springdemo </a></td>
+	      <td>0.0.44</td>
+	      <td><a href='http://springdemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> gradledemo </a></td>
+	      <td>0.0.4</td>
+	      <td><a href='http://gradledemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodedemo </a></td>
+	      <td>1.0.57</td>
+	      <td><a href='http://nodedemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> godemo </a></td>
+	      <td>0.0.11</td>
+	      <td><a href='http://godemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='https://github.com/pusher/wave' title='wave chart that runs on kubernetes'> <img src='' width='24px' height='24px'> pusher-wave </a></td>
+	      <td>0.4.15</td>
+	      <td></td>
+	      <td><a href='https://github.com/pusher/wave'>source</a></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='A helm chart for running the Jenkins X BDD tests'> <img src='https://avatars2.githubusercontent.com/u/47602533' width='24px' height='24px'> jx-bdd </a></td>
+	      <td>1.0.10</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
+		      <td colspan='4'><h3>jx-staging</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> springdemo </a></td>
+	      <td>0.0.44</td>
+	      <td><a href='http://springdemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> gradledemo </a></td>
+	      <td>0.0.4</td>
+	      <td><a href='http://gradledemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodedemo </a></td>
+	      <td>1.0.57</td>
+	      <td><a href='http://nodedemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> godemo </a></td>
+	      <td>0.0.11</td>
+	      <td><a href='http://godemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='https://github.com/pusher/wave' title='wave chart that runs on kubernetes'> <img src='' width='24px' height='24px'> pusher-wave </a></td>
+	      <td>0.4.15</td>
+	      <td></td>
+	      <td><a href='https://github.com/pusher/wave'>source</a></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title='A helm chart for running the Jenkins X BDD tests'> <img src='https://avatars2.githubusercontent.com/u/47602533' width='24px' height='24px'> jx-bdd </a></td>
+	      <td>1.0.10</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
@@ -47,7 +155,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse).
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
-	      <td>0.0.930</td>
+	      <td>0.0.933</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
@@ -78,7 +186,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
-	      <td>1.1.8</td>
+	      <td>1.1.9</td>
 	      <td><a href='https://dashboard-jx.dev.jenkins-x.me'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
@@ -136,7 +244,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse).
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
-	      <td>0.0.930</td>
+	      <td>0.0.933</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
@@ -167,7 +275,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
-	      <td>1.1.8</td>
+	      <td>1.1.9</td>
 	      <td><a href='https://dashboard-jx.dev.jenkins-x.me'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
@@ -204,36 +312,6 @@
     <tr>
 	      <td><a href='' title='Acme'> <img src='https://avatars2.githubusercontent.com/u/35583233?s=200&v=4' width='24px' height='24px'> acme </a></td>
 	      <td>0.0.19</td>
-	      <td></td>
-	      <td></td>
-	    </tr>
-    <tr>
-		      <td colspan='4'><h3>jx-production</h3></td>
-		    </tr>
-	    <tr>
-	      <td><a href='' title='Acme'> <img src='https://avatars2.githubusercontent.com/u/35583233?s=200&v=4' width='24px' height='24px'> acme </a></td>
-	      <td>0.0.20</td>
-	      <td></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='Local External Secrets'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png' width='24px' height='24px'> local-external-secrets </a></td>
-	      <td>0.0.8</td>
-	      <td></td>
-	      <td></td>
-	    </tr>
-    <tr>
-		      <td colspan='4'><h3>jx-production</h3></td>
-		    </tr>
-	    <tr>
-	      <td><a href='' title='Acme'> <img src='https://avatars2.githubusercontent.com/u/35583233?s=200&v=4' width='24px' height='24px'> acme </a></td>
-	      <td>0.0.20</td>
-	      <td></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='Local External Secrets'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png' width='24px' height='24px'> local-external-secrets </a></td>
-	      <td>0.0.8</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
@@ -292,80 +370,20 @@
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>jx-staging</h3></td>
+		      <td colspan='4'><h3>tf-system</h3></td>
 		    </tr>
 	    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> springdemo </a></td>
-	      <td>0.0.44</td>
-	      <td><a href='http://springdemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td><a href='' title='A Helm chart to deploy the terraform-operator Controller and CRD.'> <img src='' width='24px' height='24px'> terraform-operator </a></td>
 	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> gradledemo </a></td>
-	      <td>0.0.4</td>
-	      <td><a href='http://gradledemo-jx-staging.dev.jenkins-x.me'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodedemo </a></td>
-	      <td>1.0.57</td>
-	      <td><a href='http://nodedemo-jx-staging.dev.jenkins-x.me'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> godemo </a></td>
-	      <td>0.0.11</td>
-	      <td><a href='http://godemo-jx-staging.dev.jenkins-x.me'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='https://github.com/pusher/wave' title='wave chart that runs on kubernetes'> <img src='' width='24px' height='24px'> pusher-wave </a></td>
-	      <td>0.4.14</td>
-	      <td></td>
-	      <td><a href='https://github.com/pusher/wave'>source</a></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A helm chart for running the Jenkins X BDD tests'> <img src='https://avatars2.githubusercontent.com/u/47602533' width='24px' height='24px'> jx-bdd </a></td>
-	      <td>1.0.10</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>jx-staging</h3></td>
+		      <td colspan='4'><h3>tf-system</h3></td>
 		    </tr>
 	    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> springdemo </a></td>
-	      <td>0.0.44</td>
-	      <td><a href='http://springdemo-jx-staging.dev.jenkins-x.me'>view</a></td>
+	      <td><a href='' title='A Helm chart to deploy the terraform-operator Controller and CRD.'> <img src='' width='24px' height='24px'> terraform-operator </a></td>
 	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> gradledemo </a></td>
-	      <td>0.0.4</td>
-	      <td><a href='http://gradledemo-jx-staging.dev.jenkins-x.me'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodedemo </a></td>
-	      <td>1.0.57</td>
-	      <td><a href='http://nodedemo-jx-staging.dev.jenkins-x.me'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> godemo </a></td>
-	      <td>0.0.11</td>
-	      <td><a href='http://godemo-jx-staging.dev.jenkins-x.me'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='https://github.com/pusher/wave' title='wave chart that runs on kubernetes'> <img src='' width='24px' height='24px'> pusher-wave </a></td>
-	      <td>0.4.14</td>
-	      <td></td>
-	      <td><a href='https://github.com/pusher/wave'>source</a></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A helm chart for running the Jenkins X BDD tests'> <img src='https://avatars2.githubusercontent.com/u/47602533' width='24px' height='24px'> jx-bdd </a></td>
-	      <td>1.0.10</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
