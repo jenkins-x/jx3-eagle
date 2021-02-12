@@ -10,6 +10,7 @@ releases:
 - chart: isaaguilar/terraform-operator
   name: terraform-operator
   namespace: tf-system
+  version: 0.1.11
   values:
   - jx-values.yaml
   - controller:
