@@ -42,7 +42,13 @@ rules:
   - "*"
   resources:
   - configmaps
-  - job
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups: ["batch", "extensions"]
+  resources:
+  - jobs
   verbs:
   - get
   - list
