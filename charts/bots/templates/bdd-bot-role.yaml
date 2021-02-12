@@ -29,6 +29,16 @@ rules:
   - create
   - delete
 - apiGroups:
+  - tf.isaaguilar.com
+  resources:
+  - terraforms
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - delete
+- apiGroups:
   - "*"
   resources:
   - configmaps
