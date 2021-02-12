@@ -374,7 +374,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='' title='A Helm chart to deploy the terraform-operator Controller and CRD.'> <img src='' width='24px' height='24px'> terraform-operator </a></td>
-	      <td></td>
+	      <td>0.1.11</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
@@ -383,7 +383,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='' title='A Helm chart to deploy the terraform-operator Controller and CRD.'> <img src='' width='24px' height='24px'> terraform-operator </a></td>
-	      <td></td>
+	      <td>0.1.11</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
