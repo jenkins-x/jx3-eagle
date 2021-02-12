@@ -1,4 +1,0 @@
-controller:
-  # TODO scale down until this PR is released
-  # https://github.com/isaaguilar/terraform-operator/pull/7
-  replicaCount: 0
