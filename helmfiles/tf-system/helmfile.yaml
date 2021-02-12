@@ -13,7 +13,5 @@ releases:
   namespace: tf-system
   values:
   - jx-values.yaml
-  - controller:
-      replicaCount: 0
 templates: {}
 renderedvalues: {}
