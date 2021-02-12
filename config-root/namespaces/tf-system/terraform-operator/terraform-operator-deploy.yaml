@@ -13,7 +13,7 @@ metadata:
   annotations:
     wave.pusher.com/update-on-config-change: 'true'
 spec:
-  replicas: 0
+  replicas: 1
   strategy:
     type: RollingUpdate
     rollingUpdate:
