@@ -46,6 +46,8 @@ rules:
       - "*"
     resources:
       - configmaps
+      - pods
+      - services
     verbs:
       - get
       - list
