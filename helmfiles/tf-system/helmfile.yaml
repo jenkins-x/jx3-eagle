@@ -9,9 +9,9 @@ repositories:
 releases:
 - chart: isaaguilar/terraform-operator
   name: terraform-operator
+  verison: 0.3.4
   namespace: tf-system
   values:
   - jx-values.yaml
-  - values.yaml
 templates: {}
 renderedvalues: {}
