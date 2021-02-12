@@ -5,7 +5,7 @@ metadata:
   name: terraform-operator
   labels:
     app: terraform-operator
-    chart: terraform-operator-v0.1.10
+    chart: terraform-operator-v0.1.11
     release: terraform-operator
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'cluster'
@@ -22,6 +22,7 @@ rules:
       - configmaps
       - secrets
       - serviceaccounts
+      - nodes
     verbs:
       - '*'
   - apiGroups:
