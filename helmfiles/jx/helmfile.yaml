@@ -49,7 +49,7 @@ releases:
   - ../../versionStream/charts/stable/chartmuseum/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jx3/pusher-wave
-  version: 0.4.12
+  version: 0.4.16
   name: pusher-wave
   values:
   - jx-values.yaml

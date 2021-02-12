@@ -1,0 +1,49 @@
+# Source: pusher-wave/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-11T10:47:04Z"
+  deletionTimestamp: null
+  name: 'pusher-wave-0.4.16'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.4.16
+      sha: cd6ea30ba5108a91937af4856ef76042842b9b67
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 4451d4a25744995f0c883f2914427658dd578252
+    - author:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        chore:  fix pipeline
+      sha: dc2d1f734a1be88a90da9495c487a801d55e1096
+  gitHttpUrl: https://github.com/jenkins-x-charts/pusher-wave
+  gitOwner: jenkins-x-charts
+  gitRepository: pusher-wave
+  name: 'pusher-wave'
+  releaseNotesURL: https://github.com/jenkins-x-charts/pusher-wave/releases/tag/v0.4.16
+  version: v0.4.16
+status: {}
