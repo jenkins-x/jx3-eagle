@@ -1,0 +1,19 @@
+# Source: jx-test/templates/gc-jobs-role.yaml
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: jx-test-gc
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+rules:
+  - apiGroups:
+      - tf.isaaguilar.com
+    resources:
+      - terraforms
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - delete

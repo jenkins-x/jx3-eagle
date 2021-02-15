@@ -1,0 +1,48 @@
+# Source: jx-test/templates/gc-jobs-cj.yaml
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: jx-test-gc
+  labels:
+    app: jenkins-x-lighthouse-gcjobs
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx
+spec:
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+    spec:
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: jx-test-gc
+            release: x-test
+        spec:
+          containers:
+            - command:
+                - jx-test
+                - gc
+                - -d
+                - 2h
+              env:
+                - name: XDG_CONFIG_HOME
+                  value: /home
+              image: gcr.io/jenkinsxio/jx-test:0.0.750
+              imagePullPolicy: IfNotPresent
+              name: jx-test-gc
+              resources: {}
+              terminationMessagePath: /dev/termination-log
+              terminationMessagePolicy: File
+          dnsPolicy: ClusterFirst
+          restartPolicy: Never
+          schedulerName: default-scheduler
+          securityContext: {}
+          terminationGracePeriodSeconds: 30
+          serviceAccountName: jx-test-gc
+  successfulJobsHistoryLimit: 3
+  schedule: "0 * * * *"
+  startingDeadlineSeconds: 4000
+  suspend: false

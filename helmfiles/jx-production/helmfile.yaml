@@ -7,8 +7,6 @@ namespace: jx-production
 repositories:
 - name: jx3
   url: https://storage.googleapis.com/jenkinsxio/charts
-#- name: dev
-#  url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
 releases:
 - chart: jx3/acme
   version: 0.0.20
@@ -16,10 +14,5 @@ releases:
   values:
   - ../../versionStream/charts/jx3/acme/values.yaml.gotmpl
   - jx-values.yaml
-#- chart: dev/local-external-secrets
-#  version: 0.0.8
-#  name: local-external-secrets
-#  values:
-#  - jx-values.yaml
 templates: {}
 renderedvalues: {}

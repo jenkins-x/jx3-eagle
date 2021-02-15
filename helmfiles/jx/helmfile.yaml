@@ -100,5 +100,7 @@ releases:
   - jx-values.yaml
 - chart: jx3/jx-test
   name: x-test
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
