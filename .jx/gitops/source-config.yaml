@@ -82,6 +82,7 @@ spec:
     - name: jx-health
     - name: jx-kh-check
     - name: jx-release-version
+    - name: jx-registry
     - name: jx-scm
     - name: jx-stash
     - name: jx-tap
