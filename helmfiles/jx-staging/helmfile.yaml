@@ -4,41 +4,5 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-staging
-repositories:
-- name: dev
-  url: https://chartmuseum-jx.dev.jenkins-x.me
-- name: dev2
-  url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-releases:
-- chart: dev/springdemo
-  version: 0.0.44
-  name: springdemo
-  values:
-  - jx-values.yaml
-- chart: dev/gradledemo
-  version: 0.0.4
-  name: gradledemo
-  values:
-  - jx-values.yaml
-- chart: dev/nodedemo
-  version: 1.0.57
-  name: nodedemo
-  values:
-  - jx-values.yaml
-- chart: dev/godemo
-  version: 0.0.11
-  name: godemo
-  values:
-  - jx-values.yaml
-- chart: dev2/pusher-wave
-  version: 0.4.15
-  name: pusher-wave
-  values:
-  - jx-values.yaml
-- chart: dev2/jx-bdd
-  version: 1.0.10
-  name: jx-bdd
-  values:
-  - jx-values.yaml
 templates: {}
 renderedvalues: {}
