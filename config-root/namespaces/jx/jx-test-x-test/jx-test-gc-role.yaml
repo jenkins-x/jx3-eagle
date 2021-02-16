@@ -17,3 +17,11 @@ rules:
       - watch
       - create
       - delete
+  - apiGroups: ["batch", "extensions"]
+    resources:
+      - jobs
+    verbs:
+      - get
+      - list
+      - watch
+      - delete

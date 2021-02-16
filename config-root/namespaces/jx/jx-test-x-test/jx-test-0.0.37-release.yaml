@@ -2,14 +2,24 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-16T06:01:18Z"
+  creationTimestamp: "2021-02-16T11:21:49Z"
   deletionTimestamp: null
-  name: 'jx-test-0.0.36'
+  name: 'jx-test-0.0.37'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: let the GC job delete jobs too
+      sha: 7c1d279e1e7d1efe9da608dfd74b18b4f76e90d2
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -34,29 +44,9 @@ spec:
 
         we can probably disable this logic whenever this PR merges: https://github.com/isaaguilar/terraform-operator/pull/23
       sha: 9c76a92eea3b852b71fa6a56979cdfe825838936
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        chore: regen docs
-      sha: f00e9eb69fb3cd386d12fcfa0ce7908e722e1719
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: add verify result argument
-      sha: 5dff35953bfba74bb2f5ca3b3950075b2f684728
   gitHttpUrl: https://github.com/jenkins-x/jx-test
   gitOwner: jenkins-x
   gitRepository: jx-test
   name: 'jx-test'
-  version: 0.0.36
+  version: 0.0.37
 status: {}
