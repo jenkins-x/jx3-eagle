@@ -1,0 +1,39 @@
+apiVersion: kubernetes-client.io/v1
+kind: ExternalSecret
+metadata:
+  labels:
+    app.kubernetes.io/component: controller
+    app.kubernetes.io/instance: default
+    app.kubernetes.io/part-of: tekton-pipelines
+    gitops.jenkins-x.io/pipeline: namespaces
+  name: aws-bdd-user-creds
+spec:
+  backendType: gcpSecretsManager
+  data:
+  - key: jx-infra-aws-bdd-accountid
+    name: account_id
+    property: account_id
+    version: latest
+  - key: jx-infra-aws-bdd-credentials
+    name: credentials
+    property: credentials
+    version: latest
+  - key: jx-infra-aws-bdd-vaultuser
+    name: vault_user
+    property: vault_user
+    version: latest
+  projectId: {{ .Values.projectID }}
+  template:
+    metadata:
+      annotations:
+        secret.jenkins-x.io/schema-object: '{"name":"aws-bdd-user-creds","properties":[{"name":"username","question":"the
+          bdd pipeline username","help":"the user name used by bdd pipelines running in Jenkins
+          X"},{"name":"password","question":"the
+          bdd pipeline token or password","help":"the bdd token or password used by pipelines
+          running in Jenkins X"}],"mandatory":true}'
+        tekton.dev/git-0: https://github.com
+      labels:
+        app.kubernetes.io/component: controller
+        app.kubernetes.io/instance: default
+        app.kubernetes.io/part-of: tekton-pipelines
+    type: Opaque
