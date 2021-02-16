@@ -99,8 +99,8 @@ releases:
   - ../../versionStream/charts/jx3/acme-jx/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jx3/jx-test
-  name: x-test
   version: 0.0.36
+  name: x-test
   values:
   - jx-values.yaml
 templates: {}
