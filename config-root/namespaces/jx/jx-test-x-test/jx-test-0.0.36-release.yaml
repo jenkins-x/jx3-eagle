@@ -1,0 +1,62 @@
+# Source: jx-test/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-16T06:01:18Z"
+  deletionTimestamp: null
+  name: 'jx-test-0.0.36'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: fix chart image
+      sha: 33946bb7fc336f543ea08e954e6ed07e702e77bb
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: lets remove any active Terraform apply jobs first
+
+        to avoid leaving around apply and delete jobs competing with each other.
+
+        we can probably disable this logic whenever this PR merges: https://github.com/isaaguilar/terraform-operator/pull/23
+      sha: 9c76a92eea3b852b71fa6a56979cdfe825838936
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: regen docs
+      sha: f00e9eb69fb3cd386d12fcfa0ce7908e722e1719
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add verify result argument
+      sha: 5dff35953bfba74bb2f5ca3b3950075b2f684728
+  gitHttpUrl: https://github.com/jenkins-x/jx-test
+  gitOwner: jenkins-x
+  gitRepository: jx-test
+  name: 'jx-test'
+  version: 0.0.36
+status: {}
