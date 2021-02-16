@@ -279,6 +279,7 @@
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jx-test-x-test
+    version: 0.0.36
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -488,6 +489,7 @@
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jx-test-x-test
+    version: 0.0.36
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:
