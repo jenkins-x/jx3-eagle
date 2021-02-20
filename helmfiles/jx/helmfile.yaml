@@ -18,6 +18,7 @@ repositories:
 - name: bitnami
   url: https://charts.bitnami.com/bitnami
 releases:
+- chart: doesNotExist
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.29
   name: jxboot-helmfile-resources
