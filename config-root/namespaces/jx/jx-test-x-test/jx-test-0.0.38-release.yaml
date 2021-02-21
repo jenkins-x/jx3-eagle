@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-16T11:21:49Z"
+  creationTimestamp: "2021-02-21T08:33:23Z"
   deletionTimestamp: null
-  name: 'jx-test-0.0.37'
+  name: 'jx-test-0.0.38'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,35 +18,33 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
+        fix: lets delete the terraform pods
+
+        on delete of the test
+      sha: 7fac49ea8900e893249c8fd7b9bf85baeaa1b8ca
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: lets default the jx version env var
+      sha: 480827b88701a31425d006dd506798704b870bc1
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
         fix: let the GC job delete jobs too
       sha: 7c1d279e1e7d1efe9da608dfd74b18b4f76e90d2
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        chore: fix chart image
-      sha: 33946bb7fc336f543ea08e954e6ed07e702e77bb
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: lets remove any active Terraform apply jobs first
-
-        to avoid leaving around apply and delete jobs competing with each other.
-
-        we can probably disable this logic whenever this PR merges: https://github.com/isaaguilar/terraform-operator/pull/23
-      sha: 9c76a92eea3b852b71fa6a56979cdfe825838936
   gitHttpUrl: https://github.com/jenkins-x/jx-test
   gitOwner: jenkins-x
   gitRepository: jx-test
   name: 'jx-test'
-  version: 0.0.37
+  version: 0.0.38
 status: {}
