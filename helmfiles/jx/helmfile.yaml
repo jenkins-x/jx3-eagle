@@ -99,7 +99,7 @@ releases:
   - ../../versionStream/charts/jx3/acme-jx/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jx3/jx-test
-  version: 0.0.37
+  version: 0.0.38
   name: x-test
   values:
   - jx-values.yaml
