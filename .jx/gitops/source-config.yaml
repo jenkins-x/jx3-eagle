@@ -39,7 +39,6 @@ spec:
     - name: jx-project
     - name: jx-promote
     - name: jx-secret
-    - name: jx-test
     - name: jx-test-collector
     - name: jx-verify
     - name: jx3-pipeline-catalog
@@ -91,6 +90,7 @@ spec:
     - name: jx-slack
     - name: jx-stash
     - name: jx-tap
+    - name: jx-test
     - name: jx-updatebot
     - name: jx-v2-tekton-converter
     - name: kh-tls-check
