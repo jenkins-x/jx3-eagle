@@ -30,6 +30,7 @@ data:
         jenkins-x-plugins/jx-slack: true
         jenkins-x-plugins/jx-stash: true
         jenkins-x-plugins/jx-tap: true
+        jenkins-x-plugins/jx-test: true
         jenkins-x-plugins/jx-updatebot: true
         jenkins-x-plugins/jx-v2-tekton-converter: true
         jenkins-x-plugins/kh-tls-check: true
@@ -61,7 +62,6 @@ data:
         jenkins-x/jx-project: true
         jenkins-x/jx-promote: true
         jenkins-x/jx-secret: true
-        jenkins-x/jx-test: true
         jenkins-x/jx-test-collector: true
         jenkins-x/jx-verify: true
         jenkins-x/jx3-eagle: true
@@ -161,6 +161,7 @@ data:
         jenkins-x-plugins/jx-slack: merge
         jenkins-x-plugins/jx-stash: merge
         jenkins-x-plugins/jx-tap: merge
+        jenkins-x-plugins/jx-test: merge
         jenkins-x-plugins/jx-updatebot: merge
         jenkins-x-plugins/jx-v2-tekton-converter: merge
         jenkins-x-plugins/kh-tls-check: merge
@@ -192,7 +193,6 @@ data:
         jenkins-x/jx-project: merge
         jenkins-x/jx-promote: merge
         jenkins-x/jx-secret: merge
-        jenkins-x/jx-test: merge
         jenkins-x/jx-test-collector: merge
         jenkins-x/jx-verify: merge
         jenkins-x/jx3-eagle: merge
@@ -251,7 +251,6 @@ data:
         - jenkins-x/jx-promote
         - jenkins-x/jx-secret
         - jenkins-x/jx-test-collector
-        - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jx3-versions
@@ -273,6 +272,7 @@ data:
         - jenkins-x-plugins/jx-slack
         - jenkins-x-plugins/jx-stash
         - jenkins-x-plugins/jx-tap
+        - jenkins-x-plugins/jx-test
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
         - jenkins-x-plugins/kh-tls-check
@@ -328,7 +328,6 @@ data:
         - jenkins-x/jx-promote
         - jenkins-x/jx-secret
         - jenkins-x/jx-test-collector
-        - jenkins-x/jx-test
         - jenkins-x/jx-verify
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jx3-versions
@@ -350,6 +349,7 @@ data:
         - jenkins-x-plugins/jx-slack
         - jenkins-x-plugins/jx-stash
         - jenkins-x-plugins/jx-tap
+        - jenkins-x-plugins/jx-test
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
         - jenkins-x-plugins/kh-tls-check

@@ -152,11 +152,11 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jx-test
+      - jenkins-x/jx-verify
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jx-verify
+      - jenkins-x/jx3-eagle
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -237,6 +237,10 @@ data:
     - lgtm_acts_as_approve: true
       repos:
       - jenkins-x-plugins/jx-tap
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x-plugins/jx-test
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -673,6 +677,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-tap:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-test:
       - approve
       - assign
       - blunderbuss
@@ -1184,22 +1204,6 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/jx-test:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x/jx-test-collector:
       - approve
       - assign
@@ -1498,10 +1502,10 @@ data:
       - jenkins-x/jx-test-collector
       trusted_org: todo
     - repos:
-      - jenkins-x/jx-test
+      - jenkins-x/jx-verify
       trusted_org: todo
     - repos:
-      - jenkins-x/jx-verify
+      - jenkins-x/jx3-eagle
       trusted_org: todo
     - repos:
       - jenkins-x/jx3-pipeline-catalog
@@ -1562,6 +1566,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-tap
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-test
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-updatebot
