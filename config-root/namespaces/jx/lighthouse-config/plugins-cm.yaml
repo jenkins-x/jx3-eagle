@@ -148,10 +148,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jx-test-collector
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x/jx-verify
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -237,6 +233,10 @@ data:
     - lgtm_acts_as_approve: true
       repos:
       - jenkins-x-plugins/jx-tap
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x-plugins/jx-test-collector
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -693,6 +693,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-test:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-test-collector:
       - approve
       - assign
       - blunderbuss
@@ -1204,22 +1220,6 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/jx-test-collector:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x/jx-verify:
       - approve
       - assign
@@ -1499,9 +1499,6 @@ data:
       - jenkins-x/jx-secret
       trusted_org: todo
     - repos:
-      - jenkins-x/jx-test-collector
-      trusted_org: todo
-    - repos:
       - jenkins-x/jx-verify
       trusted_org: todo
     - repos:
@@ -1566,6 +1563,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-tap
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-test-collector
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-test

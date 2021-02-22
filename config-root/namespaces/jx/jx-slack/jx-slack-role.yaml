@@ -1,0 +1,55 @@
+# Source: jx-slack/templates/role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: jx-slack
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+rules:
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - pipelineactivities
+    verbs:
+      - get
+      - list
+      - watch
+      - patch
+      - update
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - environments
+    verbs:
+      - get
+      - list
+  - apiGroups:
+      - ""
+    resources:
+      - secrets
+      - configmaps
+      - namespaces
+      - serviceaccounts
+    verbs:
+      - get
+      - list
+  - apiGroups:
+      - extensions
+      - networking.k8s.io
+    resources:
+      - ingresses
+    verbs:
+      - get
+      - watch
+      - list
+  - apiGroups:
+      - ""
+    resourceNames:
+      - plugins
+    resources:
+      - configmaps
+    verbs:
+      - watch
+      - get
+      - update
