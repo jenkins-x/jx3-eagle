@@ -42,6 +42,10 @@ spec:
     - name: jx-verify
     - name: jx3-pipeline-catalog
     - name: jx3-versions
+      slack:
+        channel: jx-pipelines-production
+        kind: failureOrNextSuccess
+        pipeline: all
     - name: jxr-packs-kubernetes
     - name: kubernetes-external-secrets
     - name: octant-jx
