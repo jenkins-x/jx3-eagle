@@ -228,6 +228,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-slack
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/jx-stash
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -257,10 +261,6 @@ data:
     - lgtm_acts_as_approve: true
       repos:
       - jenkins-x-plugins/secretfacade
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - jenkins-x/slack
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -625,6 +625,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-scm:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-slack:
       - approve
       - assign
       - blunderbuss
@@ -1313,22 +1329,6 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/slack:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x/step-go-releaser:
       - approve
       - assign
@@ -1555,6 +1555,9 @@ data:
       - jenkins-x-plugins/jx-scm
       trusted_org: todo
     - repos:
+      - jenkins-x-plugins/jx-slack
+      trusted_org: todo
+    - repos:
       - jenkins-x-plugins/jx-stash
       trusted_org: todo
     - repos:
@@ -1577,9 +1580,6 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/secretfacade
-      trusted_org: todo
-    - repos:
-      - jenkins-x/slack
       trusted_org: todo
     - repos:
       - jenkins-x/step-go-releaser

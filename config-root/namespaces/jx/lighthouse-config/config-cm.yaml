@@ -27,6 +27,7 @@ data:
         jenkins-x-plugins/jx-registry: true
         jenkins-x-plugins/jx-release-version: true
         jenkins-x-plugins/jx-scm: true
+        jenkins-x-plugins/jx-slack: true
         jenkins-x-plugins/jx-stash: true
         jenkins-x-plugins/jx-tap: true
         jenkins-x-plugins/jx-updatebot: true
@@ -69,7 +70,6 @@ data:
         jenkins-x/jxr-packs-kubernetes: true
         jenkins-x/kubernetes-external-secrets: true
         jenkins-x/octant-jx: true
-        jenkins-x/slack: true
         jenkins-x/step-go-releaser: true
         jenkins-x/step-goreleaser: true
         jenkins-x/terraform-azurerm-jx: true
@@ -158,6 +158,7 @@ data:
         jenkins-x-plugins/jx-registry: merge
         jenkins-x-plugins/jx-release-version: merge
         jenkins-x-plugins/jx-scm: merge
+        jenkins-x-plugins/jx-slack: merge
         jenkins-x-plugins/jx-stash: merge
         jenkins-x-plugins/jx-tap: merge
         jenkins-x-plugins/jx-updatebot: merge
@@ -200,7 +201,6 @@ data:
         jenkins-x/jxr-packs-kubernetes: merge
         jenkins-x/kubernetes-external-secrets: merge
         jenkins-x/octant-jx: merge
-        jenkins-x/slack: merge
         jenkins-x/step-go-releaser: merge
         jenkins-x/step-goreleaser: merge
         jenkins-x/terraform-azurerm-jx: merge
@@ -270,6 +270,7 @@ data:
         - jenkins-x-plugins/jx-registry
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-slack
         - jenkins-x-plugins/jx-stash
         - jenkins-x-plugins/jx-tap
         - jenkins-x-plugins/jx-updatebot
@@ -278,7 +279,6 @@ data:
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/mink
         - jenkins-x-plugins/secretfacade
-        - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/step-goreleaser
         - jenkins-x/terraform-azurerm-jx
@@ -347,6 +347,7 @@ data:
         - jenkins-x-plugins/jx-registry
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-slack
         - jenkins-x-plugins/jx-stash
         - jenkins-x-plugins/jx-tap
         - jenkins-x-plugins/jx-updatebot
@@ -355,7 +356,6 @@ data:
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/mink
         - jenkins-x-plugins/secretfacade
-        - jenkins-x/slack
         - jenkins-x/step-go-releaser
         - jenkins-x/step-goreleaser
         - jenkins-x/terraform-azurerm-jx
