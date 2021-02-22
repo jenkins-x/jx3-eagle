@@ -281,6 +281,18 @@
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jx-test-x-test
     version: 0.0.38
+  - apiVersion: v1
+    appVersion: latest
+    description: A Slack bot for Jenkins X
+    home: https://github.com/jenkins-x-plugins/jx-slack
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    name: jx-slack
+    repositoryName: jx3
+    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    resourcePath: config-root/namespaces/jx/jx-slack
+    sources:
+    - https://github.com/jenkins-x-plugins/jx-slack
+    version: 0.0.51
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -492,6 +504,18 @@
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jx-test-x-test
     version: 0.0.38
+  - apiVersion: v1
+    appVersion: latest
+    description: A Slack bot for Jenkins X
+    home: https://github.com/jenkins-x-plugins/jx-slack
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    name: jx-slack
+    repositoryName: jx3
+    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    resourcePath: config-root/namespaces/jx/jx-slack
+    sources:
+    - https://github.com/jenkins-x-plugins/jx-slack
+    version: 0.0.51
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:
