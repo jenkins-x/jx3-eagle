@@ -103,5 +103,10 @@ releases:
   name: x-test
   values:
   - jx-values.yaml
+- chart: jx3/jx-slack
+  version: 0.0.51
+  name: jx-slack
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

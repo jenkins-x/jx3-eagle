@@ -24,7 +24,7 @@ spec:
     - name: jx-cli-base-image
     - name: jx3-eagle
       slack:
-        channel: testing-bot
+        channel: jx-pipelines-production
         kind: failureOrNextSuccess
         pipeline: pullRequest
     - name: jx-docs
@@ -39,7 +39,6 @@ spec:
     - name: jx-project
     - name: jx-promote
     - name: jx-secret
-    - name: jx-test-collector
     - name: jx-verify
     - name: jx3-pipeline-catalog
     - name: jx3-versions
@@ -91,6 +90,7 @@ spec:
     - name: jx-stash
     - name: jx-tap
     - name: jx-test
+    - name: jx-test-collector
     - name: jx-updatebot
     - name: jx-v2-tekton-converter
     - name: kh-tls-check
@@ -109,6 +109,6 @@ spec:
     - name: springdemo
     scheduler: in-repo
   slack:
-    channel: testing-bot
+    channel: jx-pipelines-production
     kind: failureOrNextSuccess
     pipeline: release
