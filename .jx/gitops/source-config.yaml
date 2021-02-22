@@ -22,6 +22,11 @@ spec:
     - name: jx-apps
     - name: jx-cli
     - name: jx-cli-base-image
+    - name: jx3-eagle
+      slack:
+        channel: testing-bot
+        kind: failureOrNextSuccess
+        pipeline: pullRequest
     - name: jx-docs
     - name: jx-git-operator
     - name: jx-gitops
@@ -103,3 +108,7 @@ spec:
     - name: pythondemo
     - name: springdemo
     scheduler: in-repo
+  slack:
+    channel: testing-bot
+    kind: failureOrNextSuccess
+    pipeline: release
