@@ -104,7 +104,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: jx3/jx-slack
-  version: 0.0.51
+  version: 0.0.53
   name: jx-slack
   values:
   - jx-values.yaml
