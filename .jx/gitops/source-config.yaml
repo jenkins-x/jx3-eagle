@@ -47,7 +47,6 @@ spec:
     - name: jxr-packs-kubernetes
     - name: kubernetes-external-secrets
     - name: octant-jx
-    - name: slack
     - name: step-go-releaser
     - name: step-goreleaser
     - name: terraform-azurerm-jx
@@ -89,6 +88,7 @@ spec:
     - name: jx-release-version
     - name: jx-registry
     - name: jx-scm
+    - name: jx-slack
     - name: jx-stash
     - name: jx-tap
     - name: jx-updatebot

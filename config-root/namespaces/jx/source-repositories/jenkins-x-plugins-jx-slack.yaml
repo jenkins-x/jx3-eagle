@@ -3,20 +3,20 @@ kind: SourceRepository
 metadata:
   creationTimestamp: null
   labels:
-    owner: jenkins-x
+    owner: jenkins-x-plugins
     provider: github
-    repository: slack
+    repository: jx-slack
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: jenkins-x-slack
+  name: jenkins-x-plugins-jx-slack
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/jenkins-x/slack.git
-  org: jenkins-x
+  httpCloneURL: https://github.com/jenkins-x-plugins/jx-slack.git
+  org: jenkins-x-plugins
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: slack
+  repo: jx-slack
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/jenkins-x/slack
+  url: https://github.com/jenkins-x-plugins/jx-slack
