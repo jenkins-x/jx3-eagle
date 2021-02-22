@@ -292,7 +292,7 @@
     resourcePath: config-root/namespaces/jx/jx-slack
     sources:
     - https://github.com/jenkins-x-plugins/jx-slack
-    version: 0.0.51
+    version: 0.0.53
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -515,7 +515,7 @@
     resourcePath: config-root/namespaces/jx/jx-slack
     sources:
     - https://github.com/jenkins-x-plugins/jx-slack
-    version: 0.0.51
+    version: 0.0.53
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:
