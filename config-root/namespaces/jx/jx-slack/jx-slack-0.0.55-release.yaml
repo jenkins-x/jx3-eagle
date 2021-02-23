@@ -2,14 +2,24 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-23T17:25:10Z"
+  creationTimestamp: "2021-02-23T17:54:59Z"
   deletionTimestamp: null
-  name: 'jx-slack-0.0.54'
+  name: 'jx-slack-0.0.55'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: pollish PR messages
+      sha: 15d96583938dc098d670e28b32875da2fe98a659
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -50,19 +60,9 @@ spec:
       message: |
         fix: use nicer annotation for message ids
       sha: 51b6f088a2b127fa67be7b39dd15244821f923be
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: add context to message
-      sha: f18ec0ed84ab306f8ab030592223b61ed0ee420b
   gitHttpUrl: https://github.com/jenkins-x-plugins/jx-slack
   gitOwner: jenkins-x-plugins
   gitRepository: jx-slack
   name: 'jx-slack'
-  version: 0.0.54
+  version: 0.0.55
 status: {}
