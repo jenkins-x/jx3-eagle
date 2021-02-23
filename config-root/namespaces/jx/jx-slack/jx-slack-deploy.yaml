@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: slack
-          image: "gcr.io/jenkinsxio/jx-slack:0.0.53"
+          image: "gcr.io/jenkinsxio/jx-slack:0.0.54"
           imagePullPolicy: IfNotPresent
           command:
             - "/jx-slack"
