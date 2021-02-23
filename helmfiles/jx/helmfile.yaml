@@ -31,7 +31,7 @@ releases:
   - ../../versionStream/charts/jx3/jenkins-x-crds/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jenkins-x/lighthouse
-  version: 0.0.934
+  version: 0.0.936
   name: lighthouse
   values:
   - ../../versionStream/charts/jenkins-x/lighthouse/values.yaml.gotmpl
@@ -101,12 +101,12 @@ releases:
   - ../../versionStream/charts/jx3/acme-jx/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jx3/jx-test
-  version: 0.0.38
+  version: 0.0.39
   name: x-test
   values:
   - jx-values.yaml
 - chart: jx3/jx-slack
-  version: 0.0.51
+  version: 0.0.53
   name: jx-slack
   values:
   - jx-values.yaml
