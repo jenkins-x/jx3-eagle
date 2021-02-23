@@ -4,8 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-keeper
   labels:
-    draft: draft-app
-    chart: "lighthouse-0.0.934"
+    chart: "lighthouse-0.0.936"
     app: lighthouse-keeper
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -21,21 +20,19 @@ spec:
       maxUnavailable: 1
   selector:
     matchLabels:
-      draft: draft-app
       app: lighthouse-keeper
   template:
     metadata:
       annotations:
         ad.datadoghq.com/keeper.logs: '[{"source":"lighthouse","service":"keeper"}]'
       labels:
-        draft: draft-app
         app: lighthouse-keeper
     spec:
       serviceAccountName: lighthouse-keeper
       terminationGracePeriodSeconds: 30
       containers:
         - name: lighthouse-keeper
-          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.934
+          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.936
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"

@@ -5,6 +5,7 @@ metadata:
   name: jx-slack
   labels:
     app: jx-slack
+    git.jenkins-x.io/sha: annotate
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
   annotations:
@@ -23,7 +24,7 @@ spec:
     spec:
       containers:
         - name: slack
-          image: "gcr.io/jenkinsxio/jx-slack:0.0.51"
+          image: "gcr.io/jenkinsxio/jx-slack:0.0.53"
           imagePullPolicy: IfNotPresent
           command:
             - "/jx-slack"

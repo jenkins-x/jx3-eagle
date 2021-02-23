@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: lighthouse-tekton-controller
   labels:
-    chart: "lighthouse-0.0.934"
+    chart: "lighthouse-0.0.936"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
 spec:
