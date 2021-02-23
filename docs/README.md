@@ -65,7 +65,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse).
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
-	      <td>0.0.934</td>
+	      <td>0.0.936</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
@@ -120,7 +120,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://grafana.net' title='The leading tool for querying and visualizing time series and metrics.'> <img src='https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png' width='24px' height='24px'> grafana </a></td>
-	      <td></td>
+	      <td>6.4.2</td>
 	      <td><a href='http://grafana-jx.dev.jenkins-x.me/'>view</a></td>
 	      <td><a href='https://grafana.net'>source</a></td>
 	    </tr>
@@ -139,13 +139,13 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test' title='This chart installs the jx-test CronJob to garbage collect failed system test resources
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-test </a></td>
-	      <td>0.0.38</td>
+	      <td>0.0.39</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack' title='A Slack bot for Jenkins X'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-slack </a></td>
-	      <td>0.0.53</td>
+	      <td>0.0.54</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack'>source</a></td>
 	    </tr>
@@ -167,7 +167,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse).
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
-	      <td>0.0.934</td>
+	      <td>0.0.936</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
@@ -222,7 +222,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://grafana.net' title='The leading tool for querying and visualizing time series and metrics.'> <img src='https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png' width='24px' height='24px'> grafana </a></td>
-	      <td></td>
+	      <td>6.4.2</td>
 	      <td><a href='http://grafana-jx.dev.jenkins-x.me/'>view</a></td>
 	      <td><a href='https://grafana.net'>source</a></td>
 	    </tr>
@@ -241,13 +241,13 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test' title='This chart installs the jx-test CronJob to garbage collect failed system test resources
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-test </a></td>
-	      <td>0.0.38</td>
+	      <td>0.0.39</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack' title='A Slack bot for Jenkins X'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-slack </a></td>
-	      <td>0.0.53</td>
+	      <td>0.0.54</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack'>source</a></td>
 	    </tr>
