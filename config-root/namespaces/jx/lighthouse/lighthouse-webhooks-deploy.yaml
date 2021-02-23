@@ -6,6 +6,7 @@ metadata:
   labels:
     chart: "lighthouse-0.0.936"
     app: lighthouse-webhooks
+    git.jenkins-x.io/sha: annotate
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     checksum/config: 0e88bf63f5551fca43d1364fed5f0fad8abedd2f30210f75d60e70d827ac2a0f
