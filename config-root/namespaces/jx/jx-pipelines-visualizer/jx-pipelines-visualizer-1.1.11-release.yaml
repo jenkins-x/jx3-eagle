@@ -2,23 +2,14 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-16T12:47:51Z"
+  creationTimestamp: "2021-02-23T17:26:15Z"
   deletionTimestamp: null
-  name: 'jx-pipelines-visualizer-1.1.10'
+  name: 'jx-pipelines-visualizer-1.1.11'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
-    - author:
-        email: 52448671+hervelemeur@users.noreply.github.com
-        name: Hervé Le Meur
-      branch: master
-      committer:
-        email: noreply@github.com
-        name: GitHub
-      message: 'fix: add jenkins-x chart icon'
-      sha: b1faf4f9c6e48272c3a70513bc98c9e775bc0dbd
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -28,10 +19,21 @@ spec:
         name: James Strachan
       message: |
         chore: upgrade deps
-      sha: c08b85e641ecb38813b869b32d4c3490271d846c
+
+        Signed-off-by: James Strachan <james.strachan@gmail.com>
+      sha: 004f82b9370adfe2450090a42b113e08d972a80e
+    - author:
+        email: 52448671+hervelemeur@users.noreply.github.com
+        name: Hervé Le Meur
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: 'fix: add jenkins-x chart icon'
+      sha: b1faf4f9c6e48272c3a70513bc98c9e775bc0dbd
   gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
   gitOwner: jenkins-x
   gitRepository: jx-pipelines-visualizer
   name: 'jx-pipelines-visualizer'
-  version: 1.1.10
+  version: 1.1.11
 status: {}
