@@ -36,7 +36,6 @@ data:
         jenkins-x-plugins/jx-v2-tekton-converter: true
         jenkins-x-plugins/kh-tls-check: true
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
-        jenkins-x-plugins/mink: true
         jenkins-x-plugins/secretfacade: true
         jenkins-x/acme: true
         jenkins-x/feature-infra-secrets: true
@@ -48,7 +47,6 @@ data:
         jenkins-x/istio: true
         jenkins-x/jx-admin: true
         jenkins-x/jx-application: true
-        jenkins-x/jx-apps: true
         jenkins-x/jx-cli: true
         jenkins-x/jx-cli-base-image: true
         jenkins-x/jx-docs: true
@@ -56,7 +54,6 @@ data:
         jenkins-x/jx-gitops: true
         jenkins-x/jx-go-maven-base-image: true
         jenkins-x/jx-helpers: true
-        jenkins-x/jx-jenkins: true
         jenkins-x/jx-pipeline: true
         jenkins-x/jx-pipelines-visualizer: true
         jenkins-x/jx-preview: true
@@ -70,8 +67,6 @@ data:
         jenkins-x/jxr-packs-kubernetes: true
         jenkins-x/kubernetes-external-secrets: true
         jenkins-x/octant-jx: true
-        jenkins-x/step-go-releaser: true
-        jenkins-x/step-goreleaser: true
         jenkins-x/terraform-azurerm-jx: true
     plank: {}
     pod_namespace: jx
@@ -167,7 +162,6 @@ data:
         jenkins-x-plugins/jx-v2-tekton-converter: merge
         jenkins-x-plugins/kh-tls-check: merge
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: merge
-        jenkins-x-plugins/mink: merge
         jenkins-x-plugins/secretfacade: merge
         jenkins-x/acme: merge
         jenkins-x/feature-infra-secrets: merge
@@ -179,7 +173,6 @@ data:
         jenkins-x/istio: merge
         jenkins-x/jx-admin: merge
         jenkins-x/jx-application: merge
-        jenkins-x/jx-apps: merge
         jenkins-x/jx-cli: merge
         jenkins-x/jx-cli-base-image: merge
         jenkins-x/jx-docs: merge
@@ -187,7 +180,6 @@ data:
         jenkins-x/jx-gitops: merge
         jenkins-x/jx-go-maven-base-image: merge
         jenkins-x/jx-helpers: merge
-        jenkins-x/jx-jenkins: merge
         jenkins-x/jx-pipeline: merge
         jenkins-x/jx-pipelines-visualizer: merge
         jenkins-x/jx-preview: merge
@@ -201,8 +193,6 @@ data:
         jenkins-x/jxr-packs-kubernetes: merge
         jenkins-x/kubernetes-external-secrets: merge
         jenkins-x/octant-jx: merge
-        jenkins-x/step-go-releaser: merge
-        jenkins-x/step-goreleaser: merge
         jenkins-x/terraform-azurerm-jx: merge
       queries:
       - labels:
@@ -235,7 +225,6 @@ data:
         - jenkins-x/istio
         - jenkins-x/jx-admin
         - jenkins-x/jx-application
-        - jenkins-x/jx-apps
         - jenkins-x/jx-cli-base-image
         - jenkins-x/jx-cli
         - jenkins-x/jx-docs
@@ -243,7 +232,6 @@ data:
         - jenkins-x/jx-gitops
         - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
-        - jenkins-x/jx-jenkins
         - jenkins-x/jx-pipeline
         - jenkins-x/jx-pipelines-visualizer
         - jenkins-x/jx-preview
@@ -277,10 +265,7 @@ data:
         - jenkins-x-plugins/jx-v2-tekton-converter
         - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
-        - jenkins-x-plugins/mink
         - jenkins-x-plugins/secretfacade
-        - jenkins-x/step-go-releaser
-        - jenkins-x/step-goreleaser
         - jenkins-x/terraform-azurerm-jx
       - labels:
         - updatebot
@@ -312,7 +297,6 @@ data:
         - jenkins-x/istio
         - jenkins-x/jx-admin
         - jenkins-x/jx-application
-        - jenkins-x/jx-apps
         - jenkins-x/jx-cli-base-image
         - jenkins-x/jx-cli
         - jenkins-x/jx-docs
@@ -320,7 +304,6 @@ data:
         - jenkins-x/jx-gitops
         - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
-        - jenkins-x/jx-jenkins
         - jenkins-x/jx-pipeline
         - jenkins-x/jx-pipelines-visualizer
         - jenkins-x/jx-preview
@@ -354,10 +337,7 @@ data:
         - jenkins-x-plugins/jx-v2-tekton-converter
         - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
-        - jenkins-x-plugins/mink
         - jenkins-x-plugins/secretfacade
-        - jenkins-x/step-go-releaser
-        - jenkins-x/step-goreleaser
         - jenkins-x/terraform-azurerm-jx
       target_url: http://dashboard-jx.dev.jenkins-x.me
 kind: ConfigMap

@@ -88,10 +88,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jx-apps
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x/jx-cli-base-image
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -117,10 +113,6 @@ data:
     - lgtm_acts_as_approve: true
       repos:
       - jenkins-x/jx-helpers
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - jenkins-x/jx-jenkins
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -260,19 +252,7 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x-plugins/mink
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x-plugins/secretfacade
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - jenkins-x/step-go-releaser
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - jenkins-x/step-goreleaser
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -788,22 +768,6 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x-plugins/mink:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x-plugins/secretfacade:
       - approve
       - assign
@@ -980,22 +944,6 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/jx-apps:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x/jx-cli:
       - approve
       - assign
@@ -1093,22 +1041,6 @@ data:
       - dog
       - pony
       jenkins-x/jx-helpers:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      jenkins-x/jx-jenkins:
       - approve
       - assign
       - blunderbuss
@@ -1333,38 +1265,6 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/step-go-releaser:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      jenkins-x/step-goreleaser:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x/terraform-azurerm-jx:
       - approve
       - assign
@@ -1454,9 +1354,6 @@ data:
       - jenkins-x/jx-application
       trusted_org: todo
     - repos:
-      - jenkins-x/jx-apps
-      trusted_org: todo
-    - repos:
       - jenkins-x/jx-cli-base-image
       trusted_org: todo
     - repos:
@@ -1476,9 +1373,6 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jx-helpers
-      trusted_org: todo
-    - repos:
-      - jenkins-x/jx-jenkins
       trusted_org: todo
     - repos:
       - jenkins-x/jx-pipeline
@@ -1583,16 +1477,7 @@ data:
       - jenkins-x-plugins/kuberhealthy-terraform-drift-check
       trusted_org: todo
     - repos:
-      - jenkins-x-plugins/mink
-      trusted_org: todo
-    - repos:
       - jenkins-x-plugins/secretfacade
-      trusted_org: todo
-    - repos:
-      - jenkins-x/step-go-releaser
-      trusted_org: todo
-    - repos:
-      - jenkins-x/step-goreleaser
       trusted_org: todo
     - repos:
       - jenkins-x/terraform-azurerm-jx
