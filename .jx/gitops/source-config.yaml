@@ -19,7 +19,6 @@ spec:
     - name: istio
     - name: jx-admin
     - name: jx-application
-    - name: jx-apps
     - name: jx-cli
     - name: jx-cli-base-image
     - name: jx3-eagle
@@ -32,7 +31,6 @@ spec:
     - name: jx-gitops
     - name: jx-go-maven-base-image
     - name: jx-helpers
-    - name: jx-jenkins
     - name: jx-pipeline
     - name: jx-pipelines-visualizer
     - name: jx-preview
@@ -49,8 +47,6 @@ spec:
     - name: jxr-packs-kubernetes
     - name: kubernetes-external-secrets
     - name: octant-jx
-    - name: step-go-releaser
-    - name: step-goreleaser
     - name: terraform-azurerm-jx
     scheduler: in-repo
   - owner: jenkins-x-apps
@@ -99,7 +95,6 @@ spec:
     - name: jx-v2-tekton-converter
     - name: kh-tls-check
     - name: kuberhealthy-terraform-drift-check
-    - name: mink
     - name: secretfacade
     scheduler: in-repo
   - owner: jenkins-x-labs-bdd-tests
