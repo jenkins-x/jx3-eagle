@@ -87,9 +87,9 @@ releases:
   version: 6.4.2
   name: grafana
   values:
+  - ../../versionStream/charts/grafana/grafana/values.yaml.gotmpl
   - ../../values/grafana.yaml.gotmpl
   - jx-values.yaml
-  - ../../versionStream/charts/grafana/grafana/values.yaml.gotmpl
 - chart: bitnami/external-dns
   version: 4.5.0
   name: external-dns
