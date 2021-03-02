@@ -12,6 +12,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
+  plugins: grafana-github-datasource
   grafana.ini: |
     [analytics]
     check_for_updates = true
@@ -30,4 +31,22 @@ data:
     serve_from_sub_path = true
   datasources.yaml: |
     apiVersion: 1
-    datasources: null
+    datasources:
+    - database: dev
+      isDefault: true
+      jsonData:
+        connMaxLifetime: 14400
+        maxIdleConns: 2
+        maxOpenConns: 0
+        postgresVersion: 1200
+        sslmode: disable
+        timescaledb: false
+      name: jx
+      secureJsonData:
+        password: ${JX_DB}
+      type: postgres
+      url: localhost:5432
+      user: read
+    - name: GitHub
+      secureJsonData:
+        accessToken: ${GITHUB_TOKEN}
