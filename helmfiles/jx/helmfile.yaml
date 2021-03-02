@@ -17,6 +17,8 @@ repositories:
   url: https://grafana.github.io/helm-charts
 - name: bitnami
   url: https://charts.bitnami.com/bitnami
+- name: jxgh
+  url: https://jenkins-x-charts.github.io/repo
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.31
@@ -53,8 +55,8 @@ releases:
   name: pusher-wave
   values:
   - jx-values.yaml
-- chart: jx3/jx-preview
-  version: 0.0.153
+- chart: jxgh/jx-preview
+  version: 0.0.167
   name: jx-preview
   values:
   - jx-values.yaml

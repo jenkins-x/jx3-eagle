@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-01T10:39:08Z"
+  creationTimestamp: "2021-03-01T14:27:11Z"
   deletionTimestamp: null
-  name: 'jx-preview-0.0.153'
+  name: 'jx-preview-0.0.167'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,10 +18,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: migrate to GHA pipeline
-
-        as cloud build has stopped working for multi-arch images
-      sha: be716b14125f6900d8315c61e27b93c631eafa53
+        fix: use github pages for chart
+      sha: 61e626440192fe172aac1129f8bb20fe85bc5d71
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -30,20 +28,11 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: upgrade deps
-      sha: 6eeb03d8720d839a49734ff97ad8835c9e4f8f5b
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: noreply@github.com
-        name: GitHub
-      message: 'chore: upgrade to recent jx-boot'
-      sha: 18b4c5018a5fe014aee0488bfdf700218175917e
+        fix: use github pages for chart
+      sha: 09fdd13bc64d0c81836f68acd14d3da04aa8d8c4
   gitHttpUrl: https://github.com/jenkins-x/jx-preview
   gitOwner: jenkins-x
   gitRepository: jx-preview
   name: 'jx-preview'
-  version: 0.0.153
+  version: 0.0.167
 status: {}
