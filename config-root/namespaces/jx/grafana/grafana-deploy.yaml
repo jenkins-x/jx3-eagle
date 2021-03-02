@@ -28,10 +28,10 @@ spec:
         app.kubernetes.io/name: grafana
         app.kubernetes.io/instance: grafana
       annotations:
-        checksum/config: 0c6199911d4b002dedfe37bc0ad7e1c956aa7016ed7a43e70ea2e7bc70bae9b5
+        checksum/config: 4b2dc983aafd1d1a2d8970a73e38e28651b1ba7eb96440df4dad82ae6168372e
         checksum/dashboards-json-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
         checksum/sc-dashboard-provider-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-        checksum/secret: 3e093a98e060cf4039bc3179eec0493c4b8cece8ff62021cdb4469dd6aa06bf0
+        checksum/secret: eabcdaae8645ced2a48372eb730b5b3b1f796d609d7c09c80f20b17c2e211ad9
     spec:
       serviceAccountName: grafana
       securityContext:
@@ -81,6 +81,11 @@ spec:
                 secretKeyRef:
                   name: grafana
                   key: admin-password
+            - name: GF_INSTALL_PLUGINS
+              valueFrom:
+                configMapKeyRef:
+                  name: grafana
+                  key: plugins
           envFrom:
             - secretRef:
                 name: grafana-jx
