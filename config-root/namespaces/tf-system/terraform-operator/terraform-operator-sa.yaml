@@ -5,7 +5,7 @@ metadata:
   name: terraform-operator
   labels:
     app: terraform-operator
-    chart: terraform-operator-v0.1.11
+    chart: terraform-operator-v0.1.14
     release: terraform-operator
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'

@@ -5,7 +5,7 @@ metadata:
   name: terraform-operator
   labels:
     app: terraform-operator
-    chart: terraform-operator-v0.1.11
+    chart: terraform-operator-v0.1.14
     release: terraform-operator
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -35,7 +35,7 @@ spec:
         runAsUser: 1001
       containers:
         - name: terraform-operator
-          image: "isaaguilar/terraform-operator:v0.3.4"
+          image: "isaaguilar/terraform-operator:v0.3.7"
           imagePullPolicy: Always
           command:
             - terraform-operator
