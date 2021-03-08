@@ -25,7 +25,7 @@ spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
         - name: lighthouse-tekton-controller
-          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.939
+          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.0-SNAPSHOT-PR-1254-15
           imagePullPolicy: IfNotPresent
           args:
             - --namespace=jx
@@ -48,7 +48,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "19539a949327e530d4fb395c06206d5312838be7"
+              value: "72f97c86099b3e938c7d1d3d273db913ad43656d"
           resources:
             limits:
               cpu: 100m
