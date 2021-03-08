@@ -1,21 +1,21 @@
 apiVersion: kubernetes-client.io/v1
 kind: ExternalSecret
 metadata:
-  name: bdd-git-bbs-approver
+  name: bdd-git-gitlab-approver
 spec:
   backendType: gcpSecretsManager
   data:
-  - key: bdd-git-bbs-approver-password
+  - key: bdd-git-gitlab-approver-password
     name: password
     version: latest
-  - key: bdd-git-bbs-approver-username
+  - key: bdd-git-gitlab-approver-username
     name: username
     version: latest
   projectId: jx-labs-infra
   template:
     metadata:
       annotations:
-        secret.jenkins-x.io/schema-object: '{"name":"bdd-git-bbs","properties":[{"name":"username","question":"the
+        secret.jenkins-x.io/schema-object: '{"name":"bdd-git-gitlab-approver","properties":[{"name":"username","question":"the
           pipeline username","help":"the user name used by pipelines running in Jenkins
           X","defaultValue": "dev1"},{"name":"password","question":"the pipeline token
           or password","help":"the token or password used by pipelines running in
