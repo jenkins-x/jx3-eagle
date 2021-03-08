@@ -1,0 +1,23 @@
+apiVersion: kubernetes-client.io/v1
+kind: ExternalSecret
+metadata:
+  name: bdd-git-ghe-approver
+spec:
+  backendType: gcpSecretsManager
+  data:
+  - key: bdd-ghe-password
+    name: password
+    version: latest
+  - key: bdd-ghe-username
+    name: username
+    version: latest
+  projectId: jx-labs-infra
+  template:
+    metadata:
+      annotations:
+        secret.jenkins-x.io/schema-object: '{"name":"bdd-pipeline-token-github-ghe","properties":[{"name":"username","question":"the
+          pipeline username","help":"the user name used by pipelines running in Jenkins
+          X","defaultValue": "dev1"},{"name":"password","question":"the pipeline token
+          or password","help":"the token or password used by pipelines running in
+          Jenkins X"}]}'
+    type: Opaque
