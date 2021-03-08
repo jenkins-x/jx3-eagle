@@ -32,7 +32,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: lighthouse-keeper
-          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.0-SNAPSHOT-PR-1254-15
+          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.0-SNAPSHOT-PR-1254-35
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -73,6 +73,8 @@ spec:
               value: "json"
             - name: "LIGHTHOUSE_KEEPER_STATUS_CONTEXT_LABEL"
               value: "Lighthouse Merge Status"
+            - name: LIGHTHOUSE_TRIGGER_ON_MISSING
+              value: disable
           resources:
             limits:
               cpu: 400m
