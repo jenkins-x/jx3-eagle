@@ -320,10 +320,10 @@
   path: helmfiles/tf-system/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: v0.3.4
+    appVersion: v0.3.7
     description: A Helm chart to deploy the terraform-operator Controller and CRD.
     name: terraform-operator
     repositoryName: isaaguilar
     repositoryUrl: https://isaaguilar.github.io/helm-charts
     resourcePath: config-root/namespaces/tf-system/terraform-operator
-    version: 0.1.11
+    version: 0.1.14
