@@ -24,7 +24,7 @@ spec:
       serviceAccountName: lighthouse-foghorn
       containers:
         - name: lighthouse-foghorn
-          image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.0-SNAPSHOT-PR-1254-35
+          image: gcr.io/jenkinsxio/lighthouse-foghorn:0.0.0-SNAPSHOT-PR-1254-15
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -60,6 +60,8 @@ spec:
               value: "gcr.io/jenkinsxio/builder-maven:2.1.142-761"
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
+            - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
+              value: "554f99eaa1812eb0acabf046d833c47d60fd3dc4"
           resources:
             limits:
               cpu: 100m
