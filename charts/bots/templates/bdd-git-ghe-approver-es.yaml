@@ -5,10 +5,10 @@ metadata:
 spec:
   backendType: gcpSecretsManager
   data:
-  - key: bdd-ghe-password
+  - key: bdd-ghe-approver-password
     name: password
     version: latest
-  - key: bdd-ghe-username
+  - key: bdd-ghe-approver-username
     name: username
     version: latest
   projectId: jx-labs-infra
