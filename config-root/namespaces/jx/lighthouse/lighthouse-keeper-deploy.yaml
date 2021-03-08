@@ -32,7 +32,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: lighthouse-keeper
-          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.939
+          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.0-SNAPSHOT-PR-1254-15
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
