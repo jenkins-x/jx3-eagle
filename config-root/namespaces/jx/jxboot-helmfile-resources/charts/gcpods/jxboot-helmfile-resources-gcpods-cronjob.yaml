@@ -33,7 +33,7 @@ spec:
                 - pods
                 - --batch-mode
               imagePullPolicy: IfNotPresent
-              image: "gcr.io/jenkinsxio-labs/jxl:0.0.127"
+              image: "gcr.io/jenkinsxio/jxboot-helmfile-resources:1.0.37"
               env:
                 - name: JX_LOG_FORMAT
                   value: json
