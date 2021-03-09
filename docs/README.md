@@ -121,7 +121,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test' title='This chart installs the jx-test CronJob to garbage collect failed system test resources
 '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-test </a></td>
-	      <td>0.0.39</td>
+	      <td>0.0.40</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test'>source</a></td>
 	    </tr>
