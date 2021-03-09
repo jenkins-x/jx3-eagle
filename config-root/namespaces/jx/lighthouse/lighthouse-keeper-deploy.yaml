@@ -73,6 +73,8 @@ spec:
               value: "json"
             - name: "LIGHTHOUSE_KEEPER_STATUS_CONTEXT_LABEL"
               value: "Lighthouse Merge Status"
+            - name: LIGHTHOUSE_TRIGGER_ON_MISSING
+              value: disable
           resources:
             limits:
               cpu: 400m
