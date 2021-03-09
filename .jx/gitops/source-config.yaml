@@ -13,6 +13,7 @@ spec:
     - name: feature-infra-secrets
     - name: flagger-metrics
     - name: github-release
+    - name: go-scm
     - name: gsm-controller
     - name: helm-annotate
     - name: helm3-image
@@ -60,6 +61,7 @@ spec:
     providerKind: github
     providerName: github
     repositories:
+    - name: jxboot-helmfile-resources
     - name: jenkins-resources
     - name: jenkins-x-crds
     - name: jx-bdd
