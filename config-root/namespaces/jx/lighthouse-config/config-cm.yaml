@@ -10,6 +10,7 @@ data:
         jenkins-x-charts/jenkins-resources: true
         jenkins-x-charts/jenkins-x-crds: true
         jenkins-x-charts/jx-bdd: true
+        jenkins-x-charts/jxboot-helmfile-resources: true
         jenkins-x-charts/knative-serving: true
         jenkins-x-charts/local-external-secrets: true
         jenkins-x-charts/nfs-subdir-external-provisioner: true
@@ -41,6 +42,7 @@ data:
         jenkins-x/feature-infra-secrets: true
         jenkins-x/flagger-metrics: true
         jenkins-x/github-release: true
+        jenkins-x/go-scm: true
         jenkins-x/gsm-controller: true
         jenkins-x/helm-annotate: true
         jenkins-x/helm3-image: true
@@ -135,6 +137,7 @@ data:
         jenkins-x-charts/jenkins-resources: merge
         jenkins-x-charts/jenkins-x-crds: merge
         jenkins-x-charts/jx-bdd: merge
+        jenkins-x-charts/jxboot-helmfile-resources: merge
         jenkins-x-charts/knative-serving: merge
         jenkins-x-charts/local-external-secrets: merge
         jenkins-x-charts/nfs-subdir-external-provisioner: merge
@@ -167,6 +170,7 @@ data:
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
         jenkins-x/github-release: merge
+        jenkins-x/go-scm: merge
         jenkins-x/gsm-controller: merge
         jenkins-x/helm-annotate: merge
         jenkins-x/helm3-image: merge
@@ -210,6 +214,7 @@ data:
         - jenkins-x-charts/jenkins-resources
         - jenkins-x-charts/jenkins-x-crds
         - jenkins-x-charts/jx-bdd
+        - jenkins-x-charts/jxboot-helmfile-resources
         - jenkins-x-charts/knative-serving
         - jenkins-x-charts/local-external-secrets
         - jenkins-x-charts/nfs-subdir-external-provisioner
@@ -218,6 +223,7 @@ data:
         - jenkins-x/feature-infra-secrets
         - jenkins-x/flagger-metrics
         - jenkins-x/github-release
+        - jenkins-x/go-scm
         - jenkins-x/gsm-controller
         - jenkins-x/helm-annotate
         - jenkins-x/helm3-image
@@ -282,6 +288,7 @@ data:
         - jenkins-x-charts/jenkins-resources
         - jenkins-x-charts/jenkins-x-crds
         - jenkins-x-charts/jx-bdd
+        - jenkins-x-charts/jxboot-helmfile-resources
         - jenkins-x-charts/knative-serving
         - jenkins-x-charts/local-external-secrets
         - jenkins-x-charts/nfs-subdir-external-provisioner
@@ -290,6 +297,7 @@ data:
         - jenkins-x/feature-infra-secrets
         - jenkins-x/flagger-metrics
         - jenkins-x/github-release
+        - jenkins-x/go-scm
         - jenkins-x/gsm-controller
         - jenkins-x/helm-annotate
         - jenkins-x/helm3-image
