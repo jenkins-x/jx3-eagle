@@ -1,0 +1,51 @@
+# Source: jxboot-helmfile-resources/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-09T10:18:29Z"
+  deletionTimestamp: null
+  name: 'jxboot-helmfile-resources-1.0.37'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.37
+      sha: 82a47c9327a21db5c981b8b92a64a678451c079c
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: ba1fc1ba07896a67f45351fdffb1bcf339deb559
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: switch to the jx3 repo
+
+        Signed-off-by: James Strachan <james.strachan@gmail.com>
+      sha: 4a2130c6ed6b9ad23e613b1c8ea2da3e6a2c1453
+  gitHttpUrl: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
+  gitOwner: jenkins-x-charts
+  gitRepository: jxboot-helmfile-resources
+  name: 'jxboot-helmfile-resources'
+  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.37
+  version: v1.0.37
+status: {}
