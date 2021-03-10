@@ -58,10 +58,10 @@
     - name: nexus
       url: https://nexus-jx.dev.jenkins-x.me
     name: jxboot-helmfile-resources
-    repositoryName: jenkins-x
-    repositoryUrl: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+    repositoryName: jx3
+    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.0.31
+    version: 1.0.37
   - apiVersion: v2
     appVersion: 3.0.5
     description: Custom Resource Definitions for Jenkins X
