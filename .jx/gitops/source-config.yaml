@@ -46,6 +46,7 @@ spec:
         kind: failureOrNextSuccess
         pipeline: all
     - name: jxr-packs-kubernetes
+    - name: lighthouse
     - name: kubernetes-external-secrets
     - name: octant-jx
     - name: terraform-azurerm-jx
