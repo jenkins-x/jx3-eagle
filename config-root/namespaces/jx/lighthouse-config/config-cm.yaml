@@ -68,6 +68,7 @@ data:
         jenkins-x/jx3-versions: true
         jenkins-x/jxr-packs-kubernetes: true
         jenkins-x/kubernetes-external-secrets: true
+        jenkins-x/lighthouse: true
         jenkins-x/octant-jx: true
         jenkins-x/terraform-azurerm-jx: true
     plank: {}
@@ -196,6 +197,7 @@ data:
         jenkins-x/jx3-versions: merge
         jenkins-x/jxr-packs-kubernetes: merge
         jenkins-x/kubernetes-external-secrets: merge
+        jenkins-x/lighthouse: merge
         jenkins-x/octant-jx: merge
         jenkins-x/terraform-azurerm-jx: merge
       queries:
@@ -254,6 +256,7 @@ data:
         - jenkins-x-labs-bdd-tests/nodedemo
         - jenkins-x-labs-bdd-tests/pythondemo
         - jenkins-x-labs-bdd-tests/springdemo
+        - jenkins-x/lighthouse
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
@@ -328,6 +331,7 @@ data:
         - jenkins-x-labs-bdd-tests/nodedemo
         - jenkins-x-labs-bdd-tests/pythondemo
         - jenkins-x-labs-bdd-tests/springdemo
+        - jenkins-x/lighthouse
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
