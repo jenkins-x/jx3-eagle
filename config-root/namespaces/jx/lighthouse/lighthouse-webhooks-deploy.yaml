@@ -22,7 +22,7 @@ spec:
       labels:
         app: lighthouse-webhooks
       annotations:
-        jenkins-x.io/hash: '86f1c36e0975d21dc6e7c3cd8b42a95731734a18c91dc0f1713e231cc8ffd7ce'
+        jenkins-x.io/hash: '2f6c93ab1d7ea05235f990443df22906cfff3725e1403250577df5162f172891'
     spec:
       serviceAccountName: lighthouse-webhooks
       containers:
@@ -66,7 +66,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "d8ca0ed0352e5beff7a17cdc6b92a94b9b5b15e9"
+              value: "f44075e1e83f675beffdd5d8bf739190676a9092"
           ports:
             - containerPort: 8080
           livenessProbe:
