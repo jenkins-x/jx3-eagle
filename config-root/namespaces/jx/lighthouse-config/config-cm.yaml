@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        jenkins-x-charts/grafana-dashboard: true
         jenkins-x-charts/jenkins-resources: true
         jenkins-x-charts/jenkins-x-crds: true
         jenkins-x-charts/jx-bdd: true
@@ -135,6 +136,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         jenkins-x-apps/jx-app-gloo: merge
+        jenkins-x-charts/grafana-dashboard: merge
         jenkins-x-charts/jenkins-resources: merge
         jenkins-x-charts/jenkins-x-crds: merge
         jenkins-x-charts/jx-bdd: merge
@@ -213,6 +215,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x-charts/grafana-dashboard
         - jenkins-x-charts/jenkins-resources
         - jenkins-x-charts/jenkins-x-crds
         - jenkins-x-charts/jx-bdd
@@ -288,6 +291,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x-charts/grafana-dashboard
         - jenkins-x-charts/jenkins-resources
         - jenkins-x-charts/jenkins-x-crds
         - jenkins-x-charts/jx-bdd
