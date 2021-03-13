@@ -1,0 +1,49 @@
+# Source: grafana-dashboard/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-13T12:52:43Z"
+  deletionTimestamp: null
+  name: 'grafana-dashboard-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: 27991e1c291edf2af45ef537ed5007437319686a
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: d0bd9d5756b76217cbf319fd45591c7b38dd5047
+    - author:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        chore: Jenkins X build pack
+      sha: 9a7fb3da58ea96532f67aa8b30b3c76ab2af8f6c
+  gitHttpUrl: https://github.com/jenkins-x-charts/grafana-dashboard
+  gitOwner: jenkins-x-charts
+  gitRepository: grafana-dashboard
+  name: 'grafana-dashboard'
+  releaseNotesURL: https://github.com/jenkins-x-charts/grafana-dashboard/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
