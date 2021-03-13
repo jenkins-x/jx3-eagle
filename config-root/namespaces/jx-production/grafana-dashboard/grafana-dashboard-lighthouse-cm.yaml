@@ -1,0 +1,673 @@
+# Source: grafana-dashboard/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-dashboard-lighthouse
+  labels:
+    app.kubernetes.io/instance: lighthouse
+    app.kubernetes.io/name: grafana-dashboard
+    helm.sh/chart: grafana-dashboard-0.0.1
+    jenkins-x.io/grafana-dashboard: "1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-production
+data:
+  lighthouse.json: |-
+    {
+        "annotations": {
+          "list": [
+            {
+              "builtIn": 1,
+              "datasource": "-- Grafana --",
+              "enable": true,
+              "hide": true,
+              "iconColor": "rgba(0, 211, 255, 1)",
+              "name": "Annotations & Alerts",
+              "type": "dashboard"
+            }
+          ]
+        },
+        "description": "Logs & metrics for Lighthouse",
+        "editable": true,
+        "gnetId": null,
+        "graphTooltip": 0,
+        "id": 1,
+        "iteration": 1615372752857,
+        "links": [],
+        "panels": [
+          {
+            "datasource": "Prometheus",
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "palette-classic"
+                },
+                "custom": {
+                  "axisLabel": "",
+                  "axisPlacement": "auto",
+                  "barAlignment": 0,
+                  "drawStyle": "line",
+                  "fillOpacity": 10,
+                  "gradientMode": "none",
+                  "hideFrom": {
+                    "graph": false,
+                    "legend": false,
+                    "tooltip": false
+                  },
+                  "lineInterpolation": "linear",
+                  "lineStyle": {
+                    "fill": "solid"
+                  },
+                  "lineWidth": 1,
+                  "pointSize": 5,
+                  "scaleDistribution": {
+                    "type": "linear"
+                  },
+                  "showPoints": "never",
+                  "spanNulls": true
+                },
+                "mappings": [],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "red",
+                      "value": 80
+                    }
+                  ]
+                },
+                "unit": "none"
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 7,
+              "w": 24,
+              "x": 0,
+              "y": 0
+            },
+            "id": 7,
+            "options": {
+              "graph": {},
+              "legend": {
+                "calcs": [],
+                "displayMode": "list",
+                "placement": "right"
+              },
+              "tooltipOptions": {
+                "mode": "single"
+              }
+            },
+            "pluginVersion": "7.4.0",
+            "targets": [
+              {
+                "expr": "sum by(event_type) (rate(lighthouse_webhook_counter[5m]))",
+                "interval": "",
+                "legendFormat": "",
+                "queryType": "randomWalk",
+                "refId": "A"
+              }
+            ],
+            "title": "Webhook events by type",
+            "type": "timeseries"
+          },
+          {
+            "datasource": "Prometheus",
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "palette-classic"
+                },
+                "custom": {
+                  "axisLabel": "",
+                  "axisPlacement": "auto",
+                  "barAlignment": 0,
+                  "drawStyle": "line",
+                  "fillOpacity": 10,
+                  "gradientMode": "none",
+                  "hideFrom": {
+                    "graph": false,
+                    "legend": false,
+                    "tooltip": false
+                  },
+                  "lineInterpolation": "linear",
+                  "lineWidth": 1,
+                  "pointSize": 5,
+                  "scaleDistribution": {
+                    "type": "linear"
+                  },
+                  "showPoints": "never",
+                  "spanNulls": true
+                },
+                "mappings": [],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "red",
+                      "value": 80
+                    }
+                  ]
+                },
+                "unit": "none"
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 7
+            },
+            "id": 11,
+            "options": {
+              "graph": {},
+              "legend": {
+                "calcs": [],
+                "displayMode": "list",
+                "placement": "bottom"
+              },
+              "tooltipOptions": {
+                "mode": "single"
+              }
+            },
+            "pluginVersion": "7.4.0",
+            "targets": [
+              {
+                "expr": "sum by(container) (rate(container_cpu_usage_seconds_total{container=~\"$app\"}[5m]))",
+                "interval": "",
+                "legendFormat": "",
+                "queryType": "randomWalk",
+                "refId": "A"
+              }
+            ],
+            "title": "CPU used",
+            "type": "timeseries"
+          },
+          {
+            "datasource": "Prometheus",
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "palette-classic"
+                },
+                "custom": {
+                  "axisLabel": "",
+                  "axisPlacement": "auto",
+                  "barAlignment": 0,
+                  "drawStyle": "line",
+                  "fillOpacity": 10,
+                  "gradientMode": "none",
+                  "hideFrom": {
+                    "graph": false,
+                    "legend": false,
+                    "tooltip": false
+                  },
+                  "lineInterpolation": "linear",
+                  "lineWidth": 1,
+                  "pointSize": 5,
+                  "scaleDistribution": {
+                    "type": "linear"
+                  },
+                  "showPoints": "never",
+                  "spanNulls": true
+                },
+                "mappings": [],
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "red",
+                      "value": 80
+                    }
+                  ]
+                },
+                "unit": "decbytes"
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 12,
+              "y": 7
+            },
+            "id": 9,
+            "options": {
+              "graph": {},
+              "legend": {
+                "calcs": [],
+                "displayMode": "list",
+                "placement": "bottom"
+              },
+              "tooltipOptions": {
+                "mode": "single"
+              }
+            },
+            "pluginVersion": "7.4.0",
+            "targets": [
+              {
+                "expr": "sum by(container) (container_memory_working_set_bytes{container=~\"$app\"})",
+                "interval": "",
+                "legendFormat": "",
+                "queryType": "randomWalk",
+                "refId": "A"
+              }
+            ],
+            "title": "Memory used",
+            "type": "timeseries"
+          },
+          {
+            "aliasColors": {},
+            "bars": true,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "Loki",
+            "fieldConfig": {
+              "defaults": {
+                "custom": {}
+              },
+              "overrides": []
+            },
+            "fill": 1,
+            "fillGradient": 0,
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 15
+            },
+            "hiddenSeries": false,
+            "id": 4,
+            "legend": {
+              "avg": false,
+              "current": false,
+              "max": false,
+              "min": false,
+              "show": true,
+              "total": false,
+              "values": false
+            },
+            "lines": false,
+            "linewidth": 1,
+            "nullPointMode": "null",
+            "options": {
+              "alertThreshold": true
+            },
+            "percentage": false,
+            "pluginVersion": "7.4.2",
+            "pointradius": 2,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [],
+            "spaceLength": 10,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "expr": "sum(count_over_time({app=~\"$app\"} |~ \"(?i)$search\" |~ \"(?i)$level\" | json | line_format \"{{.log}}\" | logfmt | level=~\"$level\" [$__interval])) by (app)",
+                "legendFormat": "",
+                "queryType": "randomWalk",
+                "refId": "A"
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeRegions": [],
+            "timeShift": null,
+            "title": "Logs by app",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "$$hashKey": "object:65",
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "$$hashKey": "object:66",
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ],
+            "yaxis": {
+              "align": false,
+              "alignLevel": null
+            }
+          },
+          {
+            "aliasColors": {},
+            "bars": true,
+            "dashLength": 10,
+            "dashes": false,
+            "datasource": "Loki",
+            "fieldConfig": {
+              "defaults": {
+                "custom": {}
+              },
+              "overrides": []
+            },
+            "fill": 1,
+            "fillGradient": 0,
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 12,
+              "y": 15
+            },
+            "hiddenSeries": false,
+            "id": 5,
+            "legend": {
+              "avg": false,
+              "current": false,
+              "max": false,
+              "min": false,
+              "show": true,
+              "total": false,
+              "values": false
+            },
+            "lines": false,
+            "linewidth": 1,
+            "nullPointMode": "null",
+            "options": {
+              "alertThreshold": true
+            },
+            "percentage": false,
+            "pluginVersion": "7.4.2",
+            "pointradius": 2,
+            "points": false,
+            "renderer": "flot",
+            "seriesOverrides": [
+              {
+                "alias": "{level=\"error\"}",
+                "color": "#F2495C"
+              },
+              {
+                "alias": "{level=\"warning\"}",
+                "color": "#FF9830"
+              },
+              {
+                "alias": "{level=\"info\"}",
+                "color": "#73BF69"
+              },
+              {
+                "alias": "{level=\"debug\"}",
+                "color": "#5794F2"
+              }
+            ],
+            "spaceLength": 10,
+            "stack": true,
+            "steppedLine": false,
+            "targets": [
+              {
+                "expr": "sum(count_over_time({app=~\"$app\"} |~ \"(?i)$search\" |~ \"(?i)$level\" | json | line_format \"{{.log}}\" | logfmt | level=~\"$level\" [$__interval])) by (level)",
+                "legendFormat": "",
+                "queryType": "randomWalk",
+                "refId": "A"
+              }
+            ],
+            "thresholds": [],
+            "timeFrom": null,
+            "timeRegions": [],
+            "timeShift": null,
+            "title": "Logs by level",
+            "tooltip": {
+              "shared": true,
+              "sort": 0,
+              "value_type": "individual"
+            },
+            "type": "graph",
+            "xaxis": {
+              "buckets": null,
+              "mode": "time",
+              "name": null,
+              "show": true,
+              "values": []
+            },
+            "yaxes": [
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              },
+              {
+                "format": "short",
+                "label": null,
+                "logBase": 1,
+                "max": null,
+                "min": null,
+                "show": true
+              }
+            ],
+            "yaxis": {
+              "align": false,
+              "alignLevel": null
+            }
+          },
+          {
+            "datasource": "Loki",
+            "description": "",
+            "fieldConfig": {
+              "defaults": {
+                "custom": {},
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": []
+                }
+              },
+              "overrides": []
+            },
+            "gridPos": {
+              "h": 16,
+              "w": 24,
+              "x": 0,
+              "y": 23
+            },
+            "id": 2,
+            "options": {
+              "showLabels": false,
+              "showTime": true,
+              "sortOrder": "Descending",
+              "wrapLogMessage": false
+            },
+            "pluginVersion": "7.3.5",
+            "targets": [
+              {
+                "expr": "{app=~\"$app\"} |~ \"(?i)$search\" |~ \"(?i)$level\" | json | line_format \"{{.log}}\" | logfmt | level=~\"$level\" | line_format \"{{.level | upper | trunc 4}}\\t[{{.app}}{{with .plugin}}:{{.}}{{end}}]\\t{{ if .name }}{{.name}}: {{end}}{{if .Webhook}}{{.Webhook}} webhook for {{.Link}}: {{end}}{{.msg}}{{with .error}} Error: {{.}}{{end}}\\t({{.pod}})\"",
+                "legendFormat": "",
+                "queryType": "randomWalk",
+                "refId": "A"
+              }
+            ],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Logs",
+            "type": "logs"
+          }
+        ],
+        "refresh": false,
+        "schemaVersion": 27,
+        "style": "dark",
+        "tags": [
+          "jenkins-x",
+          "lighthouse"
+        ],
+        "templating": {
+          "list": [
+            {
+              "allValue": null,
+              "current": {
+                "selected": true,
+                "tags": [],
+                "text": [
+                  "All"
+                ],
+                "value": [
+                  "$__all"
+                ]
+              },
+              "datasource": "Loki",
+              "definition": "label_values(app)",
+              "description": null,
+              "error": null,
+              "hide": 0,
+              "includeAll": true,
+              "label": null,
+              "multi": true,
+              "name": "app",
+              "options": [
+                {
+                  "selected": true,
+                  "text": "All",
+                  "value": "$__all"
+                },
+                {
+                  "selected": false,
+                  "text": "lighthouse-foghorn",
+                  "value": "lighthouse-foghorn"
+                },
+                {
+                  "selected": false,
+                  "text": "lighthouse-keeper",
+                  "value": "lighthouse-keeper"
+                },
+                {
+                  "selected": false,
+                  "text": "lighthouse-webhooks",
+                  "value": "lighthouse-webhooks"
+                }
+              ],
+              "query": "label_values(app)",
+              "refresh": 0,
+              "regex": "lighthouse.*",
+              "skipUrlSync": false,
+              "sort": 1,
+              "tagValuesQuery": "",
+              "tags": [],
+              "tagsQuery": "",
+              "type": "query",
+              "useTags": false
+            },
+            {
+              "allValue": null,
+              "current": {
+                "selected": true,
+                "tags": [],
+                "text": [
+                  "All"
+                ],
+                "value": [
+                  "$__all"
+                ]
+              },
+              "description": null,
+              "error": null,
+              "hide": 0,
+              "includeAll": true,
+              "label": null,
+              "multi": true,
+              "name": "level",
+              "options": [
+                {
+                  "selected": true,
+                  "text": "All",
+                  "value": "$__all"
+                },
+                {
+                  "selected": false,
+                  "text": "error",
+                  "value": "error"
+                },
+                {
+                  "selected": false,
+                  "text": "warning",
+                  "value": "warning"
+                },
+                {
+                  "selected": false,
+                  "text": "info",
+                  "value": "info"
+                },
+                {
+                  "selected": false,
+                  "text": "debug",
+                  "value": "debug"
+                },
+                {
+                  "selected": false,
+                  "text": "trace",
+                  "value": "trace"
+                }
+              ],
+              "query": "error, warning, info, debug, trace",
+              "queryValue": "",
+              "skipUrlSync": false,
+              "type": "custom"
+            },
+            {
+              "current": {
+                "selected": false,
+                "text": "",
+                "value": ""
+              },
+              "description": null,
+              "error": null,
+              "hide": 0,
+              "label": null,
+              "name": "search",
+              "options": [
+                {
+                  "selected": true,
+                  "text": "",
+                  "value": ""
+                }
+              ],
+              "query": "",
+              "skipUrlSync": false,
+              "type": "textbox"
+            }
+          ]
+        },
+        "time": {
+          "from": "now-6h",
+          "to": "now"
+        },
+        "timepicker": {},
+        "timezone": "",
+        "title": "Lighthouse",
+        "uid": "lighthouse",
+        "version": 1
+      }

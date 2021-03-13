@@ -19,5 +19,7 @@ releases:
 - chart: dev/grafana-dashboard
   version: 0.0.1
   name: grafana-dashboard
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
