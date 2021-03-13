@@ -22,11 +22,6 @@ spec:
     - name: jx-application
     - name: jx-cli
     - name: jx-cli-base-image
-    - name: jx3-eagle
-      slack:
-        channel: jx-pipelines-production
-        kind: failureOrNextSuccess
-        pipeline: pullRequest
     - name: jx-docs
     - name: jx-git-operator
     - name: jx-gitops
@@ -39,6 +34,11 @@ spec:
     - name: jx-promote
     - name: jx-secret
     - name: jx-verify
+    - name: jx3-eagle
+      slack:
+        channel: jx-pipelines-production
+        kind: failureOrNextSuccess
+        pipeline: pullRequest
     - name: jx3-pipeline-catalog
     - name: jx3-versions
       slack:
@@ -46,8 +46,8 @@ spec:
         kind: failureOrNextSuccess
         pipeline: all
     - name: jxr-packs-kubernetes
-    - name: lighthouse
     - name: kubernetes-external-secrets
+    - name: lighthouse
     - name: octant-jx
     - name: terraform-azurerm-jx
     scheduler: in-repo
@@ -62,10 +62,11 @@ spec:
     providerKind: github
     providerName: github
     repositories:
-    - name: jxboot-helmfile-resources
+    - name: grafana-dashboard
     - name: jenkins-resources
     - name: jenkins-x-crds
     - name: jx-bdd
+    - name: jxboot-helmfile-resources
     - name: knative-serving
     - name: local-external-secrets
     - name: nfs-subdir-external-provisioner
@@ -86,8 +87,8 @@ spec:
     - name: jx-changelog
     - name: jx-health
     - name: jx-kh-check
-    - name: jx-release-version
     - name: jx-registry
+    - name: jx-release-version
     - name: jx-scm
     - name: jx-slack
     - name: jx-stash
