@@ -1,4 +1,4 @@
-# Source: jxboot-helmfile-resources/charts/gcactivities/templates/role.yaml
+# Source: jxboot-helmfile-resources/templates/jx-gcactivities-role.yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
