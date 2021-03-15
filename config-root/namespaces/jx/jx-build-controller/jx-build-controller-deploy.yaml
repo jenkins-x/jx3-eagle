@@ -5,7 +5,7 @@ metadata:
   name: jx-build-controller
   labels:
     app: jx-build-controller
-    chart: jx-build-controller-0.0.33
+    chart: jx-build-controller-0.0.34
     release: jx-build-controller
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -29,7 +29,7 @@ spec:
         - name: jx-build-controller
           command: [jx-build-controller]
           imagePullPolicy:
-          image: "gcr.io/jenkinsxio/jx-build-controller:0.0.33"
+          image: "gcr.io/jenkinsxio/jx-build-controller:0.0.34"
           ports:
             - name: http
               containerPort: 8080
@@ -53,7 +53,13 @@ spec:
               value: https://github.com
             - name: XDG_CONFIG_HOME
               value: /tmp/git-creds
-          resources: null
+          resources:
+            limits:
+              cpu: 100m
+              memory: 512Mi
+            requests:
+              cpu: 80m
+              memory: 128Mi
           volumeMounts:
             - mountPath: /secrets/git
               name: secrets-git
