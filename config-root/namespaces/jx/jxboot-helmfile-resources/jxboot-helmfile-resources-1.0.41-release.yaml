@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-03-13T12:44:22Z"
+  creationTimestamp: "2021-03-15T16:32:16Z"
   deletionTimestamp: null
-  name: 'jxboot-helmfile-resources-1.0.40'
+  name: 'jxboot-helmfile-resources-1.0.41'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.40
-      sha: 4bfc7af7cd2fe28dd6ec5664510c7183426bbf1f
+        chore: release 1.0.41
+      sha: 214f3ca00f86971f91ebb2555b5a28135dd75009
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 85782ccf1f575c37fccdb0d8d111ce1540f466eb
+      sha: 5c6a9d1e48747702d8f6bb5223ebbae369203ebc
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -38,14 +38,14 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: flags
+        fix: disable gpg secret by default
 
         Signed-off-by: James Strachan <james.strachan@gmail.com>
-      sha: ebbb21f42af36ff17ea28b1053e3b8e5056a7ba9
+      sha: d616f704a4870c11e0cd111dc01ab2f37238ecf0
   gitHttpUrl: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
   gitOwner: jenkins-x-charts
   gitRepository: jxboot-helmfile-resources
   name: 'jxboot-helmfile-resources'
-  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.40
-  version: v1.0.40
+  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.41
+  version: v1.0.41
 status: {}
