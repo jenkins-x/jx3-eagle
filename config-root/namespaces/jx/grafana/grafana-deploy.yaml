@@ -5,10 +5,10 @@ metadata:
   name: grafana
   namespace: jx
   labels:
-    helm.sh/chart: grafana-6.4.2
+    helm.sh/chart: grafana-6.6.3
     app.kubernetes.io/name: grafana
     app.kubernetes.io/instance: grafana
-    app.kubernetes.io/version: "7.4.1"
+    app.kubernetes.io/version: "7.4.3"
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
@@ -28,10 +28,10 @@ spec:
         app.kubernetes.io/name: grafana
         app.kubernetes.io/instance: grafana
       annotations:
-        checksum/config: 4b2dc983aafd1d1a2d8970a73e38e28651b1ba7eb96440df4dad82ae6168372e
+        checksum/config: 69421cf042dd549fc2994f38cfe34a69c4676b5cca057fb01f0635bee753b47e
         checksum/dashboards-json-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-        checksum/sc-dashboard-provider-config: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-        checksum/secret: 2764bdeba6d74f8bb0c4f5f36f1ed71758b2465d11d776f7e15a14c8aacf06d3
+        checksum/sc-dashboard-provider-config: c7790ed3aa9564181757b424c4398ba1ca7ff6be1ffa1be88fba3f19dab852c7
+        checksum/secret: 7b0afacff5c35ffc1356d0c28be3c8c89303679db772b9387aa57d0e24017b30
     spec:
       serviceAccountName: grafana
       securityContext:
@@ -51,8 +51,24 @@ spec:
             - name: storage
               mountPath: "/var/lib/grafana"
       containers:
+        - name: grafana-sc-dashboard
+          image: "quay.io/kiwigrid/k8s-sidecar:1.10.7"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: METHOD
+              value:
+            - name: LABEL
+              value: "jenkins-x.io/grafana-dashboard"
+            - name: FOLDER
+              value: "/tmp/dashboards"
+            - name: RESOURCE
+              value: "both"
+          resources: {}
+          volumeMounts:
+            - name: sc-dashboard-volume
+              mountPath: "/tmp/dashboards"
         - name: grafana
-          image: "grafana/grafana:7.4.1"
+          image: "grafana/grafana:7.4.3"
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: config
@@ -63,6 +79,11 @@ spec:
             - name: config
               mountPath: "/etc/grafana/provisioning/datasources/datasources.yaml"
               subPath: datasources.yaml
+            - name: sc-dashboard-volume
+              mountPath: "/tmp/dashboards"
+            - name: sc-dashboard-provider
+              mountPath: "/etc/grafana/provisioning/dashboards/sc-dashboardproviders.yaml"
+              subPath: provider.yaml
           ports:
             - name: service
               containerPort: 80
@@ -113,3 +134,8 @@ spec:
         - name: storage
           persistentVolumeClaim:
             claimName: grafana
+        - name: sc-dashboard-volume
+          emptyDir: {}
+        - name: sc-dashboard-provider
+          configMap:
+            name: grafana-config-dashboards
