@@ -1,0 +1,28 @@
+# Source: ingress-nginx/templates/controller-service-metrics.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/port: "10254"
+    prometheus.io/scrape: "true"
+    kapp.k14s.io/change-group: 'apps.jenkins-x.io/ingress-nginx'
+  labels:
+    helm.sh/chart: ingress-nginx-3.12.0
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/instance: nginx-ingress
+    app.kubernetes.io/version: "0.41.2"
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/component: controller
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: ingress-nginx-controller-metrics
+  namespace: nginx
+spec:
+  type: ClusterIP
+  ports:
+    - name: metrics
+      port: 9913
+      targetPort: metrics
+  selector:
+    app.kubernetes.io/name: ingress-nginx
+    app.kubernetes.io/instance: nginx-ingress
+    app.kubernetes.io/component: controller
