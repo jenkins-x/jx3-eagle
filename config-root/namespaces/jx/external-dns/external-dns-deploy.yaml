@@ -26,6 +26,8 @@ spec:
         app.kubernetes.io/instance: external-dns
         app.kubernetes.io/managed-by: Helm
       annotations:
+        prometheus.io/port: "7979"
+        prometheus.io/scrape: "true"
     spec:
       securityContext:
         fsGroup: 1001
