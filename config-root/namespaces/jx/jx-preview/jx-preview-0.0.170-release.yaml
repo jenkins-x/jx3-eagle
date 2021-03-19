@@ -2,14 +2,24 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-03-16T16:39:04Z"
+  creationTimestamp: "2021-03-18T08:14:11Z"
   deletionTimestamp: null
-  name: 'jx-preview-0.0.169'
+  name: 'jx-preview-0.0.170'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: upgrade deps
+      sha: 967af6eaf7140d5446808a79d118264e4361baff
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -52,29 +62,9 @@ spec:
 
         as it does not seem to work very well on gitea and its much easier to just git clone
       sha: 079f9b65d82ed3915aa9bd98d9b3f7c0e75db0f4
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        chore: ugprade dependencies
-      sha: b2b3bef17d41b06efa9785837febc4c583fd82fb
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      message: |
-        fix: switch to the github image
-      sha: 5d985e99595360f2f7a3ae19ae3ce9e15608e4e7
   gitHttpUrl: https://github.com/jenkins-x/jx-preview
   gitOwner: jenkins-x
   gitRepository: jx-preview
   name: 'jx-preview'
-  version: 0.0.169
+  version: 0.0.170
 status: {}
