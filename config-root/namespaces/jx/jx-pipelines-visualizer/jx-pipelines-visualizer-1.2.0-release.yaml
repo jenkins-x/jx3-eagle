@@ -2,14 +2,28 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-02-23T17:26:15Z"
+  creationTimestamp: "2021-03-19T11:37:36Z"
   deletionTimestamp: null
-  name: 'jx-pipelines-visualizer-1.1.11'
+  name: 'jx-pipelines-visualizer-1.2.0'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
+    - author:
+        email: v.behar@free.fr
+        name: Vincent Behar
+      branch: master
+      committer:
+        email: v.behar@free.fr
+        name: Vincent Behar
+      message: |
+        feat: support archived pipelineruns
+
+        load pipelineruns from the long-term storage, so that we don't answer with 404 once the pipelineruns have been garbage-collected from the cluster
+        see https://github.com/jenkins-x-plugins/jx-build-controller/issues/13
+        and https://github.com/jenkins-x-plugins/jx-build-controller/pull/27
+      sha: 316cd9075f8afa695d23ff5d4c20ef634e869ee6
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -22,18 +36,9 @@ spec:
 
         Signed-off-by: James Strachan <james.strachan@gmail.com>
       sha: 004f82b9370adfe2450090a42b113e08d972a80e
-    - author:
-        email: 52448671+hervelemeur@users.noreply.github.com
-        name: Hervé Le Meur
-      branch: master
-      committer:
-        email: noreply@github.com
-        name: GitHub
-      message: 'fix: add jenkins-x chart icon'
-      sha: b1faf4f9c6e48272c3a70513bc98c9e775bc0dbd
   gitHttpUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
   gitOwner: jenkins-x
   gitRepository: jx-pipelines-visualizer
   name: 'jx-pipelines-visualizer'
-  version: 1.1.11
+  version: 1.2.0
 status: {}
