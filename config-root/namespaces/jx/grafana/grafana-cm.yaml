@@ -17,6 +17,8 @@ data:
     [analytics]
     check_for_updates = false
     reporting_enabled = false
+    [dashboards]
+    default_home_dashboard_path = /tmp/dashboards/jenkins-x.json
     [grafana_net]
     url = https://grafana.net
     [log]
@@ -51,3 +53,13 @@ data:
     - name: GitHub
       secureJsonData:
         accessToken: ${GITHUB_TOKEN}
+  notifiers.yaml: |
+    delete_notifiers: []
+    notifiers:
+    - is_default: true
+      name: prometheus-alertmanager
+      org_id: 1
+      settings:
+        url: http://prometheus-alertmanager.jx-observability
+      type: prometheus-alertmanager
+      uid: prometheus-alertmanager
