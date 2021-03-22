@@ -4,14 +4,5 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-staging
-repositories:
-- name: dev
-  url: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-releases:
-- chart: dev/grafana-dashboard
-  version: 0.0.1
-  name: grafana-dashboard
-  values:
-  - jx-values.yaml
 templates: {}
 renderedvalues: {}
