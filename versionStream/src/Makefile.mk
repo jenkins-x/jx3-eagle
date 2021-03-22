@@ -258,7 +258,7 @@ report:
 	jx gitops helmfile report
 
 # lets update the deployment status to your git repository (e.g. https://github.com)
-#	jx gitops helmfile status
+	jx gitops helmfile status
 
 .PHONY: apply-completed
 apply-completed:
