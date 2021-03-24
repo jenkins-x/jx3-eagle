@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-tekton-controller
   labels:
-    chart: "lighthouse-0.0.939"
+    chart: "lighthouse-1.0.3"
     app: lighthouse-tekton-controller
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -24,7 +24,7 @@ spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
         - name: lighthouse-tekton-controller
-          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:0.0.0-PR-1254-2-SNAPSHOT
+          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:1.0.3
           imagePullPolicy: IfNotPresent
           args:
             - --namespace=jx

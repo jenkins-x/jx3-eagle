@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-keeper
   labels:
-    chart: "lighthouse-0.0.939"
+    chart: "lighthouse-1.0.3"
     app: lighthouse-keeper
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -34,7 +34,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: lighthouse-keeper
-          image: gcr.io/jenkinsxio/lighthouse-keeper:0.0.0-PR-1254-2-SNAPSHOT
+          image: gcr.io/jenkinsxio/lighthouse-keeper:1.0.3
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -76,7 +76,7 @@ spec:
             - name: "LIGHTHOUSE_KEEPER_STATUS_CONTEXT_LABEL"
               value: "Lighthouse Merge Status"
             - name: LIGHTHOUSE_TRIGGER_ON_MISSING
-              value: disable
+              value: "disable"
           resources:
             limits:
               cpu: 400m
