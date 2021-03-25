@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-03-15T16:32:16Z"
+  creationTimestamp: "2021-03-24T18:57:03Z"
   deletionTimestamp: null
-  name: 'jxboot-helmfile-resources-1.0.41'
+  name: 'jxboot-helmfile-resources-1.0.42'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 1.0.41
-      sha: 214f3ca00f86971f91ebb2555b5a28135dd75009
+        chore: release 1.0.42
+      sha: ab43db794e794b371e46a49dcd8eb25e41e0cbe6
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,23 +29,27 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 5c6a9d1e48747702d8f6bb5223ebbae369203ebc
+      sha: 66fb0ceef1519e93d293ed439d38b5d8632ca778
     - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: pat@patscott.io
+        name: Patrick Lee Scott
       branch: master
       committer:
-        email: james.strachan@gmail.com
-        name: James Strachan
+        email: pat@patscott.io
+        name: Patrick Lee Scott
       message: |
-        fix: disable gpg secret by default
+        fix: allow annotations for gc job pods again
 
-        Signed-off-by: James Strachan <james.strachan@gmail.com>
-      sha: d616f704a4870c11e0cd111dc01ab2f37238ecf0
+        Signed-off-by: Patrick Lee Scott <pat@patscott.io>
+
+        fix: dont need default
+
+        Signed-off-by: Patrick Lee Scott <pat@patscott.io>
+      sha: 3b1cd0b7438531e854002dc68a4dcff0dcb522ee
   gitHttpUrl: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
   gitOwner: jenkins-x-charts
   gitRepository: jxboot-helmfile-resources
   name: 'jxboot-helmfile-resources'
-  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.41
-  version: v1.0.41
+  releaseNotesURL: https://github.com/jenkins-x-charts/jxboot-helmfile-resources/releases/tag/v1.0.42
+  version: v1.0.42
 status: {}
