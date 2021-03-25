@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-03-24T12:31:07Z"
+  creationTimestamp: "2021-03-25T10:05:30Z"
   deletionTimestamp: null
-  name: 'lighthouse-1.0.3'
+  name: 'lighthouse-1.0.9'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,10 +18,8 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: the release replace of versions
-
-        to avoid changing the image names of the different deployments
-      sha: 81f28cb0da7b42d315f46a84b5107b4cf0e5d841
+        fix: add missing workspace bindings
+      sha: cc0d88864af82cc45fb9791233a90f6b06406a7a
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -30,11 +28,21 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        chore: fix chart repository
-      sha: bc60e0a7670b080ec80aac4ab4042f374d78e5d1
+        chore: add updatebot configuration
+      sha: 506591a457cdbcb771539f5ccb20e1a369b4c4bb
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add default workspace binding if none are provided when using tasks
+      sha: 8a4095c8d97a389559a4da69c66a22c6fc26c0c9
   gitHttpUrl: https://github.com/jenkins-x/lighthouse
   gitOwner: jenkins-x
   gitRepository: lighthouse
   name: 'lighthouse'
-  version: 1.0.3
+  version: 1.0.9
 status: {}
