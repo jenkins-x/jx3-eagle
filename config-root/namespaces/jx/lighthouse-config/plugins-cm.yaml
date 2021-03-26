@@ -16,6 +16,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/cd-indicators
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-charts/grafana-dashboard
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -848,6 +852,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/cd-indicators:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/feature-infra-secrets:
       - approve
       - assign
@@ -1379,6 +1399,9 @@ data:
     - repos:
       - jenkins-x-apps/jx-app-gloo
       trusted_org: jenkins-x-apps
+    - repos:
+      - jenkins-x/cd-indicators
+      trusted_org: todo
     - repos:
       - jenkins-x-charts/grafana-dashboard
       trusted_org: todo
