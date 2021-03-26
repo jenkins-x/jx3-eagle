@@ -10,6 +10,7 @@ spec:
     providerName: github
     repositories:
     - name: acme
+    - name: cd-indicators
     - name: feature-infra-secrets
     - name: flagger-metrics
     - name: github-release
