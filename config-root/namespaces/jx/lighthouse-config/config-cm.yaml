@@ -40,6 +40,7 @@ data:
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
         jenkins-x-plugins/secretfacade: true
         jenkins-x/acme: true
+        jenkins-x/cd-indicators: true
         jenkins-x/feature-infra-secrets: true
         jenkins-x/flagger-metrics: true
         jenkins-x/github-release: true
@@ -170,6 +171,7 @@ data:
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: merge
         jenkins-x-plugins/secretfacade: merge
         jenkins-x/acme: merge
+        jenkins-x/cd-indicators: merge
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
         jenkins-x/github-release: merge
@@ -215,6 +217,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x/cd-indicators
         - jenkins-x-charts/grafana-dashboard
         - jenkins-x-charts/jenkins-resources
         - jenkins-x-charts/jenkins-x-crds
@@ -291,6 +294,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x/cd-indicators
         - jenkins-x-charts/grafana-dashboard
         - jenkins-x-charts/jenkins-resources
         - jenkins-x-charts/jenkins-x-crds
