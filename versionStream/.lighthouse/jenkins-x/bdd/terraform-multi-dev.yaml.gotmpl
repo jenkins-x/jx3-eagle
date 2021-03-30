@@ -4,15 +4,12 @@ spec:
   env:
   - name: KUBECONFIG
     value: "/tmp/kubecfg"
+  - name: TF_VAR_gsm
+    value: "true"
   - name: TF_VAR_jx_git_url
     value: https://github.com/jenkins-x-bdd/cluster-{{ .Env.TF_VAR_cluster_name }}-dev.git
   - name: TF_VAR_jx_bot_username
     value: jenkins-x-bot-bdd
-  - name: TF_VAR_vault_user
-    value: jx-bdd-test
-  # TODO until we get auto scaling working lets use 4 nodes to make sure we can fit the BDD test as well
-  - name: TF_VAR_desired_node_count
-    value: "4"
   - name: TF_VAR_jx_bot_token
     valueFrom:
       secretKeyRef:
@@ -23,25 +20,11 @@ spec:
     value: {{ quote $pval }}
 {{- end }}
 
-  credentials:
-  - secretNameRef:
-      name: aws-bdd-user-creds
-
-  scmAuthMethods:
-  - host: github.com
-    git:
-      https:
-        requireProxy: false
-        tokenSecretRef:
-          name: bdd-git
-          namespace: jx
-          key: password
-
-  terraformRunner: ghcr.io/jenkins-x/terraform-operator-aws
+  terraformRunner: ghcr.io/jenkins-x/terraform-operator-gcp
   terraformVersion: 3.1.350
 
   terraformModule:
-    address: https://github.com/jenkins-x-bdd/infra-{{ .Env.TF_VAR_cluster_name }}-dev
+    address: https://github.com/jx3-gitops-repositories/jx3-terraform-gke
 
   customBackend: |-
     terraform {
@@ -68,10 +51,7 @@ spec:
     echo "Terraform is done!"
 
     echo "lets connect to the remote cluster"
-    aws eks --region $AWS_REGION update-kubeconfig --name ${TF_VAR_cluster_name}
-
-    echo "connected to the remote cluster"
-    kubectl get ns
+    $(terraform output -raw connect)
 
     echo "now connected to cluster:"
     jx ctx -b
@@ -79,11 +59,11 @@ spec:
     echo "using jx version: $JX_VERSION"
 
     # verify we have the correct context
-    #jx verify ctx -c "gke_${TF_VAR_gcp_project}_us-central1-a_${TF_VAR_cluster_name}"
+    jx verify ctx -c "gke_${TF_VAR_gcp_project}_us-central1-a_${TF_VAR_cluster_name}"
 
     echo "lets verify the log completes"
     jx admin log -b
-
+    
     echo "installing the BDD test"
     export GIT_ORGANISATION="jenkins-x-bdd"
     export TEST_NAME="test-create-spring"
