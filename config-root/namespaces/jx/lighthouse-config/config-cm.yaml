@@ -24,8 +24,11 @@ data:
         jenkins-x-labs-bdd-tests/springdemo: true
         jenkins-x-plugins/jx-build-controller: true
         jenkins-x-plugins/jx-changelog: true
+        jenkins-x-plugins/jx-gitops: true
         jenkins-x-plugins/jx-health: true
         jenkins-x-plugins/jx-kh-check: true
+        jenkins-x-plugins/jx-project: true
+        jenkins-x-plugins/jx-promote: true
         jenkins-x-plugins/jx-registry: true
         jenkins-x-plugins/jx-release-version: true
         jenkins-x-plugins/jx-scm: true
@@ -36,6 +39,7 @@ data:
         jenkins-x-plugins/jx-test-collector: true
         jenkins-x-plugins/jx-updatebot: true
         jenkins-x-plugins/jx-v2-tekton-converter: true
+        jenkins-x-plugins/jx-verify: true
         jenkins-x-plugins/kh-tls-check: true
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
         jenkins-x-plugins/secretfacade: true
@@ -55,16 +59,12 @@ data:
         jenkins-x/jx-cli-base-image: true
         jenkins-x/jx-docs: true
         jenkins-x/jx-git-operator: true
-        jenkins-x/jx-gitops: true
         jenkins-x/jx-go-maven-base-image: true
         jenkins-x/jx-helpers: true
         jenkins-x/jx-pipeline: true
         jenkins-x/jx-pipelines-visualizer: true
         jenkins-x/jx-preview: true
-        jenkins-x/jx-project: true
-        jenkins-x/jx-promote: true
         jenkins-x/jx-secret: true
-        jenkins-x/jx-verify: true
         jenkins-x/jx3-eagle: true
         jenkins-x/jx3-pipeline-catalog: true
         jenkins-x/jx3-versions: true
@@ -155,8 +155,11 @@ data:
         jenkins-x-labs-bdd-tests/springdemo: merge
         jenkins-x-plugins/jx-build-controller: merge
         jenkins-x-plugins/jx-changelog: merge
+        jenkins-x-plugins/jx-gitops: merge
         jenkins-x-plugins/jx-health: merge
         jenkins-x-plugins/jx-kh-check: merge
+        jenkins-x-plugins/jx-project: merge
+        jenkins-x-plugins/jx-promote: merge
         jenkins-x-plugins/jx-registry: merge
         jenkins-x-plugins/jx-release-version: merge
         jenkins-x-plugins/jx-scm: merge
@@ -167,6 +170,7 @@ data:
         jenkins-x-plugins/jx-test-collector: merge
         jenkins-x-plugins/jx-updatebot: merge
         jenkins-x-plugins/jx-v2-tekton-converter: merge
+        jenkins-x-plugins/jx-verify: merge
         jenkins-x-plugins/kh-tls-check: merge
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: merge
         jenkins-x-plugins/secretfacade: merge
@@ -186,16 +190,12 @@ data:
         jenkins-x/jx-cli-base-image: merge
         jenkins-x/jx-docs: merge
         jenkins-x/jx-git-operator: merge
-        jenkins-x/jx-gitops: merge
         jenkins-x/jx-go-maven-base-image: merge
         jenkins-x/jx-helpers: merge
         jenkins-x/jx-pipeline: merge
         jenkins-x/jx-pipelines-visualizer: merge
         jenkins-x/jx-preview: merge
-        jenkins-x/jx-project: merge
-        jenkins-x/jx-promote: merge
         jenkins-x/jx-secret: merge
-        jenkins-x/jx-verify: merge
         jenkins-x/jx3-eagle: merge
         jenkins-x/jx3-pipeline-catalog: merge
         jenkins-x/jx3-versions: merge
@@ -243,16 +243,12 @@ data:
         - jenkins-x/jx-cli
         - jenkins-x/jx-docs
         - jenkins-x/jx-git-operator
-        - jenkins-x/jx-gitops
         - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
         - jenkins-x/jx-pipeline
         - jenkins-x/jx-pipelines-visualizer
         - jenkins-x/jx-preview
-        - jenkins-x/jx-project
-        - jenkins-x/jx-promote
         - jenkins-x/jx-secret
-        - jenkins-x/jx-verify
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jx3-versions
         - jenkins-x/jxr-packs-kubernetes
@@ -266,8 +262,11 @@ data:
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
+        - jenkins-x-plugins/jx-gitops
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-project
+        - jenkins-x-plugins/jx-promote
         - jenkins-x-plugins/jx-registry
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
@@ -278,6 +277,7 @@ data:
         - jenkins-x-plugins/jx-test
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
+        - jenkins-x-plugins/jx-verify
         - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/secretfacade
@@ -320,16 +320,12 @@ data:
         - jenkins-x/jx-cli
         - jenkins-x/jx-docs
         - jenkins-x/jx-git-operator
-        - jenkins-x/jx-gitops
         - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
         - jenkins-x/jx-pipeline
         - jenkins-x/jx-pipelines-visualizer
         - jenkins-x/jx-preview
-        - jenkins-x/jx-project
-        - jenkins-x/jx-promote
         - jenkins-x/jx-secret
-        - jenkins-x/jx-verify
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jx3-versions
         - jenkins-x/jxr-packs-kubernetes
@@ -343,8 +339,11 @@ data:
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
+        - jenkins-x-plugins/jx-gitops
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-project
+        - jenkins-x-plugins/jx-promote
         - jenkins-x-plugins/jx-registry
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
@@ -355,6 +354,7 @@ data:
         - jenkins-x-plugins/jx-test
         - jenkins-x-plugins/jx-updatebot
         - jenkins-x-plugins/jx-v2-tekton-converter
+        - jenkins-x-plugins/jx-verify
         - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/secretfacade

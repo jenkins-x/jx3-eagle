@@ -3,20 +3,20 @@ kind: SourceRepository
 metadata:
   creationTimestamp: null
   labels:
-    owner: jenkins-x
+    owner: jenkins-x-plugins
     provider: github
-    repository: jx-project
+    repository: jx-verify
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: jenkins-x-jx-project
+  name: jenkins-x-plugins-jx-verify
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/jenkins-x/jx-project.git
-  org: jenkins-x
+  httpCloneURL: https://github.com/jenkins-x-plugins/jx-verify.git
+  org: jenkins-x-plugins
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-project
+  repo: jx-verify
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/jenkins-x/jx-project
+  url: https://github.com/jenkins-x-plugins/jx-verify
