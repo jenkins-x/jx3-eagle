@@ -25,16 +25,12 @@ spec:
     - name: jx-cli-base-image
     - name: jx-docs
     - name: jx-git-operator
-    - name: jx-gitops
     - name: jx-go-maven-base-image
     - name: jx-helpers
     - name: jx-pipeline
     - name: jx-pipelines-visualizer
     - name: jx-preview
-    - name: jx-project
-    - name: jx-promote
     - name: jx-secret
-    - name: jx-verify
     - name: jx3-eagle
       slack:
         channel: jx-pipelines-production
@@ -86,8 +82,11 @@ spec:
     repositories:
     - name: jx-build-controller
     - name: jx-changelog
+    - name: jx-gitops
     - name: jx-health
     - name: jx-kh-check
+    - name: jx-promote
+    - name: jx-project
     - name: jx-registry
     - name: jx-release-version
     - name: jx-scm
@@ -97,6 +96,7 @@ spec:
     - name: jx-test
     - name: jx-test-collector
     - name: jx-updatebot
+    - name: jx-verify
     - name: jx-v2-tekton-converter
     - name: kh-tls-check
     - name: kuberhealthy-terraform-drift-check
