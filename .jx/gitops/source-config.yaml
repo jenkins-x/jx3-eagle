@@ -19,18 +19,13 @@ spec:
     - name: helm-annotate
     - name: helm3-image
     - name: istio
-    - name: jx-admin
-    - name: jx-application
     - name: jx-cli
     - name: jx-cli-base-image
     - name: jx-docs
     - name: jx-git-operator
     - name: jx-go-maven-base-image
     - name: jx-helpers
-    - name: jx-pipeline
     - name: jx-pipelines-visualizer
-    - name: jx-preview
-    - name: jx-secret
     - name: jx3-eagle
       slack:
         channel: jx-pipelines-production
@@ -101,6 +96,11 @@ spec:
     - name: kh-tls-check
     - name: kuberhealthy-terraform-drift-check
     - name: secretfacade
+    - name: jx-preview
+    - name: jx-secret
+    - name: jx-pipeline
+    - name: jx-application
+    - name: jx-admin
     scheduler: in-repo
   - owner: jenkins-x-labs-bdd-tests
     provider: https://github.com
