@@ -19,7 +19,7 @@ spec:
     - name: helm-annotate
     - name: helm3-image
     - name: istio
-    - name: jx-cli
+    - name: jx
     - name: jx-cli-base-image
     - name: jx-docs
     - name: jx-git-operator
