@@ -96,14 +96,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jx-admin
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - jenkins-x/jx-application
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x/jx-cli-base-image
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -128,19 +120,7 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - jenkins-x/jx-pipeline
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - jenkins-x/jx-pipelines-visualizer
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - jenkins-x/jx-preview
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - jenkins-x/jx-secret
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -192,6 +172,14 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-admin
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x-plugins/jx-application
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/jx-build-controller
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -212,6 +200,14 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-pipeline
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x-plugins/jx-preview
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/jx-project
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -229,6 +225,10 @@ data:
     - lgtm_acts_as_approve: true
       repos:
       - jenkins-x-plugins/jx-scm
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x-plugins/jx-secret
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -339,6 +339,12 @@ data:
       jenkins-x-labs-bdd-tests/springdemo:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
+      jenkins-x-plugins/jx-admin:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x-plugins/jx-application:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       jenkins-x-plugins/jx-build-controller:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -354,6 +360,12 @@ data:
       jenkins-x-plugins/jx-kh-check:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
+      jenkins-x-plugins/jx-pipeline:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x-plugins/jx-preview:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       jenkins-x-plugins/jx-project:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -367,6 +379,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x-plugins/jx-scm:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x-plugins/jx-secret:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x-plugins/jx-slack:
@@ -432,12 +447,6 @@ data:
       jenkins-x/istio:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
-      jenkins-x/jx-admin:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      jenkins-x/jx-application:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
       jenkins-x/jx-cli:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -456,16 +465,7 @@ data:
       jenkins-x/jx-helpers:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
-      jenkins-x/jx-pipeline:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
       jenkins-x/jx-pipelines-visualizer:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      jenkins-x/jx-preview:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      jenkins-x/jx-secret:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/jx3-eagle:
@@ -769,6 +769,38 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x-plugins/jx-admin:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-application:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x-plugins/jx-build-controller:
       - approve
       - assign
@@ -849,6 +881,38 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x-plugins/jx-pipeline:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-preview:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x-plugins/jx-project:
       - approve
       - assign
@@ -914,6 +978,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-scm:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-secret:
       - approve
       - assign
       - blunderbuss
@@ -1265,38 +1345,6 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/jx-admin:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      jenkins-x/jx-application:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x/jx-cli:
       - approve
       - assign
@@ -1393,55 +1441,7 @@ data:
       - cat
       - dog
       - pony
-      jenkins-x/jx-pipeline:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       jenkins-x/jx-pipelines-visualizer:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      jenkins-x/jx-preview:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      jenkins-x/jx-secret:
       - approve
       - assign
       - blunderbuss
@@ -1665,12 +1665,6 @@ data:
       - jenkins-x/istio
       trusted_org: todo
     - repos:
-      - jenkins-x/jx-admin
-      trusted_org: todo
-    - repos:
-      - jenkins-x/jx-application
-      trusted_org: todo
-    - repos:
       - jenkins-x/jx-cli-base-image
       trusted_org: todo
     - repos:
@@ -1689,16 +1683,7 @@ data:
       - jenkins-x/jx-helpers
       trusted_org: todo
     - repos:
-      - jenkins-x/jx-pipeline
-      trusted_org: todo
-    - repos:
       - jenkins-x/jx-pipelines-visualizer
-      trusted_org: todo
-    - repos:
-      - jenkins-x/jx-preview
-      trusted_org: todo
-    - repos:
-      - jenkins-x/jx-secret
       trusted_org: todo
     - repos:
       - jenkins-x/jx3-eagle
@@ -1737,6 +1722,12 @@ data:
       - jenkins-x/octant-jx
       trusted_org: todo
     - repos:
+      - jenkins-x-plugins/jx-admin
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-application
+      trusted_org: todo
+    - repos:
       - jenkins-x-plugins/jx-build-controller
       trusted_org: todo
     - repos:
@@ -1752,6 +1743,12 @@ data:
       - jenkins-x-plugins/jx-kh-check
       trusted_org: todo
     - repos:
+      - jenkins-x-plugins/jx-pipeline
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-preview
+      trusted_org: todo
+    - repos:
       - jenkins-x-plugins/jx-project
       trusted_org: todo
     - repos:
@@ -1765,6 +1762,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-scm
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-secret
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-slack
