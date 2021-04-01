@@ -3,20 +3,20 @@ kind: SourceRepository
 metadata:
   creationTimestamp: null
   labels:
-    owner: jenkins-x
+    owner: jenkins-x-plugins
     provider: github
-    repository: jx-preview
+    repository: jx-pipeline
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: jenkins-x-jx-preview
+  name: jenkins-x-plugins-jx-pipeline
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/jenkins-x/jx-preview.git
-  org: jenkins-x
+  httpCloneURL: https://github.com/jenkins-x-plugins/jx-pipeline.git
+  org: jenkins-x-plugins
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-preview
+  repo: jx-pipeline
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/jenkins-x/jx-preview
+  url: https://github.com/jenkins-x-plugins/jx-pipeline

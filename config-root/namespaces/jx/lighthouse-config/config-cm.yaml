@@ -22,16 +22,21 @@ data:
         jenkins-x-labs-bdd-tests/nodedemo: true
         jenkins-x-labs-bdd-tests/pythondemo: true
         jenkins-x-labs-bdd-tests/springdemo: true
+        jenkins-x-plugins/jx-admin: true
+        jenkins-x-plugins/jx-application: true
         jenkins-x-plugins/jx-build-controller: true
         jenkins-x-plugins/jx-changelog: true
         jenkins-x-plugins/jx-gitops: true
         jenkins-x-plugins/jx-health: true
         jenkins-x-plugins/jx-kh-check: true
+        jenkins-x-plugins/jx-pipeline: true
+        jenkins-x-plugins/jx-preview: true
         jenkins-x-plugins/jx-project: true
         jenkins-x-plugins/jx-promote: true
         jenkins-x-plugins/jx-registry: true
         jenkins-x-plugins/jx-release-version: true
         jenkins-x-plugins/jx-scm: true
+        jenkins-x-plugins/jx-secret: true
         jenkins-x-plugins/jx-slack: true
         jenkins-x-plugins/jx-stash: true
         jenkins-x-plugins/jx-tap: true
@@ -53,18 +58,13 @@ data:
         jenkins-x/helm-annotate: true
         jenkins-x/helm3-image: true
         jenkins-x/istio: true
-        jenkins-x/jx-admin: true
-        jenkins-x/jx-application: true
         jenkins-x/jx-cli: true
         jenkins-x/jx-cli-base-image: true
         jenkins-x/jx-docs: true
         jenkins-x/jx-git-operator: true
         jenkins-x/jx-go-maven-base-image: true
         jenkins-x/jx-helpers: true
-        jenkins-x/jx-pipeline: true
         jenkins-x/jx-pipelines-visualizer: true
-        jenkins-x/jx-preview: true
-        jenkins-x/jx-secret: true
         jenkins-x/jx3-eagle: true
         jenkins-x/jx3-pipeline-catalog: true
         jenkins-x/jx3-versions: true
@@ -153,16 +153,21 @@ data:
         jenkins-x-labs-bdd-tests/nodedemo: merge
         jenkins-x-labs-bdd-tests/pythondemo: merge
         jenkins-x-labs-bdd-tests/springdemo: merge
+        jenkins-x-plugins/jx-admin: merge
+        jenkins-x-plugins/jx-application: merge
         jenkins-x-plugins/jx-build-controller: merge
         jenkins-x-plugins/jx-changelog: merge
         jenkins-x-plugins/jx-gitops: merge
         jenkins-x-plugins/jx-health: merge
         jenkins-x-plugins/jx-kh-check: merge
+        jenkins-x-plugins/jx-pipeline: merge
+        jenkins-x-plugins/jx-preview: merge
         jenkins-x-plugins/jx-project: merge
         jenkins-x-plugins/jx-promote: merge
         jenkins-x-plugins/jx-registry: merge
         jenkins-x-plugins/jx-release-version: merge
         jenkins-x-plugins/jx-scm: merge
+        jenkins-x-plugins/jx-secret: merge
         jenkins-x-plugins/jx-slack: merge
         jenkins-x-plugins/jx-stash: merge
         jenkins-x-plugins/jx-tap: merge
@@ -184,18 +189,13 @@ data:
         jenkins-x/helm-annotate: merge
         jenkins-x/helm3-image: merge
         jenkins-x/istio: merge
-        jenkins-x/jx-admin: merge
-        jenkins-x/jx-application: merge
         jenkins-x/jx-cli: merge
         jenkins-x/jx-cli-base-image: merge
         jenkins-x/jx-docs: merge
         jenkins-x/jx-git-operator: merge
         jenkins-x/jx-go-maven-base-image: merge
         jenkins-x/jx-helpers: merge
-        jenkins-x/jx-pipeline: merge
         jenkins-x/jx-pipelines-visualizer: merge
-        jenkins-x/jx-preview: merge
-        jenkins-x/jx-secret: merge
         jenkins-x/jx3-eagle: merge
         jenkins-x/jx3-pipeline-catalog: merge
         jenkins-x/jx3-versions: merge
@@ -237,18 +237,13 @@ data:
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
         - jenkins-x/istio
-        - jenkins-x/jx-admin
-        - jenkins-x/jx-application
         - jenkins-x/jx-cli-base-image
         - jenkins-x/jx-cli
         - jenkins-x/jx-docs
         - jenkins-x/jx-git-operator
         - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
-        - jenkins-x/jx-pipeline
         - jenkins-x/jx-pipelines-visualizer
-        - jenkins-x/jx-preview
-        - jenkins-x/jx-secret
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jx3-versions
         - jenkins-x/jxr-packs-kubernetes
@@ -260,16 +255,21 @@ data:
         - jenkins-x-labs-bdd-tests/springdemo
         - jenkins-x/lighthouse
         - jenkins-x/octant-jx
+        - jenkins-x-plugins/jx-admin
+        - jenkins-x-plugins/jx-application
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
         - jenkins-x-plugins/jx-gitops
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-pipeline
+        - jenkins-x-plugins/jx-preview
         - jenkins-x-plugins/jx-project
         - jenkins-x-plugins/jx-promote
         - jenkins-x-plugins/jx-registry
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-secret
         - jenkins-x-plugins/jx-slack
         - jenkins-x-plugins/jx-stash
         - jenkins-x-plugins/jx-tap
@@ -314,18 +314,13 @@ data:
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
         - jenkins-x/istio
-        - jenkins-x/jx-admin
-        - jenkins-x/jx-application
         - jenkins-x/jx-cli-base-image
         - jenkins-x/jx-cli
         - jenkins-x/jx-docs
         - jenkins-x/jx-git-operator
         - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
-        - jenkins-x/jx-pipeline
         - jenkins-x/jx-pipelines-visualizer
-        - jenkins-x/jx-preview
-        - jenkins-x/jx-secret
         - jenkins-x/jx3-pipeline-catalog
         - jenkins-x/jx3-versions
         - jenkins-x/jxr-packs-kubernetes
@@ -337,16 +332,21 @@ data:
         - jenkins-x-labs-bdd-tests/springdemo
         - jenkins-x/lighthouse
         - jenkins-x/octant-jx
+        - jenkins-x-plugins/jx-admin
+        - jenkins-x-plugins/jx-application
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
         - jenkins-x-plugins/jx-gitops
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-pipeline
+        - jenkins-x-plugins/jx-preview
         - jenkins-x-plugins/jx-project
         - jenkins-x-plugins/jx-promote
         - jenkins-x-plugins/jx-registry
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-secret
         - jenkins-x-plugins/jx-slack
         - jenkins-x-plugins/jx-stash
         - jenkins-x-plugins/jx-tap

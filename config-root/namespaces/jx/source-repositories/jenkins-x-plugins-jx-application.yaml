@@ -3,20 +3,20 @@ kind: SourceRepository
 metadata:
   creationTimestamp: null
   labels:
-    owner: jenkins-x
+    owner: jenkins-x-plugins
     provider: github
-    repository: jx-secret
+    repository: jx-application
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: jenkins-x-jx-secret
+  name: jenkins-x-plugins-jx-application
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/jenkins-x/jx-secret.git
-  org: jenkins-x
+  httpCloneURL: https://github.com/jenkins-x-plugins/jx-application.git
+  org: jenkins-x-plugins
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-secret
+  repo: jx-application
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/jenkins-x/jx-secret
+  url: https://github.com/jenkins-x-plugins/jx-application
