@@ -17,6 +17,15 @@ rules:
       - watch
       - create
       - delete
+  - apiGroups:
+      - coordination.k8s.io
+    resources:
+      - leases
+    verbs:
+      - get
+      - list
+      - watch
+      - delete
   - apiGroups: ["batch", "extensions"]
     resources:
       - jobs
@@ -29,6 +38,7 @@ rules:
       - ""
     resources:
       - pods
+      - secrets
     verbs:
       - get
       - list
