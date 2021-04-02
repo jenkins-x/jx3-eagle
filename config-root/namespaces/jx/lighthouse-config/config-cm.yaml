@@ -59,6 +59,7 @@ data:
         jenkins-x/helm3-image: true
         jenkins-x/istio: true
         jenkins-x/jx: true
+        jenkins-x/jx-api: true
         jenkins-x/jx-cli-base-image: true
         jenkins-x/jx-docs: true
         jenkins-x/jx-git-operator: true
@@ -190,6 +191,7 @@ data:
         jenkins-x/helm3-image: merge
         jenkins-x/istio: merge
         jenkins-x/jx: merge
+        jenkins-x/jx-api: merge
         jenkins-x/jx-cli-base-image: merge
         jenkins-x/jx-docs: merge
         jenkins-x/jx-git-operator: merge
@@ -237,6 +239,7 @@ data:
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
         - jenkins-x/istio
+        - jenkins-x/jx-api
         - jenkins-x/jx-cli-base-image
         - jenkins-x/jx-docs
         - jenkins-x/jx-git-operator
@@ -314,6 +317,7 @@ data:
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
         - jenkins-x/istio
+        - jenkins-x/jx-api
         - jenkins-x/jx-cli-base-image
         - jenkins-x/jx-docs
         - jenkins-x/jx-git-operator

@@ -96,6 +96,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/jx-api
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/jx-cli-base-image
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -448,6 +452,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/jx:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x/jx-api:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/jx-cli-base-image:
@@ -1362,6 +1369,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/jx-api:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/jx-cli-base-image:
       - approve
       - assign
@@ -1664,6 +1687,9 @@ data:
       trusted_org: jenkins-x-images
     - repos:
       - jenkins-x/istio
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jx-api
       trusted_org: todo
     - repos:
       - jenkins-x/jx-cli-base-image
