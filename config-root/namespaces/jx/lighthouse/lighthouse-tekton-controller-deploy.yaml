@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-tekton-controller
   labels:
-    chart: "lighthouse-1.0.13"
+    chart: "lighthouse-1.0.14"
     app: lighthouse-tekton-controller
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -19,12 +19,12 @@ spec:
     metadata:
       labels:
         app: lighthouse-tekton-controller
-      annotations: {jenkins-x.io/hash: '9254003759d94c040a364ac596777ed42b67aacf094f79756c2c423a4c683144'}
+      annotations: {jenkins-x.io/hash: 'eef151ff4145a20c8b7263864d6cea4e27ce12d041d6de6961be5b721691b2c1'}
     spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
         - name: lighthouse-tekton-controller
-          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:1.0.13
+          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:1.0.14
           imagePullPolicy: IfNotPresent
           args:
             - --namespace=jx
