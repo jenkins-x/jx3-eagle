@@ -5,18 +5,18 @@ metadata:
   labels:
     owner: jenkins-x
     provider: github
-    repository: jx-cli
+    repository: jx
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: jenkins-x-jx-cli
+  name: jenkins-x-jx
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/jenkins-x/jx-cli.git
+  httpCloneURL: https://github.com/jenkins-x/jx.git
   org: jenkins-x
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: jx-cli
+  repo: jx
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/jenkins-x/jx-cli
+  url: https://github.com/jenkins-x/jx
