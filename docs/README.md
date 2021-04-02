@@ -34,7 +34,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
-	      <td>1.0.43</td>
+	      <td>1.0.45</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
 	    </tr>
@@ -69,11 +69,10 @@
 	      <td><a href='https://github.com/pusher/wave'>source</a></td>
 	    </tr>
     <tr>
-	      <td><a href='https://github.com/jenkins-x/jx-preview' title='This chart installs the jx-preview CRD and garbagecollection job
-'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview </a></td>
-	      <td>0.0.172</td>
+	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview' title='This chart installs the jx-preview CRD and garbagecollection job '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview </a></td>
+	      <td>0.0.177</td>
 	      <td></td>
-	      <td><a href='https://github.com/jenkins-x/jx-preview'>source</a></td>
+	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
@@ -119,7 +118,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test' title='This chart installs the jx-test CronJob to garbage collect failed system test resources '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-test </a></td>
-	      <td>0.0.42</td>
+	      <td>0.0.43</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test'>source</a></td>
 	    </tr>

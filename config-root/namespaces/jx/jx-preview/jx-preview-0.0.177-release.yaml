@@ -1,0 +1,28 @@
+# Source: jx-preview/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-04-02T06:37:21Z"
+  deletionTimestamp: null
+  name: 'jx-preview-0.0.177'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: upgrade deps
+      sha: 7867bbe55ac3888e2e1d8543837310e25d841deb
+  gitHttpUrl: https://github.com/jenkins-x-plugins/jx-preview
+  gitOwner: jenkins-x-plugins
+  gitRepository: jx-preview
+  name: 'jx-preview'
+  version: 0.0.177
+status: {}
