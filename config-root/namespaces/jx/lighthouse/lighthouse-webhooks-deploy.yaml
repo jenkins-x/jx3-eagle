@@ -68,7 +68,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "c9d3584714017f8a59e429f5c3a390c501827f26"
+              value: "dee1023a9a66ef8a76598c3a755fcebacee5af75"
           ports:
             - containerPort: 8080
           livenessProbe:
