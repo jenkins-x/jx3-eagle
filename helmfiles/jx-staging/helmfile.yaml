@@ -4,5 +4,12 @@ environments:
     values:
     - jx-values.yaml
 namespace: jx-staging
+repositories:
+- name: dev
+  url: https://chartmuseum-jx.dev.jenkins-x.me
+releases:
+- chart: dev/springdemo
+  version: 0.0.45
+  name: springdemo
 templates: {}
 renderedvalues: {}
