@@ -2,7 +2,6 @@
 
 This git repository setups the cloud resources required to run Jenkins X on GKE via Terraform and then sets up Jenkins X with [Google Secrets Manager](https://cloud.google.com/secret-manager).
 
-
 ## Prerequisites
 
 We assume you have access to GCP and have modified the `main.mf` file to add your GCP project ID.
