@@ -76,7 +76,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
-	      <td>1.2.0</td>
+	      <td>1.3.0</td>
 	      <td><a href='https://dashboard-jx.dev.jenkins-x.me'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
@@ -118,13 +118,13 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test' title='This chart installs the jx-test CronJob to garbage collect failed system test resources '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-test </a></td>
-	      <td>0.0.43</td>
+	      <td>0.0.44</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack' title='A Slack bot for Jenkins X'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-slack </a></td>
-	      <td>0.0.56</td>
+	      <td>0.0.57</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack'>source</a></td>
 	    </tr>
@@ -151,7 +151,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart' title='A Helm chart for Tekton Pipelines'> <img src='https://avatars2.githubusercontent.com/u/47602533' width='24px' height='24px'> tekton-pipeline </a></td>
-	      <td>0.22.0</td>
+	      <td>0.23.0</td>
 	      <td></td>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart'>source</a></td>
 	    </tr>
