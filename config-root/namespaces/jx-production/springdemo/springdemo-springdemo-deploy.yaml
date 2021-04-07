@@ -1,0 +1,59 @@
+# Source: springdemo/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springdemo-springdemo
+  labels:
+    draft: draft-app
+    chart: "springdemo-0.0.45"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-production
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: springdemo-springdemo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: springdemo-springdemo
+    spec:
+      serviceAccountName: springdemo-springdemo
+      containers:
+        - name: springdemo
+          image: "gcr.io/jenkinsxio/springdemo:0.0.45"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: VERSION
+              value: 0.0.45
+          envFrom: null
+          ports:
+            - name: http
+              containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8080
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              cpu: 400m
+              memory: 256Mi
+            requests:
+              cpu: 200m
+              memory: 128Mi
+      terminationGracePeriodSeconds:
+      imagePullSecrets:
