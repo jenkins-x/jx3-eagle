@@ -38,11 +38,11 @@ spec:
             - -resync-interval
             - 60s
             - -archived-logs-url-template
-            - gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
+            - gs://logs-tf-jx-gentle-titmouse-0978c5a812f1/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
             - -archived-pipelines-url-template
-            - gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
+            - gs://logs-tf-jx-gentle-titmouse-0978c5a812f1/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
             - -archived-pipelineruns-url-template
-            - gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
+            - gs://logs-tf-jx-gentle-titmouse-0978c5a812f1/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
             - -log-level
             - INFO
           ports:
