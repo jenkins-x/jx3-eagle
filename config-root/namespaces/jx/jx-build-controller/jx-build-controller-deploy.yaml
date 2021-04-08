@@ -51,6 +51,10 @@ spec:
               value: jenkins-x-bot
             - name: GIT_SECRET_SERVER
               value: https://github.com
+            - name: TRACES_EXPORTER_ENDPOINT
+              value: tempo.jx-observability:14268
+            - name: TRACES_EXPORTER_TYPE
+              value: jaeger:http:thrift
             - name: XDG_CONFIG_HOME
               value: /tmp/git-creds
           resources:
