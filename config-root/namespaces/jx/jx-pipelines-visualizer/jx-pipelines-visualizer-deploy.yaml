@@ -38,11 +38,13 @@ spec:
             - -resync-interval
             - 60s
             - -archived-logs-url-template
-            - gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
+            - gs://logs-tf-jx-gentle-titmouse-0978c5a812f1/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
             - -archived-pipelines-url-template
-            - gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
+            - gs://logs-tf-jx-gentle-titmouse-0978c5a812f1/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
             - -archived-pipelineruns-url-template
-            - gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
+            - gs://logs-tf-jx-gentle-titmouse-0978c5a812f1/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
+            - -pipeline-trace-url-template
+            - http://grafana-jx-observability.dev.jenkins-x.me/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
             - -log-level
             - INFO
           ports:

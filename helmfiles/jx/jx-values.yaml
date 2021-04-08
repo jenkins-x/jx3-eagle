@@ -77,11 +77,11 @@ jxRequirements:
   secretStorage: gsm
   storage:
   - name: logs
-    url: gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2
+    url: gs://logs-tf-jx-gentle-titmouse-0978c5a812f1
   - name: reports
-    url: gs://reports-tf-jx-gentle-titmouse-1603d78dd9a2
+    url: gs://reports-tf-jx-gentle-titmouse-0978c5a812f1
   - name: repository
-    url: gs://repository-tf-jx-gentle-titmouse-1603d78dd9a2
+    url: gs://repository-tf-jx-gentle-titmouse-0978c5a812f1
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:

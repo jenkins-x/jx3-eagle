@@ -40,7 +40,7 @@ spec:
     versionStreamRef: "master"
     useGitOps: true
     storageLocations:
-      - bucketUrl: gs://logs-tf-jx-gentle-titmouse-1603d78dd9a2
+      - bucketUrl: gs://logs-tf-jx-gentle-titmouse-0978c5a812f1
         classifier: logs
-      - bucketUrl: gs://reports-tf-jx-gentle-titmouse-1603d78dd9a2
+      - bucketUrl: gs://reports-tf-jx-gentle-titmouse-0978c5a812f1
         classifier: reports
