@@ -282,6 +282,10 @@ data:
       repos:
       - jenkins-x/terraform-azurerm-jx
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jenkins-x/terraform-google-jx
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -497,6 +501,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/terraform-azurerm-jx:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x/terraform-google-jx:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
     heart: {}
@@ -1610,6 +1617,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/terraform-google-jx:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -1828,6 +1851,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/terraform-azurerm-jx
+      trusted_org: todo
+    - repos:
+      - jenkins-x/terraform-google-jx
       trusted_org: todo
     welcome:
     - message_template: Welcome

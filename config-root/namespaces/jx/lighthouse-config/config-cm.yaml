@@ -74,6 +74,7 @@ data:
         jenkins-x/lighthouse: true
         jenkins-x/octant-jx: true
         jenkins-x/terraform-azurerm-jx: true
+        jenkins-x/terraform-google-jx: true
     plank: {}
     pod_namespace: jx
     postsubmits:
@@ -206,6 +207,7 @@ data:
         jenkins-x/lighthouse: merge
         jenkins-x/octant-jx: merge
         jenkins-x/terraform-azurerm-jx: merge
+        jenkins-x/terraform-google-jx: merge
       queries:
       - labels:
         - approved
@@ -285,6 +287,7 @@ data:
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
+        - jenkins-x/terraform-google-jx
       - labels:
         - updatebot
         missingLabels:
@@ -363,6 +366,7 @@ data:
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
+        - jenkins-x/terraform-google-jx
       target_url: http://dashboard-jx.dev.jenkins-x.me
 kind: ConfigMap
 metadata:

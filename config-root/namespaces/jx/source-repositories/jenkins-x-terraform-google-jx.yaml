@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: terraform-google-jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-terraform-google-jx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x/terraform-google-jx.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: terraform-google-jx
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x/terraform-google-jx
