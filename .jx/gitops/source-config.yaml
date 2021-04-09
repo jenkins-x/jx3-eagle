@@ -42,6 +42,7 @@ spec:
     - name: kubernetes-external-secrets
     - name: lighthouse
     - name: octant-jx
+    - name: terraform-google-jx
     - name: terraform-azurerm-jx
     scheduler: in-repo
   - owner: jenkins-x-apps
