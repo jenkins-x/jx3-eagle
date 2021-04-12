@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-keeper
   labels:
-    chart: "lighthouse-1.0.23"
+    chart: "lighthouse-1.0.24"
     app: lighthouse-keeper
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -34,7 +34,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: lighthouse-keeper
-          image: gcr.io/jenkinsxio/lighthouse-keeper:1.0.23
+          image: gcr.io/jenkinsxio/lighthouse-keeper:1.0.24
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
