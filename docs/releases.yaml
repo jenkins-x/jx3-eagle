@@ -69,7 +69,7 @@
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.0.47
+    version: 1.0.50
   - apiVersion: v2
     appVersion: 3.0.5
     description: Custom Resource Definitions for Jenkins X
