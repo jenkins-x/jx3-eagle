@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: slack
-          image: "gcr.io/jenkinsxio/jx-slack:0.0.57"
+          image: "gcr.io/jenkinsxio/jx-slack:0.0.58"
           imagePullPolicy: IfNotPresent
           command:
             - "/jx-slack"
@@ -42,7 +42,7 @@ spec:
               value: /secrets/git
             - name: GIT_KIND
               value: "github"
-            - name: GIT_SERVER
+            - name: GIT_SECRET_SERVER
               value: "https://github.com"
             - name: GIT_TOKEN
               valueFrom:
