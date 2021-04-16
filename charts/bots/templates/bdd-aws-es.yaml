@@ -10,27 +10,27 @@ metadata:
 spec:
   backendType: gcpSecretsManager
   data:
-  - key: jx-infra-aws-bdd-accountid
+  - key: jx-infra-aws-bdd-credentials
     name: AWS_ACCOUNT_ID
     property: AWS_ACCOUNT_ID
     version: latest
-  - key: jx-infra-aws-bdd-access-key-id
+  - key: jx-infra-aws-bdd-credentials
     name: AWS_ACCESS_KEY_ID
     property: AWS_ACCESS_KEY_ID
     version: latest
-  - key: jx-infra-aws-bdd-secret-access-key
+  - key: jx-infra-aws-bdd-credentials
     name: AWS_SECRET_ACCESS_KEY
     property: AWS_SECRET_ACCESS_KEY
     version: latest
-  - key: jx-infra-aws-bdd-region
+  - key: jx-infra-aws-bdd-credentials
     name: AWS_REGION
     property: AWS_REGION
     version: latest
-  - key: jx-infra-aws-bdd-default-region
+  - key: jx-infra-aws-bdd-credentials
     name: AWS_DEFAULT_REGION
     property: AWS_DEFAULT_REGION
     version: latest
-  - key: jx-infra-aws-bdd-vaultuser
+  - key: jx-infra-aws-bdd-credentials
     name: VAULT_USER
     property: VAULT_USER
     version: latest
