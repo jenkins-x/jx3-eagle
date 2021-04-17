@@ -56,7 +56,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: jxgh/jx-preview
-  version: 0.0.177
+  version: 0.0.178
   name: jx-preview
   values:
   - jx-values.yaml
