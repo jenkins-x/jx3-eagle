@@ -25,11 +25,11 @@ spec:
             - command:
                 - /bin/sh
                 - -c
-                - jx gitops git setup --namespace jx --secret tekton-git && jx preview gc
+                - jx gitops git setup --namespace jx --secret tekton-git --git-provider https://github.com && jx preview gc
               env:
                 - name: XDG_CONFIG_HOME
                   value: /home
-              image: ghcr.io/jenkins-x-plugins/jx-preview:0.0.178
+              image: ghcr.io/jenkins-x-plugins/jx-preview:0.0.180
               imagePullPolicy: IfNotPresent
               name: jx-preview-gc-jobs
               resources: {}
