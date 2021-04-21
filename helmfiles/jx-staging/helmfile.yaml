@@ -13,5 +13,10 @@ releases:
   name: godemo
   values:
   - jx-values.yaml
+- chart: dev/go-chaos
+  version: 0.0.1
+  name: go-chaos
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
