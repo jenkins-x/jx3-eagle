@@ -72,6 +72,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/go-chaos
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/go-scm
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -438,6 +442,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/github-release:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x/go-chaos:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/go-scm:
@@ -1279,6 +1286,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/go-chaos:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/go-scm:
       - approve
       - assign
@@ -1692,6 +1715,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/github-release
+      trusted_org: todo
+    - repos:
+      - jenkins-x/go-chaos
       trusted_org: todo
     - repos:
       - jenkins-x/go-scm

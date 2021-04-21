@@ -53,6 +53,7 @@ data:
         jenkins-x/feature-infra-secrets: true
         jenkins-x/flagger-metrics: true
         jenkins-x/github-release: true
+        jenkins-x/go-chaos: true
         jenkins-x/go-scm: true
         jenkins-x/gsm-controller: true
         jenkins-x/helm-annotate: true
@@ -186,6 +187,7 @@ data:
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
         jenkins-x/github-release: merge
+        jenkins-x/go-chaos: merge
         jenkins-x/go-scm: merge
         jenkins-x/gsm-controller: merge
         jenkins-x/helm-annotate: merge
@@ -235,6 +237,7 @@ data:
         - jenkins-x/feature-infra-secrets
         - jenkins-x/flagger-metrics
         - jenkins-x/github-release
+        - jenkins-x/go-chaos
         - jenkins-x/go-scm
         - jenkins-x/gsm-controller
         - jenkins-x/helm-annotate
@@ -314,6 +317,7 @@ data:
         - jenkins-x/feature-infra-secrets
         - jenkins-x/flagger-metrics
         - jenkins-x/github-release
+        - jenkins-x/go-chaos
         - jenkins-x/go-scm
         - jenkins-x/gsm-controller
         - jenkins-x/helm-annotate
