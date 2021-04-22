@@ -8,11 +8,6 @@ repositories:
 - name: dev
   url: https://chartmuseum-jx.dev.jenkins-x.me
 releases:
-- chart: dev/godemo
-  version: 0.0.13
-  name: godemo
-  values:
-  - jx-values.yaml
 - chart: dev/go-chaos
   version: 0.0.1
   name: go-chaos
