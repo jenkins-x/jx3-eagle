@@ -4,12 +4,12 @@ kind: Deployment
 metadata:
   name: lighthouse-webhooks
   labels:
-    chart: "lighthouse-1.0.28"
+    chart: "lighthouse-1.0.29"
     app: lighthouse-webhooks
     git.jenkins-x.io/sha: annotate
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    checksum/config: 5cc922163d306601cb59a1738a4baf0e483f23daff7d82981f4a4f9da8c7fa5f
+    checksum/config: b5ebbb110750b6aba07a68fc0f7cd01bab811f127e5e66e37c581924240221f0
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
 spec:
@@ -29,7 +29,7 @@ spec:
       serviceAccountName: lighthouse-webhooks
       containers:
         - name: lighthouse-webhooks
-          image: gcr.io/jenkinsxio/lighthouse-webhooks:1.0.28
+          image: gcr.io/jenkinsxio/lighthouse-webhooks:1.0.29
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
