@@ -82,6 +82,7 @@ spec:
     - name: jx-application
     - name: jx-build-controller
     - name: jx-changelog
+    - name: jx-charter
     - name: jx-gitops
     - name: jx-health
     - name: jx-kh-check
