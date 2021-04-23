@@ -1,0 +1,67 @@
+# Source: go-chaos/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-chaos-go-chaos
+  labels:
+    draft: draft-app
+    chart: "go-chaos-0.0.4"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-production
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: go-chaos-go-chaos
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: go-chaos-go-chaos
+    spec:
+      serviceAccountName: go-chaos-go-chaos
+      containers:
+        - name: go-chaos
+          image: "gcr.io/jenkinsxio/go-chaos:0.0.4"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: VERSION
+              value: 0.0.4
+            - name: CRASH
+              value: "true"
+            - name: CRASH_DURATION
+              value: "10s"
+            - name: REQUEST_ERROR_CODE
+              value: "404"
+            - name: REQUEST_FAIL
+              value: "0"
+          envFrom: null
+          ports:
+            - name: http
+              containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              cpu: 400m
+              memory: 256Mi
+            requests:
+              cpu: 200m
+              memory: 128Mi
+      terminationGracePeriodSeconds:
+      imagePullSecrets:
