@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: rawlingsj
+    provider: github
+    repository: cosign-test2
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: rawlingsj-cosign-test2
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/rawlingsj/cosign-test2.git
+  org: rawlingsj
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: cosign-test2
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/rawlingsj/cosign-test2

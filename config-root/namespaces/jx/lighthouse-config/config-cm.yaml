@@ -76,6 +76,7 @@ data:
         jenkins-x/octant-jx: true
         jenkins-x/terraform-azurerm-jx: true
         jenkins-x/terraform-google-jx: true
+        rawlingsj/cosign-test2: true
     plank: {}
     pod_namespace: jx
     postsubmits:
@@ -210,6 +211,7 @@ data:
         jenkins-x/octant-jx: merge
         jenkins-x/terraform-azurerm-jx: merge
         jenkins-x/terraform-google-jx: merge
+        rawlingsj/cosign-test2: merge
       queries:
       - labels:
         - approved
@@ -291,6 +293,7 @@ data:
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
         - jenkins-x/terraform-google-jx
+        - rawlingsj/cosign-test2
       - labels:
         - updatebot
         missingLabels:
@@ -371,6 +374,7 @@ data:
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
         - jenkins-x/terraform-google-jx
+        - rawlingsj/cosign-test2
       target_url: http://dashboard-jx.dev.jenkins-x.me
 kind: ConfigMap
 metadata:
