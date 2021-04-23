@@ -196,6 +196,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-charter
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/jx-gitops
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -365,6 +369,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x-plugins/jx-changelog:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x-plugins/jx-charter:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x-plugins/jx-gitops:
@@ -846,6 +853,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-changelog:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-charter:
       - approve
       - assign
       - blunderbuss
@@ -1831,6 +1854,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-changelog
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-charter
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-gitops

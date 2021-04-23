@@ -26,6 +26,7 @@ data:
         jenkins-x-plugins/jx-application: true
         jenkins-x-plugins/jx-build-controller: true
         jenkins-x-plugins/jx-changelog: true
+        jenkins-x-plugins/jx-charter: true
         jenkins-x-plugins/jx-gitops: true
         jenkins-x-plugins/jx-health: true
         jenkins-x-plugins/jx-kh-check: true
@@ -161,6 +162,7 @@ data:
         jenkins-x-plugins/jx-application: merge
         jenkins-x-plugins/jx-build-controller: merge
         jenkins-x-plugins/jx-changelog: merge
+        jenkins-x-plugins/jx-charter: merge
         jenkins-x-plugins/jx-gitops: merge
         jenkins-x-plugins/jx-health: merge
         jenkins-x-plugins/jx-kh-check: merge
@@ -269,6 +271,7 @@ data:
         - jenkins-x-plugins/jx-application
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
+        - jenkins-x-plugins/jx-charter
         - jenkins-x-plugins/jx-gitops
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
@@ -350,6 +353,7 @@ data:
         - jenkins-x-plugins/jx-application
         - jenkins-x-plugins/jx-build-controller
         - jenkins-x-plugins/jx-changelog
+        - jenkins-x-plugins/jx-charter
         - jenkins-x-plugins/jx-gitops
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
