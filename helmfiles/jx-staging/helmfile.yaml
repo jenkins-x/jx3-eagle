@@ -13,5 +13,10 @@ releases:
   name: go-chaos
   values:
   - jx-values.yaml
+- chart: dev/cosign-test2
+  version: 0.0.1
+  name: cosign-test2
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
