@@ -43,8 +43,8 @@ spec:
     - name: kubernetes-external-secrets
     - name: lighthouse
     - name: octant-jx
-    - name: terraform-google-jx
     - name: terraform-azurerm-jx
+    - name: terraform-google-jx
     scheduler: in-repo
   - owner: jenkins-x-apps
     provider: https://github.com
@@ -78,32 +78,32 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: jx-admin
+    - name: jx-application
     - name: jx-build-controller
     - name: jx-changelog
     - name: jx-gitops
     - name: jx-health
     - name: jx-kh-check
-    - name: jx-promote
+    - name: jx-pipeline
+    - name: jx-preview
     - name: jx-project
+    - name: jx-promote
     - name: jx-registry
     - name: jx-release-version
     - name: jx-scm
+    - name: jx-secret
     - name: jx-slack
     - name: jx-stash
     - name: jx-tap
     - name: jx-test
     - name: jx-test-collector
     - name: jx-updatebot
-    - name: jx-verify
     - name: jx-v2-tekton-converter
+    - name: jx-verify
     - name: kh-tls-check
     - name: kuberhealthy-terraform-drift-check
     - name: secretfacade
-    - name: jx-preview
-    - name: jx-secret
-    - name: jx-pipeline
-    - name: jx-application
-    - name: jx-admin
     scheduler: in-repo
   - owner: jenkins-x-labs-bdd-tests
     provider: https://github.com
@@ -114,6 +114,12 @@ spec:
     - name: nodedemo
     - name: pythondemo
     - name: springdemo
+    scheduler: in-repo
+  - owner: rawlingsj
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: cosign-test2
     scheduler: in-repo
   slack:
     channel: jx-pipelines-production
