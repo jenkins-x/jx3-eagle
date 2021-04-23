@@ -11,6 +11,7 @@ spec:
   failedJobsHistoryLimit: 1
   successfulJobsHistoryLimit: 3
   schedule: "0/30 */3 * * *"
+  startingDeadlineSeconds: 4000
   jobTemplate:
     spec:
       template:
