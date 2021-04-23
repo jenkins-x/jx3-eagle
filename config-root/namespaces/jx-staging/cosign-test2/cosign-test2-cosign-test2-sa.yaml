@@ -1,0 +1,8 @@
+# Source: cosign-test2/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: cosign-test2-cosign-test2
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
