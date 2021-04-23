@@ -290,6 +290,10 @@ data:
       repos:
       - jenkins-x/terraform-google-jx
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - rawlingsj/cosign-test2
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -511,6 +515,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/terraform-google-jx:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      rawlingsj/cosign-test2:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
     heart: {}
@@ -1656,6 +1663,22 @@ data:
       - cat
       - dog
       - pony
+      rawlingsj/cosign-test2:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -1880,6 +1903,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/terraform-google-jx
+      trusted_org: todo
+    - repos:
+      - rawlingsj/cosign-test2
       trusted_org: todo
     welcome:
     - message_template: Welcome
