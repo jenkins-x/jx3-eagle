@@ -112,5 +112,11 @@ releases:
   name: jx-slack
   values:
   - jx-values.yaml
+
+- chart: jx3/jx-charter
+  version: 0.0.13
+  name: jx-charter
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
