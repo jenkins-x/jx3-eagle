@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-04-22T11:34:29Z"
+  creationTimestamp: "2021-04-24T06:25:37Z"
   deletionTimestamp: null
-  name: 'lighthouse-1.0.29'
+  name: 'lighthouse-1.0.30'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,14 +18,14 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore(deps): upgrade jenkins-x/lighthouse to version 1.7.0
+        chore(deps): upgrade jenkins-x/lighthouse to version 1.7.1
 
         from: https://github.com/jenkins-x/go-scm.git
-      sha: 30fabb3d333e434b602d7db0e5ead77fe4247b86
+      sha: ac4d2a1b14de6b85c8e3f8181e08a892f4ae8558
   gitHttpUrl: https://github.com/jenkins-x/lighthouse
   gitOwner: jenkins-x
   gitRepository: lighthouse
   name: 'lighthouse'
-  releaseNotesURL: https://github.com/jenkins-x/lighthouse/releases/tag/v1.0.29
-  version: 1.0.29
+  releaseNotesURL: https://github.com/jenkins-x/lighthouse/releases/tag/v1.0.30
+  version: 1.0.30
 status: {}
