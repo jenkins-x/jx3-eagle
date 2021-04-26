@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-04-23T10:13:39Z"
+  creationTimestamp: "2021-04-26T07:59:04Z"
   deletionTimestamp: null
-  name: 'go-chaos-0.0.4'
+  name: 'go-chaos-0.0.5'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.4
-      sha: 90a964a62bac247ebb8fb7d44413c449dc154f80
+        chore: release 0.0.5
+      sha: c73e1ebd8c95e930761cf955756c694103fe25fd
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: f8f35073cc3304c1a1bdeed9081b85b7af75d2c0
+      sha: 2ea44b5ded3fdcf2aadac88a7e0053cf488fdcf1
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -37,21 +37,24 @@ spec:
       committer:
         email: noreply@github.com
         name: GitHub
-      message: Update README.md
-      sha: 269d383e10b1a6d416339aeb6e82d09ca5f7a28e
-    - author:
-        email: james.strachan@gmail.com
-        name: James Strachan
-      branch: master
-      committer:
-        email: noreply@github.com
-        name: GitHub
-      message: Update README.md
-      sha: f85dedf3e541077afbafa4687a051d197383d928
+      issueIds:
+        - "1"
+      message: |-
+        fix: fix bug
+
+        fixes #1
+      sha: 2a9da85bfd51d5c86434294bad69bfaf9c69da63
   gitHttpUrl: https://github.com/jenkins-x/go-chaos
   gitOwner: jenkins-x
   gitRepository: go-chaos
+  issues:
+    - body: description of the bug
+      creationTimestamp: "2021-04-26T07:58:07Z"
+      id: "1"
+      state: closed
+      title: a random bug thingy happened
+      url: https://github.com/jenkins-x/go-chaos/issues/1
   name: 'go-chaos'
-  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.4
-  version: v0.0.4
+  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.5
+  version: v0.0.5
 status: {}
