@@ -4,8 +4,6 @@ metadata:
   creationTimestamp: null
   name: charts/bots
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   name: ../charts/bots
 status:
