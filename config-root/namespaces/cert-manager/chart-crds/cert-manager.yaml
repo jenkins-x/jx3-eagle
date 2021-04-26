@@ -1,0 +1,29 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: cert-manager
+  namespace: cert-manager
+spec:
+  apiVersion: v1
+  appVersion: v1.1.0
+  description: A Helm chart for cert-manager
+  home: https://github.com/jetstack/cert-manager
+  icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
+  keywords:
+  - cert-manager
+  - kube-lego
+  - letsencrypt
+  - tls
+  maintainers:
+  - email: james@jetstack.io
+    name: munnerz
+  name: cert-manager
+  sources:
+  - https://github.com/jetstack/cert-manager
+  version: 1.1.0
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

@@ -1,0 +1,27 @@
+# Source: jx-charter/templates/clusterrole.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: jx-charter-jx-charter-jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'cluster'
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - secrets
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - chart.jenkins.io
+    resources:
+      - charts
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - patch
+      - update

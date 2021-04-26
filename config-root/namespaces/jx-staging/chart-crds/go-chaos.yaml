@@ -1,0 +1,17 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: go-chaos
+  namespace: jx-staging
+spec:
+  apiVersion: v1
+  description: A Helm chart for Kubernetes
+  icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+  name: go-chaos
+  version: 0.0.5
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

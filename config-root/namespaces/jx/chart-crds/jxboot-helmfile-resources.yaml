@@ -1,0 +1,18 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: jxboot-helmfile-resources
+  namespace: jx
+spec:
+  apiVersion: v1
+  description: A Helm chart for the resources for JX Boot
+  home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
+  icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+  name: jxboot-helmfile-resources
+  version: 1.0.51
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

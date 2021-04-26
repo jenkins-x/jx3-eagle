@@ -1,0 +1,21 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: jx-slack
+  namespace: jx
+spec:
+  apiVersion: v1
+  appVersion: latest
+  description: A Slack bot for Jenkins X
+  home: https://github.com/jenkins-x-plugins/jx-slack
+  icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+  name: jx-slack
+  sources:
+  - https://github.com/jenkins-x-plugins/jx-slack
+  version: 0.0.60
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

@@ -1,0 +1,18 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: jx-charter
+  namespace: jx
+spec:
+  apiVersion: v1
+  description: 'This chart installs the jx-charter CRD and the optional controller '
+  home: https://github.com/jenkins-x-plugins/jx-charter
+  icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+  name: jx-charter
+  version: 0.0.13
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

@@ -1,0 +1,18 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: jx-test
+  namespace: jx
+spec:
+  apiVersion: v1
+  description: 'This chart installs the jx-test CronJob to garbage collect failed system test resources '
+  home: https://github.com/jenkins-x-plugins/jx-test
+  icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+  name: jx-test
+  version: 0.0.44
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

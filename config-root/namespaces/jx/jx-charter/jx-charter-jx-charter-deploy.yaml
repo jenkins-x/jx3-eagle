@@ -1,0 +1,67 @@
+# Source: jx-charter/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jx-charter-jx-charter
+  labels:
+    app: jx-charter-jx-charter
+    release: jx-charter
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: jx-charter-jx-charter
+      release: jx-charter
+  template:
+    metadata:
+      labels:
+        app: jx-charter-jx-charter
+        release: jx-charter
+    spec:
+      restartPolicy: Always
+      serviceAccountName: jx-charter
+      containers:
+        - name: jx-charter
+          command: [jx-charter]
+          args:
+            - run
+          imagePullPolicy: IfNotPresent
+          image: "gcr.io/jenkinsxio/jx-charter:0.0.13"
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: http
+          env:
+            - name: GIT_SECRET_MOUNT_PATH
+              value: /secrets/git
+            - name: GIT_AUTHOR_EMAIL
+              value: jenkins-x@googlegroups.com
+            - name: GIT_AUTHOR_NAME
+              value: jenkins-x-bot
+          resources:
+            limits:
+              cpu: 100m
+              memory: 512Mi
+            requests:
+              cpu: 80m
+              memory: 128Mi
+          volumeMounts:
+            - mountPath: /secrets/git
+              name: secrets-git
+      volumes:
+        - name: secrets-git
+          secret:
+            defaultMode: 420
+            secretName: tekton-git

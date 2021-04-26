@@ -1,0 +1,12 @@
+# Source: jx-charter/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jx-charter
+  labels:
+    app: jx-charter-jx-charter
+    release: jx-charter
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+  namespace: jx
