@@ -10,7 +10,7 @@ spec:
   home: https://github.com/jenkins-x-plugins/jx-charter
   icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
   name: jx-charter
-  version: 0.0.13
+  version: 0.0.15
 status:
   description: Install complete
   firstDeployed: null

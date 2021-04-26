@@ -15,7 +15,7 @@ rules:
       - list
       - watch
   - apiGroups:
-      - chart.jenkins.io
+      - chart.jenkins-x.io
     resources:
       - charts
     verbs:

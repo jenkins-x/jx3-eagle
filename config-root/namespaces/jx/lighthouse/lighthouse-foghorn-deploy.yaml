@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-foghorn
   labels:
-    chart: "lighthouse-1.0.30"
+    chart: "lighthouse-1.0.31"
     app: lighthouse-foghorn
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
@@ -25,7 +25,7 @@ spec:
       serviceAccountName: lighthouse-foghorn
       containers:
         - name: lighthouse-foghorn
-          image: gcr.io/jenkinsxio/lighthouse-foghorn:1.0.30
+          image: gcr.io/jenkinsxio/lighthouse-foghorn:1.0.31
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
