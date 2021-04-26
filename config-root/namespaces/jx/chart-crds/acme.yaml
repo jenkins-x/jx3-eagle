@@ -1,0 +1,17 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: acme
+  namespace: jx
+spec:
+  apiVersion: v1
+  description: Acme
+  icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
+  name: acme
+  version: 0.0.19
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

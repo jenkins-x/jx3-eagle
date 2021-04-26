@@ -1,0 +1,24 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: jx-build-controller
+  namespace: jx
+spec:
+  apiVersion: v2
+  appVersion: 3.0.0
+  description: Jenkins X next gen cloud CI / CD platform for Kubernetes
+  home: https://jenkins-x.io/
+  icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+  maintainers:
+  - email: jenkins-x@googlegroups.com
+    name: Jenkins X Team
+  name: jx-build-controller
+  sources:
+  - https://github.com/jenkins-x-plugins/jx-build-controller
+  version: 0.2.4
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

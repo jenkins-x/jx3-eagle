@@ -1,0 +1,13 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: ../charts/bots
+  namespace: jx
+spec:
+  name: ../charts/bots
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

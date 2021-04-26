@@ -1,0 +1,18 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: nexus
+  namespace: jx
+spec:
+  apiVersion: v1
+  description: A Helm chart for Kubernetes
+  home: https://github.com/jenkins-x-charts/nexus
+  icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/jenkins-x-platform/images/nexus.png
+  name: nexus
+  version: 0.1.37
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

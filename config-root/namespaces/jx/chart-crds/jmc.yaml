@@ -1,0 +1,17 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: jmc
+  namespace: jx
+spec:
+  apiVersion: v1
+  appVersion: 0.0.9
+  description: A Helm chart for collecting Jenkins X metrics
+  home: https://github.com/rawlingsj/jmc
+  name: jmc
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed

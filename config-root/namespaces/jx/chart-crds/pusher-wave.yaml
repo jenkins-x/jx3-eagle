@@ -1,0 +1,23 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: pusher-wave
+  namespace: jx
+spec:
+  apiVersion: v1
+  appVersion: v0.4.0
+  description: wave chart that runs on kubernetes
+  home: https://github.com/pusher/wave
+  keywords:
+  - wave
+  - kubernetes
+  name: pusher-wave
+  sources:
+  - https://github.com/pusher/wave
+  version: 0.4.16
+status:
+  description: Install complete
+  firstDeployed: null
+  lastDeployed: null
+  status: deployed
