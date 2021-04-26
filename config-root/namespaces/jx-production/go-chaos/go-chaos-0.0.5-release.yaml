@@ -1,0 +1,60 @@
+# Source: go-chaos/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-04-26T07:59:04Z"
+  deletionTimestamp: null
+  name: 'go-chaos-0.0.5'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.5
+      sha: c73e1ebd8c95e930761cf955756c694103fe25fd
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 2ea44b5ded3fdcf2aadac88a7e0053cf488fdcf1
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      issueIds:
+        - "1"
+      message: |-
+        fix: fix bug
+
+        fixes #1
+      sha: 2a9da85bfd51d5c86434294bad69bfaf9c69da63
+  gitHttpUrl: https://github.com/jenkins-x/go-chaos
+  gitOwner: jenkins-x
+  gitRepository: go-chaos
+  issues:
+    - body: description of the bug
+      creationTimestamp: "2021-04-26T07:58:07Z"
+      id: "1"
+      state: closed
+      title: a random bug thingy happened
+      url: https://github.com/jenkins-x/go-chaos/issues/1
+  name: 'go-chaos'
+  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.5
+  version: v0.0.5
+status: {}
