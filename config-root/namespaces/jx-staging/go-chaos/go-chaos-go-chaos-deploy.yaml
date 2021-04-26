@@ -5,7 +5,7 @@ metadata:
   name: go-chaos-go-chaos
   labels:
     draft: draft-app
-    chart: "go-chaos-0.0.4"
+    chart: "go-chaos-0.0.5"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: go-chaos-go-chaos
       containers:
         - name: go-chaos
-          image: "gcr.io/jenkinsxio/go-chaos:0.0.4"
+          image: "gcr.io/jenkinsxio/go-chaos:0.0.5"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.4
+              value: 0.0.5
             - name: CRASH
               value: "true"
             - name: CRASH_DURATION
