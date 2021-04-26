@@ -4,8 +4,6 @@ metadata:
   creationTimestamp: null
   name: jx-charter
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   description: 'This chart installs the jx-charter CRD and the optional controller '
