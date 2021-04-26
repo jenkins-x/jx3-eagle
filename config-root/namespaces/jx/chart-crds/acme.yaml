@@ -4,14 +4,18 @@ metadata:
   creationTimestamp: null
   name: acme
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   description: Acme
   icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
   name: acme
+  repositoryName: jx3
+  repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
   version: 0.0.19
 status:
   description: Install complete
-  firstDeployed: null
-  lastDeployed: null
+  firstDeployed: "2021-04-26T17:13:13Z"
+  lastDeployed: "2021-04-26T17:13:13Z"
   status: deployed

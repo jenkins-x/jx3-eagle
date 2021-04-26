@@ -4,15 +4,19 @@ metadata:
   creationTimestamp: null
   name: jx-preview
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   description: 'This chart installs the jx-preview CRD and garbagecollection job '
   home: https://github.com/jenkins-x-plugins/jx-preview
   icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
   name: jx-preview
+  repositoryName: jxgh
+  repositoryUrl: https://jenkins-x-charts.github.io/repo
   version: 0.0.180
 status:
   description: Install complete
-  firstDeployed: null
-  lastDeployed: null
+  firstDeployed: "2021-04-26T17:13:13Z"
+  lastDeployed: "2021-04-26T17:13:13Z"
   status: deployed

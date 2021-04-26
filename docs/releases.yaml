@@ -4,6 +4,7 @@
   - apiVersion: v1
     appVersion: v1.1.0
     description: A Helm chart for cert-manager
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/jetstack/cert-manager
     icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
     keywords:
@@ -11,6 +12,7 @@
     - kube-lego
     - letsencrypt
     - tls
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fcert-manager%2Fcontainer_name%2Fcert-manager&dateRangeUnbound=both
     maintainers:
     - email: james@jetstack.io
@@ -27,7 +29,9 @@
   releases:
   - apiVersion: v1
     description: Acme
+    firstDeployed: "2021-04-26T17:13:13Z"
     icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx-production%2Fcontainer_name%2Facme&dateRangeUnbound=both
     name: acme
     repositoryName: jx3
@@ -40,10 +44,12 @@
   - apiVersion: v1
     applicationUrl: http://go-chaos-jx-staging.dev.jenkins-x.me
     description: A Helm chart for Kubernetes
+    firstDeployed: "2021-04-26T17:13:13Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     ingresses:
     - name: go-chaos
       url: http://go-chaos-jx-staging.dev.jenkins-x.me
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fgo-chaos&dateRangeUnbound=both
     name: go-chaos
     repositoryName: dev
@@ -53,10 +59,12 @@
   - apiVersion: v1
     applicationUrl: http://cosign-test2-jx-staging.dev.jenkins-x.me
     description: A Helm chart for Kubernetes
+    firstDeployed: "2021-04-26T17:13:13Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     ingresses:
     - name: cosign-test2
       url: http://cosign-test2-jx-staging.dev.jenkins-x.me
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fcosign-test2&dateRangeUnbound=both
     name: cosign-test2
     repositoryName: dev
@@ -68,6 +76,7 @@
   releases:
   - apiVersion: v1
     description: A Helm chart for the resources for JX Boot
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
@@ -77,6 +86,7 @@
       url: https://hook-jx.dev.jenkins-x.me
     - name: nexus
       url: https://nexus-jx.dev.jenkins-x.me
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjxboot-helmfile-resources&dateRangeUnbound=both
     name: jxboot-helmfile-resources
     repositoryName: jx3
@@ -86,7 +96,9 @@
   - apiVersion: v2
     appVersion: 3.0.5
     description: Custom Resource Definitions for Jenkins X
+    firstDeployed: "2021-04-26T17:13:13Z"
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjenkins-x-crds&dateRangeUnbound=both
     name: jenkins-x-crds
     repositoryName: jx3
@@ -95,8 +107,10 @@
     version: 3.0.5
   - apiVersion: v1
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/jenkins-x/lighthouse
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Flighthouse&dateRangeUnbound=both
     name: lighthouse
     repositoryName: jx3
@@ -105,8 +119,10 @@
     version: 1.0.31
   - apiVersion: v1
     description: A Helm chart for Kubernetes
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/jenkins-x-charts/nexus
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/jenkins-x-platform/images/nexus.png
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fnexus&dateRangeUnbound=both
     name: nexus
     repositoryName: jenkins-x
@@ -117,12 +133,14 @@
     appVersion: 0.12.0
     deprecated: true
     description: DEPRECATED Host your own Helm Chart Repository
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/helm/chartmuseum
     icon: https://raw.githubusercontent.com/helm/chartmuseum/master/logo2.png
     keywords:
     - chartmuseum
     - helm
     - charts repo
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fchartmuseum&dateRangeUnbound=both
     name: chartmuseum
     repositoryName: stable
@@ -132,10 +150,12 @@
   - apiVersion: v1
     appVersion: v0.4.0
     description: wave chart that runs on kubernetes
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/pusher/wave
     keywords:
     - wave
     - kubernetes
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fpusher-wave&dateRangeUnbound=both
     name: pusher-wave
     repositoryName: jx3
@@ -146,8 +166,10 @@
     version: 0.4.16
   - apiVersion: v1
     description: 'This chart installs the jx-preview CRD and garbagecollection job '
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/jenkins-x-plugins/jx-preview
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-preview&dateRangeUnbound=both
     name: jx-preview
     repositoryName: jxgh
@@ -158,11 +180,13 @@
     appVersion: latest
     applicationUrl: https://dashboard-jx.dev.jenkins-x.me
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
     - name: jx-pipelines-visualizer
       url: https://dashboard-jx.dev.jenkins-x.me
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-pipelines-visualizer&dateRangeUnbound=both
     name: jx-pipelines-visualizer
     repositoryName: jx3
@@ -174,7 +198,9 @@
   - apiVersion: v1
     appVersion: 0.0.9
     description: A Helm chart for collecting Jenkins X metrics
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/rawlingsj/jmc
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjmc&dateRangeUnbound=both
     name: jmc
     repositoryName: collector
@@ -183,8 +209,10 @@
   - apiVersion: v2
     appVersion: 3.0.0
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://jenkins-x.io/
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-build-controller&dateRangeUnbound=both
     maintainers:
     - email: jenkins-x@googlegroups.com
@@ -196,19 +224,23 @@
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
     version: 0.2.4
-  - logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2F../charts/bots&dateRangeUnbound=both
+  - firstDeployed: "2021-04-26T17:13:13Z"
+    lastDeployed: "2021-04-26T17:13:13Z"
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2F../charts/bots&dateRangeUnbound=both
     name: ../charts/bots
     repositoryName: ..
   - apiVersion: v2
     appVersion: 7.4.3
     applicationUrl: http://grafana-jx.dev.jenkins-x.me/
     description: The leading tool for querying and visualizing time series and metrics.
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://grafana.net
     icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
     ingresses:
     - name: grafana
       url: http://grafana-jx.dev.jenkins-x.me/
     kubeVersion: ^1.8.0-0
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fgrafana&dateRangeUnbound=both
     maintainers:
     - email: zanhsieh@gmail.com
@@ -240,12 +272,14 @@
       - bitnami-common
       version: 1.x.x
     description: ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
     icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-110x117.png
     keywords:
     - external-dns
     - network
     - dns
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fexternal-dns&dateRangeUnbound=both
     maintainers:
     - email: containers@bitnami.com
@@ -261,7 +295,9 @@
     version: 4.5.0
   - apiVersion: v1
     description: Acme
+    firstDeployed: "2021-04-26T17:13:13Z"
     icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Facme&dateRangeUnbound=both
     name: acme
     repositoryName: jx3
@@ -269,8 +305,10 @@
     version: 0.0.19
   - apiVersion: v1
     description: 'This chart installs the jx-test CronJob to garbage collect failed system test resources '
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/jenkins-x-plugins/jx-test
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-test&dateRangeUnbound=both
     name: jx-test
     repositoryName: jx3
@@ -280,8 +318,10 @@
   - apiVersion: v1
     appVersion: latest
     description: A Slack bot for Jenkins X
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/jenkins-x-plugins/jx-slack
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-slack&dateRangeUnbound=both
     name: jx-slack
     repositoryName: jx3
@@ -292,8 +332,10 @@
     version: 0.0.60
   - apiVersion: v1
     description: 'This chart installs the jx-charter CRD and the optional controller '
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/jenkins-x-plugins/jx-charter
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-charter&dateRangeUnbound=both
     name: jx-charter
     repositoryName: jx3
@@ -309,12 +351,14 @@
     apiVersion: v2
     appVersion: 0.41.2
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/kubernetes/ingress-nginx
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
     keywords:
     - ingress
     - nginx
     kubeVersion: '>=1.16.0-0'
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fnginx%2Fcontainer_name%2Fingress-nginx&dateRangeUnbound=both
     maintainers:
     - name: ChiefAlexander
@@ -332,10 +376,12 @@
   - apiVersion: v1
     appVersion: 6.3.0
     description: Kubernetes External Secrets CustomResourceDefinition
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/external-secrets/kubernetes-external-secrets
     keywords:
     - kubernetes-external-secrets
     - secrets
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fsecret-infra%2Fcontainer_name%2Fkubernetes-external-secrets&dateRangeUnbound=both
     maintainers:
     - name: external-secrets
@@ -353,8 +399,10 @@
   - apiVersion: v1
     appVersion: 0.23.0
     description: A Helm chart for Tekton Pipelines
+    firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/cdfoundation/tekton-helm-chart
     icon: https://avatars2.githubusercontent.com/u/47602533
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Ftekton-pipelines%2Fcontainer_name%2Ftekton-pipeline&dateRangeUnbound=both
     name: tekton-pipeline
     repositoryName: cdf
@@ -367,6 +415,8 @@
   - apiVersion: v1
     appVersion: v0.3.7
     description: A Helm chart to deploy the terraform-operator Controller and CRD.
+    firstDeployed: "2021-04-26T17:13:13Z"
+    lastDeployed: "2021-04-26T17:13:13Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Ftf-system%2Fcontainer_name%2Fterraform-operator&dateRangeUnbound=both
     name: terraform-operator
     repositoryName: isaaguilar

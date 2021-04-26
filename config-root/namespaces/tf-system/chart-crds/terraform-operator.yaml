@@ -4,14 +4,18 @@ metadata:
   creationTimestamp: null
   name: terraform-operator
   namespace: tf-system
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   appVersion: v0.3.7
   description: A Helm chart to deploy the terraform-operator Controller and CRD.
   name: terraform-operator
+  repositoryName: isaaguilar
+  repositoryUrl: https://isaaguilar.github.io/helm-charts
   version: 0.1.14
 status:
   description: Install complete
-  firstDeployed: null
-  lastDeployed: null
+  firstDeployed: "2021-04-26T17:13:13Z"
+  lastDeployed: "2021-04-26T17:13:13Z"
   status: deployed

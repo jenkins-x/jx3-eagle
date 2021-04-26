@@ -4,20 +4,24 @@ metadata:
   creationTimestamp: null
   name: pusher-wave
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   appVersion: v0.4.0
   description: wave chart that runs on kubernetes
   home: https://github.com/pusher/wave
   keywords:
-  - wave
-  - kubernetes
+    - wave
+    - kubernetes
   name: pusher-wave
+  repositoryName: jx3
+  repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
   sources:
-  - https://github.com/pusher/wave
+    - https://github.com/pusher/wave
   version: 0.4.16
 status:
   description: Install complete
-  firstDeployed: null
-  lastDeployed: null
+  firstDeployed: "2021-04-26T17:13:13Z"
+  lastDeployed: "2021-04-26T17:13:13Z"
   status: deployed

@@ -4,35 +4,39 @@ metadata:
   creationTimestamp: null
   name: external-dns
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   annotations:
     category: DeveloperTools
   apiVersion: v2
   appVersion: 0.7.5
   dependencies:
-  - name: common
-    repository: https://charts.bitnami.com/bitnami
-    tags:
-    - bitnami-common
-    version: 1.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+        - bitnami-common
+      version: 1.x.x
   description: ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.
   home: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
   icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-110x117.png
   keywords:
-  - external-dns
-  - network
-  - dns
+    - external-dns
+    - network
+    - dns
   maintainers:
-  - email: containers@bitnami.com
-    name: Bitnami
+    - email: containers@bitnami.com
+      name: Bitnami
   name: external-dns
+  repositoryName: bitnami
+  repositoryUrl: https://charts.bitnami.com/bitnami
   sources:
-  - https://github.com/kubernetes-sigs/external-dns
-  - https://github.com/bitnami/bitnami-docker-external-dns
-  - https://github.com/kubernetes-sigs/external-dns
+    - https://github.com/kubernetes-sigs/external-dns
+    - https://github.com/bitnami/bitnami-docker-external-dns
+    - https://github.com/kubernetes-sigs/external-dns
   version: 4.5.0
 status:
   description: Install complete
-  firstDeployed: null
-  lastDeployed: null
+  firstDeployed: "2021-04-26T17:13:13Z"
+  lastDeployed: "2021-04-26T17:13:13Z"
   status: deployed

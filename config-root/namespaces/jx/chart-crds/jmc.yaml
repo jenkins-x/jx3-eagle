@@ -4,14 +4,18 @@ metadata:
   creationTimestamp: null
   name: jmc
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   appVersion: 0.0.9
   description: A Helm chart for collecting Jenkins X metrics
   home: https://github.com/rawlingsj/jmc
   name: jmc
+  repositoryName: collector
+  repositoryUrl: https://rawlingsj.github.io/jmc
 status:
   description: Install complete
-  firstDeployed: null
-  lastDeployed: null
+  firstDeployed: "2021-04-26T17:13:13Z"
+  lastDeployed: "2021-04-26T17:13:13Z"
   status: deployed

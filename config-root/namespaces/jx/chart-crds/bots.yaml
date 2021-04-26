@@ -2,12 +2,15 @@ apiVersion: chart.jenkins-x.io/v1alpha1
 kind: Chart
 metadata:
   creationTimestamp: null
-  name: charts/bots
+  name: bots
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   name: ../charts/bots
+  repositoryName: ..
 status:
   description: Install complete
-  firstDeployed: null
-  lastDeployed: null
+  firstDeployed: "2021-04-26T17:13:13Z"
+  lastDeployed: "2021-04-26T17:13:13Z"
   status: deployed
