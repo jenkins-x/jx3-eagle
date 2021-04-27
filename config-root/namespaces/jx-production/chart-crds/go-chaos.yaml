@@ -2,18 +2,18 @@ apiVersion: chart.jenkins-x.io/v1alpha1
 kind: Chart
 metadata:
   creationTimestamp: null
-  name: cosign-test2
-  namespace: jx-staging
+  name: go-chaos
+  namespace: jx-production
 spec:
   apiVersion: v1
   description: A Helm chart for Kubernetes
   icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-  name: cosign-test2
+  name: go-chaos
   repositoryName: dev
   repositoryUrl: https://chartmuseum-jx.dev.jenkins-x.me
-  version: 0.0.1
+  version: 0.0.6
 status:
   description: Install complete
-  firstDeployed: "2021-04-26T17:13:13Z"
-  lastDeployed: "2021-04-26T17:13:13Z"
+  firstDeployed: "2021-04-27T11:28:38Z"
+  lastDeployed: "2021-04-27T11:28:38Z"
   status: deployed
