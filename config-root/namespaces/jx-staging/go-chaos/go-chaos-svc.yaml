@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: go-chaos
   labels:
-    chart: "go-chaos-0.0.5"
+    chart: "go-chaos-0.0.6"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
 spec:

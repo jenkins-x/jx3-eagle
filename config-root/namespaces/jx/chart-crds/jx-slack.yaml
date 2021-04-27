@@ -4,8 +4,6 @@ metadata:
   creationTimestamp: null
   name: jx-slack
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   appVersion: latest
@@ -16,7 +14,7 @@ spec:
   repositoryName: jx3
   repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
   sources:
-    - https://github.com/jenkins-x-plugins/jx-slack
+  - https://github.com/jenkins-x-plugins/jx-slack
   version: 0.0.60
 status:
   description: Install complete

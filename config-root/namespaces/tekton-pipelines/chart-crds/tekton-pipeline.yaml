@@ -4,8 +4,6 @@ metadata:
   creationTimestamp: null
   name: tekton-pipeline
   namespace: tekton-pipelines
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   appVersion: 0.23.0
