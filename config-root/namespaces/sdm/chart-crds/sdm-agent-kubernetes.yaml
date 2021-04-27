@@ -17,9 +17,9 @@ spec:
   repositoryUrl: https://storage.googleapis.com/jx-labs-infra-charts/charts
   sources:
   - https://github.com/cloudbees/sdm-agent-kubernetes
-  version: 0.4.4
+  version: 0.4.6
 status:
   description: Install complete
-  firstDeployed: "2021-04-27T16:43:01Z"
-  lastDeployed: "2021-04-27T16:43:01Z"
+  firstDeployed: "2021-04-27T17:08:56Z"
+  lastDeployed: "2021-04-27T17:08:56Z"
   status: deployed
