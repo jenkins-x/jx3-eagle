@@ -1,0 +1,11 @@
+# Source: sdm-agent-kubernetes/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: sdm-agent-kubernetes
+  labels:
+    app: sdm-agent-kubernetes
+    chart: sdm-agent-kubernetes-0.3.2
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+  namespace: sdm

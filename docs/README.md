@@ -168,6 +168,15 @@
 	      <td><a href='https://github.com/external-secrets/kubernetes-external-secrets'>source</a></td>
 	    </tr>
     <tr>
+		      <td colspan='4'><h3>sdm</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='https://cloudbees.com' title='Kubernetes controller to watch for events and send to SDM'> <img src='' width='24px' height='24px'> sdm-agent-kubernetes </a></td>
+	      <td>0.3.2</td>
+	      <td></td>
+	      <td><a href='https://cloudbees.com'>source</a></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>tekton-pipelines</h3></td>
 		    </tr>
 	    <tr>

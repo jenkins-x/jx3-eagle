@@ -1,0 +1,61 @@
+# Source: sdm-agent-kubernetes/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sdm-agent-kubernetes
+  labels:
+    app: sdm-agent-kubernetes
+    chart: sdm-agent-kubernetes-0.3.2
+    release: sdm-agent-kubernetes
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: sdm
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: sdm-agent-kubernetes
+      release: sdm-agent-kubernetes
+  template:
+    metadata:
+      labels:
+        app: sdm-agent-kubernetes
+        release: sdm-agent-kubernetes
+    spec:
+      restartPolicy: Always
+      serviceAccountName: sdm-agent-kubernetes
+      containers:
+        - name: sdm-agent-kubernetes
+          args:
+            - --jx-collector=true
+            - --health-collector=true
+            - --kubernetes-collector=true
+            - --cluster-name=tf-jx-gentle-titmouse
+          imagePullPolicy: IfNotPresent
+          image: "gcr.io/jx-labs-infra/sdm-agent-kubernetes:0.3.2"
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: http
+          env:
+            - name: JX_LOG_LEVEL
+              value: DEBUG
+          envFrom:
+            - secretRef:
+                name: sdm-agent-kubernetes
+          resources:
+            limits:
+              cpu: 20m
+              memory: 64Mi
+            requests:
+              cpu: 10m
+              memory: 32Mi

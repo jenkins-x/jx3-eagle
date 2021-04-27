@@ -1,0 +1,42 @@
+# Source: sdm-agent-kubernetes/templates/cluster-role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: sdm-agent-kubernetes-sdm
+  labels:
+    gitops.jenkins-x.io/pipeline: 'cluster'
+rules:
+  - apiGroups:
+      - jenkins.io
+    resources:
+      - pipelineactivities
+    verbs:
+      - list
+      - get
+      - watch
+  - apiGroups:
+      - apps
+    resources:
+      - deployments
+      - statefulsets
+      - replicasets
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - ""
+    resources:
+      - namespaces
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - comcast.github.io
+    resources:
+      - khstates
+    verbs:
+      - get
+      - list
+      - watch
