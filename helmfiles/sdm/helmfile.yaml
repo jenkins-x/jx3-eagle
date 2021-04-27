@@ -1,0 +1,18 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: sdm
+repositories:
+- name: labs
+  url: https://storage.googleapis.com/jx-labs-infra-charts/charts
+releases:
+- chart: labs/sdm-agent-kubernetes
+  version: 0.3.2
+  name: sdm-agent-kubernetes
+  values:
+  - jx-values.yaml
+  - ../../values/sdm-values.yaml.gotmpl
+templates: {}
+renderedvalues: {}
