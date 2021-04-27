@@ -4,8 +4,6 @@ metadata:
   creationTimestamp: null
   name: terraform-operator
   namespace: tf-system
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   appVersion: v0.3.7
