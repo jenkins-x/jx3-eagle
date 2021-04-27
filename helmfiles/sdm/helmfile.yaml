@@ -7,9 +7,11 @@ namespace: sdm
 repositories:
 - name: labs
   url: https://storage.googleapis.com/jx-labs-infra-charts/charts
+- name: dev
+  url: http://chartmuseum-jx.35.242.181.72.nip.io/
 releases:
 - chart: labs/sdm-agent-kubernetes
-  version: 0.4.1
+  version: 0.4.0
   name: sdm-agent-kubernetes
   values:
   - jx-values.yaml
