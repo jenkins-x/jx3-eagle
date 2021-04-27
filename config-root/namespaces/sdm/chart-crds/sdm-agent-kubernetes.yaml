@@ -4,24 +4,22 @@ metadata:
   creationTimestamp: null
   name: sdm-agent-kubernetes
   namespace: sdm
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v2
   appVersion: 0.0.1
   description: Kubernetes controller to watch for events and send to SDM
   home: https://cloudbees.com
   maintainers:
-    - email: support@cloudbees.com
-      name: CloudBees Team
+  - email: support@cloudbees.com
+    name: CloudBees Team
   name: sdm-agent-kubernetes
   repositoryName: labs
   repositoryUrl: https://storage.googleapis.com/jx-labs-infra-charts/charts
   sources:
-    - https://github.com/cloudbees/sdm-agent-kubernetes
-  version: 0.4.1
+  - https://github.com/cloudbees/sdm-agent-kubernetes
+  version: 0.4.2
 status:
   description: Install complete
-  firstDeployed: "2021-04-27T14:19:46Z"
-  lastDeployed: "2021-04-27T14:19:46Z"
+  firstDeployed: "2021-04-27T15:08:59Z"
+  lastDeployed: "2021-04-27T15:08:59Z"
   status: deployed
