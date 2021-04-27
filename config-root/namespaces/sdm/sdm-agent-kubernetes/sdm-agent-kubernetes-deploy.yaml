@@ -5,7 +5,7 @@ metadata:
   name: sdm-agent-kubernetes
   labels:
     app: sdm-agent-kubernetes
-    chart: sdm-agent-kubernetes-0.4.4
+    chart: sdm-agent-kubernetes-0.4.6
     release: sdm-agent-kubernetes
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -28,13 +28,12 @@ spec:
       containers:
         - name: sdm-agent-kubernetes
           args:
-            - --jx-collector=
             - --health-collector=true
             - --kubernetes-collector=true
             - --cluster-name=tf-jx-gentle-titmouse
             - --kinds=chart.jenkins-x.io/v1alpha1/charts,jenkins.io/v1/pipelineactivities,jenkins.io/v1/releases,extensions/v1/ingresses,
           imagePullPolicy: IfNotPresent
-          image: "gcr.io/jx-labs-infra/sdm-agent-kubernetes:0.4.4"
+          image: "gcr.io/jx-labs-infra/sdm-agent-kubernetes:0.4.6"
           ports:
             - name: http
               containerPort: 8080
