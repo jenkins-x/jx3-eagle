@@ -4,8 +4,6 @@ metadata:
   creationTimestamp: null
   name: jmc
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   appVersion: 0.0.9

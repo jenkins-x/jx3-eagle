@@ -224,8 +224,8 @@
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
     version: 0.2.4
-  - firstDeployed: "2021-04-27T14:21:43Z"
-    lastDeployed: "2021-04-27T14:21:43Z"
+  - firstDeployed: "2021-04-27T16:43:10Z"
+    lastDeployed: "2021-04-27T16:43:10Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2F../charts/bots&dateRangeUnbound=both
     name: ../charts/bots
     repositoryName: ..
@@ -399,9 +399,9 @@
   - apiVersion: v2
     appVersion: 0.0.1
     description: Kubernetes controller to watch for events and send to SDM
-    firstDeployed: "2021-04-27T14:19:46Z"
+    firstDeployed: "2021-04-27T16:43:01Z"
     home: https://cloudbees.com
-    lastDeployed: "2021-04-27T14:19:46Z"
+    lastDeployed: "2021-04-27T16:43:01Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fsdm%2Fcontainer_name%2Fsdm-agent-kubernetes&dateRangeUnbound=both
     maintainers:
     - email: support@cloudbees.com
@@ -412,7 +412,7 @@
     resourcePath: config-root/namespaces/sdm/sdm-agent-kubernetes
     sources:
     - https://github.com/cloudbees/sdm-agent-kubernetes
-    version: 0.4.1
+    version: 0.4.4
 - namespace: tekton-pipelines
   path: helmfiles/tekton-pipelines/helmfile.yaml
   releases:

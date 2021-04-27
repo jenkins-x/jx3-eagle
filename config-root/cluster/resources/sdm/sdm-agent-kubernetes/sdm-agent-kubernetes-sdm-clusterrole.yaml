@@ -7,14 +7,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'cluster'
 rules:
   - apiGroups:
-      - jenkins.io
-    resources:
-      - pipelineactivities
-    verbs:
-      - list
-      - get
-      - watch
-  - apiGroups:
       - apps
     resources:
       - deployments
@@ -36,6 +28,30 @@ rules:
       - comcast.github.io
     resources:
       - khstates
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - "chart.jenkins-x.io"
+    resources:
+      - "charts"
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - "jenkins.io"
+    resources:
+      - "pipelineactivities"
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - "jenkins.io"
+    resources:
+      - "releases"
     verbs:
       - get
       - list

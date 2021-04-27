@@ -4,8 +4,6 @@ metadata:
   creationTimestamp: null
   name: lighthouse
   namespace: jx
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
