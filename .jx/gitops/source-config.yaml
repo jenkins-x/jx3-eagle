@@ -116,6 +116,12 @@ spec:
     - name: pythondemo
     - name: springdemo
     scheduler: in-repo
+  - owner: jenkins-x-terraform
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: terraform-jx-azure
+    scheduler: in-repo
   - owner: rawlingsj
     provider: https://github.com
     providerKind: github
