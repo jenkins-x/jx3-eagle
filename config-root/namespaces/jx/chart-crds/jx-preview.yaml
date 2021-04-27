@@ -4,6 +4,8 @@ metadata:
   creationTimestamp: null
   name: jx-preview
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   description: 'This chart installs the jx-preview CRD and garbagecollection job '

@@ -4,6 +4,8 @@ metadata:
   creationTimestamp: null
   name: acme
   namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   description: Acme

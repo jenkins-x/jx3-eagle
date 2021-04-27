@@ -4,6 +4,8 @@ metadata:
   creationTimestamp: null
   name: jenkins-x-crds
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v2
   appVersion: 3.0.5
