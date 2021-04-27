@@ -172,7 +172,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='https://cloudbees.com' title='Kubernetes controller to watch for events and send to SDM'> <img src='' width='24px' height='24px'> sdm-agent-kubernetes </a></td>
-	      <td>0.4.1</td>
+	      <td>0.4.4</td>
 	      <td></td>
 	      <td><a href='https://cloudbees.com'>source</a></td>
 	    </tr>
