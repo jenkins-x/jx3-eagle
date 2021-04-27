@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-04-26T07:59:04Z"
+  creationTimestamp: "2021-04-27T11:26:41Z"
   deletionTimestamp: null
-  name: 'go-chaos-0.0.5'
+  name: 'go-chaos-0.0.6'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.5
-      sha: c73e1ebd8c95e930761cf955756c694103fe25fd
+        chore: release 0.0.6
+      sha: a53eb0a28b00e1fee82ed17a80ad683ee93466e1
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 2ea44b5ded3fdcf2aadac88a7e0053cf488fdcf1
+      sha: cf93832162fe7a7e59fdfeeb92b03a5019e7d0cf
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -37,24 +37,12 @@ spec:
       committer:
         email: noreply@github.com
         name: GitHub
-      issueIds:
-        - "1"
-      message: |-
-        fix: fix bug
-
-        fixes #1
-      sha: 2a9da85bfd51d5c86434294bad69bfaf9c69da63
+      message: Update README.md
+      sha: 8a20ffa891154ae44de8d529c7f8ca69cac360c4
   gitHttpUrl: https://github.com/jenkins-x/go-chaos
   gitOwner: jenkins-x
   gitRepository: go-chaos
-  issues:
-    - body: description of the bug
-      creationTimestamp: "2021-04-26T07:58:07Z"
-      id: "1"
-      state: closed
-      title: a random bug thingy happened
-      url: https://github.com/jenkins-x/go-chaos/issues/1
   name: 'go-chaos'
-  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.5
-  version: v0.0.5
+  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.6
+  version: v0.0.6
 status: {}

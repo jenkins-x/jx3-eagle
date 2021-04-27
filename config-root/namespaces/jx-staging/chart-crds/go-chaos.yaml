@@ -4,8 +4,6 @@ metadata:
   creationTimestamp: null
   name: go-chaos
   namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   description: A Helm chart for Kubernetes
@@ -13,9 +11,9 @@ spec:
   name: go-chaos
   repositoryName: dev
   repositoryUrl: https://chartmuseum-jx.dev.jenkins-x.me
-  version: 0.0.5
+  version: 0.0.6
 status:
   description: Install complete
-  firstDeployed: "2021-04-26T17:13:13Z"
-  lastDeployed: "2021-04-26T17:13:13Z"
+  firstDeployed: "2021-04-27T11:28:29Z"
+  lastDeployed: "2021-04-27T11:28:29Z"
   status: deployed

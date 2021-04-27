@@ -34,7 +34,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> go-chaos </a></td>
-	      <td>0.0.5</td>
+	      <td>0.0.6</td>
 	      <td><a href='http://go-chaos-jx-staging.dev.jenkins-x.me'>view</a></td>
 	      <td></td>
 	    </tr>
