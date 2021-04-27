@@ -19,7 +19,7 @@ spec:
     metadata:
       labels:
         app: lighthouse-tekton-controller
-      annotations: {jenkins-x.io/hash: 'e130df740b7c17d585139e95b374e9b83a46228d53314cb3fac76748983ca570'}
+      annotations: {jenkins-x.io/hash: '2ed7dace9281f855242ae792eb435ab246c222638ddecf9238ec88d5198490f3'}
     spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:

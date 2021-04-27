@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-terraform
+    provider: github
+    repository: terraform-jx-azure
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-terraform-terraform-jx-azure
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-terraform/terraform-jx-azure.git
+  org: jenkins-x-terraform
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: terraform-jx-azure
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x-terraform/terraform-jx-azure

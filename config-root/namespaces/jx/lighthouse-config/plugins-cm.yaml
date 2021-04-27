@@ -296,6 +296,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-terraform/terraform-jx-azure
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - rawlingsj/cosign-test2
       require_self_approval: true
     cat: {}
@@ -438,6 +442,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x-plugins/secretfacade:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x-terraform/terraform-jx-azure:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/acme:
@@ -1236,6 +1243,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x-terraform/terraform-jx-azure:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/acme:
       - approve
       - assign
@@ -1929,6 +1952,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/terraform-google-jx
+      trusted_org: todo
+    - repos:
+      - jenkins-x-terraform/terraform-jx-azure
       trusted_org: todo
     - repos:
       - rawlingsj/cosign-test2

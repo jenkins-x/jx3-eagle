@@ -49,6 +49,7 @@ data:
         jenkins-x-plugins/kh-tls-check: true
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
         jenkins-x-plugins/secretfacade: true
+        jenkins-x-terraform/terraform-jx-azure: true
         jenkins-x/acme: true
         jenkins-x/cd-indicators: true
         jenkins-x/feature-infra-secrets: true
@@ -185,6 +186,7 @@ data:
         jenkins-x-plugins/kh-tls-check: merge
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: merge
         jenkins-x-plugins/secretfacade: merge
+        jenkins-x-terraform/terraform-jx-azure: merge
         jenkins-x/acme: merge
         jenkins-x/cd-indicators: merge
         jenkins-x/feature-infra-secrets: merge
@@ -296,6 +298,7 @@ data:
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
         - jenkins-x/terraform-google-jx
+        - jenkins-x-terraform/terraform-jx-azure
         - rawlingsj/cosign-test2
       - labels:
         - updatebot
@@ -378,6 +381,7 @@ data:
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
         - jenkins-x/terraform-google-jx
+        - jenkins-x-terraform/terraform-jx-azure
         - rawlingsj/cosign-test2
       target_url: http://dashboard-jx.dev.jenkins-x.me
 kind: ConfigMap
