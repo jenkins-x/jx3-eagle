@@ -4,6 +4,8 @@ metadata:
   creationTimestamp: null
   name: grafana
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v2
   appVersion: 7.4.3
@@ -12,21 +14,21 @@ spec:
   icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
   kubeVersion: ^1.8.0-0
   maintainers:
-  - email: zanhsieh@gmail.com
-    name: zanhsieh
-  - email: rluckie@cisco.com
-    name: rtluckie
-  - email: maor.friedman@redhat.com
-    name: maorfr
-  - email: miroslav.hadzhiev@gmail.com
-    name: Xtigyro
-  - email: mail@torstenwalter.de
-    name: torstenwalter
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: mail@torstenwalter.de
+      name: torstenwalter
   name: grafana
   repositoryName: grafana
   repositoryUrl: https://grafana.github.io/helm-charts
   sources:
-  - https://github.com/grafana/grafana
+    - https://github.com/grafana/grafana
   type: application
   version: 6.6.3
 status:
