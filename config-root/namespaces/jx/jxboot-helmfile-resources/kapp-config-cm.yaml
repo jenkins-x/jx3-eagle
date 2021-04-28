@@ -6,6 +6,8 @@ metadata:
   labels:
     kapp.k14s.io/config: ""
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
 data:
   config.yml: |

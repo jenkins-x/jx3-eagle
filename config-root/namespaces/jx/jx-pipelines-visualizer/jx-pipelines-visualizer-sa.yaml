@@ -12,4 +12,5 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     iam.gke.io/gcp-service-account: tf-jx-gentle-titmouse-jxui@jx-labs-infra.iam.gserviceaccount.com
+    meta.helm.sh/release-name: 'jx-pipelines-visualizer'
   namespace: jx

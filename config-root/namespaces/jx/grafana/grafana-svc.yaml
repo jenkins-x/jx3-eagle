@@ -11,6 +11,8 @@ metadata:
     app.kubernetes.io/version: "7.4.3"
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'grafana'
 spec:
   type: ClusterIP
   ports:

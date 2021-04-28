@@ -4,6 +4,8 @@ kind: RoleBinding
 metadata:
   name: jmc
   namespace: jx
+  annotations:
+    meta.helm.sh/release-name: 'jmc'
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 roleRef:

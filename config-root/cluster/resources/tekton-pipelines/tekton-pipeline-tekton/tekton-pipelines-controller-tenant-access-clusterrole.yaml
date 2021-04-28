@@ -9,6 +9,8 @@ metadata:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
     gitops.jenkins-x.io/pipeline: 'cluster'
+  annotations:
+    meta.helm.sh/release-name: 'tekton'
 rules:
   # Read-write access to create Pods, K8s Events and PVCs (for Workspaces)
   - apiGroups: [""]

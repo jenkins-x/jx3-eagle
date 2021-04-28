@@ -9,4 +9,5 @@ metadata:
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
+    meta.helm.sh/release-name: 'jx-charter'
   namespace: jx

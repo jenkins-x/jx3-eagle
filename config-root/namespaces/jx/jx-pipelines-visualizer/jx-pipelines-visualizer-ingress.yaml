@@ -14,6 +14,7 @@ metadata:
     nginx.ingress.kubernetes.io/auth-realm: Authentication Required - Jenkins X Pipeline Dashboard
     nginx.ingress.kubernetes.io/auth-secret: jx-basic-auth-htpasswd
     nginx.ingress.kubernetes.io/auth-type: basic
+    meta.helm.sh/release-name: 'jx-pipelines-visualizer'
   namespace: jx
 spec:
   rules:

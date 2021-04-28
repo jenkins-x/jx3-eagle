@@ -3,6 +3,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: sdm-agent-kubernetes-sdm
+  annotations:
+    meta.helm.sh/release-name: 'sdm-agent-kubernetes'
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 rules:

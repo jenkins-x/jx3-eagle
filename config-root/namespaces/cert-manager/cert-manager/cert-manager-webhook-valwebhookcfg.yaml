@@ -13,6 +13,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     cert-manager.io/inject-ca-from-secret: "cert-manager/cert-manager-webhook-ca"
+    meta.helm.sh/release-name: 'cert-manager'
   namespace: cert-manager
 webhooks:
   - name: webhook.cert-manager.io

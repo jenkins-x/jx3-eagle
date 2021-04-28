@@ -5,6 +5,8 @@ metadata:
   creationTimestamp: "2021-01-27T10:51:56Z"
   deletionTimestamp: null
   name: 'acme-0.0.20'
+  annotations:
+    meta.helm.sh/release-name: 'tls-jx-production'
   namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

@@ -9,6 +9,8 @@ metadata:
     app.kubernetes.io/part-of: tekton-pipelines
     pipeline.tekton.dev/release: "v0.23.0"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'tekton'
   namespace: tekton-pipelines
 webhooks:
   - admissionReviewVersions: ["v1"]

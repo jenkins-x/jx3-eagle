@@ -29,6 +29,8 @@ metadata:
     # labels below are related to istio and should not be used for resource lookup
     version: "v0.23.0"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'tekton'
 spec:
   minReplicas: 1
   maxReplicas: 5

@@ -3,6 +3,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: gcactivities
+  annotations:
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

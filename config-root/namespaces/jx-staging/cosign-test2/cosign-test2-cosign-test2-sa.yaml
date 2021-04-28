@@ -3,6 +3,8 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: cosign-test2-cosign-test2
+  annotations:
+    meta.helm.sh/release-name: 'cosign-test2'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

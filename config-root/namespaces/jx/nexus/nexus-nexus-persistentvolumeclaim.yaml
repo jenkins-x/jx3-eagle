@@ -9,6 +9,8 @@ metadata:
     release: "nexus"
     heritage: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'nexus'
   namespace: jx
 spec:
   accessModes:

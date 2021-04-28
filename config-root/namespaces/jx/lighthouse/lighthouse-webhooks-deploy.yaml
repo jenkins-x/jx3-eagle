@@ -10,6 +10,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     checksum/config: 2aaba8b328701ca61618c707324b9170d84611bd15795c73c2dfbf6f5608d1b5
+    meta.helm.sh/release-name: 'lighthouse'
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
 spec:

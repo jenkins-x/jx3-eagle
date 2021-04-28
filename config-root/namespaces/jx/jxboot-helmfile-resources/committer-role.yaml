@@ -9,6 +9,7 @@ metadata:
   annotations:
     title: "Committer"
     description: "A committer can write to project resources but cannot add/remove users"
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
 rules:
   - apiGroups:

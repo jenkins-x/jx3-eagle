@@ -11,6 +11,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     configmap.fabric8.io/update-on-change: nexus
+    meta.helm.sh/release-name: 'nexus'
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
 spec:

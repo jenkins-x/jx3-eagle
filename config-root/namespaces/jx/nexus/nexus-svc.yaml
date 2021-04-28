@@ -11,6 +11,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
+    meta.helm.sh/release-name: 'nexus'
   namespace: jx
 spec:
   type: ClusterIP

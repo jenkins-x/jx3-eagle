@@ -8,6 +8,8 @@ metadata:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
     gitops.jenkins-x.io/pipeline: 'cluster'
+  annotations:
+    meta.helm.sh/release-name: 'tekton'
 rules:
   # The webhook needs to be able to list and update customresourcedefinitions,
   # mainly to update the webhook certificates.

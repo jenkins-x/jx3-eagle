@@ -3,6 +3,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: jx-charter-jx-charter-jx
+  annotations:
+    meta.helm.sh/release-name: 'jx-charter'
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 rules:

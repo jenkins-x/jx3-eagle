@@ -14,6 +14,7 @@ metadata:
   name: tekton-pipelines-webhook
   namespace: tekton-pipelines
   annotations:
+    meta.helm.sh/release-name: 'tekton'
     wave.pusher.com/update-on-config-change: 'true'
 spec:
   replicas: 1

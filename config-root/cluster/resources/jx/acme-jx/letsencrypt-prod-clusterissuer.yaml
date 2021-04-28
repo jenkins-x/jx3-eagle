@@ -3,6 +3,8 @@ apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
   name: letsencrypt-prod
+  annotations:
+    meta.helm.sh/release-name: 'acme-jx'
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 spec:

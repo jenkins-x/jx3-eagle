@@ -4,8 +4,10 @@ kind: Service
 metadata:
   name: go-chaos
   labels:
-    chart: "go-chaos-0.0.6"
+    chart: "go-chaos-0.0.7"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'go-chaos'
   namespace: jx-staging
 spec:
   type: ClusterIP
