@@ -7,6 +7,8 @@ metadata:
     app: jenkins-x-chartmuseum
     release: "chartmuseum"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'chartmuseum'
   namespace: jx
 spec:
   accessModes:

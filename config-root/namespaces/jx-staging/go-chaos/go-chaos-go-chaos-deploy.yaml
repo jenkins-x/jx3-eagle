@@ -5,11 +5,12 @@ metadata:
   name: go-chaos-go-chaos
   labels:
     draft: draft-app
-    chart: "go-chaos-0.0.6"
+    chart: "go-chaos-0.0.7"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: jx-staging
   annotations:
+    meta.helm.sh/release-name: 'go-chaos'
     wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx-staging
 spec:
   selector:
     matchLabels:
@@ -24,11 +25,11 @@ spec:
       serviceAccountName: go-chaos-go-chaos
       containers:
         - name: go-chaos
-          image: "gcr.io/jenkinsxio/go-chaos:0.0.6"
+          image: "gcr.io/jenkinsxio/go-chaos:0.0.7"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.6
+              value: 0.0.7
             - name: CRASH
               value: "true"
             - name: CRASH_DURATION

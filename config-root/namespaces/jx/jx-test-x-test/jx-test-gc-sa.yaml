@@ -3,6 +3,8 @@ kind: ServiceAccount
 apiVersion: v1
 metadata:
   name: jx-test-gc
+  annotations:
+    meta.helm.sh/release-name: 'x-test'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

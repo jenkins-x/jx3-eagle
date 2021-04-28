@@ -12,6 +12,8 @@ metadata:
     app.kubernetes.io/component: "webhook"
     helm.sh/chart: cert-manager-v1.1.0
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'cert-manager'
 spec:
   type: ClusterIP
   ports:

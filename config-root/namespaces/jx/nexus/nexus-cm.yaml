@@ -5,6 +5,7 @@ metadata:
   name: nexus
   annotations:
     expose.config.fabric8.io/path-key: context.path
+    meta.helm.sh/release-name: 'nexus'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

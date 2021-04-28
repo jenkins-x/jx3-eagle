@@ -3,6 +3,8 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: go-chaos-go-chaos
+  annotations:
+    meta.helm.sh/release-name: 'go-chaos'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

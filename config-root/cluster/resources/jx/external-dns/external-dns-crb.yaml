@@ -9,6 +9,8 @@ metadata:
     app.kubernetes.io/instance: external-dns
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'cluster'
+  annotations:
+    meta.helm.sh/release-name: 'external-dns'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

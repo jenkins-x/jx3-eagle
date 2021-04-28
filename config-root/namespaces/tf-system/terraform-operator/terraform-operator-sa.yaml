@@ -9,4 +9,6 @@ metadata:
     release: terraform-operator
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'terraform-operator'
   namespace: tf-system

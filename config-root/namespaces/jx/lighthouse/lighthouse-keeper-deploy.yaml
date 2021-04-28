@@ -7,9 +7,10 @@ metadata:
     chart: "lighthouse-1.0.31"
     app: lighthouse-keeper
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: jx
   annotations:
+    meta.helm.sh/release-name: 'lighthouse'
     wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx
 spec:
   replicas: 1
   strategy:

@@ -13,6 +13,8 @@ metadata:
     app.kubernetes.io/component: "cainjector"
     helm.sh/chart: cert-manager-v1.1.0
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'cert-manager'
 rules:
   # Used for leader election by the controller
   # cert-manager-cainjector-leader-election is used by the CertificateBased injector controller

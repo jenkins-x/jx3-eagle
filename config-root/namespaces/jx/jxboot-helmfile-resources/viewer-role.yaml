@@ -9,6 +9,7 @@ metadata:
   annotations:
     title: "Viewer"
     description: "A viewer can view all project resources"
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
 rules:
   - apiGroups:

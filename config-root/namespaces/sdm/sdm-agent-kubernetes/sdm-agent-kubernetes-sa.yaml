@@ -8,4 +8,5 @@ metadata:
     chart: sdm-agent-kubernetes-0.4.6
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
+    meta.helm.sh/release-name: 'sdm-agent-kubernetes'
   namespace: sdm

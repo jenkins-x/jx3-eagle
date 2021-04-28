@@ -11,6 +11,8 @@ metadata:
     app.kubernetes.io/component: "cainjector"
     helm.sh/chart: cert-manager-v1.1.0
     gitops.jenkins-x.io/pipeline: 'cluster'
+  annotations:
+    meta.helm.sh/release-name: 'cert-manager'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

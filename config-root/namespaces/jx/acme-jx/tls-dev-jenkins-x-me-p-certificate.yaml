@@ -6,6 +6,8 @@ metadata:
   labels:
     jenkins.io/letsencrypt-service: production
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'acme-jx'
   namespace: jx
 spec:
   secretName: "tls-dev-jenkins-x-me-p"

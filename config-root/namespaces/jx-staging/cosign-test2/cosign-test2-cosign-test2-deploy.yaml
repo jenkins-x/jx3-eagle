@@ -7,9 +7,10 @@ metadata:
     draft: draft-app
     chart: "cosign-test2-0.0.1"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: jx-staging
   annotations:
+    meta.helm.sh/release-name: 'cosign-test2'
     wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx-staging
 spec:
   selector:
     matchLabels:

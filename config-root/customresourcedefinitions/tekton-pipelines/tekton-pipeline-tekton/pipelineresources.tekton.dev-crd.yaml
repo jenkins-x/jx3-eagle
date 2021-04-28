@@ -23,6 +23,8 @@ metadata:
     pipeline.tekton.dev/release: "v0.23.0"
     version: "v0.23.0"
     gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
+  annotations:
+    meta.helm.sh/release-name: 'tekton'
 spec:
   group: tekton.dev
   versions:

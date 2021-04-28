@@ -5,6 +5,8 @@ metadata:
   creationTimestamp: "2020-12-14T11:05:13Z"
   deletionTimestamp: null
   name: 'acme-0.0.19'
+  annotations:
+    meta.helm.sh/release-name: 'acme-jx'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

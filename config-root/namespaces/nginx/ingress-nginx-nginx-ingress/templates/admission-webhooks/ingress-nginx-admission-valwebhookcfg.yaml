@@ -13,9 +13,10 @@ metadata:
     app.kubernetes.io/component: admission-webhook
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: ingress-nginx-admission
-  namespace: nginx
   annotations:
+    meta.helm.sh/release-name: 'nginx-ingress'
     kapp.k14s.io/change-group: 'apps.jenkins-x.io/ingress-nginx'
+  namespace: nginx
 webhooks:
   - name: validate.nginx.ingress.kubernetes.io
     matchPolicy: Equivalent

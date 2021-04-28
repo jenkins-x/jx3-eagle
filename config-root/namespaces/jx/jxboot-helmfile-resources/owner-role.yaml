@@ -9,6 +9,7 @@ metadata:
   annotations:
     title: "Team Owner"
     description: "A team owner can add/remove users and has write access to all team resources"
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
 rules:
   - apiGroups:

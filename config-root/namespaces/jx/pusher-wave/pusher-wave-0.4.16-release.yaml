@@ -5,6 +5,8 @@ metadata:
   creationTimestamp: "2021-02-11T10:47:04Z"
   deletionTimestamp: null
   name: 'pusher-wave-0.4.16'
+  annotations:
+    meta.helm.sh/release-name: 'pusher-wave'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
