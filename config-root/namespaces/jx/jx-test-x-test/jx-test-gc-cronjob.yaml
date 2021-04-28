@@ -6,6 +6,8 @@ metadata:
   labels:
     app: jenkins-x-lighthouse-gcjobs
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'x-test'
   namespace: jx
 spec:
   concurrencyPolicy: Forbid

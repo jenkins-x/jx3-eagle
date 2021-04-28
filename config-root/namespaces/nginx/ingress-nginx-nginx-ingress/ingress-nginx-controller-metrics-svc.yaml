@@ -5,6 +5,7 @@ metadata:
   annotations:
     prometheus.io/port: "10254"
     prometheus.io/scrape: "true"
+    meta.helm.sh/release-name: 'nginx-ingress'
     kapp.k14s.io/change-group: 'apps.jenkins-x.io/ingress-nginx'
   labels:
     helm.sh/chart: ingress-nginx-3.12.0

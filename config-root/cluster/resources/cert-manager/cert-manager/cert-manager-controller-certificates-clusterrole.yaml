@@ -12,6 +12,8 @@ metadata:
     app.kubernetes.io/component: "controller"
     helm.sh/chart: cert-manager-v1.1.0
     gitops.jenkins-x.io/pipeline: 'cluster'
+  annotations:
+    meta.helm.sh/release-name: 'cert-manager'
 rules:
   - apiGroups: ["cert-manager.io"]
     resources: ["certificates", "certificates/status", "certificaterequests", "certificaterequests/status"]

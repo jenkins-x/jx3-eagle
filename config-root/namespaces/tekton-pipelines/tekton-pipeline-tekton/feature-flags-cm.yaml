@@ -22,6 +22,8 @@ metadata:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'tekton'
 data:
   # Setting this flag to "true" will prevent Tekton to create an
   # Affinity Assistant for every TaskRun sharing a PVC workspace

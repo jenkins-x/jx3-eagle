@@ -4,6 +4,7 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'cosign-test2'
   name: cosign-test2
   namespace: jx-staging
   labels:

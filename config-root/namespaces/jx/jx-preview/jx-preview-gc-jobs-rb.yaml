@@ -3,6 +3,8 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: jx-preview-gc-jobs
+  annotations:
+    meta.helm.sh/release-name: 'jx-preview'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

@@ -11,9 +11,10 @@ metadata:
     app.kubernetes.io/component: controller
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: ingress-nginx-controller
-  namespace: nginx
   annotations:
+    meta.helm.sh/release-name: 'nginx-ingress'
     kapp.k14s.io/change-group: 'apps.jenkins-x.io/ingress-nginx'
+  namespace: nginx
 spec:
   type: LoadBalancer
   ports:

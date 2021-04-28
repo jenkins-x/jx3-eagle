@@ -9,9 +9,10 @@ metadata:
     release: sdm-agent-kubernetes
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: sdm
   annotations:
+    meta.helm.sh/release-name: 'sdm-agent-kubernetes'
     wave.pusher.com/update-on-config-change: 'true'
+  namespace: sdm
 spec:
   selector:
     matchLabels:

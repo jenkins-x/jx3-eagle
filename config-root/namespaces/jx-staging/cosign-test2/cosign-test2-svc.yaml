@@ -6,6 +6,8 @@ metadata:
   labels:
     chart: "cosign-test2-0.0.1"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'cosign-test2'
   namespace: jx-staging
 spec:
   type: ClusterIP

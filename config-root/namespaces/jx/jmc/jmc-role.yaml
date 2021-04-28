@@ -3,6 +3,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: jmc
+  annotations:
+    meta.helm.sh/release-name: 'jmc'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

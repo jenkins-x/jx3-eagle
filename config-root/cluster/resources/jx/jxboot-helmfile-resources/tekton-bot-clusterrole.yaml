@@ -3,6 +3,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: "tekton-bot"
+  annotations:
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 rules:

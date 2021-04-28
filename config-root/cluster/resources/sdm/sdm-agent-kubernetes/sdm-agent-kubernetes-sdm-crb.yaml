@@ -4,6 +4,8 @@ kind: ClusterRoleBinding
 metadata:
   name: sdm-agent-kubernetes-sdm
   namespace: sdm
+  annotations:
+    meta.helm.sh/release-name: 'sdm-agent-kubernetes'
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 roleRef:

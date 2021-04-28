@@ -7,9 +7,10 @@ metadata:
     draft: draft-app
     chart: "go-chaos-0.0.6"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: jx-staging
   annotations:
+    meta.helm.sh/release-name: 'go-chaos'
     wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx-staging
 spec:
   selector:
     matchLabels:

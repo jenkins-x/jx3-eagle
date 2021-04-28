@@ -3,6 +3,8 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: plugins-bot
+  annotations:
+    meta.helm.sh/release-name: 'bots'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

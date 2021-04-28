@@ -11,6 +11,8 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: grafana-config-dashboards
   namespace: jx
+  annotations:
+    meta.helm.sh/release-name: 'grafana'
 data:
   provider.yaml: |-
     apiVersion: 1

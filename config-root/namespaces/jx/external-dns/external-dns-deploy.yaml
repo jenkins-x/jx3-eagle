@@ -9,9 +9,10 @@ metadata:
     app.kubernetes.io/instance: external-dns
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: jx
   annotations:
+    meta.helm.sh/release-name: 'external-dns'
     wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx
 spec:
   replicas: 1
   selector:

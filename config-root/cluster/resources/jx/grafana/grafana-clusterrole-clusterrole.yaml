@@ -10,6 +10,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'cluster'
   name: grafana-clusterrole
+  annotations:
+    meta.helm.sh/release-name: 'grafana'
 rules:
   - apiGroups: [""] # "" indicates the core API group
     resources: ["configmaps", "secrets"]

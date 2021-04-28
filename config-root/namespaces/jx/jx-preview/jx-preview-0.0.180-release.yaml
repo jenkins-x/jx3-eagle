@@ -5,6 +5,8 @@ metadata:
   creationTimestamp: "2021-04-18T05:53:28Z"
   deletionTimestamp: null
   name: 'jx-preview-0.0.180'
+  annotations:
+    meta.helm.sh/release-name: 'jx-preview'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

@@ -5,6 +5,8 @@ metadata:
   creationTimestamp: "2021-04-27T11:26:41Z"
   deletionTimestamp: null
   name: 'go-chaos-0.0.6'
+  annotations:
+    meta.helm.sh/release-name: 'go-chaos'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

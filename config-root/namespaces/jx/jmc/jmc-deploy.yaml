@@ -9,9 +9,10 @@ metadata:
     release: jmc
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: jx
   annotations:
+    meta.helm.sh/release-name: 'jmc'
     wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx
 spec:
   selector:
     matchLabels:

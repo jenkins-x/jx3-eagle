@@ -6,6 +6,7 @@ metadata:
   namespace: "cert-manager"
   annotations:
     iam.gke.io/gcp-service-account: tf-jx-gentle-titmouse-dn@jx-labs-infra.iam.gserviceaccount.com
+    meta.helm.sh/release-name: 'cert-manager'
   labels:
     app: cert-manager
     app.kubernetes.io/name: cert-manager

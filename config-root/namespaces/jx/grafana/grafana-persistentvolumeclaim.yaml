@@ -13,6 +13,8 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   finalizers:
     - kubernetes.io/pvc-protection
+  annotations:
+    meta.helm.sh/release-name: 'grafana'
 spec:
   accessModes:
     - "ReadWriteOnce"

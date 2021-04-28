@@ -8,4 +8,6 @@ metadata:
     release: jx-slack
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'jx-slack'
   namespace: jx

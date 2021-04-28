@@ -11,6 +11,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'cluster'
   name: ingress-nginx
   annotations:
+    meta.helm.sh/release-name: 'nginx-ingress'
     kapp.k14s.io/change-group: 'apps.jenkins-x.io/ingress-nginx'
 rules:
   - apiGroups:

@@ -9,6 +9,8 @@ data:
 kind: ConfigMap
 metadata:
   name: ingress-config
+  annotations:
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

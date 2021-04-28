@@ -3,6 +3,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: "jenkins-x-extensions"
+  annotations:
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

@@ -6,6 +6,8 @@ metadata:
   labels:
     chart: "go-chaos-0.0.6"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'go-chaos'
   namespace: jx-staging
 spec:
   type: ClusterIP

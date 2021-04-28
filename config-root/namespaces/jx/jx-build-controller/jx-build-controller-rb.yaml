@@ -4,6 +4,8 @@ kind: RoleBinding
 metadata:
   name: jx-build-controller
   namespace: jx
+  annotations:
+    meta.helm.sh/release-name: 'jx-build-controller'
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 roleRef:

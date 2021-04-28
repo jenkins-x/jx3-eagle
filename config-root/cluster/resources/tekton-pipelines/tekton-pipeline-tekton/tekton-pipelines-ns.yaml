@@ -22,3 +22,5 @@ metadata:
     app.kubernetes.io/part-of: tekton-pipelines
     gitops.jenkins-x.io/pipeline: 'cluster'
     team: 'jx'
+  annotations:
+    meta.helm.sh/release-name: 'tekton'

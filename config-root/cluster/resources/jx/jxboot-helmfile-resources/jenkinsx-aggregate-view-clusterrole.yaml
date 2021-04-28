@@ -8,6 +8,8 @@ metadata:
     app.kubernetes.io/part-of: jenkins-x
     rbac.authorization.k8s.io/aggregate-to-view: "true"
     gitops.jenkins-x.io/pipeline: 'cluster'
+  annotations:
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
 rules:
   - apiGroups:
       - jenkins.io

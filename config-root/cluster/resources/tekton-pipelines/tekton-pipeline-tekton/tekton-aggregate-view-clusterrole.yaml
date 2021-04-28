@@ -22,6 +22,8 @@ metadata:
     app.kubernetes.io/part-of: tekton-pipelines
     rbac.authorization.k8s.io/aggregate-to-view: "true"
     gitops.jenkins-x.io/pipeline: 'cluster'
+  annotations:
+    meta.helm.sh/release-name: 'tekton'
 rules:
   - apiGroups:
       - tekton.dev

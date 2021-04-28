@@ -4,6 +4,8 @@ kind: ClusterRoleBinding
 metadata:
   name: jx-charter-jx-charter-jx
   namespace: jx
+  annotations:
+    meta.helm.sh/release-name: 'jx-charter'
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 roleRef:

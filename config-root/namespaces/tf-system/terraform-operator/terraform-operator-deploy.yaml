@@ -9,9 +9,10 @@ metadata:
     release: terraform-operator
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: tf-system
   annotations:
+    meta.helm.sh/release-name: 'terraform-operator'
     wave.pusher.com/update-on-config-change: 'true'
+  namespace: tf-system
 spec:
   replicas: 1
   strategy:
