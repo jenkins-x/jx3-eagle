@@ -31,7 +31,7 @@ spec:
           args:
             - run
           imagePullPolicy: IfNotPresent
-          image: "gcr.io/jenkinsxio/jx-charter:0.0.22"
+          image: "gcr.io/jenkinsxio/jx-charter:0.0.23"
           ports:
             - name: http
               containerPort: 8080

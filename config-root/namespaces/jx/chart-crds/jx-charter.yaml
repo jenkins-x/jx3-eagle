@@ -14,9 +14,9 @@ spec:
   name: jx-charter
   repositoryName: jx3
   repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
-  version: 0.0.22
+  version: 0.0.23
 status:
   description: Install complete
-  firstDeployed: "2021-04-28T13:36:57Z"
-  lastDeployed: "2021-04-28T13:36:57Z"
+  firstDeployed: "2021-04-28T14:27:50Z"
+  lastDeployed: "2021-04-28T14:27:50Z"
   status: deployed
