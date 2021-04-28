@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: jx-logging
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-jx-logging
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x/jx-logging.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-logging
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x/jx-logging

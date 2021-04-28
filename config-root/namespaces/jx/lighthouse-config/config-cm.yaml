@@ -68,6 +68,7 @@ data:
         jenkins-x/jx-git-operator: true
         jenkins-x/jx-go-maven-base-image: true
         jenkins-x/jx-helpers: true
+        jenkins-x/jx-logging: true
         jenkins-x/jx-pipelines-visualizer: true
         jenkins-x/jx3-eagle: true
         jenkins-x/jx3-pipeline-catalog: true
@@ -205,6 +206,7 @@ data:
         jenkins-x/jx-git-operator: merge
         jenkins-x/jx-go-maven-base-image: merge
         jenkins-x/jx-helpers: merge
+        jenkins-x/jx-logging: merge
         jenkins-x/jx-pipelines-visualizer: merge
         jenkins-x/jx3-eagle: merge
         jenkins-x/jx3-pipeline-catalog: merge
@@ -256,6 +258,7 @@ data:
         - jenkins-x/jx-git-operator
         - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
+        - jenkins-x/jx-logging
         - jenkins-x/jx-pipelines-visualizer
         - jenkins-x/jx
         - jenkins-x/jx3-pipeline-catalog
@@ -339,6 +342,7 @@ data:
         - jenkins-x/jx-git-operator
         - jenkins-x/jx-go-maven-base-image
         - jenkins-x/jx-helpers
+        - jenkins-x/jx-logging
         - jenkins-x/jx-pipelines-visualizer
         - jenkins-x/jx
         - jenkins-x/jx3-pipeline-catalog

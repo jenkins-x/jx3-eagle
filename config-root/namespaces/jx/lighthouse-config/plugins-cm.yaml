@@ -124,6 +124,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/jx-logging
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/jx-pipelines-visualizer
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -499,6 +503,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/jx-helpers:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x/jx-logging:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/jx-pipelines-visualizer:
@@ -1548,6 +1555,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/jx-logging:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/jx-pipelines-visualizer:
       - approve
       - assign
@@ -1823,6 +1846,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/jx-helpers
+      trusted_org: todo
+    - repos:
+      - jenkins-x/jx-logging
       trusted_org: todo
     - repos:
       - jenkins-x/jx-pipelines-visualizer
