@@ -27,6 +27,7 @@ spec:
     - name: jx-git-operator
     - name: jx-go-maven-base-image
     - name: jx-helpers
+    - name: jx-logging
     - name: jx-pipelines-visualizer
     - name: jx3-eagle
       slack:
