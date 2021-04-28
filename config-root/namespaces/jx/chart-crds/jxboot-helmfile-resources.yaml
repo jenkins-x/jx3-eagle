@@ -4,6 +4,8 @@ metadata:
   creationTimestamp: null
   name: jxboot-helmfile-resources
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   description: A Helm chart for the resources for JX Boot

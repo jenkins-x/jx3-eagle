@@ -4,11 +4,13 @@ metadata:
   creationTimestamp: null
   name: bots
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   name: ../charts/bots
   repositoryName: ..
 status:
   description: Install complete
-  firstDeployed: "2021-04-28T07:34:23Z"
-  lastDeployed: "2021-04-28T07:34:23Z"
+  firstDeployed: "2021-04-28T12:14:24Z"
+  lastDeployed: "2021-04-28T12:14:24Z"
   status: deployed

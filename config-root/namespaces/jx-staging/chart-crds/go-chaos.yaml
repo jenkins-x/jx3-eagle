@@ -4,6 +4,8 @@ metadata:
   creationTimestamp: null
   name: go-chaos
   namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   description: A Helm chart for Kubernetes

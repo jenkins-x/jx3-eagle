@@ -4,6 +4,8 @@ metadata:
   creationTimestamp: null
   name: jx-pipelines-visualizer
   namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
   appVersion: latest
@@ -14,7 +16,7 @@ spec:
   repositoryName: jx3
   repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
   sources:
-  - https://github.com/jenkins-x/jx-pipelines-visualizer
+    - https://github.com/jenkins-x/jx-pipelines-visualizer
   version: 1.4.0
 status:
   description: Install complete
