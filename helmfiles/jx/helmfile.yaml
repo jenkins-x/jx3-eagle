@@ -113,7 +113,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: jx3/jx-charter
-  version: 0.0.22
+  version: 0.0.23
   name: jx-charter
   values:
   - jx-values.yaml
