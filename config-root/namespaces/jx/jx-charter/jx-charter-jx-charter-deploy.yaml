@@ -31,7 +31,7 @@ spec:
           args:
             - run
           imagePullPolicy: IfNotPresent
-          image: "gcr.io/jenkinsxio/jx-charter:0.0.18"
+          image: "gcr.io/jenkinsxio/jx-charter:0.0.22"
           ports:
             - name: http
               containerPort: 8080
@@ -45,8 +45,6 @@ spec:
               path: /readyz
               port: http
           env:
-            - name: GIT_SECRET_MOUNT_PATH
-              value: /secrets/git
             - name: GIT_AUTHOR_EMAIL
               value: jenkins-x@googlegroups.com
             - name: GIT_AUTHOR_NAME
@@ -58,11 +56,3 @@ spec:
             requests:
               cpu: 80m
               memory: 128Mi
-          volumeMounts:
-            - mountPath: /secrets/git
-              name: secrets-git
-      volumes:
-        - name: secrets-git
-          secret:
-            defaultMode: 420
-            secretName: tekton-git
