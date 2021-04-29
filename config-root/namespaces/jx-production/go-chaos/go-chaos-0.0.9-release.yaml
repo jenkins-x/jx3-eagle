@@ -1,0 +1,51 @@
+# Source: go-chaos/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-04-29T06:42:42Z"
+  deletionTimestamp: null
+  name: 'go-chaos-0.0.9'
+  annotations:
+    meta.helm.sh/release-name: 'go-chaos'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.9
+      sha: 15b97fddb55b1e126e8b5837eadff3e0ae5a0627
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 4f2f1f5d2fbb881b7e45b726a2ff1759ed5da3a5
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add better error message
+      sha: b4d66823611258bccccc45338fbb99b727c99813
+  gitHttpUrl: https://github.com/jenkins-x/go-chaos
+  gitOwner: jenkins-x
+  gitRepository: go-chaos
+  name: 'go-chaos'
+  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.9
+  version: v0.0.9
+status: {}

@@ -1,0 +1,21 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: go-chaos
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  apiVersion: v1
+  description: A Helm chart for Kubernetes
+  icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+  name: go-chaos
+  repositoryName: dev
+  repositoryUrl: https://chartmuseum-jx.dev.jenkins-x.me
+  version: 0.0.9
+status:
+  description: Install complete
+  firstDeployed: "2021-04-29T06:44:37Z"
+  lastDeployed: "2021-04-29T06:44:37Z"
+  status: deployed
