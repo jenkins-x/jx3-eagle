@@ -4,12 +4,12 @@ kind: Deployment
 metadata:
   name: lighthouse-webhooks
   labels:
-    chart: "lighthouse-1.0.31"
+    chart: "lighthouse-1.0.34"
     app: lighthouse-webhooks
     git.jenkins-x.io/sha: annotate
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    checksum/config: 2aaba8b328701ca61618c707324b9170d84611bd15795c73c2dfbf6f5608d1b5
+    checksum/config: 45d1bde41e6c3f7d8c953a0e5c1edff951f897a38568eb6576fb3a2f555fef02
     meta.helm.sh/release-name: 'lighthouse'
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
@@ -30,7 +30,7 @@ spec:
       serviceAccountName: lighthouse-webhooks
       containers:
         - name: lighthouse-webhooks
-          image: gcr.io/jenkinsxio/lighthouse-webhooks:1.0.31
+          image: gcr.io/jenkinsxio/lighthouse-webhooks:1.0.34
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -58,6 +58,12 @@ spec:
               value: "json"
             - name: "LOGRUS_FORMAT"
               value: "json"
+            - name: LOGRUS_SERVICE
+              value: "lighthouse"
+            - name: LOGRUS_SERVICE_VERSION
+              value: "1.0.34"
+            - name: LOGRUS_STACK_SKIP
+              value: ""
             - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
               value: "tekton-bot"
             - name: DEFAULT_PIPELINE_RUN_TIMEOUT

@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-keeper
   labels:
-    chart: "lighthouse-1.0.31"
+    chart: "lighthouse-1.0.34"
     app: lighthouse-keeper
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
@@ -35,7 +35,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: lighthouse-keeper
-          image: gcr.io/jenkinsxio/lighthouse-keeper:1.0.31
+          image: gcr.io/jenkinsxio/lighthouse-keeper:1.0.34
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -74,6 +74,12 @@ spec:
               value: "json"
             - name: "LOGRUS_FORMAT"
               value: "json"
+            - name: LOGRUS_SERVICE
+              value: "lighthouse"
+            - name: LOGRUS_SERVICE_VERSION
+              value: "1.0.34"
+            - name: LOGRUS_STACK_SKIP
+              value: ""
             - name: "LIGHTHOUSE_KEEPER_STATUS_CONTEXT_LABEL"
               value: "Lighthouse Merge Status"
             - name: LIGHTHOUSE_TRIGGER_ON_MISSING
