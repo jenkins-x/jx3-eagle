@@ -55,9 +55,9 @@ spec:
                   key: hmac
                   optional: false
             - name: "JX_LOG_FORMAT"
-              value: "json"
+              value: "stackdriver"
             - name: "LOGRUS_FORMAT"
-              value: "json"
+              value: "stackdriver"
             - name: LOGRUS_SERVICE
               value: "lighthouse"
             - name: LOGRUS_SERVICE_VERSION
