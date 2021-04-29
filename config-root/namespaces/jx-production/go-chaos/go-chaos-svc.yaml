@@ -1,0 +1,20 @@
+# Source: go-chaos/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-chaos
+  labels:
+    chart: "go-chaos-0.0.10"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'go-chaos'
+  namespace: jx-production
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: go-chaos-go-chaos
