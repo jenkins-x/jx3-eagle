@@ -13,9 +13,9 @@ spec:
   name: go-chaos
   repositoryName: dev
   repositoryUrl: https://chartmuseum-jx.dev.jenkins-x.me
-  version: 0.0.7
+  version: 0.0.8
 status:
   description: Install complete
-  firstDeployed: "2021-04-28T13:25:16Z"
-  lastDeployed: "2021-04-28T13:25:16Z"
+  firstDeployed: "2021-04-29T05:52:19Z"
+  lastDeployed: "2021-04-29T05:52:19Z"
   status: deployed
