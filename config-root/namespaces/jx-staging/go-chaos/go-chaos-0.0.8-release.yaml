@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-04-28T13:23:03Z"
+  creationTimestamp: "2021-04-29T05:50:41Z"
   deletionTimestamp: null
-  name: 'go-chaos-0.0.7'
+  name: 'go-chaos-0.0.8'
   annotations:
     meta.helm.sh/release-name: 'go-chaos'
   namespace: jx-staging
@@ -20,8 +20,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.7
-      sha: 6fd450f29aa7957e441bc77959c962a41aa90f1d
+        chore: release 0.0.8
+      sha: 18b4dd7422cf07ab395f7cef182f82b59ece9d87
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -31,20 +31,21 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 466d32a8d63674618989bf7e6ba2b6dce9b8b36c
+      sha: 90df74f831208758f8411331f13cafcd57c82df3
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
       branch: master
       committer:
-        email: noreply@github.com
-        name: GitHub
-      message: Update README.md
-      sha: 2609e122268c56a4be362e559fa571467c7b04ba
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add better stack driver logging
+      sha: d08de937483f9345b1b39b1e9ab39f81bb688395
   gitHttpUrl: https://github.com/jenkins-x/go-chaos
   gitOwner: jenkins-x
   gitRepository: go-chaos
   name: 'go-chaos'
-  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.7
-  version: v0.0.7
+  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.8
+  version: v0.0.8
 status: {}
