@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-04-29T06:42:42Z"
+  creationTimestamp: "2021-04-29T06:52:36Z"
   deletionTimestamp: null
-  name: 'go-chaos-0.0.9'
+  name: 'go-chaos-0.0.10'
   annotations:
     meta.helm.sh/release-name: 'go-chaos'
   namespace: jx-staging
@@ -20,8 +20,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.9
-      sha: 15b97fddb55b1e126e8b5837eadff3e0ae5a0627
+        chore: release 0.0.10
+      sha: 0a2e780f90c6e8ec5e4e3d224f41f5e307e4d718
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -31,7 +31,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 4f2f1f5d2fbb881b7e45b726a2ff1759ed5da3a5
+      sha: c443d98f98b1c13fb2e64e78ee118ce1674fd7a3
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -40,12 +40,12 @@ spec:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: add better error message
-      sha: b4d66823611258bccccc45338fbb99b727c99813
+        chore: better labels
+      sha: 1a19480962c3960913f87f26af8cf6a72a0df2c2
   gitHttpUrl: https://github.com/jenkins-x/go-chaos
   gitOwner: jenkins-x
   gitRepository: go-chaos
   name: 'go-chaos'
-  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.9
-  version: v0.0.9
+  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.10
+  version: v0.0.10
 status: {}

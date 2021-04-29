@@ -44,18 +44,18 @@
   - apiVersion: v1
     applicationUrl: http://go-chaos-jx-staging.dev.jenkins-x.me
     description: A Helm chart for Kubernetes
-    firstDeployed: "2021-04-29T06:44:25Z"
+    firstDeployed: "2021-04-29T06:54:21Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     ingresses:
     - name: go-chaos
       url: http://go-chaos-jx-staging.dev.jenkins-x.me
-    lastDeployed: "2021-04-29T06:44:25Z"
+    lastDeployed: "2021-04-29T06:54:21Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fgo-chaos&dateRangeUnbound=both
     name: go-chaos
     repositoryName: dev
     repositoryUrl: https://chartmuseum-jx.dev.jenkins-x.me
     resourcePath: config-root/namespaces/jx-staging/go-chaos
-    version: 0.0.9
+    version: 0.0.10
   - apiVersion: v1
     applicationUrl: http://cosign-test2-jx-staging.dev.jenkins-x.me
     description: A Helm chart for Kubernetes
@@ -212,8 +212,8 @@
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
     version: 0.2.5
-  - firstDeployed: "2021-04-29T06:44:25Z"
-    lastDeployed: "2021-04-29T06:44:25Z"
+  - firstDeployed: "2021-04-29T06:54:21Z"
+    lastDeployed: "2021-04-29T06:54:21Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2F../charts/bots&dateRangeUnbound=both
     name: ../charts/bots
     repositoryName: ..

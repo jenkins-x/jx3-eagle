@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: go-chaos
   labels:
-    chart: "go-chaos-0.0.9"
+    chart: "go-chaos-0.0.10"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'go-chaos'

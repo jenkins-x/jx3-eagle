@@ -4,8 +4,8 @@ kind: Deployment
 metadata:
   name: go-chaos-go-chaos
   labels:
-    draft: draft-app
-    chart: "go-chaos-0.0.9"
+    app: go-chaos-go-chaos
+    chart: "go-chaos-0.0.10"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'go-chaos'
@@ -19,13 +19,13 @@ spec:
   template:
     metadata:
       labels:
-        draft: draft-app
         app: go-chaos-go-chaos
+        chart: "go-chaos-0.0.10"
     spec:
       serviceAccountName: go-chaos-go-chaos
       containers:
         - name: go-chaos
-          image: "gcr.io/jenkinsxio/go-chaos:0.0.9"
+          image: "gcr.io/jenkinsxio/go-chaos:0.0.10"
           imagePullPolicy: IfNotPresent
           env:
             - name: JX_LOG_FORMAT
@@ -35,11 +35,11 @@ spec:
             - name: JX_LOG_SERVICE
               value: "go-chaos"
             - name: JX_LOG_SERVICE_VERSION
-              value: "0.0.9"
+              value: "0.0.10"
             - name: JX_LOG_STACK_SKIP
               value: ""
             - name: VERSION
-              value: 0.0.9
+              value: 0.0.10
             - name: CRASH
               value: "true"
             - name: CRASH_DURATION
