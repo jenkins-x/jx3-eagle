@@ -71,9 +71,9 @@ spec:
                   name: lighthouse-oauth-token
                   key: oauth
             - name: "JX_LOG_FORMAT"
-              value: "json"
+              value: "stackdriver"
             - name: "LOGRUS_FORMAT"
-              value: "json"
+              value: "stackdriver"
             - name: LOGRUS_SERVICE
               value: "lighthouse"
             - name: LOGRUS_SERVICE_VERSION
