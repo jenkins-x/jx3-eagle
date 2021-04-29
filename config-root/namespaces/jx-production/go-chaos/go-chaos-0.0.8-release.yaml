@@ -1,0 +1,51 @@
+# Source: go-chaos/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-04-29T05:50:41Z"
+  deletionTimestamp: null
+  name: 'go-chaos-0.0.8'
+  annotations:
+    meta.helm.sh/release-name: 'go-chaos'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.8
+      sha: 18b4dd7422cf07ab395f7cef182f82b59ece9d87
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 90df74f831208758f8411331f13cafcd57c82df3
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: add better stack driver logging
+      sha: d08de937483f9345b1b39b1e9ab39f81bb688395
+  gitHttpUrl: https://github.com/jenkins-x/go-chaos
+  gitOwner: jenkins-x
+  gitRepository: go-chaos
+  name: 'go-chaos'
+  releaseNotesURL: https://github.com/jenkins-x/go-chaos/releases/tag/v0.0.8
+  version: v0.0.8
+status: {}
