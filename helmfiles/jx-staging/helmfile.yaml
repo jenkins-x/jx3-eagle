@@ -9,7 +9,7 @@ repositories:
   url: https://chartmuseum-jx.dev.jenkins-x.me
 releases:
 - chart: dev/go-chaos
-  version: 0.0.9
+  version: 0.0.10
   name: go-chaos
   values:
   - jx-values.yaml
