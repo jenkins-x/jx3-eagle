@@ -11,7 +11,7 @@ repositories:
   url: https://chartmuseum-jx.cb.jenkins-x.me
 releases:
 - chart: labs/sdm-agent-kubernetes
-  version: 0.4.9
+  version: 0.4.10
   name: sdm-agent-kubernetes
   values:
   - jx-values.yaml
