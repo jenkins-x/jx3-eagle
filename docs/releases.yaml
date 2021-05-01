@@ -154,16 +154,16 @@
     version: 0.4.16
   - apiVersion: v1
     description: 'This chart installs the jx-preview CRD and garbagecollection job '
-    firstDeployed: "2021-04-26T17:13:13Z"
+    firstDeployed: "2021-05-01T01:20:22Z"
     home: https://github.com/jenkins-x-plugins/jx-preview
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-04-26T17:13:13Z"
+    lastDeployed: "2021-05-01T01:20:22Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-preview&dateRangeUnbound=both
     name: jx-preview
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-preview
-    version: 0.0.180
+    version: 0.0.181
   - apiVersion: v1
     appVersion: latest
     applicationUrl: https://dashboard-jx.dev.jenkins-x.me
@@ -212,8 +212,8 @@
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
     version: 0.2.5
-  - firstDeployed: "2021-04-30T16:07:12Z"
-    lastDeployed: "2021-04-30T16:07:12Z"
+  - firstDeployed: "2021-05-01T01:20:22Z"
+    lastDeployed: "2021-05-01T01:20:22Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2F../charts/bots&dateRangeUnbound=both
     name: ../charts/bots
     repositoryName: ..
