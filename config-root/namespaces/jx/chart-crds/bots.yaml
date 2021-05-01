@@ -11,6 +11,6 @@ spec:
   repositoryName: ..
 status:
   description: Install complete
-  firstDeployed: "2021-04-30T16:07:12Z"
-  lastDeployed: "2021-04-30T16:07:12Z"
+  firstDeployed: "2021-05-01T01:20:22Z"
+  lastDeployed: "2021-05-01T01:20:22Z"
   status: deployed
