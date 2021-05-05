@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-tekton-controller
   labels:
-    chart: "lighthouse-1.0.36"
+    chart: "lighthouse-1.0.37"
     app: lighthouse-tekton-controller
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
@@ -25,7 +25,7 @@ spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
         - name: lighthouse-tekton-controller
-          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:1.0.36
+          image: gcr.io/jenkinsxio/lighthouse-tekton-controller:1.0.37
           imagePullPolicy: IfNotPresent
           args:
             - --namespace=jx
@@ -40,7 +40,7 @@ spec:
             - name: LOGRUS_SERVICE
               value: "lighthouse"
             - name: LOGRUS_SERVICE_VERSION
-              value: "1.0.36"
+              value: "1.0.37"
             - name: LOGRUS_STACK_SKIP
               value: ""
             - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
