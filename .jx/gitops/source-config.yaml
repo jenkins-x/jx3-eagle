@@ -43,6 +43,7 @@ spec:
     - name: jxr-packs-kubernetes
     - name: kubernetes-external-secrets
     - name: lighthouse
+    - name: lighthouse-telemetry-plugin
     - name: octant-jx
     - name: terraform-azurerm-jx
     - name: terraform-google-jx
