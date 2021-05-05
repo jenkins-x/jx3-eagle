@@ -76,6 +76,7 @@ data:
         jenkins-x/jxr-packs-kubernetes: true
         jenkins-x/kubernetes-external-secrets: true
         jenkins-x/lighthouse: true
+        jenkins-x/lighthouse-telemetry-plugin: true
         jenkins-x/octant-jx: true
         jenkins-x/terraform-azurerm-jx: true
         jenkins-x/terraform-google-jx: true
@@ -214,6 +215,7 @@ data:
         jenkins-x/jxr-packs-kubernetes: merge
         jenkins-x/kubernetes-external-secrets: merge
         jenkins-x/lighthouse: merge
+        jenkins-x/lighthouse-telemetry-plugin: merge
         jenkins-x/octant-jx: merge
         jenkins-x/terraform-azurerm-jx: merge
         jenkins-x/terraform-google-jx: merge
@@ -270,6 +272,7 @@ data:
         - jenkins-x-labs-bdd-tests/nodedemo
         - jenkins-x-labs-bdd-tests/pythondemo
         - jenkins-x-labs-bdd-tests/springdemo
+        - jenkins-x/lighthouse-telemetry-plugin
         - jenkins-x/lighthouse
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-admin
@@ -354,6 +357,7 @@ data:
         - jenkins-x-labs-bdd-tests/nodedemo
         - jenkins-x-labs-bdd-tests/pythondemo
         - jenkins-x-labs-bdd-tests/springdemo
+        - jenkins-x/lighthouse-telemetry-plugin
         - jenkins-x/lighthouse
         - jenkins-x/octant-jx
         - jenkins-x-plugins/jx-admin

@@ -176,6 +176,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/lighthouse-telemetry-plugin
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/lighthouse
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -527,6 +531,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/lighthouse:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x/lighthouse-telemetry-plugin:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/octant-jx:
@@ -1684,6 +1691,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/lighthouse-telemetry-plugin:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/octant-jx:
       - approve
       - assign
@@ -1885,6 +1908,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-labs-bdd-tests/springdemo
+      trusted_org: todo
+    - repos:
+      - jenkins-x/lighthouse-telemetry-plugin
       trusted_org: todo
     - repos:
       - jenkins-x/lighthouse

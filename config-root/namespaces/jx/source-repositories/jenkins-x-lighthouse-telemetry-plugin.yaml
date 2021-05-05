@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: lighthouse-telemetry-plugin
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-lighthouse-telemetry-plugin
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x/lighthouse-telemetry-plugin.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: lighthouse-telemetry-plugin
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x/lighthouse-telemetry-plugin
