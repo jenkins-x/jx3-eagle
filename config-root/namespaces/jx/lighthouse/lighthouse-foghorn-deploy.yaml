@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-foghorn
   labels:
-    chart: "lighthouse-1.0.37"
+    chart: "lighthouse-1.0.38"
     app: lighthouse-foghorn
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
@@ -26,7 +26,7 @@ spec:
       serviceAccountName: lighthouse-foghorn
       containers:
         - name: lighthouse-foghorn
-          image: gcr.io/jenkinsxio/lighthouse-foghorn:1.0.37
+          image: gcr.io/jenkinsxio/lighthouse-foghorn:1.0.38
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -55,7 +55,7 @@ spec:
             - name: LOGRUS_SERVICE
               value: "lighthouse"
             - name: LOGRUS_SERVICE_VERSION
-              value: "1.0.37"
+              value: "1.0.38"
             - name: LOGRUS_STACK_SKIP
               value: ""
             - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
