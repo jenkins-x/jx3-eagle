@@ -30,6 +30,7 @@ data:
         jenkins-x-plugins/jx-gitops: true
         jenkins-x-plugins/jx-health: true
         jenkins-x-plugins/jx-kh-check: true
+        jenkins-x-plugins/jx-kube-test: true
         jenkins-x-plugins/jx-pipeline: true
         jenkins-x-plugins/jx-preview: true
         jenkins-x-plugins/jx-project: true
@@ -169,6 +170,7 @@ data:
         jenkins-x-plugins/jx-gitops: merge
         jenkins-x-plugins/jx-health: merge
         jenkins-x-plugins/jx-kh-check: merge
+        jenkins-x-plugins/jx-kube-test: merge
         jenkins-x-plugins/jx-pipeline: merge
         jenkins-x-plugins/jx-preview: merge
         jenkins-x-plugins/jx-project: merge
@@ -283,6 +285,7 @@ data:
         - jenkins-x-plugins/jx-gitops
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-kube-test
         - jenkins-x-plugins/jx-pipeline
         - jenkins-x-plugins/jx-preview
         - jenkins-x-plugins/jx-project
@@ -368,6 +371,7 @@ data:
         - jenkins-x-plugins/jx-gitops
         - jenkins-x-plugins/jx-health
         - jenkins-x-plugins/jx-kh-check
+        - jenkins-x-plugins/jx-kube-test
         - jenkins-x-plugins/jx-pipeline
         - jenkins-x-plugins/jx-preview
         - jenkins-x-plugins/jx-project
