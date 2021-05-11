@@ -3,15 +3,15 @@ apiVersion: v1
 kind: Service
 metadata:
   name: external-dns
+  namespace: jx
   labels:
     app.kubernetes.io/name: external-dns
-    helm.sh/chart: external-dns-4.5.0
+    helm.sh/chart: external-dns-5.0.0
     app.kubernetes.io/instance: external-dns
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'external-dns'
-  namespace: jx
 spec:
   ports:
     - name: http

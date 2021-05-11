@@ -3,16 +3,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: external-dns
+  namespace: jx
   labels:
     app.kubernetes.io/name: external-dns
-    helm.sh/chart: external-dns-4.5.0
+    helm.sh/chart: external-dns-5.0.0
     app.kubernetes.io/instance: external-dns
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'external-dns'
     wave.pusher.com/update-on-config-change: 'true'
-  namespace: jx
 spec:
   replicas: 1
   selector:
@@ -23,7 +23,7 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: external-dns
-        helm.sh/chart: external-dns-4.5.0
+        helm.sh/chart: external-dns-5.0.0
         app.kubernetes.io/instance: external-dns
         app.kubernetes.io/managed-by: Helm
       annotations:
@@ -43,14 +43,14 @@ spec:
                     app.kubernetes.io/name: external-dns
                     app.kubernetes.io/instance: external-dns
                 namespaces:
-                  - jx
+                  - "jx"
                 topologyKey: kubernetes.io/hostname
               weight: 1
         nodeAffinity:
       serviceAccountName: external-dns
       containers:
         - name: external-dns
-          image: "docker.io/bitnami/external-dns:0.7.5-debian-10-r0"
+          image: "docker.io/bitnami/external-dns:0.8.0-debian-10-r0"
           imagePullPolicy: "IfNotPresent"
           args:
             # Generic arguments

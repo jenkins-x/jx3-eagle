@@ -91,7 +91,7 @@ releases:
   - ../../values/grafana.yaml.gotmpl
   - jx-values.yaml
 - chart: bitnami/external-dns
-  version: 4.5.0
+  version: 5.0.0
   name: external-dns
   values:
   - ../../versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
