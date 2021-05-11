@@ -21,8 +21,6 @@ spec:
   webHookEngine: "Lighthouse"
   teamSettings:
     appsRepository: http://chartmuseum.jenkins-x.io
-    buildPackRef: "master"
-    buildPackUrl: "https://github.com/jenkins-x/jxr-packs-kubernetes.git"
     defaultScheduler:
       apiVersion: jenkins.io/v1
       kind: Scheduler
@@ -30,17 +28,10 @@ spec:
     dockerRegistryOrg: "jenkinsxio"
     envOrganisation: todo
     gitServer: https://github.com
-    helmTemplate: true
     kubeProvider: "gke"
     pipelineUsername: "jenkins-x-bot-test"
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
-    importMode: YAML
-    promotionEngine: Prow
-    prowEngine: Tekton
-    versionStreamUrl: "https://github.com/jenkins-x/jenkins-x-versions.git"
-    versionStreamRef: "master"
-    useGitOps: true
     storageLocations:
       - bucketUrl: gs://logs-tf-jx-gentle-titmouse-0978c5a812f1
         classifier: logs
