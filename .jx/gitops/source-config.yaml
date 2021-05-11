@@ -107,6 +107,7 @@ spec:
     - name: jx-verify
     - name: kh-tls-check
     - name: kuberhealthy-terraform-drift-check
+    - name: kubeval
     - name: secretfacade
     scheduler: in-repo
   - owner: jenkins-x-labs-bdd-tests
