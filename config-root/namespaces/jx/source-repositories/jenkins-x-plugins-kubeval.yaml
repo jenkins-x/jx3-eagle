@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-plugins
+    provider: github
+    repository: kubeval
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-plugins-kubeval
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-plugins/kubeval.git
+  org: jenkins-x-plugins
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: kubeval
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x-plugins/kubeval

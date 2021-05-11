@@ -49,6 +49,7 @@ data:
         jenkins-x-plugins/jx-verify: true
         jenkins-x-plugins/kh-tls-check: true
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: true
+        jenkins-x-plugins/kubeval: true
         jenkins-x-plugins/secretfacade: true
         jenkins-x-terraform/terraform-jx-azure: true
         jenkins-x/acme: true
@@ -189,6 +190,7 @@ data:
         jenkins-x-plugins/jx-verify: merge
         jenkins-x-plugins/kh-tls-check: merge
         jenkins-x-plugins/kuberhealthy-terraform-drift-check: merge
+        jenkins-x-plugins/kubeval: merge
         jenkins-x-plugins/secretfacade: merge
         jenkins-x-terraform/terraform-jx-azure: merge
         jenkins-x/acme: merge
@@ -304,6 +306,7 @@ data:
         - jenkins-x-plugins/jx-verify
         - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
+        - jenkins-x-plugins/kubeval
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
         - jenkins-x/terraform-google-jx
@@ -390,6 +393,7 @@ data:
         - jenkins-x-plugins/jx-verify
         - jenkins-x-plugins/kh-tls-check
         - jenkins-x-plugins/kuberhealthy-terraform-drift-check
+        - jenkins-x-plugins/kubeval
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
         - jenkins-x/terraform-google-jx
