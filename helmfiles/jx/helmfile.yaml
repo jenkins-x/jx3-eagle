@@ -72,7 +72,7 @@ releases:
   - ../../values/jmc-values.yaml.gotmpl
   - jx-values.yaml
 - chart: jx3/jx-build-controller
-  version: 0.2.6
+  version: 0.2.7
   name: jx-build-controller
   values:
   - ../../values/jx-build-controller-values.yaml.gotmpl

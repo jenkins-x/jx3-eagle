@@ -20,9 +20,9 @@ spec:
   repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
   sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-  version: 0.2.6
+  version: 0.2.7
 status:
   description: Install complete
-  firstDeployed: "2021-05-07T01:08:00Z"
-  lastDeployed: "2021-05-07T01:08:00Z"
+  firstDeployed: "2021-05-11T07:39:09Z"
+  lastDeployed: "2021-05-11T07:39:09Z"
   status: deployed
