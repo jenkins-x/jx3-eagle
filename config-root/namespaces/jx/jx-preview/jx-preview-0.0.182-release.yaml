@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-04-30T14:33:00Z"
+  creationTimestamp: "2021-05-11T12:36:07Z"
   deletionTimestamp: null
-  name: 'jx-preview-0.0.181'
+  name: 'jx-preview-0.0.182'
   annotations:
     meta.helm.sh/release-name: 'jx-preview'
   namespace: jx
@@ -12,6 +12,18 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
+    - author:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        fix: avoid storing git credentials in the preview custom resource
+
+        this helps avoid stale tokens being used to clone the repo when a preview is being garbage collected, instead user or in cluster git credentials are used by default
+      sha: b23de50d89bb7f94f155f191a35d425b2f494323
     - author:
         email: james.strachan@gmail.com
         name: James Strachan
@@ -44,28 +56,9 @@ spec:
       message: |
         fix: added JSON schema generation
       sha: 99839eb735d02361f137c226a61a566de7c69766
-    - author:
-        email: wowq@users.noreply.github.com
-        name: wowq
-      branch: master
-      committer:
-        email: noreply@github.com
-        name: GitHub
-      message: Update values.yaml
-      sha: ef8ab029f2bb94791eac9d5f895c6aafa604a53d
-    - author:
-        email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
-      branch: master
-      committer:
-        email: jenkins-x@googlegroups.com
-        name: jenkins-x-bot
-      message: |
-        fix: value error
-      sha: a63e7f9097cd3be9b1ff54d6b8bcda4589c30848
   gitHttpUrl: https://github.com/jenkins-x-plugins/jx-preview
   gitOwner: jenkins-x-plugins
   gitRepository: jx-preview
   name: 'jx-preview'
-  version: 0.0.181
+  version: 0.0.182
 status: {}
