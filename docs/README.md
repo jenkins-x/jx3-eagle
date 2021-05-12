@@ -139,7 +139,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-charter' title='This chart installs the jx-charter CRD and the optional controller '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-charter </a></td>
-	      <td>0.0.24</td>
+	      <td>0.0.25</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-charter'>source</a></td>
 	    </tr>
