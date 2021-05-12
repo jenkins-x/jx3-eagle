@@ -96,16 +96,16 @@
     version: 1.0.53
   - apiVersion: v1
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
-    firstDeployed: "2021-05-06T10:03:07Z"
+    firstDeployed: "2021-05-12T06:44:10Z"
     home: https://github.com/jenkins-x/lighthouse
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-05-06T10:03:07Z"
+    lastDeployed: "2021-05-12T06:44:10Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Flighthouse&dateRangeUnbound=both
     name: lighthouse
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 1.0.38
+    version: 1.0.39
   - apiVersion: v1
     description: A Helm chart for Kubernetes
     firstDeployed: "2021-04-26T17:13:13Z"

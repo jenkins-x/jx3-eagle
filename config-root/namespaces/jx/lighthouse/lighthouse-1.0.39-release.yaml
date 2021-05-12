@@ -1,0 +1,31 @@
+# Source: lighthouse/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-05-12T05:53:37Z"
+  deletionTimestamp: null
+  name: 'lighthouse-1.0.39'
+  annotations:
+    meta.helm.sh/release-name: 'lighthouse'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: cameron@drivenow.com.au
+        name: Cameron Braid
+      branch: master
+      committer:
+        email: cameron@drivenow.com.au
+        name: Cameron Braid
+      message: |
+        fix: fix uses resolver using incorrect version of uses:task.yaml
+      sha: c93a1962efece58d0016a7337358da28d7124272
+  gitHttpUrl: https://github.com/jenkins-x/lighthouse
+  gitOwner: jenkins-x
+  gitRepository: lighthouse
+  name: 'lighthouse'
+  releaseNotesURL: https://github.com/jenkins-x/lighthouse/releases/tag/v1.0.39
+  version: 1.0.39
+status: {}
