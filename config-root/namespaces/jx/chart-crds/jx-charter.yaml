@@ -8,15 +8,16 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
+  appVersion: 0.0.24
   description: 'This chart installs the jx-charter CRD and the optional controller '
   home: https://github.com/jenkins-x-plugins/jx-charter
   icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
   name: jx-charter
   repositoryName: jx3
   repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
-  version: 0.0.23
+  version: 0.0.24
 status:
   description: Install complete
-  firstDeployed: "2021-04-28T14:27:50Z"
-  lastDeployed: "2021-04-28T14:27:50Z"
+  firstDeployed: "2021-05-12T01:11:30Z"
+  lastDeployed: "2021-05-12T01:11:30Z"
   status: deployed
