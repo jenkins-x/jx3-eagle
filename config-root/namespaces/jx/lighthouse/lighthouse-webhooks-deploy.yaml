@@ -25,7 +25,7 @@ spec:
       annotations:
         prometheus.io/port: "2112"
         prometheus.io/scrape: "true"
-        git.jenkins-x.io/sha: '2a6d89af5eb22789a067a8f6719acc82d9077a13'
+        git.jenkins-x.io/sha: '579e8257e50a32c5de09128a2acbc3a96fe21048'
         jenkins-x.io/hash: '7c49024afad97f15c878c1368e66931a796783b99d6fd681136a7076c31ca030'
     spec:
       serviceAccountName: lighthouse-webhooks
@@ -76,7 +76,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "bd5056a2d9ac71b64202f2db9d2114a544f87c0b"
+              value: "9bcd8cd2031a801553adff710ebc69eb8c84cc3c"
           ports:
             - containerPort: 8080
           livenessProbe:
