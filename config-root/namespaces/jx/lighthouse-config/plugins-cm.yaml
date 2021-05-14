@@ -252,6 +252,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/jx-secret-postrenderer
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/jx-secret
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -428,6 +432,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x-plugins/jx-secret:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x-plugins/jx-secret-postrenderer:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x-plugins/jx-slack:
@@ -1096,6 +1103,22 @@ data:
       - dog
       - pony
       jenkins-x-plugins/jx-secret:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-plugins/jx-secret-postrenderer:
       - approve
       - assign
       - blunderbuss
@@ -2011,6 +2034,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-scm
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/jx-secret-postrenderer
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/jx-secret

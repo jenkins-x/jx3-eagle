@@ -39,6 +39,7 @@ data:
         jenkins-x-plugins/jx-release-version: true
         jenkins-x-plugins/jx-scm: true
         jenkins-x-plugins/jx-secret: true
+        jenkins-x-plugins/jx-secret-postrenderer: true
         jenkins-x-plugins/jx-slack: true
         jenkins-x-plugins/jx-stash: true
         jenkins-x-plugins/jx-tap: true
@@ -180,6 +181,7 @@ data:
         jenkins-x-plugins/jx-release-version: merge
         jenkins-x-plugins/jx-scm: merge
         jenkins-x-plugins/jx-secret: merge
+        jenkins-x-plugins/jx-secret-postrenderer: merge
         jenkins-x-plugins/jx-slack: merge
         jenkins-x-plugins/jx-stash: merge
         jenkins-x-plugins/jx-tap: merge
@@ -295,6 +297,7 @@ data:
         - jenkins-x-plugins/jx-registry
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-secret-postrenderer
         - jenkins-x-plugins/jx-secret
         - jenkins-x-plugins/jx-slack
         - jenkins-x-plugins/jx-stash
@@ -382,6 +385,7 @@ data:
         - jenkins-x-plugins/jx-registry
         - jenkins-x-plugins/jx-release-version
         - jenkins-x-plugins/jx-scm
+        - jenkins-x-plugins/jx-secret-postrenderer
         - jenkins-x-plugins/jx-secret
         - jenkins-x-plugins/jx-slack
         - jenkins-x-plugins/jx-stash
