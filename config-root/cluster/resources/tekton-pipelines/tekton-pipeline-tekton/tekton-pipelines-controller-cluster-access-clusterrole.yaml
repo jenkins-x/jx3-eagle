@@ -26,11 +26,8 @@ metadata:
     meta.helm.sh/release-name: 'tekton'
 rules:
   - apiGroups: [""]
-    # Namespace access is required because the controller timeout handling logic
-    # iterates over all namespaces and times out any PipelineRuns that have expired.
-    # Pod access is required because the taskrun controller wants to be updated when
-    # a Pod underlying a TaskRun changes state.
-    resources: ["namespaces", "pods"]
+    # Controller needs to watch Pods created by TaskRuns to see them progress.
+    resources: ["pods"]
     verbs: ["list", "watch"]
     # Controller needs cluster access to all of the CRDs that it is responsible for
     # managing.
