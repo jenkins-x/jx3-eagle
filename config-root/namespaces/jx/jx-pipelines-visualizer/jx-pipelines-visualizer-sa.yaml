@@ -6,8 +6,8 @@ metadata:
   labels:
     app.kubernetes.io/name: jx-pipelines-visualizer
     app.kubernetes.io/instance: "jx-pipelines-visualizer"
-    helm.sh/chart: jx-pipelines-visualizer-1.6.1
-    app.kubernetes.io/version: "1.6.1"
+    helm.sh/chart: jx-pipelines-visualizer-1.6.2
+    app.kubernetes.io/version: "1.6.2"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:

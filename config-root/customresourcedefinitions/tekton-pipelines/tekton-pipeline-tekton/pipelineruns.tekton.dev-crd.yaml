@@ -20,8 +20,8 @@ metadata:
   labels:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
-    pipeline.tekton.dev/release: "v0.23.0"
-    version: "v0.23.0"
+    pipeline.tekton.dev/release: "v0.24.1"
+    version: "v0.24.1"
     gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
   annotations:
     meta.helm.sh/release-name: 'tekton'
