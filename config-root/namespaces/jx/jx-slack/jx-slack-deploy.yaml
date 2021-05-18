@@ -22,7 +22,7 @@ spec:
         app: jx-slack
       annotations:
         myannotation: abcd
-        git.jenkins-x.io/sha: 'dfbb8e1c7b8e08f3ab1a7e16be4ecef6261bdc85'
+        git.jenkins-x.io/sha: '1570d5cd74179aeb9f8d3b06046a3b6ff7fc6dd3'
     spec:
       containers:
         - name: slack
