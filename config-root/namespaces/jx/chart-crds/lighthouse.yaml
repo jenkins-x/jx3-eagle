@@ -14,9 +14,9 @@ spec:
   name: lighthouse
   repositoryName: jx3
   repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
-  version: 1.0.39
+  version: 1.0.42
 status:
   description: Install complete
-  firstDeployed: "2021-05-12T06:44:10Z"
-  lastDeployed: "2021-05-12T06:44:10Z"
+  firstDeployed: "2021-05-19T12:47:51Z"
+  lastDeployed: "2021-05-19T12:47:51Z"
   status: deployed
