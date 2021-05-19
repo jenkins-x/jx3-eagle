@@ -110,7 +110,7 @@
     <tr>
 	      <td><a href='https://grafana.net' title='The leading tool for querying and visualizing time series and metrics.'> <img src='https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png' width='24px' height='24px'> grafana </a></td>
 	      <td>6.6.3</td>
-	      <td><a href='http://grafana-jx.dev.jenkins-x.me/'>view</a></td>
+	      <td></td>
 	      <td><a href='https://grafana.net'>source</a></td>
 	    </tr>
     <tr>
