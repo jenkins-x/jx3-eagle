@@ -8,7 +8,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
-  appVersion: 1.6.4
+  appVersion: 1.6.5
   description: Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.
   home: https://github.com/jenkins-x/jx-pipelines-visualizer
   icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
@@ -17,9 +17,9 @@ spec:
   repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
   sources:
     - https://github.com/jenkins-x/jx-pipelines-visualizer
-  version: 1.6.4
+  version: 1.6.5
 status:
   description: Install complete
-  firstDeployed: "2021-05-19T01:18:09Z"
-  lastDeployed: "2021-05-19T01:18:09Z"
+  firstDeployed: "2021-05-20T14:44:51Z"
+  lastDeployed: "2021-05-20T14:44:51Z"
   status: deployed
