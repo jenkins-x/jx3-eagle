@@ -54,6 +54,7 @@ data:
         jenkins-x-plugins/secretfacade: true
         jenkins-x-terraform/terraform-jx-azure: true
         jenkins-x/acme: true
+        jenkins-x/bucketrepo: true
         jenkins-x/cd-indicators: true
         jenkins-x/feature-infra-secrets: true
         jenkins-x/flagger-metrics: true
@@ -196,6 +197,7 @@ data:
         jenkins-x-plugins/secretfacade: merge
         jenkins-x-terraform/terraform-jx-azure: merge
         jenkins-x/acme: merge
+        jenkins-x/bucketrepo: merge
         jenkins-x/cd-indicators: merge
         jenkins-x/feature-infra-secrets: merge
         jenkins-x/flagger-metrics: merge
@@ -239,6 +241,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x/bucketrepo
         - jenkins-x/cd-indicators
         - jenkins-x-charts/grafana-dashboard
         - jenkins-x-charts/jenkins-resources
@@ -327,6 +330,7 @@ data:
         - jenkins-x/jx3-eagle
         - jenkins-x/acme
         - jenkins-x-apps/jx-app-gloo
+        - jenkins-x/bucketrepo
         - jenkins-x/cd-indicators
         - jenkins-x-charts/grafana-dashboard
         - jenkins-x-charts/jenkins-resources

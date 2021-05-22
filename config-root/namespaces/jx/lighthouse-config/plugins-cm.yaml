@@ -16,6 +16,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/bucketrepo
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x/cd-indicators
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -477,6 +481,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/acme:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x/bucketrepo:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x/cd-indicators:
@@ -1358,6 +1365,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/bucketrepo:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x/cd-indicators:
       - approve
       - assign
@@ -1858,6 +1881,9 @@ data:
     - repos:
       - jenkins-x-apps/jx-app-gloo
       trusted_org: jenkins-x-apps
+    - repos:
+      - jenkins-x/bucketrepo
+      trusted_org: todo
     - repos:
       - jenkins-x/cd-indicators
       trusted_org: todo
