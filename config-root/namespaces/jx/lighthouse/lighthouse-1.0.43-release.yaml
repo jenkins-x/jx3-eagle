@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-05-19T09:52:36Z"
+  creationTimestamp: "2021-05-22T14:39:33Z"
   deletionTimestamp: null
-  name: 'lighthouse-1.0.42'
+  name: 'lighthouse-1.0.43'
   annotations:
     meta.helm.sh/release-name: 'lighthouse'
   namespace: jx
@@ -13,19 +13,19 @@ metadata:
 spec:
   commits:
     - author:
-        email: cameron@drivenow.com.au
-        name: Cameron Braid
+        email: james.strachan@gmail.com
+        name: James Strachan
       branch: master
       committer:
         email: james.strachan@gmail.com
         name: James Strachan
       message: |
-        fix: fix typo by renaming uses-ussue-1234 to uses-issue-1234
-      sha: 42c0c10b07d6adf59f9954f76586582ad3055c47
+        fix: add optional proxy env vars
+      sha: 68b5627ed0151d1c99e37f034a61c03fedf1621a
   gitHttpUrl: https://github.com/jenkins-x/lighthouse
   gitOwner: jenkins-x
   gitRepository: lighthouse
   name: 'lighthouse'
-  releaseNotesURL: https://github.com/jenkins-x/lighthouse/releases/tag/v1.0.42
-  version: 1.0.42
+  releaseNotesURL: https://github.com/jenkins-x/lighthouse/releases/tag/v1.0.43
+  version: 1.0.43
 status: {}

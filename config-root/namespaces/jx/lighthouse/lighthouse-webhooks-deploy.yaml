@@ -4,12 +4,12 @@ kind: Deployment
 metadata:
   name: lighthouse-webhooks
   labels:
-    chart: "lighthouse-1.0.42"
+    chart: "lighthouse-1.0.43"
     app: lighthouse-webhooks
     git.jenkins-x.io/sha: annotate
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    checksum/config: 4442a5b8c36b6afcf6936bb1fcb89008ed7a89fc8cdb47c6c60246510ed0dec9
+    checksum/config: 9e3a3bea983e6cc392d234df009e67da872d644fd61bf76de3a6992ccb63ab4d
     meta.helm.sh/release-name: 'lighthouse'
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
@@ -30,7 +30,7 @@ spec:
       serviceAccountName: lighthouse-webhooks
       containers:
         - name: lighthouse-webhooks
-          image: gcr.io/jenkinsxio/lighthouse-webhooks:1.0.42
+          image: gcr.io/jenkinsxio/lighthouse-webhooks:1.0.43
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -61,7 +61,7 @@ spec:
             - name: LOGRUS_SERVICE
               value: "lighthouse"
             - name: LOGRUS_SERVICE_VERSION
-              value: "1.0.42"
+              value: "1.0.43"
             - name: LOGRUS_STACK_SKIP
               value: ""
             - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
@@ -76,6 +76,10 @@ spec:
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
               value: "d327b4e328f7eedf4ddf8eb8b4db1d7ff2f2c995"
+          envFrom:
+            - secretRef:
+                name: jx-boot-job-env-vars
+                optional: true
           ports:
             - containerPort: 8080
           livenessProbe:
