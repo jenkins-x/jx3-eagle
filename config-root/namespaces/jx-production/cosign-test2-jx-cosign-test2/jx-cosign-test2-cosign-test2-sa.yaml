@@ -1,0 +1,10 @@
+# Source: cosign-test2/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jx-cosign-test2-cosign-test2
+  annotations:
+    meta.helm.sh/release-name: 'jx-cosign-test2'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

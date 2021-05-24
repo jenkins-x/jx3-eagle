@@ -1,0 +1,60 @@
+# Source: cosign-test2/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jx-cosign-test2-cosign-test2
+  labels:
+    draft: draft-app
+    chart: "cosign-test2-0.0.12"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'jx-cosign-test2'
+    wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx-production
+spec:
+  selector:
+    matchLabels:
+      app: jx-cosign-test2-cosign-test2
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: jx-cosign-test2-cosign-test2
+    spec:
+      serviceAccountName: jx-cosign-test2-cosign-test2
+      containers:
+        - name: cosign-test2
+          image: "gcr.io/jenkinsxio/cosign-test2:0.0.12"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: VERSION
+              value: 0.0.12
+          envFrom: null
+          ports:
+            - name: http
+              containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              cpu: 400m
+              memory: 256Mi
+            requests:
+              cpu: 200m
+              memory: 128Mi
+      terminationGracePeriodSeconds:
+      imagePullSecrets:

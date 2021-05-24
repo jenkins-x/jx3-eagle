@@ -19,5 +19,7 @@ releases:
 - chart: dev/cosign-test2
   version: 0.0.12
   name: jx-cosign-test2
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

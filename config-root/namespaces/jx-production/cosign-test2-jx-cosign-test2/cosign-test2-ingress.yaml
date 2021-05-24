@@ -1,0 +1,19 @@
+# Source: cosign-test2/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'jx-cosign-test2'
+  name: cosign-test2
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: cosign-test2
+              servicePort: 80
+      host: cosign-test2-jx-production.dev.jenkins-x.me
