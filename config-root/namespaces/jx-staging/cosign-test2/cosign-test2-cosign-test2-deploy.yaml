@@ -5,7 +5,7 @@ metadata:
   name: cosign-test2-cosign-test2
   labels:
     draft: draft-app
-    chart: "cosign-test2-0.0.12"
+    chart: "cosign-test2-0.0.14"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'cosign-test2'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: cosign-test2-cosign-test2
       containers:
         - name: cosign-test2
-          image: "gcr.io/jenkinsxio/cosign-test2:0.0.12"
+          image: "gcr.io/jenkinsxio/cosign-test2:0.0.14"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.12
+              value: 0.0.14
           envFrom: null
           ports:
             - name: http
