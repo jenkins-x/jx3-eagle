@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: cosign-test2
   labels:
-    chart: "cosign-test2-0.0.12"
+    chart: "cosign-test2-0.0.14"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'cosign-test2'
