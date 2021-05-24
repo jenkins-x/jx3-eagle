@@ -14,7 +14,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: dev/cosign-test2
-  version: 0.0.1
+  version: 0.0.12
   name: cosign-test2
   values:
   - jx-values.yaml
