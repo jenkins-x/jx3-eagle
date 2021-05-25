@@ -25,7 +25,7 @@ spec:
       apiVersion: jenkins.io/v1
       kind: Scheduler
       name: jx-meta-pipeline
-    dockerRegistryOrg: "jenkinsxio"
+    dockerRegistryOrg: "jenkins-x"
     envOrganisation: todo
     gitServer: https://github.com
     kubeProvider: "gke"

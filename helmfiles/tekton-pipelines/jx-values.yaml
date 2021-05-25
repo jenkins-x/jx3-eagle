@@ -20,7 +20,7 @@ jxRequirements:
   cluster:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     clusterName: tf-jx-gentle-titmouse
-    dockerRegistryOrg: jenkinsxio
+    dockerRegistryOrg: jenkins-x
     environmentGitOwner: todo
     gitKind: github
     gitName: github
@@ -29,7 +29,7 @@ jxRequirements:
       projectNumber: "193491712574"
     project: jx-labs-infra
     provider: gke
-    registry: gcr.io
+    registry: ghcr.io
     zone: us-central1-a
   environments:
   - ingress:
