@@ -8,15 +8,15 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
-  appVersion: 0.0.14
+  appVersion: 0.0.16
   description: A Helm chart for Kubernetes
   icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
   name: cosign-test2
   repositoryName: dev
   repositoryUrl: https://chartmuseum-jx.dev.jenkins-x.me
-  version: 0.0.14
+  version: 0.0.16
 status:
   description: Install complete
-  firstDeployed: "2021-05-24T15:06:50Z"
-  lastDeployed: "2021-05-24T15:06:50Z"
+  firstDeployed: "2021-05-25T12:38:57Z"
+  lastDeployed: "2021-05-25T12:38:57Z"
   status: deployed
