@@ -1,0 +1,20 @@
+# Source: cosign-test2/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: cosign-test2
+  labels:
+    chart: "cosign-test2-0.0.16"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'jx-cosign-test2'
+  namespace: jx-production
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app: jx-cosign-test2-cosign-test2

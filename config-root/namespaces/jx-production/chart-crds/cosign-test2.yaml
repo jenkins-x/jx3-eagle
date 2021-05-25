@@ -1,0 +1,22 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: cosign-test2
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  apiVersion: v1
+  appVersion: 0.0.16
+  description: A Helm chart for Kubernetes
+  icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+  name: cosign-test2
+  repositoryName: dev
+  repositoryUrl: https://chartmuseum-jx.dev.jenkins-x.me
+  version: 0.0.16
+status:
+  description: Install complete
+  firstDeployed: "2021-05-25T12:38:41Z"
+  lastDeployed: "2021-05-25T12:38:41Z"
+  status: deployed
