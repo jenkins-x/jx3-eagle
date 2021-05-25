@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-05-22T14:39:33Z"
+  creationTimestamp: "2021-05-25T07:54:40Z"
   deletionTimestamp: null
-  name: 'lighthouse-1.0.43'
+  name: 'lighthouse-1.0.44'
   annotations:
     meta.helm.sh/release-name: 'lighthouse'
   namespace: jx
@@ -21,11 +21,11 @@ spec:
         name: James Strachan
       message: |
         fix: add optional proxy env vars
-      sha: 68b5627ed0151d1c99e37f034a61c03fedf1621a
+      sha: 1f2443e4d6465823f0c9469804f386012b05155d
   gitHttpUrl: https://github.com/jenkins-x/lighthouse
   gitOwner: jenkins-x
   gitRepository: lighthouse
   name: 'lighthouse'
-  releaseNotesURL: https://github.com/jenkins-x/lighthouse/releases/tag/v1.0.43
-  version: 1.0.43
+  releaseNotesURL: https://github.com/jenkins-x/lighthouse/releases/tag/v1.0.44
+  version: 1.0.44
 status: {}
