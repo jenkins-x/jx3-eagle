@@ -7,6 +7,8 @@ namespace: jx-production
 repositories:
 - name: jx3
   url: https://storage.googleapis.com/jenkinsxio/charts
+- name: dev
+  url: https://chartmuseum-jx.dev.jenkins-x.me
 releases:
 - chart: jx3/acme
   version: 0.0.20
@@ -14,5 +16,8 @@ releases:
   values:
   - ../../versionStream/charts/jx3/acme/values.yaml.gotmpl
   - jx-values.yaml
+- chart: dev/cosign-test2
+  version: 0.0.16
+  name: jx-cosign-test2
 templates: {}
 renderedvalues: {}
