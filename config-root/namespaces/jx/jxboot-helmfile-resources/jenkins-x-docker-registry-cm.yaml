@@ -11,5 +11,5 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   kaniko.flags: ""
-  docker.registry: gcr.io
-  docker.registry.org: jenkinsxio
+  docker.registry: ghcr.io
+  docker.registry.org: jenkins-x
