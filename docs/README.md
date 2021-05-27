@@ -40,7 +40,7 @@
 	    </tr>
     <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> cosign-test2 </a></td>
-	      <td>0.0.18</td>
+	      <td>0.0.19</td>
 	      <td><a href='http://cosign-test2-jx-staging.dev.jenkins-x.me'>view</a></td>
 	      <td></td>
 	    </tr>
