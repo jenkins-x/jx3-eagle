@@ -49,7 +49,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
-	      <td>1.0.54</td>
+	      <td>1.0.55</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
 	    </tr>
@@ -127,7 +127,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test' title='This chart installs the jx-test CronJob to garbage collect failed system test resources '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-test </a></td>
-	      <td>0.0.44</td>
+	      <td>0.0.45</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-test'>source</a></td>
 	    </tr>
@@ -139,7 +139,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-charter' title='This chart installs the jx-charter CRD and the optional controller '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-charter </a></td>
-	      <td>0.0.25</td>
+	      <td>0.0.26</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-charter'>source</a></td>
 	    </tr>
