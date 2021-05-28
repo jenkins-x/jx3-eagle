@@ -32,7 +32,7 @@ spec:
               env:
                 - name: XDG_CONFIG_HOME
                   value: /home
-              image: ghcr.io/jenkins-x/jx-test:0.0.47
+              image: ghcr.io/jenkins-x/jx-test:0.0.45
               imagePullPolicy: IfNotPresent
               name: jx-test-gc
               resources: {}

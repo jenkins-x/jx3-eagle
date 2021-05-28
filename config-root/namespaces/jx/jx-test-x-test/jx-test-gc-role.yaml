@@ -40,7 +40,6 @@ rules:
       - ""
     resources:
       - pods
-      - configmaps
       - secrets
     verbs:
       - get
