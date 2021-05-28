@@ -8,16 +8,16 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
-  appVersion: 0.0.45
+  appVersion: 0.0.46
   description: 'This chart installs the jx-test CronJob to garbage collect failed system test resources '
   home: https://github.com/jenkins-x-plugins/jx-test
   icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
   name: jx-test
   repositoryName: jx3
   repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
-  version: 0.0.45
+  version: 0.0.46
 status:
   description: Install complete
-  firstDeployed: "2021-05-28T01:31:07Z"
-  lastDeployed: "2021-05-28T01:31:07Z"
+  firstDeployed: "2021-05-28T10:37:01Z"
+  lastDeployed: "2021-05-28T10:37:01Z"
   status: deployed
