@@ -288,18 +288,18 @@
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     version: 0.0.19
   - apiVersion: v1
-    appVersion: 0.0.47
+    appVersion: 0.0.45
     description: 'This chart installs the jx-test CronJob to garbage collect failed system test resources '
-    firstDeployed: "2021-05-28T12:02:02Z"
+    firstDeployed: "2021-05-28T12:27:39Z"
     home: https://github.com/jenkins-x-plugins/jx-test
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-05-28T12:02:02Z"
+    lastDeployed: "2021-05-28T12:27:39Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-test&dateRangeUnbound=both
     name: jx-test
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jx-test-x-test
-    version: 0.0.47
+    version: 0.0.45
   - apiVersion: v1
     appVersion: 0.0.62
     description: A Slack bot for Jenkins X
