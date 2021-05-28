@@ -55,7 +55,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
-	      <td>1.0.46</td>
+	      <td>1.1.0</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
@@ -175,7 +175,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart' title='A Helm chart for Tekton Pipelines'> <img src='https://avatars2.githubusercontent.com/u/47602533' width='24px' height='24px'> tekton-pipeline </a></td>
-	      <td>0.24.1</td>
+	      <td>0.24.4</td>
 	      <td></td>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart'>source</a></td>
 	    </tr>
