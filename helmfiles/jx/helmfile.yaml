@@ -38,6 +38,7 @@ releases:
   values:
   - ../../versionStream/charts/jx3/lighthouse/values.yaml.gotmpl
   - jx-values.yaml
+  - values.yaml
 - chart: jenkins-x/nexus
   version: 0.1.37
   name: nexus

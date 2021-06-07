@@ -1,0 +1,3 @@
+keeper:
+  env:
+    LIGHTHOUSE_TRIGGER_ON_MISSING: disable
