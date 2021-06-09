@@ -76,9 +76,9 @@
   path: helmfiles/jx/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 1.0.55
+    appVersion: 1.0.56
     description: A Helm chart for the resources for JX Boot
-    firstDeployed: "2021-05-28T01:31:06Z"
+    firstDeployed: "2021-06-09T09:59:25Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
@@ -88,13 +88,13 @@
       url: https://hook-jx.dev.jenkins-x.me
     - name: nexus
       url: https://nexus-jx.dev.jenkins-x.me
-    lastDeployed: "2021-05-28T01:31:06Z"
+    lastDeployed: "2021-06-09T09:59:25Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjxboot-helmfile-resources&dateRangeUnbound=both
     name: jxboot-helmfile-resources
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.0.55
+    version: 1.0.56
   - apiVersion: v1
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
     firstDeployed: "2021-06-07T15:37:07Z"
@@ -167,16 +167,16 @@
     resourcePath: config-root/namespaces/jx/jx-preview
     version: 0.0.182
   - apiVersion: v1
-    appVersion: 1.6.6
+    appVersion: 1.6.11
     applicationUrl: https://dashboard-jx.dev.jenkins-x.me
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.
-    firstDeployed: "2021-05-22T01:16:21Z"
+    firstDeployed: "2021-06-09T09:59:26Z"
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
     - name: jx-pipelines-visualizer
       url: https://dashboard-jx.dev.jenkins-x.me
-    lastDeployed: "2021-05-22T01:16:21Z"
+    lastDeployed: "2021-06-09T09:59:26Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-pipelines-visualizer&dateRangeUnbound=both
     name: jx-pipelines-visualizer
     repositoryName: jx3
@@ -184,7 +184,7 @@
     resourcePath: config-root/namespaces/jx/jx-pipelines-visualizer
     sources:
     - https://github.com/jenkins-x/jx-pipelines-visualizer
-    version: 1.6.6
+    version: 1.6.11
   - apiVersion: v1
     appVersion: 0.0.9
     description: A Helm chart for collecting Jenkins X metrics
@@ -288,18 +288,18 @@
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     version: 0.0.19
   - apiVersion: v1
-    appVersion: 0.0.45
+    appVersion: 0.0.47
     description: 'This chart installs the jx-test CronJob to garbage collect failed system test resources '
-    firstDeployed: "2021-05-28T12:27:39Z"
+    firstDeployed: "2021-06-09T09:59:26Z"
     home: https://github.com/jenkins-x-plugins/jx-test
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-05-28T12:27:39Z"
+    lastDeployed: "2021-06-09T09:59:26Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-test&dateRangeUnbound=both
     name: jx-test
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
     resourcePath: config-root/namespaces/jx/jx-test-x-test
-    version: 0.0.45
+    version: 0.0.47
   - apiVersion: v1
     appVersion: 0.0.62
     description: A Slack bot for Jenkins X
