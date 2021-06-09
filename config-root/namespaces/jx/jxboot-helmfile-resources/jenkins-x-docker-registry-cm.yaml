@@ -10,6 +10,6 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
-  kaniko.flags: ""
+  kaniko.flags: "--snapshotMode=redo"
   docker.registry: ghcr.io
   docker.registry.org: jenkins-x
