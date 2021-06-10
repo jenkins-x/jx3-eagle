@@ -110,6 +110,7 @@ spec:
     - name: kh-tls-check
     - name: kuberhealthy-terraform-drift-check
     - name: kubeval
+    - name: lighthouse-webui-plugin
     - name: secretfacade
     scheduler: in-repo
   - owner: jenkins-x-labs-bdd-tests
