@@ -308,6 +308,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-plugins/lighthouse-webui-plugin
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-plugins/secretfacade
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -472,6 +476,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x-plugins/kubeval:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      jenkins-x-plugins/lighthouse-webui-plugin:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       jenkins-x-plugins/secretfacade:
@@ -1317,6 +1324,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x-plugins/lighthouse-webui-plugin:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkins-x-plugins/secretfacade:
       - approve
       - assign
@@ -2099,6 +2122,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/kubeval
+      trusted_org: todo
+    - repos:
+      - jenkins-x-plugins/lighthouse-webui-plugin
       trusted_org: todo
     - repos:
       - jenkins-x-plugins/secretfacade
