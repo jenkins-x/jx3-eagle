@@ -113,6 +113,18 @@ data:
           pipelineRef:
             name: jx-meta-pipeline
           serviceAccountName: tekton-bot
+      jenkins-x-images/maven-quarkus-mandrel:
+      - agent: tekton-pipeline
+        branches:
+        - master
+        - main
+        labels:
+          aadpodidbinding: tekton-bot
+        name: release
+        pipeline_run_spec:
+          pipelineRef:
+            name: jx-meta-pipeline
+          serviceAccountName: tekton-bot
     presubmits:
       jenkins-x-apps/jx-app-gloo:
       - agent: tekton-pipeline
@@ -128,6 +140,19 @@ data:
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
       jenkins-x-images/kaniko:
+      - agent: tekton-pipeline
+        always_run: true
+        context: pr-build
+        labels:
+          aadpodidbinding: tekton-bot
+        name: pr-build
+        pipeline_run_spec:
+          pipelineRef:
+            name: jx-meta-pipeline
+          serviceAccountName: tekton-bot
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jenkins-x-images/maven-quarkus-mandrel:
       - agent: tekton-pipeline
         always_run: true
         context: pr-build
@@ -161,6 +186,7 @@ data:
         jenkins-x-charts/pusher-wave: merge
         jenkins-x-charts/vault-instance: merge
         jenkins-x-images/kaniko: merge
+        jenkins-x-images/maven-quarkus-mandrel: merge
         jenkins-x-labs-bdd-tests/godemo: merge
         jenkins-x-labs-bdd-tests/gradledemo: merge
         jenkins-x-labs-bdd-tests/nodedemo: merge
@@ -264,6 +290,7 @@ data:
         - jenkins-x/helm-annotate
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
+        - jenkins-x-images/maven-quarkus-mandrel
         - jenkins-x/istio
         - jenkins-x/jx-api
         - jenkins-x/jx-cli-base-image
@@ -354,6 +381,7 @@ data:
         - jenkins-x/helm-annotate
         - jenkins-x/helm3-image
         - jenkins-x-images/kaniko
+        - jenkins-x-images/maven-quarkus-mandrel
         - jenkins-x/istio
         - jenkins-x/jx-api
         - jenkins-x/jx-cli-base-image

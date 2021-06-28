@@ -21,7 +21,7 @@ spec:
       labels:
         app: lighthouse-foghorn
       annotations:
-        jenkins-x.io/hash: 'eed5ff5ef25b3e0ad70045e2d46a813c93ec8a2a3e01e3b219f94a931c9e5bf3'
+        jenkins-x.io/hash: 'e236fd75f3b3cdb28380d076ef3aed7576c5b08a138e4bab1a307f51836edb53'
     spec:
       serviceAccountName: lighthouse-foghorn
       containers:
@@ -69,7 +69,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "e04c51867a334329692acc97b39104e916461863"
+              value: "c1c7b872f034ce0456892fc534688fea81a5fb1b"
           resources:
             limits:
               cpu: 100m

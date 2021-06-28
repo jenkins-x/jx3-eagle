@@ -8,7 +8,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
-  appVersion: 0.0.62
+  appVersion: 0.0.63
   description: A Slack bot for Jenkins X
   home: https://github.com/jenkins-x-plugins/jx-slack
   icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
@@ -17,9 +17,9 @@ spec:
   repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
   sources:
     - https://github.com/jenkins-x-plugins/jx-slack
-  version: 0.0.62
+  version: 0.0.63
 status:
   description: Install complete
-  firstDeployed: "2021-05-25T01:13:46Z"
-  lastDeployed: "2021-05-25T01:13:46Z"
+  firstDeployed: "2021-06-28T12:25:37Z"
+  lastDeployed: "2021-06-28T12:25:37Z"
   status: deployed

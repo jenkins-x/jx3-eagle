@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x-images
+    provider: github
+    repository: maven-quarkus-mandrel
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-images-maven-quarkus-mandrel
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x-images/maven-quarkus-mandrel.git
+  org: jenkins-x-images
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: maven-quarkus-mandrel
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jenkins-x-images/maven-quarkus-mandrel
