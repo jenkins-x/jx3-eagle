@@ -18,5 +18,5 @@ spec:
   repo: maven-quarkus-mandrel
   scheduler:
     kind: ""
-    name: ""
+    name: in-repo
   url: https://github.com/jenkins-x-images/maven-quarkus-mandrel

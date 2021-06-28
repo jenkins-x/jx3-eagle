@@ -2153,10 +2153,10 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-images/kaniko
-      trusted_org: jenkins-x-images
+      trusted_org: todo
     - repos:
       - jenkins-x-images/maven-quarkus-mandrel
-      trusted_org: jenkins-x-images
+      trusted_org: todo
     - repos:
       - jenkins-x/istio
       trusted_org: todo
