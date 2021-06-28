@@ -78,6 +78,7 @@ spec:
     repositories:
     - name: kaniko
     - name: maven-quarkus-mandrel
+    scheduler: in-repo    
   - owner: jenkins-x-plugins
     provider: https://github.com
     providerKind: github
