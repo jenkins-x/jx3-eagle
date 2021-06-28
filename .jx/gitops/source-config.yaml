@@ -77,6 +77,7 @@ spec:
     providerName: github
     repositories:
     - name: kaniko
+    - name: maven-quarkus-mandrel
   - owner: jenkins-x-plugins
     provider: https://github.com
     providerKind: github
