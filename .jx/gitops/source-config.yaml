@@ -67,6 +67,7 @@ spec:
     - name: jxboot-helmfile-resources
     - name: knative-serving
     - name: local-external-secrets
+    - name: nexus
     - name: nfs-subdir-external-provisioner
     - name: pusher-wave
     - name: vault-instance
@@ -78,7 +79,7 @@ spec:
     repositories:
     - name: kaniko
     - name: maven-quarkus-mandrel
-    scheduler: in-repo    
+    scheduler: in-repo
   - owner: jenkins-x-plugins
     provider: https://github.com
     providerKind: github
