@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-keeper
   labels:
-    chart: "lighthouse-1.1.6"
+    chart: "lighthouse-1.1.10"
     app: lighthouse-keeper
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
@@ -27,7 +27,7 @@ spec:
         ad.datadoghq.com/keeper.logs: '[{"source":"lighthouse","service":"keeper"}]'
         prometheus.io/port: "9090"
         prometheus.io/scrape: "true"
-        jenkins-x.io/hash: '96a308942a8b22773b5232b3fcc759f269561ae6e58fd97ba62161082634a75b'
+        jenkins-x.io/hash: '5d5682a415523ddca9e0fa31d46662dc87349cb2c182688d92019f9da366932b'
       labels:
         app: lighthouse-keeper
     spec:
@@ -35,7 +35,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: lighthouse-keeper
-          image: ghcr.io/jenkins-x/lighthouse-keeper:1.1.6
+          image: ghcr.io/jenkins-x/lighthouse-keeper:1.1.10
           imagePullPolicy: IfNotPresent
           args:
             - "--namespace=jx"
@@ -77,7 +77,7 @@ spec:
             - name: LOGRUS_SERVICE
               value: "lighthouse"
             - name: LOGRUS_SERVICE_VERSION
-              value: "1.1.6"
+              value: "1.1.10"
             - name: LOGRUS_STACK_SKIP
               value: ""
             - name: "LIGHTHOUSE_KEEPER_STATUS_CONTEXT_LABEL"

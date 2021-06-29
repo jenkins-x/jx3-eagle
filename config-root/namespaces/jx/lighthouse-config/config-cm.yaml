@@ -391,7 +391,7 @@ data:
         - jenkins-x/terraform-google-jx
         - jenkins-x-terraform/terraform-jx-azure
         - rawlingsj/cosign-test2
-      target_url: http://dashboard-jx.dev.jenkins-x.me
+      target_url: http://lighthouse-jx.dev.jenkins-x.me/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

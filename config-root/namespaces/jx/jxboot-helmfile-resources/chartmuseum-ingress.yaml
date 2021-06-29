@@ -1,5 +1,5 @@
 # Source: jxboot-helmfile-resources/templates/700-chartmuseum-ing.yaml
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
@@ -13,9 +13,12 @@ spec:
   rules:
     - http:
         paths:
-          - backend:
-              serviceName: jenkins-x-chartmuseum
-              servicePort: 8080
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: jenkins-x-chartmuseum
+                port:
+                  number: 8080
             path: "/"
       host: chartmuseum-jx.dev.jenkins-x.me
   tls:
