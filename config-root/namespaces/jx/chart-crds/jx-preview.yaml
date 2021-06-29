@@ -14,9 +14,9 @@ spec:
   name: jx-preview
   repositoryName: jxgh
   repositoryUrl: https://jenkins-x-charts.github.io/repo
-  version: 0.0.182
+  version: 0.0.183
 status:
   description: Install complete
-  firstDeployed: "2021-05-12T01:11:29Z"
-  lastDeployed: "2021-05-12T01:11:29Z"
+  firstDeployed: "2021-06-29T11:41:01Z"
+  lastDeployed: "2021-06-29T11:41:01Z"
   status: deployed

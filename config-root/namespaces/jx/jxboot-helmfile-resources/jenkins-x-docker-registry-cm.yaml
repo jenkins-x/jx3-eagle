@@ -10,6 +10,6 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
-  kaniko.flags: "--snapshotMode=redo"
+  kaniko.flags: "--skip-unused-stages --snapshotMode=redo"
   docker.registry: ghcr.io
   docker.registry.org: jenkins-x

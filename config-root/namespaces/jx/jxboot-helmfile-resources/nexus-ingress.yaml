@@ -1,5 +1,5 @@
 # Source: jxboot-helmfile-resources/templates/700-nexus-ing.yaml
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
@@ -13,9 +13,12 @@ spec:
   rules:
     - http:
         paths:
-          - backend:
-              serviceName: nexus
-              servicePort: 80
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: nexus
+                port:
+                  number: 80
             path: "/"
       host: nexus-jx.dev.jenkins-x.me
   tls:

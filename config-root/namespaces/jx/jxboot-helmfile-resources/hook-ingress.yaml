@@ -1,5 +1,5 @@
 # Source: jxboot-helmfile-resources/templates/700-hook-ing.yaml
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
@@ -13,9 +13,12 @@ spec:
   rules:
     - http:
         paths:
-          - backend:
-              serviceName: hook
-              servicePort: 80
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: hook
+                port:
+                  number: 80
             path: "/hook"
       host: hook-jx.dev.jenkins-x.me
   tls:

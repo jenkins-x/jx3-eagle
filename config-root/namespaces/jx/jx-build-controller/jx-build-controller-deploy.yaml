@@ -5,7 +5,7 @@ metadata:
   name: jx-build-controller
   labels:
     app: jx-build-controller
-    chart: jx-build-controller-0.2.8
+    chart: jx-build-controller-0.3.1
     release: jx-build-controller
     heritage: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -30,7 +30,7 @@ spec:
         - name: jx-build-controller
           command: [jx-build-controller]
           imagePullPolicy:
-          image: "gcr.io/jenkinsxio/jx-build-controller:0.2.8"
+          image: "ghcr.io/jenkins-x/jx-build-controller:0.3.1"
           ports:
             - name: http
               containerPort: 8080
@@ -51,7 +51,7 @@ spec:
             - name: JX_LOG_SERVICE
               value: "jx-build-controller"
             - name: JX_LOG_SERVICE_VERSION
-              value: "0.2.8"
+              value: "0.3.1"
             - name: JX_LOG_STACK_SKIP
               value: ""
             - name: GIT_SECRET_MOUNT_PATH
