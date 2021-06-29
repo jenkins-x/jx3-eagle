@@ -5,7 +5,8 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    chartRepository: https://jenkins-x-charts.github.io/repo
+    chartKind: pages
     clusterName: tf-jx-gentle-titmouse
     dockerRegistryOrg: jenkins-x
     environmentGitOwner: todo
