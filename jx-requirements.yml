@@ -5,8 +5,8 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: https://jenkins-x-charts.github.io/repo
     chartKind: pages
+    chartRepository: https://jenkins-x-charts.github.io/repo
     clusterName: tf-jx-gentle-titmouse
     dockerRegistryOrg: jenkins-x
     environmentGitOwner: todo
