@@ -1,0 +1,25 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: lighthouse-webui-plugin
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  apiVersion: v1
+  appVersion: 0.1.4
+  description: Web UI for Lighthouse, to visualize events, jobs, and merge status/history.
+  home: https://github.com/jenkins-x-plugins/lighthouse-webui-plugin
+  icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+  name: lighthouse-webui-plugin
+  repositoryName: jxgh
+  repositoryUrl: https://jenkins-x-charts.github.io/repo
+  sources:
+    - https://github.com/jenkins-x-plugins/lighthouse-webui-plugin
+  version: 0.1.4
+status:
+  description: Install complete
+  firstDeployed: "2021-06-30T15:05:53Z"
+  lastDeployed: "2021-06-30T15:05:53Z"
+  status: deployed
