@@ -87,6 +87,12 @@
 	      <td><a href='https://github.com/rawlingsj/jmc'>source</a></td>
 	    </tr>
     <tr>
+	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin' title='Web UI for Lighthouse, to visualize events, jobs, and merge status/history.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse-webui-plugin </a></td>
+	      <td>0.1.4</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin'>source</a></td>
+	    </tr>
+    <tr>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-build-controller </a></td>
 	      <td>0.3.3</td>
 	      <td></td>
