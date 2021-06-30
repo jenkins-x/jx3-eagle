@@ -7,8 +7,6 @@ namespace: jx
 repositories:
 - name: jenkins-x
   url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
-- name: jx3
-  url: https://storage.googleapis.com/jenkinsxio/charts
 - name: stable
   url: https://charts.helm.sh/stable
 - name: collector
@@ -20,30 +18,30 @@ repositories:
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
 releases:
-- chart: jx3/jxboot-helmfile-resources
-  version: 1.0.64
+- chart: jxgh/jxboot-helmfile-resources
+  version: 1.0.65
   name: jxboot-helmfile-resources
   values:
-  - ../../versionStream/charts/jx3/jxboot-helmfile-resources/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/jxboot-helmfile-resources/values.yaml.gotmpl
   - jx-values.yaml
-- chart: jx3/jenkins-x-crds
-  version: 3.0.7
+- chart: jxgh/jenkins-x-crds
+  version: 3.0.8
   name: jenkins-x-crds
   values:
-  - ../../versionStream/charts/jx3/jenkins-x-crds/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/jenkins-x-crds/values.yaml.gotmpl
   - jx-values.yaml
-- chart: jx3/lighthouse
-  version: 1.1.10
+- chart: jxgh/lighthouse
+  version: 1.1.11
   name: lighthouse
   values:
-  - ../../versionStream/charts/jx3/lighthouse/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/lighthouse/values.yaml.gotmpl
   - jx-values.yaml
   - lighthouse-values.yaml
-- chart: jenkins-x/nexus
-  version: 0.1.37
+- chart: jxgh/nexus
+  version: 0.1.41
   name: nexus
   values:
-  - ../../versionStream/charts/jenkins-x/nexus/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/nexus/values.yaml.gotmpl
   - jx-values.yaml
 - chart: stable/chartmuseum
   version: 2.14.2
@@ -51,8 +49,8 @@ releases:
   values:
   - ../../versionStream/charts/stable/chartmuseum/values.yaml.gotmpl
   - jx-values.yaml
-- chart: jx3/pusher-wave
-  version: 0.4.16
+- chart: jxgh/pusher-wave
+  version: 0.4.17
   name: pusher-wave
   values:
   - jx-values.yaml
@@ -61,23 +59,23 @@ releases:
   name: jx-preview
   values:
   - jx-values.yaml
-- chart: jx3/jx-pipelines-visualizer
-  version: 1.7.1
+- chart: jxgh/jx-pipelines-visualizer
+  version: 1.7.2
   name: jx-pipelines-visualizer
   values:
-  - ../../versionStream/charts/jx3/jx-pipelines-visualizer/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/jx-pipelines-visualizer/values.yaml.gotmpl
   - jx-values.yaml
 - chart: collector/jmc
   name: jmc
   values:
   - ../../values/jmc-values.yaml.gotmpl
   - jx-values.yaml
-- chart: jx3/jx-build-controller
-  version: 0.3.1
+- chart: jxgh/jx-build-controller
+  version: 0.3.3
   name: jx-build-controller
   values:
   - ../../values/jx-build-controller-values.yaml.gotmpl
-  - ../../versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/jx-build-controller/values.yaml.gotmpl
   - jx-values.yaml
 - chart: ../../charts/bots
   name: bots
@@ -97,24 +95,24 @@ releases:
   values:
   - ../../versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
   - jx-values.yaml
-- chart: jx3/acme
-  version: 0.0.19
+- chart: jxgh/acme
+  version: 0.0.24
   name: acme-jx
   values:
-  - ../../versionStream/charts/jx3/acme-jx/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/acme-jx/values.yaml.gotmpl
   - jx-values.yaml
-- chart: jx3/jx-test
-  version: 0.0.47
+- chart: jxgh/jx-test
+  version: 0.0.48
   name: x-test
   values:
   - jx-values.yaml
-- chart: jx3/jx-slack
-  version: 0.0.63
+- chart: jxgh/jx-slack
+  version: 0.0.64
   name: jx-slack
   values:
   - jx-values.yaml
-- chart: jx3/jx-charter
-  version: 0.0.26
+- chart: jxgh/jx-charter
+  version: 0.0.27
   name: jx-charter
   values:
   - jx-values.yaml

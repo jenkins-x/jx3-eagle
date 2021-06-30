@@ -5,14 +5,14 @@ environments:
     - jx-values.yaml
 namespace: jx-production
 repositories:
-- name: jx3
-  url: https://storage.googleapis.com/jenkinsxio/charts
+- name: jxgh
+  url: https://jenkins-x-charts.github.io/repo
 releases:
-- chart: jx3/acme
-  version: 0.0.21
+- chart: jxgh/acme
+  version: 0.0.24
   name: tls-jx-production
   values:
-  - ../../versionStream/charts/jx3/acme/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/acme/values.yaml.gotmpl
   - jx-values.yaml
 templates: {}
 renderedvalues: {}
