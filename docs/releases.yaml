@@ -64,42 +64,43 @@
   path: helmfiles/jx/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 1.0.64
+    appVersion: 1.0.65
     description: A Helm chart for the resources for JX Boot
-    firstDeployed: "2021-06-29T11:40:54Z"
+    firstDeployed: "2021-06-30T12:17:56Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-06-29T11:40:54Z"
+    lastDeployed: "2021-06-30T12:17:56Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjxboot-helmfile-resources&dateRangeUnbound=both
     name: jxboot-helmfile-resources
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.0.64
+    version: 1.0.65
   - apiVersion: v1
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
-    firstDeployed: "2021-06-29T11:40:54Z"
+    firstDeployed: "2021-06-30T12:18:02Z"
     home: https://github.com/jenkins-x/lighthouse
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-06-29T11:40:54Z"
+    lastDeployed: "2021-06-30T12:18:02Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Flighthouse&dateRangeUnbound=both
     name: lighthouse
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 1.1.10
+    version: 1.1.11
   - apiVersion: v1
+    appVersion: 0.1.41
     description: A Helm chart for Kubernetes
-    firstDeployed: "2021-04-26T17:13:13Z"
+    firstDeployed: "2021-06-30T12:18:09Z"
     home: https://github.com/jenkins-x-charts/nexus
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/jenkins-x-platform/images/nexus.png
-    lastDeployed: "2021-04-26T17:13:13Z"
+    lastDeployed: "2021-06-30T12:18:09Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fnexus&dateRangeUnbound=both
     name: nexus
-    repositoryName: jenkins-x
-    repositoryUrl: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/nexus
-    version: 0.1.37
+    version: 0.1.41
   - apiVersion: v1
     appVersion: 0.12.0
     deprecated: true
@@ -119,22 +120,22 @@
     resourcePath: config-root/namespaces/jx/chartmuseum
     version: 2.14.2
   - apiVersion: v1
-    appVersion: v0.4.0
+    appVersion: 0.4.17
     description: wave chart that runs on kubernetes
-    firstDeployed: "2021-04-26T17:13:13Z"
+    firstDeployed: "2021-06-30T12:18:16Z"
     home: https://github.com/pusher/wave
     keywords:
     - wave
     - kubernetes
-    lastDeployed: "2021-04-26T17:13:13Z"
+    lastDeployed: "2021-06-30T12:18:16Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fpusher-wave&dateRangeUnbound=both
     name: pusher-wave
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/pusher-wave
     sources:
     - https://github.com/pusher/wave
-    version: 0.4.16
+    version: 0.4.17
   - apiVersion: v1
     description: 'This chart installs the jx-preview CRD and garbagecollection job '
     firstDeployed: "2021-06-29T11:41:01Z"
@@ -148,20 +149,20 @@
     resourcePath: config-root/namespaces/jx/jx-preview
     version: 0.0.183
   - apiVersion: v1
-    appVersion: 1.7.1
+    appVersion: 1.7.2
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.
-    firstDeployed: "2021-06-29T11:41:01Z"
+    firstDeployed: "2021-06-30T12:18:22Z"
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-06-29T11:41:01Z"
+    lastDeployed: "2021-06-30T12:18:22Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-pipelines-visualizer&dateRangeUnbound=both
     name: jx-pipelines-visualizer
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-pipelines-visualizer
     sources:
     - https://github.com/jenkins-x/jx-pipelines-visualizer
-    version: 1.7.1
+    version: 1.7.2
   - apiVersion: v1
     appVersion: 0.0.9
     description: A Helm chart for collecting Jenkins X metrics
@@ -174,23 +175,23 @@
     repositoryUrl: https://rawlingsj.github.io/jmc
     resourcePath: config-root/namespaces/jx/jmc
   - apiVersion: v2
-    appVersion: 3.0.0
+    appVersion: 0.3.3
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
-    firstDeployed: "2021-06-29T11:41:02Z"
+    firstDeployed: "2021-06-30T12:18:29Z"
     home: https://jenkins-x.io/
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-06-29T11:41:02Z"
+    lastDeployed: "2021-06-30T12:18:29Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-build-controller&dateRangeUnbound=both
     maintainers:
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
     name: jx-build-controller
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.3.1
+    version: 0.3.3
   - logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2F../charts/bots&dateRangeUnbound=both
     name: ../charts/bots
     repositoryName: ..
@@ -255,56 +256,57 @@
     - https://github.com/kubernetes-sigs/external-dns
     version: 5.0.0
   - apiVersion: v1
+    appVersion: 0.0.24
     description: Acme
-    firstDeployed: "2021-04-26T17:13:13Z"
+    firstDeployed: "2021-06-30T12:18:36Z"
     icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
-    lastDeployed: "2021-04-26T17:13:13Z"
+    lastDeployed: "2021-06-30T12:18:36Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Facme&dateRangeUnbound=both
     name: acme
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
-    version: 0.0.19
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    version: 0.0.24
   - apiVersion: v1
-    appVersion: 0.0.47
+    appVersion: 0.0.48
     description: 'This chart installs the jx-test CronJob to garbage collect failed system test resources '
-    firstDeployed: "2021-06-09T09:59:26Z"
+    firstDeployed: "2021-06-30T12:18:43Z"
     home: https://github.com/jenkins-x-plugins/jx-test
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-06-09T09:59:26Z"
+    lastDeployed: "2021-06-30T12:18:43Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-test&dateRangeUnbound=both
     name: jx-test
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-test-x-test
-    version: 0.0.47
+    version: 0.0.48
   - apiVersion: v1
-    appVersion: 0.0.63
+    appVersion: 0.0.64
     description: A Slack bot for Jenkins X
-    firstDeployed: "2021-06-28T12:25:37Z"
+    firstDeployed: "2021-06-30T12:18:49Z"
     home: https://github.com/jenkins-x-plugins/jx-slack
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-06-28T12:25:37Z"
+    lastDeployed: "2021-06-30T12:18:49Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-slack&dateRangeUnbound=both
     name: jx-slack
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-slack
     sources:
     - https://github.com/jenkins-x-plugins/jx-slack
-    version: 0.0.63
+    version: 0.0.64
   - apiVersion: v1
-    appVersion: 0.0.26
+    appVersion: 0.0.27
     description: 'This chart installs the jx-charter CRD and the optional controller '
-    firstDeployed: "2021-05-28T01:31:07Z"
+    firstDeployed: "2021-06-30T12:18:56Z"
     home: https://github.com/jenkins-x-plugins/jx-charter
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-05-28T01:31:07Z"
+    lastDeployed: "2021-06-30T12:18:56Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-charter&dateRangeUnbound=both
     name: jx-charter
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-charter
-    version: 0.0.26
+    version: 0.0.27
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:
