@@ -26,18 +26,6 @@
     version: 1.1.0
 - namespace: jx-production
   path: helmfiles/jx-production/helmfile.yaml
-  releases:
-  - apiVersion: v1
-    description: Acme
-    firstDeployed: "2021-04-26T17:13:13Z"
-    icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
-    lastDeployed: "2021-04-26T17:13:13Z"
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx-production%2Fcontainer_name%2Facme&dateRangeUnbound=both
-    name: acme
-    repositoryName: jx3
-    repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
-    resourcePath: config-root/namespaces/jx-production/acme-tls-jx-production
-    version: 0.0.20
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
   releases:

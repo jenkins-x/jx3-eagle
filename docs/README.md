@@ -21,15 +21,6 @@
 	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>jx-production</h3></td>
-		    </tr>
-	    <tr>
-	      <td><a href='' title='Acme'> <img src='https://avatars2.githubusercontent.com/u/35583233?s=200&v=4' width='24px' height='24px'> acme </a></td>
-	      <td>0.0.20</td>
-	      <td></td>
-	      <td></td>
-	    </tr>
-    <tr>
 		      <td colspan='4'><h3>jx-staging</h3></td>
 		    </tr>
 	    <tr>
