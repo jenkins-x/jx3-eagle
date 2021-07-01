@@ -22,6 +22,14 @@ rules:
       - list
       - watch
   - apiGroups:
+      - ""
+    resources:
+      - services
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
       - lighthouse.jenkins.io
     resources:
       - lighthousejobs
