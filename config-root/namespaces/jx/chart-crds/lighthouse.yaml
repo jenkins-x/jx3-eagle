@@ -14,9 +14,9 @@ spec:
   name: lighthouse
   repositoryName: jxgh
   repositoryUrl: https://jenkins-x-charts.github.io/repo
-  version: 1.1.22
+  version: 1.1.23
 status:
   description: Install complete
-  firstDeployed: "2021-07-02T14:07:43Z"
-  lastDeployed: "2021-07-02T14:07:43Z"
+  firstDeployed: "2021-07-02T14:46:02Z"
+  lastDeployed: "2021-07-02T14:46:02Z"
   status: deployed
