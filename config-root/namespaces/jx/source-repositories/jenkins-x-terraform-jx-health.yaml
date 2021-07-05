@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkins-x
+    provider: github
+    repository: terraform-jx-health
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkins-x-terraform-jx-health
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkins-x/terraform-jx-health.git
+  org: jenkins-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: terraform-jx-health
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkins-x/terraform-jx-health

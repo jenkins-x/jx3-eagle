@@ -88,6 +88,7 @@ data:
         jenkins-x/octant-jx: true
         jenkins-x/terraform-azurerm-jx: true
         jenkins-x/terraform-google-jx: true
+        jenkins-x/terraform-jx-health: true
         rawlingsj/cosign-test2: true
     plank: {}
     pod_namespace: jx
@@ -209,6 +210,7 @@ data:
         jenkins-x/octant-jx: merge
         jenkins-x/terraform-azurerm-jx: merge
         jenkins-x/terraform-google-jx: merge
+        jenkins-x/terraform-jx-health: merge
         rawlingsj/cosign-test2: merge
       queries:
       - labels:
@@ -301,6 +303,7 @@ data:
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
         - jenkins-x/terraform-google-jx
+        - jenkins-x/terraform-jx-health
         - jenkins-x-terraform/terraform-jx-azure
         - rawlingsj/cosign-test2
       - labels:
@@ -393,6 +396,7 @@ data:
         - jenkins-x-plugins/secretfacade
         - jenkins-x/terraform-azurerm-jx
         - jenkins-x/terraform-google-jx
+        - jenkins-x/terraform-jx-health
         - jenkins-x-terraform/terraform-jx-azure
         - rawlingsj/cosign-test2
       target_url: http://lighthouse-jx.dev.jenkins-x.me/merge/status

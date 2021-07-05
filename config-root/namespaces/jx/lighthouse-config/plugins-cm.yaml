@@ -332,6 +332,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x/terraform-jx-health
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-terraform/terraform-jx-azure
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -754,6 +758,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       jenkins-x/terraform-google-jx:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      jenkins-x/terraform-jx-health:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -2082,6 +2091,22 @@ data:
       - cat
       - dog
       - pony
+      jenkins-x/terraform-jx-health:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       rawlingsj/cosign-test2:
       - approve
       - assign
@@ -2352,6 +2377,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x/terraform-google-jx
+      trusted_org: todo
+    - repos:
+      - jenkins-x/terraform-jx-health
       trusted_org: todo
     - repos:
       - jenkins-x-terraform/terraform-jx-azure
