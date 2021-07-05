@@ -48,6 +48,7 @@ spec:
     - name: octant-jx
     - name: terraform-azurerm-jx
     - name: terraform-google-jx
+    - name: terraform-jx-health
     scheduler: in-repo
   - owner: jenkins-x-apps
     provider: https://github.com
