@@ -150,7 +150,8 @@
     version: 0.0.184
   - apiVersion: v1
     appVersion: 1.7.2
-    description: Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.
+    description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
+      - and their logs.
     firstDeployed: "2021-06-30T12:18:22Z"
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
@@ -248,7 +249,8 @@
       tags:
       - bitnami-common
       version: 1.x.x
-    description: ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
     firstDeployed: "2021-05-11T17:08:12Z"
     home: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
     icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png
@@ -283,7 +285,8 @@
     version: 0.0.24
   - apiVersion: v1
     appVersion: 0.0.48
-    description: 'This chart installs the jx-test CronJob to garbage collect failed system test resources '
+    description: 'This chart installs the jx-test CronJob to garbage collect failed
+      system test resources '
     firstDeployed: "2021-06-30T12:18:43Z"
     home: https://github.com/jenkins-x-plugins/jx-test
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
@@ -330,7 +333,8 @@
         - Remove helm2 support and update docs
     apiVersion: v2
     appVersion: 0.41.2
-    description: Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer
+    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
+      and load balancer
     firstDeployed: "2021-04-26T17:13:13Z"
     home: https://github.com/kubernetes/ingress-nginx
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
