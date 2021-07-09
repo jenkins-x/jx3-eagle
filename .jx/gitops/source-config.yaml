@@ -68,6 +68,7 @@ spec:
     - name: jxboot-helmfile-resources
     - name: knative-serving
     - name: local-external-secrets
+    - name: metallb
     - name: nexus
     - name: nfs-subdir-external-provisioner
     - name: pusher-wave
