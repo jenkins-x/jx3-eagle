@@ -52,6 +52,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkins-x-charts/metallb
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkins-x-charts/nexus
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -388,6 +392,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       jenkins-x-charts/local-external-secrets:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      jenkins-x-charts/metallb:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -890,6 +899,22 @@ data:
       - dog
       - pony
       jenkins-x-charts/local-external-secrets:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jenkins-x-charts/metallb:
       - approve
       - assign
       - blunderbuss
@@ -2167,6 +2192,9 @@ data:
       trusted_org: todo
     - repos:
       - jenkins-x-charts/local-external-secrets
+      trusted_org: todo
+    - repos:
+      - jenkins-x-charts/metallb
       trusted_org: todo
     - repos:
       - jenkins-x-charts/nexus

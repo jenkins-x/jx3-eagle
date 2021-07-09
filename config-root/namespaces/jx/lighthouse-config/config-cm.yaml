@@ -14,6 +14,7 @@ data:
         jenkins-x-charts/jxboot-helmfile-resources: true
         jenkins-x-charts/knative-serving: true
         jenkins-x-charts/local-external-secrets: true
+        jenkins-x-charts/metallb: true
         jenkins-x-charts/nexus: true
         jenkins-x-charts/nfs-subdir-external-provisioner: true
         jenkins-x-charts/pusher-wave: true
@@ -136,6 +137,7 @@ data:
         jenkins-x-charts/jxboot-helmfile-resources: merge
         jenkins-x-charts/knative-serving: merge
         jenkins-x-charts/local-external-secrets: merge
+        jenkins-x-charts/metallb: merge
         jenkins-x-charts/nexus: merge
         jenkins-x-charts/nfs-subdir-external-provisioner: merge
         jenkins-x-charts/pusher-wave: merge
@@ -234,6 +236,7 @@ data:
         - jenkins-x-charts/jxboot-helmfile-resources
         - jenkins-x-charts/knative-serving
         - jenkins-x-charts/local-external-secrets
+        - jenkins-x-charts/metallb
         - jenkins-x-charts/nexus
         - jenkins-x-charts/nfs-subdir-external-provisioner
         - jenkins-x-charts/pusher-wave
@@ -327,6 +330,7 @@ data:
         - jenkins-x-charts/jxboot-helmfile-resources
         - jenkins-x-charts/knative-serving
         - jenkins-x-charts/local-external-secrets
+        - jenkins-x-charts/metallb
         - jenkins-x-charts/nexus
         - jenkins-x-charts/nfs-subdir-external-provisioner
         - jenkins-x-charts/pusher-wave
