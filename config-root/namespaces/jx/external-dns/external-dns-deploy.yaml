@@ -57,7 +57,7 @@ spec:
             - --log-level=info
             - --log-format=text
             - --domain-filter=dev.jenkins-x.me
-            - --policy=upsert-only
+            - --policy=sync
             - --provider=google
             - --registry=txt
             - --interval=1m
