@@ -1,0 +1,22 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: godemo
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  apiVersion: v1
+  appVersion: 0.0.14
+  description: A Helm chart for Kubernetes
+  icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+  name: godemo
+  repositoryName: dev2
+  repositoryUrl: https://jenkins-x-charts.github.io/repo/
+  version: 0.0.14
+status:
+  description: Install complete
+  firstDeployed: "2021-07-14T16:20:32Z"
+  lastDeployed: "2021-07-14T16:20:32Z"
+  status: deployed
