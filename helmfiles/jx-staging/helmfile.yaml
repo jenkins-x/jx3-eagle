@@ -7,6 +7,8 @@ namespace: jx-staging
 repositories:
 - name: dev
   url: https://chartmuseum-jx.dev.jenkins-x.me
+- name: dev2
+  url: https://jenkins-x-charts.github.io/repo/
 releases:
 - chart: dev/go-chaos
   version: 0.0.10
@@ -18,5 +20,8 @@ releases:
   name: cosign-test2
   values:
   - jx-values.yaml
+- chart: dev2/godemo
+  version: 0.0.14
+  name: godemo
 templates: {}
 renderedvalues: {}
