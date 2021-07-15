@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: hook
   labels:
-    chart: "lighthouse-1.1.38"
+    chart: "lighthouse-1.1.39"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'lighthouse'
