@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: godemo
   labels:
-    chart: "godemo-0.0.23"
+    chart: "godemo-0.0.24"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'godemo'

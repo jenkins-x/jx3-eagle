@@ -61,17 +61,17 @@
     resourcePath: config-root/namespaces/jx-staging/cosign-test2
     version: 0.0.20
   - apiVersion: v1
-    appVersion: 0.0.23
+    appVersion: 0.0.24
     description: A Helm chart for Kubernetes
-    firstDeployed: "2021-07-15T20:15:01Z"
+    firstDeployed: "2021-07-15T20:16:40Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2021-07-15T20:15:01Z"
+    lastDeployed: "2021-07-15T20:16:40Z"
     logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fgodemo&dateRangeUnbound=both
     name: godemo
     repositoryName: dev2
     repositoryUrl: https://jenkins-x-charts.github.io/repo/
     resourcePath: config-root/namespaces/jx-staging/godemo
-    version: 0.0.23
+    version: 0.0.24
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
