@@ -5,7 +5,7 @@ metadata:
   name: godemo-godemo
   labels:
     draft: draft-app
-    chart: "godemo-0.0.22"
+    chart: "godemo-0.0.23"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'godemo'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: godemo-godemo
       containers:
         - name: godemo
-          image: "ghcr.io/jenkins-x/godemo:0.0.22"
+          image: "ghcr.io/jenkins-x/godemo:0.0.23"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.22
+              value: 0.0.23
           envFrom: null
           ports:
             - name: http
