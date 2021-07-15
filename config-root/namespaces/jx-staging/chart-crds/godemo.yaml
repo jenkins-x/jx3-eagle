@@ -8,15 +8,15 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
-  appVersion: 0.0.18
+  appVersion: 0.0.20
   description: A Helm chart for Kubernetes
   icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
   name: godemo
   repositoryName: dev2
   repositoryUrl: https://jenkins-x-charts.github.io/repo/
-  version: 0.0.18
+  version: 0.0.20
 status:
   description: Install complete
-  firstDeployed: "2021-07-15T19:47:02Z"
-  lastDeployed: "2021-07-15T19:47:02Z"
+  firstDeployed: "2021-07-15T19:54:43Z"
+  lastDeployed: "2021-07-15T19:54:43Z"
   status: deployed
