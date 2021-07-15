@@ -21,7 +21,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: dev2/godemo
-  version: 0.0.15
+  version: 0.0.17
   name: godemo
   values:
   - jx-values.yaml
