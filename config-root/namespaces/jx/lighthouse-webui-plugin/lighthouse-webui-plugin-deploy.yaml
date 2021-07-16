@@ -6,8 +6,8 @@ metadata:
   labels:
     app.kubernetes.io/name: lighthouse-webui-plugin
     app.kubernetes.io/instance: "lighthouse-webui-plugin"
-    helm.sh/chart: lighthouse-webui-plugin-0.1.6
-    app.kubernetes.io/version: "0.1.6"
+    helm.sh/chart: lighthouse-webui-plugin-0.1.7
+    app.kubernetes.io/version: "0.1.7"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
@@ -28,13 +28,13 @@ spec:
       labels:
         app.kubernetes.io/name: lighthouse-webui-plugin
         app.kubernetes.io/instance: "lighthouse-webui-plugin"
-        helm.sh/chart: lighthouse-webui-plugin-0.1.6
-        app.kubernetes.io/version: "0.1.6"
+        helm.sh/chart: lighthouse-webui-plugin-0.1.7
+        app.kubernetes.io/version: "0.1.7"
         app.kubernetes.io/managed-by: "Helm"
     spec:
       containers:
         - name: lighthouse-webui-plugin
-          image: "ghcr.io/jenkins-x/lighthouse-webui-plugin:0.1.6"
+          image: "ghcr.io/jenkins-x/lighthouse-webui-plugin:0.1.7"
           args:
             - -namespace
             - jx
@@ -62,7 +62,6 @@ spec:
                 secretKeyRef:
                   key: hmac
                   name: lighthouse-hmac-token
-                  optional: true
           volumeMounts:
             - name: data
               mountPath: "/data"

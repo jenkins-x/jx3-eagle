@@ -5,7 +5,7 @@ metadata:
   name: lighthouse-external-plugins
   labels:
     app: lighthouse-lighthouse
-    chart: "lighthouse-1.1.40"
+    chart: "lighthouse-1.1.41"
     release: "lighthouse"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
