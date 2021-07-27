@@ -45,6 +45,7 @@ spec:
             - --v=2
             - --cluster-resource-namespace=$(POD_NAMESPACE)
             - --leader-election-namespace=cert-manager
+            - --issuer-ambient-credentials
           ports:
             - containerPort: 9402
               protocol: TCP
