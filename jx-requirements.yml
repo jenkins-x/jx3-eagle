@@ -22,7 +22,6 @@ spec:
   environments:
   - ingress:
       domain: ""
-      externalDNS: false
       namespaceSubDomain: ""
       tls:
         email: ""
@@ -33,7 +32,6 @@ spec:
     repository: jx3-eagle
   - ingress:
       domain: ""
-      externalDNS: false
       namespaceSubDomain: ""
       tls:
         email: ""
@@ -42,7 +40,6 @@ spec:
     key: staging
   - ingress:
       domain: ""
-      externalDNS: false
       namespaceSubDomain: ""
       tls:
         email: ""
