@@ -35,6 +35,7 @@ jxRequirements:
   environments:
   - ingress:
       domain: ""
+      externalDNS: false
       namespaceSubDomain: ""
       tls:
         email: ""
@@ -45,6 +46,7 @@ jxRequirements:
     repository: jx3-eagle
   - ingress:
       domain: ""
+      externalDNS: false
       namespaceSubDomain: ""
       tls:
         email: ""
@@ -53,6 +55,7 @@ jxRequirements:
     key: staging
   - ingress:
       domain: ""
+      externalDNS: false
       namespaceSubDomain: ""
       tls:
         email: ""
@@ -61,6 +64,7 @@ jxRequirements:
     key: production
   ingress:
     domain: dev.jenkins-x.me
+    externalDNS: false
     namespaceSubDomain: -jx-production.
     tls:
       email: ""
