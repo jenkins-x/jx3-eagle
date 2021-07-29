@@ -32,7 +32,7 @@ spec:
                 - gc
                 - activities
               imagePullPolicy: IfNotPresent
-              image: "ghcr.io/jenkins-x/jx-boot:3.2.178"
+              image: "ghcr.io/jenkins-x/jx-boot:3.2.179"
               env:
                 - name: JX_LOG_FORMAT
                   value: json
