@@ -17,7 +17,7 @@ repositories:
   url: https://jenkins-x-charts.github.io/repo
 releases:
 - chart: jxgh/jxboot-helmfile-resources
-  version: 1.0.70
+  version: 1.0.71
   name: jxboot-helmfile-resources
   values:
   - ../../versionStream/charts/jxgh/jxboot-helmfile-resources/values.yaml.gotmpl
@@ -53,7 +53,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: jxgh/jx-preview
-  version: 0.0.186
+  version: 0.0.187
   name: jx-preview
   values:
   - jx-values.yaml
