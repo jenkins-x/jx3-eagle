@@ -27,6 +27,7 @@ rules:
   - apiGroups:
       - lighthouse.jenkins.io
     resources:
+      - lighthousebreakpoints
       - lighthousejobs
     verbs:
       - get
