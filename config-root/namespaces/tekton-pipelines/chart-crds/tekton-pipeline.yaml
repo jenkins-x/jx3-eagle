@@ -15,9 +15,9 @@ spec:
   name: tekton-pipeline
   repositoryName: cdf
   repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
-  version: 0.27.0
+  version: 0.27.2
 status:
   description: Install complete
-  firstDeployed: "2021-08-16T11:40:35Z"
-  lastDeployed: "2021-08-16T11:40:35Z"
+  firstDeployed: "2021-08-16T15:50:29Z"
+  lastDeployed: "2021-08-16T15:50:29Z"
   status: deployed

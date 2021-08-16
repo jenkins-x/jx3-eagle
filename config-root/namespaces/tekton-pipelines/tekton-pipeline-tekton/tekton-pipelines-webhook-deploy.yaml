@@ -78,7 +78,7 @@ spec:
             - secretRef:
                 name: 'jx-boot-job-env-vars'
                 optional: true
-          image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.27.0@sha256:9d1de73bf9776d0862d211a6e123802959e56fd1e43ce39054374b9f2d4ed966
+          image: ghcr.io/jenkins-x/webhook-d4749e605405422fd87700164e31b2d1:latest
           livenessProbe:
             httpGet:
               path: /health
