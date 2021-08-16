@@ -102,7 +102,7 @@ spec:
             - secretRef:
                 name: 'jx-boot-job-env-vars'
                 optional: true
-          image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.27.0@sha256:015e8f9cf38416652545ce5e16776379a979af64373250ec489861886a468fcf
+          image: ghcr.io/jenkins-x/controller-10a3e32792f33651396d02b6855a6e36:latest
           livenessProbe:
             httpGet:
               path: /health
