@@ -19,7 +19,6 @@ spec:
                 name: jenkins-x-chartmuseum
                 port:
                   number: 8080
-            path: "/"
       host: chartmuseum-jx.dev.jenkins-x.me
   tls:
     - hosts:
