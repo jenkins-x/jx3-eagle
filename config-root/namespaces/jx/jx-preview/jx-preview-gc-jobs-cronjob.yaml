@@ -31,7 +31,7 @@ spec:
               env:
                 - name: XDG_CONFIG_HOME
                   value: /home
-              image: ghcr.io/jenkins-x-plugins/jx-preview:0.0.191
+              image: ghcr.io/jenkins-x-plugins/jx-preview:0.0.192
               imagePullPolicy: IfNotPresent
               name: jx-preview-gc-jobs
               resources: {}
