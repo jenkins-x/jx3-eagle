@@ -70,7 +70,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/pusher/wave' title='wave chart that runs on kubernetes'> <img src='' width='24px' height='24px'> pusher-wave </a></td>
-	      <td>0.4.18</td>
+	      <td>0.4.21</td>
 	      <td></td>
 	      <td><a href='https://github.com/pusher/wave'>source</a></td>
 	    </tr>
