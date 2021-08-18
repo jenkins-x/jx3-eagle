@@ -8,7 +8,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
-  appVersion: 0.4.18
+  appVersion: 0.4.21
   description: wave chart that runs on kubernetes
   home: https://github.com/pusher/wave
   keywords:
@@ -19,9 +19,9 @@ spec:
   repositoryUrl: https://jenkins-x-charts.github.io/repo
   sources:
     - https://github.com/pusher/wave
-  version: 0.4.18
+  version: 0.4.21
 status:
   description: Install complete
-  firstDeployed: "2021-08-14T01:06:35Z"
-  lastDeployed: "2021-08-14T01:06:35Z"
+  firstDeployed: "2021-08-18T19:04:00Z"
+  lastDeployed: "2021-08-18T19:04:00Z"
   status: deployed
