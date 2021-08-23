@@ -28,5 +28,7 @@ releases:
 - chart: dev2/nodedemo
   version: 1.0.58
   name: nodedemo
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

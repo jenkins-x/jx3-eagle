@@ -1,0 +1,60 @@
+# Source: nodedemo/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodedemo-nodedemo
+  labels:
+    draft: draft-app
+    chart: "nodedemo-1.0.58"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'nodedemo'
+    wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx-staging
+spec:
+  selector:
+    matchLabels:
+      app: nodedemo-nodedemo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: nodedemo-nodedemo
+    spec:
+      serviceAccountName: nodedemo-nodedemo
+      containers:
+        - name: nodedemo
+          image: "ghcr.io/jenkins-x/nodedemo:1.0.58"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: VERSION
+              value: 1.0.58
+          envFrom: null
+          ports:
+            - name: http
+              containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              cpu: 400m
+              memory: 256Mi
+            requests:
+              cpu: 0.1
+              memory: 128Mi
+      terminationGracePeriodSeconds:
+      imagePullSecrets:

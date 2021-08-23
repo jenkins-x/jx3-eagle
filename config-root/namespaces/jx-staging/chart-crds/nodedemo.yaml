@@ -1,0 +1,22 @@
+apiVersion: chart.jenkins-x.io/v1alpha1
+kind: Chart
+metadata:
+  creationTimestamp: null
+  name: nodedemo
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  apiVersion: v1
+  appVersion: 1.0.58
+  description: A Helm chart for Kubernetes
+  icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+  name: nodedemo
+  repositoryName: dev2
+  repositoryUrl: https://jenkins-x-charts.github.io/repo/
+  version: 1.0.58
+status:
+  description: Install complete
+  firstDeployed: "2021-08-23T12:36:22Z"
+  lastDeployed: "2021-08-23T12:36:22Z"
+  status: deployed
