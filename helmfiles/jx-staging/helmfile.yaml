@@ -11,7 +11,7 @@ repositories:
   url: https://jenkins-x-charts.github.io/repo/
 releases:
 - chart: dev/go-chaos
-  version: 0.0.10
+  version: 0.0.11
   name: go-chaos
   values:
   - jx-values.yaml
