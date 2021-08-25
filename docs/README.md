@@ -43,7 +43,7 @@
 	    </tr>
     <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> nodedemo </a></td>
-	      <td>1.0.58</td>
+	      <td>1.0.59</td>
 	      <td></td>
 	      <td></td>
 	    </tr>

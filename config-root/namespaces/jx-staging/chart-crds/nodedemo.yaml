@@ -8,15 +8,15 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
-  appVersion: 1.0.58
+  appVersion: 1.0.59
   description: A Helm chart for Kubernetes
   icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
   name: nodedemo
   repositoryName: dev2
   repositoryUrl: https://jenkins-x-charts.github.io/repo/
-  version: 1.0.58
+  version: 1.0.59
 status:
   description: Install complete
-  firstDeployed: "2021-08-23T12:36:22Z"
-  lastDeployed: "2021-08-23T12:36:22Z"
+  firstDeployed: "2021-08-25T17:14:57Z"
+  lastDeployed: "2021-08-25T17:14:57Z"
   status: deployed

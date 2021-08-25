@@ -5,7 +5,7 @@ metadata:
   name: nodedemo-nodedemo
   labels:
     draft: draft-app
-    chart: "nodedemo-1.0.58"
+    chart: "nodedemo-1.0.59"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'nodedemo'
@@ -25,11 +25,11 @@ spec:
       serviceAccountName: nodedemo-nodedemo
       containers:
         - name: nodedemo
-          image: "ghcr.io/jenkins-x/nodedemo:1.0.58"
+          image: "ghcr.io/jenkins-x/nodedemo:1.0.59"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 1.0.58
+              value: 1.0.59
           envFrom: null
           ports:
             - name: http
