@@ -24,18 +24,6 @@
 		      <td colspan='4'><h3>jx-staging</h3></td>
 		    </tr>
 	    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> go-chaos </a></td>
-	      <td>0.0.10</td>
-	      <td><a href='http://go-chaos-jx-staging.dev.jenkins-x.me'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> cosign-test2 </a></td>
-	      <td>0.0.20</td>
-	      <td><a href='http://cosign-test2-jx-staging.dev.jenkins-x.me'>view</a></td>
-	      <td></td>
-	    </tr>
-    <tr>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> godemo </a></td>
 	      <td>0.0.25</td>
 	      <td></td>
@@ -58,7 +46,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
-	      <td>1.1.50</td>
+	      <td>1.1.51</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
@@ -88,7 +76,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
-	      <td>1.7.2</td>
+	      <td>1.7.3</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
@@ -169,15 +157,6 @@
 	      <td>6.3.0</td>
 	      <td></td>
 	      <td><a href='https://github.com/external-secrets/kubernetes-external-secrets'>source</a></td>
-	    </tr>
-    <tr>
-		      <td colspan='4'><h3>sdm</h3></td>
-		    </tr>
-	    <tr>
-	      <td><a href='https://cloudbees.com' title='Kubernetes controller to watch for events and send to SDM'> <img src='' width='24px' height='24px'> sdm-agent-kubernetes </a></td>
-	      <td>0.4.10</td>
-	      <td></td>
-	      <td><a href='https://cloudbees.com'>source</a></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>tekton-pipelines</h3></td>
