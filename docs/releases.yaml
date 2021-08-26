@@ -30,37 +30,6 @@
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
   - apiVersion: v1
-    applicationUrl: http://go-chaos-jx-staging.dev.jenkins-x.me
-    description: A Helm chart for Kubernetes
-    firstDeployed: "2021-04-29T06:54:21Z"
-    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    ingresses:
-    - name: go-chaos
-      url: http://go-chaos-jx-staging.dev.jenkins-x.me
-    lastDeployed: "2021-04-29T06:54:21Z"
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fgo-chaos&dateRangeUnbound=both
-    name: go-chaos
-    repositoryName: dev
-    repositoryUrl: https://chartmuseum-jx.dev.jenkins-x.me
-    resourcePath: config-root/namespaces/jx-staging/go-chaos
-    version: 0.0.10
-  - apiVersion: v1
-    appVersion: 0.0.20
-    applicationUrl: http://cosign-test2-jx-staging.dev.jenkins-x.me
-    description: A Helm chart for Kubernetes
-    firstDeployed: "2021-05-27T14:44:25Z"
-    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    ingresses:
-    - name: cosign-test2
-      url: http://cosign-test2-jx-staging.dev.jenkins-x.me
-    lastDeployed: "2021-05-27T14:44:25Z"
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fcosign-test2&dateRangeUnbound=both
-    name: cosign-test2
-    repositoryName: dev
-    repositoryUrl: https://chartmuseum-jx.dev.jenkins-x.me
-    resourcePath: config-root/namespaces/jx-staging/cosign-test2
-    version: 0.0.20
-  - apiVersion: v1
     appVersion: 0.0.25
     description: A Helm chart for Kubernetes
     firstDeployed: "2021-07-15T21:16:22Z"
@@ -401,26 +370,6 @@
     sources:
     - https://github.com/external-secrets/kubernetes-external-secrets
     version: 6.3.0
-- namespace: sdm
-  path: helmfiles/sdm/helmfile.yaml
-  releases:
-  - apiVersion: v2
-    appVersion: 0.0.1
-    description: Kubernetes controller to watch for events and send to SDM
-    firstDeployed: "2021-04-30T10:46:49Z"
-    home: https://cloudbees.com
-    lastDeployed: "2021-04-30T10:46:49Z"
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jx-labs-infra&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-gentle-titmouse%2Fnamespace_name%2Fsdm%2Fcontainer_name%2Fsdm-agent-kubernetes&dateRangeUnbound=both
-    maintainers:
-    - email: support@cloudbees.com
-      name: CloudBees Team
-    name: sdm-agent-kubernetes
-    repositoryName: labs
-    repositoryUrl: https://storage.googleapis.com/jx-labs-infra-charts/charts
-    resourcePath: config-root/namespaces/sdm/sdm-agent-kubernetes
-    sources:
-    - https://github.com/cloudbees/sdm-agent-kubernetes
-    version: 0.4.10
 - namespace: tekton-pipelines
   path: helmfiles/tekton-pipelines/helmfile.yaml
   releases:
