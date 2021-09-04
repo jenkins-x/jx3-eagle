@@ -8,16 +8,16 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   apiVersion: v1
-  appVersion: 1.0.75
+  appVersion: 1.0.76
   description: A Helm chart for the resources for JX Boot
   home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
   icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
   name: jxboot-helmfile-resources
   repositoryName: jxgh
   repositoryUrl: https://jenkins-x-charts.github.io/repo
-  version: 1.0.75
+  version: 1.0.76
 status:
   description: Install complete
-  firstDeployed: "2021-08-27T01:12:21Z"
-  lastDeployed: "2021-08-27T01:12:21Z"
+  firstDeployed: "2021-09-04T01:09:47Z"
+  lastDeployed: "2021-09-04T01:09:47Z"
   status: deployed
